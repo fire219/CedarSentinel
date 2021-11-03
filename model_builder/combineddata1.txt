@@ -1,0 +1,1429 @@
+Sep 22 00:51:57 <P64ProtocolBot>	[M] <@mbohun> Is there actually a plan for a Pine64 "car dash-cam recording system" ?
+Sep 22 00:51:58 <P64ProtocolBot>	[M] <@mbohun> - modular/extensible
+Sep 22 00:52:00 <P64ProtocolBot>	[M] <@mbohun> - i would really love to build one with night vision / heat sensor for wildlife detection/avoidance (kangaroos, deer, wombats, echidnas, foxes, etc. EVERYWHERE! )
+Sep 22 00:53:25 <P64ProtocolBot>	[M] <@mbohun> yes, that is what i meant, pine64 seems to have all the different parts
+Sep 22 00:53:33 <P64ProtocolBot>	[M] <@mbohun> already
+Sep 22 00:55:51 <P64ProtocolBot>	[D] <@gamiee> Ayaay nice
+Sep 22 02:18:56 <P64ProtocolBot>	[M] <@mbohun> https://matrix.org/_matrix/media/v1/download/matrix.org/NwkxodNaknswfzWBQggezNiq
+Sep 22 02:31:53 <P64ProtocolBot>	[D] <@Electr0Lyte> wat
+Sep 22 02:33:24 <P64ProtocolBot>	[M] <@gamelaster (gamiee)> mbohun: I was thinking about this for a longer time
+Sep 22 02:37:03 <P64ProtocolBot>	[D] <@Funeral> Tell us your thoughts
+Sep 22 02:44:28 <P64ProtocolBot>	[M] <@gamelaster (gamiee)> it should be possible with to do with Allwinner S3 which is currently used in PineCube
+Sep 22 02:47:57 <P64ProtocolBot>	[T] <@fredd774> Forwarded from fredd774: Withdrawal profit received successfully 💯💯This is indeed the best paying platform ❤️Capital-base is an investment company based in UK they offers 120% and 140% daily interest with 5% referral bonus.  You can register for free and access your dashboard Best paying platform for crypto currencieshttps://is.gd/ur2tsS : 
+Sep 22 02:54:59 <P64ProtocolBot>	[D] <@Funeral> that's even possible with an ESP32 or ESP32-cam 😄
+Sep 22 02:57:34 <P64ProtocolBot>	[D] <@gamiee> but low fps, no recording, etc.
+Sep 22 10:53:12 <P64ProtocolBot>	[D] <@jurapura13> @arch frajer sa frizurom Tbh I have no idea what I would order
+Sep 22 10:53:20 <P64ProtocolBot>	[D] <@jurapura13> I got a second hand PinePhone here
+Sep 22 10:53:29 <P64ProtocolBot>	[D] <@jurapura13> Maybe a PineBook Pro
+Sep 22 10:53:36 <P64ProtocolBot>	[D] <@jurapura13> For uni
+Sep 22 11:08:47 <P64ProtocolBot>	[T] <@Rahulraj> Is pine phone shipping available to India?
+Sep 22 11:14:08 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> lol ok then
+Sep 22 11:14:47 <P64ProtocolBot>	[M] <@Strit> > <@p64protocolbot:matrix.org> [T] <@Rahulraj> Is pine phone shipping available to India?
+Sep 22 11:14:47 <P64ProtocolBot>	[M] <@Strit> 
+Sep 22 11:14:48 <P64ProtocolBot>	[M] <@Strit> I don't think so. Because of some customs law.
+Sep 22 11:15:38 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> are you going to fer, too, perchance?
+Sep 22 11:26:08 <P64ProtocolBot>	[D] <@Funeral> Rahulraj: nah, they don't ship to India
+Sep 22 11:26:40 <P64ProtocolBot>	[D] <@Funeral> @arch frajer sa frizurom mind that discord replies are not supported by the bridge
+Sep 22 11:29:33 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> ok i wont use replies
+Sep 22 12:27:49 <P64ProtocolBot>	[T] <@L> Hi
+Sep 22 12:27:58 <P64ProtocolBot>	[T] <@L> How may I get my order status
+Sep 22 12:28:01 <P64ProtocolBot>	[T] <@L> ?
+Sep 22 12:29:17 <P64ProtocolBot>	[T] <@L> That's my last alternative
+Sep 22 12:29:35 <P64ProtocolBot>	[T] <@L> I don't know if was shipped or not
+Sep 22 12:29:57 <P64ProtocolBot>	[D] <@Segfault> You get two emails, one with an order confirmation and one later on with a tracking number
+Sep 22 12:30:07 <P64ProtocolBot>	[D] <@Segfault> If you haven't received the second email then it hasn't shipped yet
+Sep 22 12:52:14 <P64ProtocolBot>	[D] <@jurapura13> @arch frajer sa frizurom I'm not going to FER, I'm going to a different city but virtually the same course
+Sep 22 12:54:53 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> kewl
+Sep 22 17:15:08 <P64ProtocolBot>	[M] <@taner.veriyol> Hi guys!!
+Sep 22 17:15:19 <P64ProtocolBot>	[M] <@taner.veriyol> i have a question about shipping
+Sep 22 17:15:35 <P64ProtocolBot>	[D] <@Funeral> Spit it out
+Sep 22 17:16:24 <P64ProtocolBot>	[M] <@taner.veriyol> if i ordered one pinephone and 2x pinetime, How can I find out when it will be at my address?
+Sep 22 17:16:46 <P64ProtocolBot>	[M] <@taner.veriyol> date field on site not working
+Sep 22 17:17:03 <P64ProtocolBot>	[D] <@Funeral> You could order the PinePhone only individually, without the pinetime. For both orders you will get a mail with the tracking number once it ships
+Sep 22 17:17:10 <P64ProtocolBot>	[D] <@Funeral> Which date field?
+Sep 22 17:17:39 <P64ProtocolBot>	[D] <@Funeral> Or are you asking how long it would roughly take?
+Sep 22 17:17:51 <P64ProtocolBot>	[M] <@taner.veriyol> I have a flight on the 9th of next month it has to catch up
+Sep 22 17:18:15 <P64ProtocolBot>	[M] <@taner.veriyol> we can say from today until october 8
+Sep 22 17:18:21 <P64ProtocolBot>	[D] <@Funeral> They ship from China and the PinePhone is usually a pre-order depending on your location
+Sep 22 17:18:51 <P64ProtocolBot>	[M] <@taner.veriyol> i'm in pennsylvania
+Sep 22 17:19:12 <P64ProtocolBot>	[D] <@Funeral> Then it also depends on the shipping method, courier or slow shipping 😛
+Sep 22 17:20:01 <P64ProtocolBot>	[M] <@taner.veriyol> May I know roughly how long it takes in America?
+Sep 22 17:27:10 <P64ProtocolBot>	[D] <@Funeral> Nah, that's not possible
+Sep 22 17:27:16 <P64ProtocolBot>	[D] <@Funeral> 3 to 40 days
+Sep 22 17:28:45 <P64ProtocolBot>	[D] <@Funeral> Like said, it's a pre-order, there are different shipping methods
+Sep 22 17:28:46 <P64ProtocolBot>	[M] <@taner.veriyol> OMG
+Sep 22 17:28:57 <P64ProtocolBot>	[M] <@taner.veriyol> thanks man!
+Sep 22 17:29:00 <P64ProtocolBot>	[M] <@taner.veriyol> thats bad for me :(
+Sep 22 17:29:17 <P64ProtocolBot>	[M] <@taner.veriyol> i want to get pinephone but i will leave from USA
+Sep 22 17:29:26 <P64ProtocolBot>	[M] <@taner.veriyol> and you are not shipping Turkey yet
+Sep 22 17:30:37 <P64ProtocolBot>	[D] <@Funeral> Well, did you order courier or standard and when?
+Sep 22 17:31:21 <P64ProtocolBot>	[M] <@taner.veriyol> I haven't done it yet, I'm looking for the fastest way
+Sep 22 17:31:51 <P64ProtocolBot>	[D] <@Funeral> courier is fast but it's a pre-order 😄
+Sep 22 17:32:47 <P64ProtocolBot>	[D] <@Funeral> The PinePhone ships roughly twice a month, so with some unlucky timing it might not reach you in time
+Sep 22 18:36:51 <P64ProtocolBot>	[D] <@GCJohnsonChevalier> https://cdn.discordapp.com/attachments/463285150898192384/890381157961723934/2021-09-22-163552.webm
+Sep 22 18:37:25 <P64ProtocolBot>	[D] <@GCJohnsonChevalier> @fireTwoOneNine custom GPU on the PinePhone64 System on a Chip ?
+Sep 22 18:40:16 <P64ProtocolBot>	[D] <@fireTwoOneNine> the GPU on the pinephone is built into the same chip as the CPU
+Sep 22 19:28:12 <P64ProtocolBot>	[D] <@gamiee> @PiZZaMartijn i guess this is good idea
+Sep 22 19:33:49 <P64ProtocolBot>	[D] <@notLillie> I want more boards
+Sep 22 19:34:12 <P64ProtocolBot>	[D] <@notLillie> what would you all buy? 😛
+Sep 22 19:34:44 <P64ProtocolBot>	[D] <@notLillie> I don’t have any pine64 SBCs, excluding the pinetime, and pinebook pro
+Sep 22 19:36:50 <P64ProtocolBot>	[D] <@notLillie> These two I won’t buy (quartz maybe later)
+Sep 22 19:36:51 <P64ProtocolBot>	[D] <@notLillie> Quartz64: No, waiting for that one to mature. (Mostly because of the USB issue.)
+Sep 22 19:36:52 <P64ProtocolBot>	[D] <@notLillie> Pine A64: far too slow.
+Sep 22 19:38:58 <P64ProtocolBot>	[D] <@notLillie> I guess that leaves the rockpro64. Rock64 is starting to show its age anyways… 😛
+Sep 22 19:43:19 <P64ProtocolBot>	[D] <@caleb (they/them)> @GAMELASTER i like your banner !
+Sep 22 19:43:31 <P64ProtocolBot>	[D] <@PiZZaMartijn> @GAMELASTER having devzone be public is not a good idea
+Sep 22 19:44:23 <P64ProtocolBot>	[D] <@gamiee> Not everything public, only parts which could be public
+Sep 22 19:44:28 <P64ProtocolBot>	[D] <@gamiee> Thanks 😀
+Sep 22 19:44:37 <P64ProtocolBot>	[D] <@PiZZaMartijn> that eeh, mostly will keep it down to nothing
+Sep 22 19:44:53 <P64ProtocolBot>	[D] <@caleb (they/them)> surely anything that would be public on devzone should be on the wiki instead
+Sep 22 19:44:58 <P64ProtocolBot>	[D] <@PiZZaMartijn> yes
+Sep 22 19:45:00 <P64ProtocolBot>	[D] <@PiZZaMartijn> exactly
+Sep 22 19:56:19 <P64ProtocolBot>	[D] <@gamiee> That's true
+Sep 22 20:23:14 <P64ProtocolBot>	[D] <@PiZZaMartijn> because stuff shows up there before it's announced
+Sep 22 20:24:56 <P64ProtocolBot>	[D] <@PiZZaMartijn> exactly
+Sep 22 20:26:30 <P64ProtocolBot>	[D] <@PiZZaMartijn> yup
+Sep 22 20:26:53 <P64ProtocolBot>	[D] <@PiZZaMartijn> but that's mostly done in the public channels
+Sep 22 20:28:48 <P64ProtocolBot>	[D] <@PiZZaMartijn> ofcourse everything is as open as possible, but not everything can be public, which is why this needs to exist
+Sep 22 20:29:11 <P64ProtocolBot>	[D] <@PiZZaMartijn> it's not like all the open developments is going away 😛
+Sep 22 20:30:18 <P64ProtocolBot>	[D] <@PiZZaMartijn> you seem to think that the things that are in devzone were public before
+Sep 22 20:31:15 <P64ProtocolBot>	[D] <@caleb (they/them)> there isn't much reason for development work for current devices to happen on devzone
+Sep 22 20:31:31 <P64ProtocolBot>	[D] <@caleb (they/them)> the wiki, public channels and mailing lists are far better platforms
+Sep 22 20:31:51 <P64ProtocolBot>	[D] <@caleb (they/them)> i don't think there's any intention of devzone being used for active development of stuff that you can go buy
+Sep 22 20:32:06 <P64ProtocolBot>	[D] <@PiZZaMartijn> no the current projects are listed in the devzone
+Sep 22 20:32:12 <P64ProtocolBot>	[D] <@PiZZaMartijn> so far nothing has happened on them
+Sep 22 20:32:32 <P64ProtocolBot>	[D] <@PiZZaMartijn> devzone is also just neat to keep track of who has which devkits etc, this is not replacing all the open development
+Sep 22 20:33:18 <P64ProtocolBot>	[D] <@caleb (they/them)> there's obviously no benefit to gatekeeping development efforts, that would kinda defeat the purpose of pine64... to the best of my knowledge it's not something anyone ever planned as a usecase for it
+Sep 22 20:33:28 <P64ProtocolBot>	[D] <@caleb (they/them)> for the reasons you've stated - it would be dumb
+Sep 22 20:35:05 <P64ProtocolBot>	[D] <@PiZZaMartijn> devzone is the bucket where all the small features are thrown in that are needed for organizing
+Sep 22 20:36:11 <P64ProtocolBot>	[D] <@PiZZaMartijn> no, features for organizing. like developer lists, the signup stuff, timeline tracking
+Sep 22 20:36:33 <P64ProtocolBot>	[D] <@caleb (they/them)> ie for the people who are being sent devices for the purposes of working on them
+Sep 22 20:36:43 <P64ProtocolBot>	[D] <@PiZZaMartijn> there definetly is
+Sep 22 20:36:48 <P64ProtocolBot>	[D] <@Philpax> there are plenty of reasons
+Sep 22 20:36:55 <P64ProtocolBot>	[D] <@PiZZaMartijn> do you want to publicly list all the GDPR protected contact info of developers?
+Sep 22 20:37:19 <P64ProtocolBot>	[D] <@PiZZaMartijn> timeline might be public, but it's not exciting at all, and mostly used for tracking products that are not public yet
+Sep 22 20:37:51 <P64ProtocolBot>	[D] <@Philpax> something something D1 SBC :>
+Sep 22 20:38:05 <P64ProtocolBot>	[D] <@Philpax> although I'm still trying to figure out whether I want that
+Sep 22 20:38:37 <P64ProtocolBot>	[D] <@Philpax> I'll probably get it just for the novelty of RISC-V that's not a softcore
+Sep 22 20:40:34 <P64ProtocolBot>	[D] <@PiZZaMartijn> that's not the intention ofcourse, and most of that development is already done split over the public chats here thanks to all the bridging that's done so devs on all platforms can talk together
+Sep 22 20:40:47 <P64ProtocolBot>	[D] <@PiZZaMartijn> and a lot of development just happens in distribution specific chat channels
+Sep 22 20:42:02 <P64ProtocolBot>	[D] <@Philpax> I'm not a -huge- fan of knowledge being gated behind devzone, but my understanding is that it is primarily for knowledge that can't be shared for legal or other reasons
+Sep 22 20:42:11 <P64ProtocolBot>	[D] <@PiZZaMartijn> if there is any info that _can_ be public, it _is_ public
+Sep 22 20:42:27 <P64ProtocolBot>	[D] <@Philpax> the development talks you refer to already happen outside of devzone
+Sep 22 20:45:12 <P64ProtocolBot>	[D] <@Philpax> mm, same
+Sep 22 20:45:26 <P64ProtocolBot>	[D] <@Philpax> I guess we'll see, I'm hoping for the best
+Sep 22 20:46:04 <P64ProtocolBot>	[D] <@Philpax> I'll be signing up for devzone once I get some working devices going and can do some dev
+Sep 22 20:49:40 <P64ProtocolBot>	[D] <@Philpax> I think, if the decision to publicise something is made because of policy, that the battle has already been lost
+Sep 22 20:49:57 <P64ProtocolBot>	[D] <@Philpax> This only really works if people want their work to be public
+Sep 22 20:50:59 <P64ProtocolBot>	[D] <@PiZZaMartijn> heh, who doesn't want credit
+Sep 22 20:51:37 <P64ProtocolBot>	[D] <@PiZZaMartijn> it's not like the developers are pine64 developers and they start working in-company now, the developers working on pine products usually do that because they like working in the open 🙂
+Sep 22 20:53:11 <P64ProtocolBot>	[D] <@♦ Б̸̔̈а̶̋̽р̶͐͂о̵̟̇н̶̒̐ ♦> I want to apologize to the dev teams for the PR nightmare, and express my gratitude for the fact you didn't permaban me the moment I walked in here
+Sep 22 21:07:53 <P64ProtocolBot>	[D] <@Tenacious-Techhunter> So, what are the plans if ARM won’t license legitimate ARM cores to Rockchip anymore on account of the recent China shenanigans?
+Sep 23 00:19:41 <P64ProtocolBot>	[T] <@la concentida Ri> Forwarded from unknown: ᴬᵐ ᵛᵉʳʸ ᵍʳᵃᵗᵉᶠᵘˡ, ʷʰᵃᵗ ʷⁱˡˡ ⁱ ʳᵉᵃˡˡʸ ᵈᵒ ᵗᵒ ᵃᵖᵖʳᵉᶜⁱᵃᵗᵉ ʸᵒᵘ ˢⁱʳ, ᵇᵉᶜᵃᵘˢᵉ ⁱ ᵈᵒⁿᵗ ᵏⁿᵒʷ ʰᵒʷ ᵗᵒ ᵗʰᵃⁿᵏ ʸᵒᵘ ᵉⁿᵒᵘᵍʰ ᶠᵒʳ ᵇᵉⁱⁿᵍ ˢᵒ ᵏⁱⁿᵈ ᵃⁿᵈ ᵍᵒᵒᵈ ᵗᵒ ᵐᵉ ⁱⁿ ʸᵒᵘʳ ᵖˡᵃᵗᶠᵒʳᵐ, ⁱᵗ'ˢ 
+Sep 23 00:19:42 <P64ProtocolBot>	[T] <@la concentida Ri> 👇👇👇
+Sep 23 00:19:43 <P64ProtocolBot>	[T] <@la concentida Ri> @Expat_trader
+Sep 23 00:19:45 <P64ProtocolBot>	[T] <@la concentida Ri> 👇👇👇👇👇
+Sep 23 00:19:46 <P64ProtocolBot>	[T] <@la concentida Ri> https://t.me/joinchat/Dm2C-u-n3TkwMmQ0
+Sep 23 04:27:38 <P64ProtocolBot>	[T] <@Alvaro> I am so fortunate that I am now making $ 1500 free weekly from the company as a representative.  Best online trading company ever.  capital-base
+Sep 23 04:27:38 <P64ProtocolBot>	[T] <@Alvaro> They give 120% and 140% profit after 24 hours Mining session and 5% referral commission
+Sep 23 04:27:39 <P64ProtocolBot>	[T] <@Alvaro> Best paying platform 💯
+Sep 23 04:27:41 <P64ProtocolBot>	[T] <@Alvaro> https://is.gd/ur2tsS
+Sep 23 04:33:05 <P64ProtocolBot>	[T] <@EricGLivingston> English is the international language of business; i.e. productivity. Anyone who doesn’t want to learn it is a culturalist and probably a racist. (re @Kirfkin: There's people from all over the world. English isn't everyone's first language.)
+Sep 23 04:35:00 <P64ProtocolBot>	[D] <@Funeral> Best to keep politics out
+Sep 23 04:36:49 <P64ProtocolBot>	[T] <@EricGLivingston> 👍 (re @p64protocolbot: [D] <@Funeral> Best to keep politics out)
+Sep 23 04:37:29 <P64ProtocolBot>	[T] <@widex90> We don't need political words. I don't like English because I favourite two other foreign languages. This is but no reason that I don't try to communicate in this language. This is important that we could collaborate over cultures (re @EricGLivingston: English is the international language of business; i.e. productivity. Anyone who doesn’t want to learn it is a culturalist and probably a racist.)
+Sep 23 04:53:50 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> Eric, you deserve to become a meme 😂
+Sep 23 04:55:56 <P64ProtocolBot>	[D] <@Funeral> Eh, please be nice. And I highly recommend not to deepen the topic
+Sep 23 12:56:36 <P64ProtocolBot>	[D] <@Thanos the tank engine> lodge a ticket with support
+Sep 23 15:12:03 <P64ProtocolBot>	[D] <@Zen> Does `bash` have a way of populating a variable in a background thread with the script waiting for that to complete before using the variable?
+Sep 23 15:12:45 <P64ProtocolBot>	[D] <@gamiee> #offtopic
+Sep 23 15:13:08 <P64ProtocolBot>	[D] <@Zen> Alright, ty
+Sep 23 15:13:15 <P64ProtocolBot>	[D] <@gamiee> np :)
+Sep 23 16:34:01 <P64ProtocolBot>	[T] <@UniversalSuperBox> It's been closed. This room supersedes it.
+Sep 23 16:38:55 <P64ProtocolBot>	[T] <@UniversalSuperBox> People were using the Pine64 room as a general space. So now it is.
+Sep 23 16:39:10 <P64ProtocolBot>	[T] <@UniversalSuperBox> There is  sopine and lts room now for the actual Pine64 PINE64 boards
+Sep 23 18:19:20 <P64ProtocolBot>	[D] <@ayayagames> Scrolls up like 50 messages lmao wtf baby
+Sep 23 19:16:30 <P64ProtocolBot>	[D] <@fireTwoOneNine> dsimic: i really don't want to be making more niche purpose channels. this network's already getting unwieldy to manage
+Sep 23 19:52:49 <P64ProtocolBot>	[D] <@mite> would be cool to see a powerful arm64 workstation be developed
+Sep 23 21:10:33 <P64ProtocolBot>	[T] <@Vijay> Hello All
+Sep 23 21:11:44 <P64ProtocolBot>	[T] <@Vijay> Can any one help with pine64 smartwatch development related questions
+Sep 23 21:12:32 <P64ProtocolBot>	[T] <@Vijay> Is this the correct forum?
+Sep 23 21:45:41 <P64ProtocolBot>	[D] <@ayayagames> ha so i still use ,y iphone5 at home for small things like amazon and GPS when i need it...... I AM LOCKED OUT OF AMAZON VIA I NEED UPDATE IOS13
+Sep 23 21:46:02 <P64ProtocolBot>	[D] <@ayayagames> they are on 12.5
+Sep 23 21:46:04 <P64ProtocolBot>	[D] <@ayayagames> :moon2H:
+Sep 23 21:46:36 <P64ProtocolBot>	[D] <@ayayagames> what the fuck kina bull this is that
+Sep 23 22:01:55 <P64ProtocolBot>	[D] <@Tenacious-Techhunter> @dsimic, what makes MicroSD so important on a system that can take SSDs?
+Sep 23 23:31:15 <P64ProtocolBot>	[D] <@SirOggy> impressive performance from bpfilter
+Sep 23 23:31:18 <P64ProtocolBot>	[D] <@SirOggy> https://cdn.discordapp.com/attachments/463285150898192384/890817643479719956/image.png
+Sep 23 23:52:04 <P64ProtocolBot>	[D] <@Cyastis> dsimic: you can have a minimum 1Gbps ethernet connection from usb c so I assume it will cone with time
+Sep 23 23:53:36 <P64ProtocolBot>	[D] <@Cyastis> dsimic: you can have a minimum 1Gbps ethernet connection from usb c so I assume it will come with time
+Sep 23 23:53:37 <P64ProtocolBot>	[D] <@Cyastis> 
+Sep 23 23:53:38 <P64ProtocolBot>	[D] <@Cyastis> ~~also it'd probably be 10x cheaper to get adapters sadly~~
+Sep 24 00:38:05 <P64ProtocolBot>	[D] <@Ocawesome101> dsimic: they support thunderbolt 4 iirc
+Sep 24 01:39:50 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> i thought bpfilter is abandoned?
+Sep 24 02:30:29 <P64ProtocolBot>	[T] <@P. Salvatore> Buongiorno. Sono interessato all'acquisto del Pinenote, sono residente in Italia, ma sul sito www.pine64.org/pinenote/ non si puo' accedere alla procedura di acqisto. C'è una alternativa? Grazie
+Sep 24 02:32:55 <P64ProtocolBot>	[D] <@Segfault> Hey we try to keep discussion here in English, it's easier to moderate that way and you're more likely to get a response
+Sep 24 02:32:56 <P64ProtocolBot>	[D] <@Segfault> As for the question, the pinenote isn't available for purchase yet as far as I can tell, it'll be available soon as a development unit though
+Sep 24 10:43:58 <P64ProtocolBot>	[D] <@Segfault> With m.2 E key you could absolutely solder wires to take the SDIO and UART connections for a wifi module elsewhere while still leaving the PCIe connection on the multiphy PCIe connection in place for an SSD in that slot
+Sep 24 10:44:00 <P64ProtocolBot>	[D] <@Philpax> what would you do with a PCIe 4x inside the laptop, dsimic? the only thing I can really think of is storage or the LiteFury or something
+Sep 24 10:44:30 <P64ProtocolBot>	[D] <@Philpax> (to be clear, I agree with you, I think having as much in the laptop is good, but I'm trying to figure out what you could actually add here)
+Sep 24 10:44:42 <P64ProtocolBot>	[D] <@Thanos the tank engine> imagine the bottleneck factor of ann RTX 3090 connected to the rk3588 based pinebook pro pro
+Sep 24 10:44:44 <P64ProtocolBot>	[D] <@Segfault> And the beauty of it all is that if that big PCIe controller plays nice with GPUs and thunderbolt then there's literally no reason that idea couldn't work in theory
+Sep 24 10:44:44 <P64ProtocolBot>	[D] <@Philpax> (nobody ships GPUs on NVMe, do they? :P)
+Sep 24 10:45:01 <P64ProtocolBot>	[D] <@Philpax> M.2, bah, I keep mixing those up
+Sep 24 10:45:17 <P64ProtocolBot>	[D] <@Thanos the tank engine> no, GPUs on M.2 are not a thing
+Sep 24 10:45:27 <P64ProtocolBot>	[D] <@Segfault> There are framebuffer/blitter units that output over vga but that's it
+Sep 24 10:45:40 <P64ProtocolBot>	[D] <@Thanos the tank engine> not exactly super useful
+Sep 24 10:45:59 <P64ProtocolBot>	[D] <@Philpax> @Thanos the tank engine sometimes you just need to machine learn at a coffee shop and your RTX 3090
+Sep 24 10:47:09 <P64ProtocolBot>	[D] <@Segfault> So yeah if I ever disappear for a few months after we get an RK3588 pinebook you can probably assume I've gone into some kind of "I will not go online until I finish this crazy project and make a blog post about it" thing lol
+Sep 24 10:47:33 <P64ProtocolBot>	[D] <@Segfault> dsimic: my home setup it a ThinkPad with an external RX 570
+Sep 24 10:47:38 <P64ProtocolBot>	[D] <@Philpax> I will cheer you on Segfault o7
+Sep 24 10:47:52 <P64ProtocolBot>	[D] <@Thanos the tank engine> >sets down Pinebook on table at coffee shop
+Sep 24 10:47:53 <P64ProtocolBot>	[D] <@Thanos the tank engine> >pulls RTX 3090 eGPU out of bag and sets it on the floor, plugging it in to the nearest outlet
+Sep 24 10:47:54 <P64ProtocolBot>	[D] <@Thanos the tank engine> >the lights dim for a second as the sheer power of your rig is too much for the building to handle
+Sep 24 10:47:55 <P64ProtocolBot>	[D] <@Thanos the tank engine> >all the peasants are staring at you, jealous of your rig
+Sep 24 10:48:07 <P64ProtocolBot>	[D] <@Segfault> I took it to a LAN party once
+Sep 24 10:48:34 <P64ProtocolBot>	[D] <@Philpax> you have a decent laptop that becomes a workstation when you're at home, and you can bring your workstation with you if you really need to
+Sep 24 10:49:09 <P64ProtocolBot>	[D] <@Thanos the tank engine> >you start training an AI on it, the heat output raising the temperature of the building noticeably
+Sep 24 10:49:09 <P64ProtocolBot>	[D] <@Thanos the tank engine> >people start leaving, throwing dirty looks at you
+Sep 24 10:49:11 <P64ProtocolBot>	[D] <@Thanos the tank engine> >they're still just jealous
+Sep 24 10:49:29 <P64ProtocolBot>	[D] <@Philpax> I was tempted by the Flow X13 which takes this concept to the extreme (small ultrabook-ish device with a 3080 eGPU), but it was ungodly expensive
+Sep 24 10:50:13 <P64ProtocolBot>	[D] <@Segfault> dsimic: then clearly you're not the target market for an egpu :P
+Sep 24 10:50:48 <P64ProtocolBot>	[D] <@Philpax> oh, I agree: but that's what I mean, you can't really extend the laptop internally in a way that will make it substantially more powerful
+Sep 24 10:50:57 <P64ProtocolBot>	[D] <@Philpax> WiFi can be engineered into the device in this hypothetical future
+Sep 24 10:50:59 <P64ProtocolBot>	[D] <@Thanosthetankengine> the entire point of egpus and things like convergence on phones is just having one device
+Sep 24 10:51:26 <P64ProtocolBot>	[D] <@Segfault> My pinebook already has the best SSD I own lol
+Sep 24 10:51:27 <P64ProtocolBot>	[D] <@Philpax> RAID on a laptop is a possible outcome, but again, probably not the target market for a PBU
+Sep 24 10:52:02 <P64ProtocolBot>	[D] <@Philpax> you're not making it weaker though, imo! :p
+Sep 24 10:52:21 <P64ProtocolBot>	[D] <@Segfault> I don't see much point in RAID unless you've already got like 4-6 drives lol
+Sep 24 10:52:30 <P64ProtocolBot>	[D] <@Philpax> true, but my opinion is the number of use cases enabled by external connectivity outweighs that of internal connectivity
+Sep 24 10:52:35 <P64ProtocolBot>	[D] <@Segfault> It's just not cost effective otherwise
+Sep 24 10:53:24 <P64ProtocolBot>	[D] <@Segfault> dsimic: in theory at least, connecting the SSD to a multiphy would only lose you 50mb/s at most, at least on slower drives like the 660p which I already think is plenty fast enough
+Sep 24 10:54:03 <P64ProtocolBot>	[D] <@Segfault> The biggest hit would actually be wifi because you'd be stuck with SDIO modules rather than PCIe
+Sep 24 10:54:23 <P64ProtocolBot>	[D] <@Segfault> I'm not exhausting the cache lol
+Sep 24 10:55:15 <P64ProtocolBot>	[D] <Thanos the tank engine> so yeah there's a tradeoff
+Sep 24 10:55:32 <P64ProtocolBot>	[D] <Segfault> Absolutely, but I also don't particularly care about wifi performance as long as it's faster than my internet connection so in this theoretical world I don't care about the small performance loss from a setup like that
+Sep 24 10:55:55 <P64ProtocolBot>	[D] <Segfault> Even the PBPs current WiFi module is adequate for me
+Sep 24 10:56:20 <P64ProtocolBot>	[D] <Segfault> So yes in this theoretical world I don't actually lose any significant SSD or wifi performance
+Sep 24 10:56:30 <P64ProtocolBot>	[D] <Thanos the tank engine> splitting t5he 4 lanes from the pcie3.0 into 2 sets of 2 lanes could be fun for putting 2 SSDs in RAID
+Sep 24 10:56:43 <P64ProtocolBot>	[D] <Segfault> If the controller supports it
+Sep 24 10:57:04 <P64ProtocolBot>	[D] <Philpax> only four lanes is pretty limiting though :(
+Sep 24 10:57:14 <P64ProtocolBot>	[D] <Segfault> Four lanes is quite a bit at 3.0 speeds
+Sep 24 10:57:19 <P64ProtocolBot>	[D] <Segfault> 32gbit/s
+Sep 24 10:57:31 <P64ProtocolBot>	[D] <Thanos the tank engine> two drives in a raid1 could be faster than one drive with the full bandwidth
+Sep 24 10:57:35 <P64ProtocolBot>	[D] <Segfault> I'd be surprised if the interconnect rockchip designs will be able to handle that much tbh
+Sep 24 10:58:32 <P64ProtocolBot>	[D] <Thanos the tank engine> in a raid0 you'd get fdaster everything but no redundancy
+Sep 24 10:58:55 <P64ProtocolBot>	[D] <Thanos the tank engine> raid1 would have the redundancy benefits at least
+Sep 24 10:58:58 <P64ProtocolBot>	[D] <Segfault> We can only hope rockchip sees this as an opportunity to create a future proof design (like with the 32gb ram limit) so they iron out the bottlenecks before they can become a problem in the next generation
+Sep 24 10:59:30 <P64ProtocolBot>	[D] <Philpax> can a PCIE 3.0 lane be bifurcated into two PCIE 2.0 lanes?
+Sep 24 11:00:06 <P64ProtocolBot>	[D] <Segfault> It wouldn't be 2.0 lanes
+Sep 24 11:00:26 <P64ProtocolBot>	[D] <Segfault> If it can it would be splitting it into two 3.0 2x lanes yeah
+Sep 24 11:00:37 <P64ProtocolBot>	[D] <Segfault> Or possibly even something like one 3.0 1x and one 3.0 3x
+Sep 24 11:00:53 <P64ProtocolBot>	[D] <Segfault> iirc there's technically nothing stopping PCIe from working with odd numbers of lanes
+Sep 24 11:01:25 <P64ProtocolBot>	[D] <Segfault> Non standard of course
+Sep 24 11:01:34 <P64ProtocolBot>	[D] <Segfault> But theoretically I think they can work
+Sep 24 11:01:55 <P64ProtocolBot>	[D] <Segfault> I'm pretty sure there's also at least one 32x implementation
+Sep 24 11:02:44 <P64ProtocolBot>	[D] <Segfault> Bah that's semantics :P
+Sep 24 11:03:18 <P64ProtocolBot>	[D] <Philpax> ah right, I thought 3.0 was double 2.0 but that's only true of 4.0 and above
+Sep 24 11:03:28 <P64ProtocolBot>	[D] <Segfault> No 3.0 is double 2.0
+Sep 24 11:03:31 <P64ProtocolBot>	[D] <Segfault> Just as 2.0 is double 1.0
+Sep 24 11:03:45 <P64ProtocolBot>	[D] <Philpax> negatory, 2.0 is 5 GT/s, 3.0 is 8 GT/s
+Sep 24 11:03:54 <P64ProtocolBot>	[D] <Segfault> Almost double :P
+Sep 24 11:04:18 <P64ProtocolBot>	[D] <Segfault> iirc the real world numbers for 2.0 are actually 4gt/s
+Sep 24 11:04:36 <P64ProtocolBot>	[D] <Philpax> yeah, I was just wondering if it was possible to reconfigure a PCI-E 3.0 port with 4 lanes into a PCI-E 2.0 port with 8 lanes essentially
+Sep 24 11:04:38 <P64ProtocolBot>	[D] <Segfault> And for 3.0 they're like 7.8gt/s or something
+Sep 24 11:04:44 <P64ProtocolBot>	[D] <Segfault> Yeah no
+Sep 24 11:04:53 <P64ProtocolBot>	[D] <Philpax> yep, that's what I thought
+Sep 24 11:04:58 <P64ProtocolBot>	[D] <Philpax> ah well :-)
+Sep 24 11:05:05 <P64ProtocolBot>	[D] <Segfault> Part of how 3.0 got extra speed was reducing error correction btw
+Sep 24 11:05:27 <P64ProtocolBot>	[D] <Segfault> Those 5/8 numbers are theoretical numbers before encoding yeah
+Sep 24 11:06:02 <P64ProtocolBot>	[D] <Segfault> I'm fairly certain it's before
+Sep 24 11:06:13 <P64ProtocolBot>	[D] <Segfault> Because PCIe 2.0 x1 is 500MB/s real world
+Sep 24 11:06:24 <P64ProtocolBot>	[D] <Segfault> Which is 4GT/s
+Sep 24 11:06:26 <P64ProtocolBot>	[D] <Segfault> Not 5
+Sep 24 11:08:57 <P64ProtocolBot>	[D] <Segfault> Oh weird
+Sep 24 11:09:32 <P64ProtocolBot>	[D] <Philpax> well, we're dreaming - take the Framework approach and turn the PCI-E interface into a modular component that you can switch out to a M.2 port or a Thunderbolt port as you wish :P
+Sep 24 11:11:26 <P64ProtocolBot>	[D] <Segfault> Oh also talking about thunderbolt again, I've got more uses for it than just egpus so for someone like me a TB mod for the pbp could actually be insanely useful
+Sep 24 11:11:26 <P64ProtocolBot>	[D] <Segfault> Note how I say mod, because for 99% of people it wouldn't make sense, I just happen to be the 1% of people crazy enough that something like that might just work :P
+Sep 24 11:13:52 <P64ProtocolBot>	[D] <Philpax> @Segfault I'll take the bait, what do you use TB for?
+Sep 24 11:14:22 <P64ProtocolBot>	[D] <Segfault> Well, GPUs, high speed networking and storage, and other small things that involve PCIe
+Sep 24 11:14:23 <P64ProtocolBot>	[D] <Philpax> they mentioned other uses
+Sep 24 11:15:22 <P64ProtocolBot>	[D] <Segfault> Oh the experiments I could run if I could plug a box into my PBP with a PCIe slot in it
+Sep 24 11:16:16 <P64ProtocolBot>	[D] <Segfault> I've got the box :)
+Sep 24 11:16:17 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/890995058545917992/unknown.jpeg
+Sep 24 11:16:43 <P64ProtocolBot>	[D] <Electr0Lyte> he's got a box
+Sep 24 11:16:54 <P64ProtocolBot>	[D] <Segfault> Yeah but it's nowhere near as convenient having a whole separate machine to my laptop to connect things like that to
+Sep 24 11:17:46 <P64ProtocolBot>	[D] <Philpax> what's the 3x PCIe 2.0 used for if you don't use the SATA port?
+Sep 24 11:18:03 <P64ProtocolBot>	[D] <Segfault> On the RK3588?
+Sep 24 11:18:09 <P64ProtocolBot>	[D] <Philpax> yup
+Sep 24 11:18:18 <P64ProtocolBot>	[D] <Segfault> I think only two of the multiphys will have PCIe
+Sep 24 11:18:35 <P64ProtocolBot>	[D] <Segfault> So it's actually 2x PCIe 2.0 x1 I'm pretty sure
+Sep 24 11:18:57 <P64ProtocolBot>	[D] <Segfault> Theoretically one would be used for an m.2 E key slot so you can use a pcie wifi module
+Sep 24 11:19:10 <P64ProtocolBot>	[D] <Segfault> The other one... beats me...
+Sep 24 11:19:16 <P64ProtocolBot>	[D] <Segfault> ¯\\_(ツ)\_/¯
+Sep 24 11:19:55 <P64ProtocolBot>	[D] <Segfault> That 3x PCIe 2.0 comes from a cnx article which I'm pretty sure is riddled with errors
+Sep 24 11:20:19 <P64ProtocolBot>	[D] <Segfault> I think they mistook 3 multiphys as 3 PCIe 2.0 controllers
+Sep 24 11:20:42 <P64ProtocolBot>	[D] <Segfault> I'd imagine the rk3588 will probably have a multiphy layout similar to the RK3568
+Sep 24 11:21:40 <P64ProtocolBot>	[D] <Segfault> At least one of the controllers should be configured the same way it is on the quartz, so SATA/PCIe
+Sep 24 11:21:56 <P64ProtocolBot>	[D] <Segfault> And I think one will be configured for USB 3.0/SATA
+Sep 24 11:22:05 <P64ProtocolBot>	[D] <Segfault> But I'm not sure on that
+Sep 24 11:22:16 <P64ProtocolBot>	[D] <Segfault> And I don't know what the 3rd one is configured as
+Sep 24 11:22:24 <P64ProtocolBot>	[D] <Segfault> Again, check the RK3568 specs
+Sep 24 11:22:50 <P64ProtocolBot>	[D] <Segfault> Nono I think it's 2 separate pcie 2.0 x1 links assuming all multiphys that can be used for PCIe are
+Sep 24 11:23:02 <P64ProtocolBot>	[D] <Philpax> https://eji4evk5kxx.exactdn.com/wp-content/uploads/2020/11/RK3588-Rockchip-Developer-Conference-2020.jpg
+Sep 24 11:23:29 <P64ProtocolBot>	[D] <Philpax> I believe that says, exactly, "three lanes PCI-e 2.0/SATA 3.0"
+Sep 24 11:23:32 <P64ProtocolBot>	[D] <Philpax> make of that what you will
+Sep 24 11:25:30 <P64ProtocolBot>	[D] <Philpax> also while researching this, I saw this, and that seems like tough pricing to make
+Sep 24 11:25:31 <P64ProtocolBot>	[D] <Philpax> https://cdn.discordapp.com/attachments/463285150898192384/890997380881711154/unknown.png
+Sep 24 11:25:33 <P64ProtocolBot>	[D] <Philpax> time will tell I suppose
+Sep 24 11:26:39 <P64ProtocolBot>	[D] <Segfault> Maybe see if they had a similar slide for the RK3568? Since that's actually been released we could compare what they said to what we got
+Sep 24 11:28:46 <P64ProtocolBot>	[D] <Segfault> Ignore the pcie 3.0 controller in that diagram btw, that's specific to the RK3568, sort of like the 3.0 x4 controller in the 3588
+Sep 24 11:29:08 <P64ProtocolBot>	[D] <Philpax> yep I think that image is from the same conference (Rockchip DC 2020)
+Sep 24 11:29:19 <P64ProtocolBot>	[D] <Philpax> it's September 2021, where did the time go? :-)
+Sep 24 11:29:21 <P64ProtocolBot>	[D] <Segfault> That sounds hopeful for the 3588 3.0 controller doing the same then
+Sep 24 11:30:40 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/890998679845085244/unknown.jpeg
+Sep 24 11:30:48 <P64ProtocolBot>	[D] <Segfault> That's the 3568
+Sep 24 11:30:57 <P64ProtocolBot>	[D] <Segfault> Those muxes are the multiphys
+Sep 24 11:31:08 <P64ProtocolBot>	[D] <Segfault> I would imagine the 3588 will be laid out the same way
+Sep 24 11:31:48 <P64ProtocolBot>	[D] <Segfault> Although maybe not because that only has a single pcie 2.0 controller
+Sep 24 11:32:13 <P64ProtocolBot>	[D] <Segfault> Maybe mux0 on the rk3588 will also have another pcie2.0 controller or something
+Sep 24 11:32:35 <P64ProtocolBot>	[D] <Segfault> And iirc compared to that image the 3566 deleted the qsgmii controller and mux0
+Sep 24 11:32:44 <P64ProtocolBot>	[D] <Segfault> As well as the PCIe 3.0 contriller
+Sep 24 11:43:13 <P64ProtocolBot>	[D] <Segfault> Potentially?
+Sep 24 11:43:28 <P64ProtocolBot>	[D] <Segfault> I think it can do at least three although idk how qsgmii works
+Sep 24 11:44:51 <P64ProtocolBot>	[D] <Segfault> Oh I see
+Sep 24 11:44:54 <P64ProtocolBot>	[D] <Segfault> Interesting
+Sep 24 11:45:11 <P64ProtocolBot>	[D] <Segfault> So yeah I guess the RK3568 can run 6 Ethernet ports directly with the right hardware
+Sep 24 11:45:38 <P64ProtocolBot>	[D] <Segfault> Why not both :P
+Sep 24 11:45:47 <P64ProtocolBot>	[D] <Segfault> Wouldn't qsgmii give you better performance?
+Sep 24 11:46:04 <P64ProtocolBot>	[D] <Segfault> Because you've got a direct link to every port
+Sep 24 11:46:48 <P64ProtocolBot>	[D] <Segfault> Does increasing packet size markedly decrease CPU use?
+Sep 24 11:47:49 <P64ProtocolBot>	[D] <Segfault> I wonder if the CPU would be powerful enough to route the theoretical what 12gbit/s of 9000mtu packets you could do with that many Ethernet ports lol
+Sep 24 11:48:25 <P64ProtocolBot>	[D] <Segfault> That is a **lot** of packets lol
+Sep 24 11:48:54 <P64ProtocolBot>	[D] <Segfault> Although for applications where maximum performance isn't needed it might be a good idea anyway because it gives you better firewalling ability and such
+Sep 24 11:50:39 <P64ProtocolBot>	[D] <Segfault> It's crazy how Rockchip finds new ways to make their chips so versatile lol
+Sep 24 11:51:00 <P64ProtocolBot>	[D] <Segfault> I mean the RK3568 could do so many things, it could be a high end router one minute and a NAS the next
+Sep 24 11:51:17 <P64ProtocolBot>	[D] <Segfault> Or even a phone! :P
+Sep 24 11:52:04 <P64ProtocolBot>	[D] <Segfault> I mean hell this generation they were like "hmm this chip doesn't do enough stuff, let's just let it *modify itself on the fly*" with muxes :P
+Sep 24 16:18:47 <P64ProtocolBot>	[D] <Funeral> android: strange chats go into the offtopic channel
+Sep 25 13:10:24 <P64ProtocolBot>	[T] <saifage> PINEPHONE will ship to India in future?
+Sep 25 13:12:04 <P64ProtocolBot>	[D] <Funeral> @Avamander could you add the general Pine64 chat and the lts-and-sopine channel to your Matrix space? And maybe one or two of the admins
+Sep 25 13:12:38 <P64ProtocolBot>	[D] <Funeral> saifage: not as of now. Pine tried it but there have been severe issues with the customs, from how I've understood it
+Sep 25 13:17:57 <P64ProtocolBot>	[D] <Avamander> Provide the full channel address
+Sep 25 13:18:45 <P64ProtocolBot>	[D] <Funeral> https://riot.im/app/#/room/#pine64:matrix.org (#pine64:matrix.org) and https://riot.im/app/#/room/#pine64sopine:matrix.org (#pine64sopine:matrix.org), see https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms. Thankks, @Avamander
+Sep 25 13:21:43 <P64ProtocolBot>	[D] <Avamander> Done
+Sep 25 13:21:51 <P64ProtocolBot>	[D] <Funeral> 👍
+Sep 25 14:10:51 <P64ProtocolBot>	[D] <Thanos the tank engine> Yeah, I have been told that indian customs made it practically impossible for Pine to send anything there
+Sep 25 14:11:41 <P64ProtocolBot>	[D] <Thanos the tank engine> So your only option is a mail forwarding service right bow
+Sep 25 14:59:54 <P64ProtocolBot>	[D] <_deepfire> There used to be an #accessories channel -- and it's now no more..
+Sep 25 15:00:51 <P64ProtocolBot>	[D] <_deepfire> ..and it's still weirdly listed in #information-and-rules : -)
+Sep 25 16:34:09 <P64ProtocolBot>	[T] <willwelker> Is three a chat specifically for the Pinephone?  Was wondering about anybody with AT&T usage.
+Sep 25 16:34:17 <P64ProtocolBot>	[T] <UniversalSuperBox> @pinephone
+Sep 25 16:34:33 <P64ProtocolBot>	[T] <willwelker> Thanks (re @UniversalSuperBox: @pinephone)
+Sep 25 16:34:44 <P64ProtocolBot>	[T] <UniversalSuperBox> anytime :)
+Sep 25 16:38:30 <P64ProtocolBot>	[D] <FTN95> hey im doing a small project and i need a single board computer to act as a network proxy - I've got few questions which dont really belong into any of the sbc chats (cuz tbf its about choosing the device), so i hope nobody minds asking here. My main question is which (if any) sb computer can act as a network proxy (wirless best, but in case id have to hook up 2 wifi dongles itll also do) for reverse engineering assu
+Sep 25 16:39:15 <P64ProtocolBot>	[D] <FTN95> hey im doing a small project and i need a single board computer to act as a network proxy - I've got few questions which dont really belong into any of the sbc chats (cuz tbf its about choosing the device), so i hope nobody minds asking here. My main question is which (if any) sb computer can act as a network proxy (wirless best, but in case id have to hook up 2 wifi dongles itll also do) for reverse engineering assu
+Sep 25 16:44:42 <P64ProtocolBot>	[D] <[REDACTED]> What do we do when we buy a replacement cable and the barrel plug doesn't fit?
+Sep 25 16:44:43 <P64ProtocolBot>	[D] <[REDACTED]> normal people: return it
+Sep 25 16:44:44 <P64ProtocolBot>	[D] <[REDACTED]> Me: create a new cable that has the potential to break the device and make it a smoke machine but that's chill too 🙂
+Sep 25 19:29:37 <P64ProtocolBot>	[T] <Aleks> Hi everyone. Anyone knows why the delivery in Europe(I had ordered pinephone) it’s taking so long, waiting already more than 2 weeks, is that normal?!!
+Sep 25 19:48:22 <P64ProtocolBot>	[T] <Aleks> Thanks for reply, Not yet, didn’t get any tracking number
+Sep 25 20:21:07 <P64ProtocolBot>	[M] <pinaperr> hey, i received a pinephone a couple of months ago and only yesterday i had the opportunity to try it. at first it ran ok, although i did see some error message on booting. now though the screen is turned off every second, sometimes when i touch it and sometimes just by itself. totally unusable. i'm running the default os (manjaro) and i did play with the screen settings, but this behaviors doesn't make any sense.
+Sep 25 22:05:09 <P64ProtocolBot>	[D] <Cyastis> ~~but it supports discord calling~~
+Sep 25 22:09:30 <P64ProtocolBot>	[D] <33YN2> The PinePhone could do Voip calling though, @Riff
+Sep 25 22:10:20 <P64ProtocolBot>	[D] <33YN2> (Using software, but you will need a data sim or wifi connectiom obv)
+Sep 26 02:57:57 <P64ProtocolBot>	[D] <Sameer9793> Hello Poeples!
+Sep 26 02:58:33 <P64ProtocolBot>	[D] <gamiee> Helol :)
+Sep 26 02:58:35 <P64ProtocolBot>	[D] <gamiee> Hello :)
+Sep 26 02:59:36 <P64ProtocolBot>	[D] <Sameer9793> can i ask for support about linux on amlogic devices here? they are basically a SBC now
+Sep 26 03:00:34 <P64ProtocolBot>	[D] <Electr0Lyte> sorry server is meant for discussing Pine64 devices
+Sep 26 03:00:36 <P64ProtocolBot>	[D] <gamiee> PINE64 doesn't have any devices with amlogic SoCs, so this is not correct place, although, you can try to ask in #offtopic and maybe someone will help you
+Sep 26 03:01:16 <P64ProtocolBot>	[D] <Sameer9793> oaky, thanks for the help.
+Sep 26 12:45:25 <P64ProtocolBot>	[D] <ayayagames> Lmao I Couldn’t find my sxmo arch phone for like 3 weeks I found it just now and it ran 100+ updates in like 2 mins
+Sep 26 12:45:51 <P64ProtocolBot>	[D] <ayayagames> Phosh does 100+ in like 10 mins
+Sep 26 12:50:49 <P64ProtocolBot>	[T] <Schugy> could be 1 min with eufs and 1x1 AC wifi
+Sep 26 12:58:27 <P64ProtocolBot>	[D] <ayayagames> Lol trueee
+Sep 26 12:58:36 <P64ProtocolBot>	[D] <ayayagames> All the speeds
+Sep 26 13:12:12 <P64ProtocolBot>	[T] <Schugy> 2 GB/s is adequate speed for embedded storage i think
+Sep 26 16:10:17 <P64ProtocolBot>	[D] <Vord> lol https://twitter.com/sephr/status/1441655526807334914
+Sep 26 16:36:01 <P64ProtocolBot>	[T] <KanoIta> Vivaldi browser is cool
+Sep 26 17:46:44 <P64ProtocolBot>	[T] <Z> An Australian here very interested in ordering a PinePhone as soon as possible.
+Sep 26 17:46:44 <P64ProtocolBot>	[T] <Z>  
+Sep 26 17:46:46 <P64ProtocolBot>	[T] <Z> My knowledge level for potential carrier/connection/service suitability is novice.
+Sep 26 17:46:47 <P64ProtocolBot>	[T] <Z> Thanks for this group and any thoughts/comments/guidance is sincerely welcome.
+Sep 26 17:49:33 <P64ProtocolBot>	[T] <Z> Appreciated!
+Sep 26 23:28:54 <P64ProtocolBot>	[M] <benjamin_southern> whats up with this "Pine64 Protocol Droid" bot? Are these just messages from Telegram/Discord? I was under the impression that matrix bridges would allow for non-matrix messages to still show up without the need for a bot like this...
+Sep 27 00:19:46 <P64ProtocolBot>	[M] <pinaperr> can anyone here help me? not sure what to do
+Sep 27 00:21:07 <P64ProtocolBot>	[M] <Strit> That depends entirely on what your issue is.
+Sep 27 00:21:35 <P64ProtocolBot>	[M] <pinaperr> i wrote yesterday. here it is: "hey, i received a pinephone a couple of months ago and only yesterday i had the opportunity to try it. at first it ran ok, although i did see some error message on booting. now though the screen is turned off every second, sometimes when i touch it and sometimes just by itself. totally unusable. i'm running the default os (manjaro) and i did play with the screen settings, but this b
+Sep 27 00:22:54 <P64ProtocolBot>	[M] <Strit> It's made by the screen settings KCM writing bogus config files. Remove the ~/.config/powermanagementrc file if you can (maybe through JumpDrive on an SD card)
+Sep 27 00:23:42 <P64ProtocolBot>	[M] <pinaperr> thanks, i'll give it a try! :)
+Sep 27 01:26:23 <P64ProtocolBot>	[T] <Thorsten Schragle> I have earned more from trading Stock..all thanks you and your team for your trust and honestly. @Elliot_Finances
+Sep 27 01:26:24 <P64ProtocolBot>	[T] <Thorsten Schragle> https://t.me/joinchat/LcYrRXbptyNkZjVk
+Sep 27 01:47:40 <P64ProtocolBot>	[M] <mbohun> pinaperr: same over here, i got my PinePhone in the end of June 2021. The manjaro + plasma-mobile installed on it are not for everyday use. Plus the modem was dying often even after 2 hours, etc.
+Sep 27 01:47:40 <P64ProtocolBot>	[M] <mbohun> HOWEVER then I installed postmarketOS phosh (the edge version) - and now I always smile, works really good
+Sep 27 10:48:41 <P64ProtocolBot>	[D] <Funeral> @Philpax that and how Pine links then. IRC has a server linked, Discord has an invite link public and Matrix and Telegram both link individual channels, both also have a spam issue here
+Sep 27 14:11:55 <P64ProtocolBot>	[D] <_deepfire> dsimic, maybe you also could voice that in the forum thread? : -)
+Sep 27 14:24:41 <P64ProtocolBot>	[D] <quantomworks> Are there any plans to use matrix?
+Sep 27 15:14:20 <P64ProtocolBot>	[M] <cyckl> can confirm, am typing this from matrix
+Sep 27 15:17:04 <P64ProtocolBot>	[M] <fakeroot> can confirm, also typing from matrix
+Sep 27 15:26:19 <P64ProtocolBot>	[D] <quantomworks> Ooooooo
+Sep 27 21:20:57 <P64ProtocolBot>	[D] <Mk> Hello Anyone have the link to download the latest Ubuntu touch version for pinephone thanks?
+Sep 27 22:00:33 <P64ProtocolBot>	[D] <Caleb Christopher Fontenot> I use #offtopic and #pinephone so often I forgot there was a general channel lol
+Sep 28 00:07:00 <P64ProtocolBot>	[D] <Funeral> The general chat is new. Like a week old @CCF_100
+Sep 28 00:08:23 <P64ProtocolBot>	[D] <Funeral> @Mk see https://wiki.pine64.org/wiki/PinePhone_Software_Releases#Ubuntu_Touch
+Sep 28 00:23:50 <P64ProtocolBot>	[M] <Strit> In matrix the topic for this channel reads: "General discussion for the Pine64 Chat Network. Product-specific questions and discussion and better suited to other chats."
+Sep 28 00:27:03 <P64ProtocolBot>	[D] <Funeral> Yeah, but new folks will ask specific product questions here anyway. That is something to life with, IMO.
+Sep 28 00:30:42 <P64ProtocolBot>	[D] <Funeral> Its also laziness. Ask in the first channel you can find. Same like people asking things you have to look up yourself just to get the link, what the asking persons could have done themselves.
+Sep 28 02:19:47 <P64ProtocolBot>	[M] <Ben Finney> I asked questions about "free-software open-design alternative to FitBit, where the user has full control over their own data"
+Sep 28 02:20:13 <P64ProtocolBot>	[M] <Ben Finney> and was led to the PineTime. It does a lot more than I'd need from such a device but seems to have the right sensors and connectivity.
+Sep 28 02:21:09 <P64ProtocolBot>	[M] <Ben Finney> How well does it make the data avilable? Are there standard "show me data from my wearable" apps for GNU+Linux, and for LineageOS, which work with this?
+Sep 28 02:38:12 <P64ProtocolBot>	[D] <gamiee> Hi Ben Finney, I recommend you to join PineTime Matrix channel, you can find link on our wiki page https://wiki.pine64.org/ :)
+Sep 28 11:53:49 <P64ProtocolBot>	[D] <fervi> I think there is a bug with pine64 website. You have one (old version) of website without www and newest with www.
+Sep 28 11:58:19 <P64ProtocolBot>	[D] <gamiee> what? :o
+Sep 28 11:59:02 <P64ProtocolBot>	[T] <UniversalSuperBox> https://pine64.org should redirect to https://www.pine64.org. It does for me...
+Sep 28 12:05:22 <P64ProtocolBot>	[D] <Julian Zb.> I tried it too - works for me
+Sep 28 12:06:26 <P64ProtocolBot>	[D] <Julian Zb.> There is also https://pine64.com/, which I am pretty sure is a different site intentionally
+Sep 28 12:13:01 <P64ProtocolBot>	[D] <Funeral> @fervi test again with pressing control+F5 to reload your local cache
+Sep 28 12:14:16 <P64ProtocolBot>	[D] <fervi> @Funeral Maybe the bug is, cause I get a website to old version
+Sep 28 12:14:17 <P64ProtocolBot>	[D] <fervi> I mean
+Sep 28 12:14:18 <P64ProtocolBot>	[D] <fervi> https://pine64.com/product-category/single-board-computers/
+Sep 28 12:14:45 <P64ProtocolBot>	[D] <fervi> sorry - anyway, it should be removed or just merged
+Sep 28 12:14:49 <P64ProtocolBot>	[D] <Funeral> That's the shop, which is a different site and a different organization behind it
+Sep 28 12:15:11 <P64ProtocolBot>	[D] <fervi> ok, but if you then click on "Home button", the redirect wont work
+Sep 28 12:15:26 <P64ProtocolBot>	[D] <Funeral> The store has more issues than that 😛
+Sep 28 12:15:33 <P64ProtocolBot>	[D] <fervi> ok 😛
+Sep 28 12:15:46 <P64ProtocolBot>	[D] <Funeral> Click on Cart > Orders while having an empty cart for example
+Sep 28 12:28:35 <P64ProtocolBot>	[D] <fervi> But is the shop open source?
+Sep 28 12:28:52 <P64ProtocolBot>	[D] <Funeral> You mean the shop software? 😄
+Sep 28 12:28:55 <P64ProtocolBot>	[D] <fervi> yep
+Sep 28 12:29:06 <P64ProtocolBot>	[D] <fervi> Maybe I should add some bugs
+Sep 28 12:29:07 <P64ProtocolBot>	[D] <fervi> 😛
+Sep 28 12:29:56 <P64ProtocolBot>	[D] <Funeral> Looks like Wordpress but enhancing the site is not a focus 😛
+Sep 28 12:58:58 <P64ProtocolBot>	[T] <Magnus> hi I just got the Pinephone and im new to Linux can anyone help me what this is about? : 
+Sep 28 12:59:54 <P64ProtocolBot>	[D] <fervi> Magnus: What distro do you use?
+Sep 28 13:00:27 <P64ProtocolBot>	[D] <fervi> ok
+Sep 28 13:00:35 <P64ProtocolBot>	[T] <Magnus> im on the defoult that came with the phone how can i check to make sure?
+Sep 28 13:01:13 <P64ProtocolBot>	[M] <Strit> I would suggest updating via terminal/pacman instead of discover.
+Sep 28 13:01:44 <P64ProtocolBot>	[M] <Strit> Discover has issues with pacman 6 / packagekit for some reason.
+Sep 28 13:02:02 <P64ProtocolBot>	[T] <Magnus> okay thx
+Sep 28 13:02:23 <P64ProtocolBot>	[D] <fervi> Anyway - is there any news about supporting Bitcoin in Pine64 payments?
+Sep 28 13:40:22 <P64ProtocolBot>	[T] <Thorsten Schragle> I have earned more from trading Stock..all thanks you and your team for your trust and honestly. @Elliot_Finances
+Sep 28 13:40:23 <P64ProtocolBot>	[T] <Thorsten Schragle> https://t.me/joinchat/LcYrRXbptyNkZjVk
+Sep 28 13:44:05 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> @Moderator telegram's back at it again with the white vans
+Sep 28 13:47:18 <P64ProtocolBot>	[D] <Funeral> Maybe fervi spawned the crypto spam @Porkyofthepine 😛
+Sep 28 13:51:47 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> Lol maybe
+Sep 28 13:58:25 <P64ProtocolBot>	[D] <fervi> Probably 😄
+Sep 28 13:58:41 <P64ProtocolBot>	[D] <fervi> Unlimited power! 😄
+Sep 28 14:13:53 <P64ProtocolBot>	[T] <errquilibria> 
+Sep 28 14:16:29 <P64ProtocolBot>	[T] <errquilibria> My ancient pineA64+ doing well thx to the uboot-pine64 boot file and the dkms wayland driver for the mali-utgard gpu 👌🏼 (re @errquilibria: )
+Sep 28 14:19:40 <P64ProtocolBot>	[T] <errquilibria> My ancient pineA64+ doing well thx to the uboot-pine64 boot file and the dkms wayland driver for the mali-utgard gpu 👌🏼 thanks for the help and support on pine64 etc @strit it was a good guide (re @errquilibria: )
+Sep 28 14:23:11 <P64ProtocolBot>	[D] <gamiee> uuuuh llvmpipe
+Sep 28 14:26:09 <P64ProtocolBot>	[M] <Strit> I would have thought Arch would be using Lima like the rest of us on mainline kernel.
+Sep 28 14:34:12 <P64ProtocolBot>	[T] <errquilibria> I found the wayland driver from sunxi50i-a64 support site is the smoothest and supporting graphic acceleration, not that it's a large device but I get about 28 fps in 720p resolution
+Sep 28 14:35:10 <P64ProtocolBot>	[T] <errquilibria> Yeah it picked the llvm automatically (re @p64protocolbot: [D] <gamiee> uuuuh llvmpipe)
+Sep 28 14:35:54 <P64ProtocolBot>	[T] <errquilibria> How does Lima differ from llvm
+Sep 28 14:36:30 <P64ProtocolBot>	[M] <Strit> Lima is a hardware driver, where llvm is a software driver I believe.
+Sep 28 14:36:48 <P64ProtocolBot>	[M] <Strit> So llvm will use the CPU instead of the GPU.
+Sep 28 14:38:40 <P64ProtocolBot>	[T] <errquilibria> Oh OK, I'll look into that, wayland is a kernel driver though but I'll see if there is Lima support on this mali-400 etc hardware (re @p64protocolbot: [M] <Strit> Lima is a hardware driver, where llvm is a software driver I believe.)
+Sep 28 14:39:16 <P64ProtocolBot>	[M] <Strit> You can check in your kernel with `zgrep LIMA /proc/config.gz`.
+Sep 28 14:39:25 <P64ProtocolBot>	[T] <errquilibria> Ah yes, I understand, interesting stuff (re @p64protocolbot: [M] <Strit> So llvm will use the CPU instead of the GPU.)
+Sep 28 14:40:39 <P64ProtocolBot>	[T] <errquilibria> I'll have a look yes thx for the info, it's bit late by me, almost 10 pm so will see tomorrow (re @p64protocolbot: [M] <Strit> You can check in your kernel with `zgrep LIMA /proc/config.gz`.)
+Sep 28 14:41:44 <P64ProtocolBot>	[T] <errquilibria> I'll look @ arch wiki solong tho
+Sep 28 15:06:41 <P64ProtocolBot>	[T] <FlyFrog> Hi guys! I bought a few things on the site pine64.com, order # 199856 and they never sent me any product or track number. no explanation ... Is this not your site? Is this a fake that your company pretends to be?
+Sep 28 15:06:42 <P64ProtocolBot>	[T] <FlyFrog> Is there someone from the store support here?
+Sep 28 15:07:31 <P64ProtocolBot>	[T] <UniversalSuperBox> No, you won't find store support here. But pine64.com is the pine64 store. You can email the support address listed on pine64.com for order help. But you won't receive anything but your order confirmation until the item ships, which depending on the item could be several weeks.
+Sep 28 15:08:48 <P64ProtocolBot>	[D] <gamiee> FlyFrog, when you placed your order?
+Sep 28 15:13:24 <P64ProtocolBot>	[T] <FlyFrog> A month passed, I wrote to the mail several times, they never answered, I began to worry, as I bought several products. (re @UniversalSuperBox: No, you won't find store support here. But pine64.com is the pine64 store. You can email the support address listed on pine64.com for order help. But you won't receive anything but your order confirmation until the item ships, which depending on the item could be several we
+Sep 28 15:13:37 <P64ProtocolBot>	[T] <FlyFrog> [Order #199856] (August 29, 2021) (re @p64protocolbot: [D] <gamiee> FlyFrog, when you placed your order?)
+Sep 28 15:21:19 <P64ProtocolBot>	[T] <gamiee> That's definitely weird @FlyFrog , please, try ask http://support.pine64.org
+Sep 28 15:21:37 <P64ProtocolBot>	[T] <gamiee> If you will not receive an answer within few days, please come back here again and ping me
+Sep 28 15:22:23 <P64ProtocolBot>	[T] <FlyFrog> Thank you! (re @gamiee: That's definitely weird @FlyFrog , please, try ask http://support.pine64.org)
+Sep 28 16:21:59 <P64ProtocolBot>	[T] <Precious> Words alone won't express how thankful I'm to you @Fxprofitable1 , investing with you has been a good opportunity for me and family I just received my profit of $ 11,200 within a 48hours of active trading, thank you so very much 
+Sep 28 16:22:00 <P64ProtocolBot>	[T] <Precious> Reach him through this link
+Sep 28 16:22:01 <P64ProtocolBot>	[T] <Precious> 👇👇👇
+Sep 28 16:22:02 <P64ProtocolBot>	[T] <Precious> https://t.me/joinchat/RgoRdoQwRpM5MzJk
+Sep 28 20:51:49 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> https://cdn.discordapp.com/attachments/463285150898192384/892589453628043304/unknown.png
+Sep 28 20:52:00 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> https://cdn.discordapp.com/attachments/463285150898192384/892589498569990244/unknown.png
+Sep 28 20:52:02 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> 🙃
+Sep 28 21:10:01 <P64ProtocolBot>	[M] <c2a1 (@c2a1:matrix.org)> Just of of curiosity how easy is it to make your pinebook/general arm64 device unbootable by using the wrong partition scheme
+Sep 28 21:10:20 <P64ProtocolBot>	[M] <c2a1 (@c2a1:matrix.org)> I.e deleting u boot
+Sep 28 21:11:12 <P64ProtocolBot>	[M] <c2a1 (@c2a1:matrix.org)> The fact that the bootloader needs to be run from a specific device on arm always gave me anxiety
+Sep 28 21:15:21 <P64ProtocolBot>	[T] <Fx Mo> Forwarded from unknown: 𝐈𝐧 𝐫𝐞𝐜𝐞𝐧𝐭 𝐲𝐞𝐚𝐫𝐬 𝐛𝐢𝐭𝐜𝐨𝐢𝐧 𝐢𝐧𝐯𝐞𝐬𝐭𝐦𝐞𝐧𝐭 𝐡𝐚𝐯𝐞 𝐛𝐞𝐜𝐨𝐦𝐞 𝐨𝐧𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐭𝐫𝐮𝐬𝐭𝐞𝐝 𝐚𝐧𝐝 𝐫𝐞𝐥𝐢𝐚𝐛𝐥𝐞 𝐬𝐨𝐮𝐫𝐜𝐞𝐬 𝐨𝐟 𝐦𝐚𝐤𝐢𝐧𝐠 𝐦𝐨𝐫𝐞 𝐦𝐨𝐧𝐞𝐲 �
+Sep 28 21:15:22 <P64ProtocolBot>	[T] <Fx Mo>  𝐒𝐨 𝐰𝐢𝐭𝐡 𝐡𝐚𝐩𝐩𝐲 𝐡𝐞𝐚𝐫𝐭, 𝐈 𝐬𝐚𝐲 𝐭𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐭𝐨 𝐭𝐡𝐞 𝐦𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐨𝐟 CRYPTO GOLDEN FX
+Sep 28 21:15:23 <P64ProtocolBot>	[T] <Fx Mo> 𝐘𝐨𝐮'𝐫𝐞 𝐃𝐞𝐯𝐢𝐧𝐞💙
+Sep 28 21:15:24 <P64ProtocolBot>	[T] <Fx Mo> 𝐇𝐚𝐯𝐞 𝐂𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞𝐦 𝐡𝐞𝐫𝐞
+Sep 28 21:15:26 <P64ProtocolBot>	[T] <Fx Mo> 👇👇👇
+Sep 28 21:15:27 <P64ProtocolBot>	[T] <Fx Mo> https://t.me/joinchat/FVmheLMh1j9mYmQ0
+Sep 29 00:12:07 <P64ProtocolBot>	[T] <tele_33yn2> With happy heart, your banned.
+Sep 29 00:15:08 <P64ProtocolBot>	[D] <Segfault> c2a1: A64 devices will load the bootloader from an SD card first if one is available so those are effectively unbrickable
+Sep 29 00:15:35 <P64ProtocolBot>	[D] <Segfault> RK3399 devices are a bit more tricky, they'll load from eMMC first, so a physical switch is included that disconnects the eMMC if needed
+Sep 29 00:16:00 <P64ProtocolBot>	[D] <Segfault> Although before even that they'll load from SPI so if you want some reassurance you can also flash the SPI chip on devices that have it like the PBP
+Sep 29 01:50:20 <P64ProtocolBot>	[T] <Aaron> Forwarded from unknown: I really appreciate al her efforts with the little investment of €2,000 with joy all over me after withdrawing by of €12,700 through the coach of https://t.me/joinchat/sz7bG_wdB3U5ZDc0
+Sep 29 02:00:16 <P64ProtocolBot>	[D] <Skunkynator> oh cmon
+Sep 29 11:46:23 <P64ProtocolBot>	[T] <t00sik> Hello everybody!  Can I buy pinephone with delivery to Russia?
+Sep 29 17:04:04 <P64ProtocolBot>	[D] <5SpeedFatty> so how do i go about using discord on a pinephone
+Sep 29 17:09:59 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> WayDroid
+Sep 29 17:10:11 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> https://cdn.discordapp.com/attachments/463285150898192384/892896058533879858/WhyAmILikeThis_WIP_5.mp3
+Sep 29 17:10:54 <P64ProtocolBot>	[D] <5SpeedFatty> thank you
+Sep 29 17:11:45 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> no problem
+Sep 29 17:17:52 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> > <@p64protocolbot:matrix.org> [D] <Caleb Fontenot (He/Him)> WayDroid
+Sep 29 17:17:52 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> 
+Sep 29 17:17:53 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Doesnt discord have a web client
+Sep 29 17:20:24 <P64ProtocolBot>	[D] <5SpeedFatty> yes but the useragent on the pinephone is setup to make it think you are on android, which blocks that part of the site form access
+Sep 29 17:20:40 <P64ProtocolBot>	[D] <5SpeedFatty> im sure i could fake it but the thought was see what teh community uses before i go poking
+Sep 29 17:20:55 <P64ProtocolBot>	[D] <5SpeedFatty> im sure i could fake it but the thought was see what the community uses before i go poking
+Sep 29 17:26:29 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Useragent changer addons can be made to work on a per site basis
+Sep 29 17:27:12 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Im sure its possible in both firefox and chrom*um
+Sep 29 17:27:28 <P64ProtocolBot>	[D] <5SpeedFatty> so far havent installed firefox
+Sep 29 17:27:41 <P64ProtocolBot>	[D] <5SpeedFatty> was checking it out on "anglefish"
+Sep 29 17:28:56 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> It looks more mobile friendly
+Sep 29 17:29:15 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> I dont own a pinephone
+Sep 29 17:29:53 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> But you could try firefox too and also falkon
+Sep 29 17:29:54 <P64ProtocolBot>	[D] <5SpeedFatty> yea i just got mine and im poking around seeign what the default OS looks like bfore i flash the multi image on it and go looking around
+Sep 29 17:31:12 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Im more interested in the smartwatch
+Sep 29 17:32:01 <P64ProtocolBot>	[D] <5SpeedFatty> i messed up and didnt pay for the good shipping on my watch
+Sep 29 17:32:05 <P64ProtocolBot>	[D] <5SpeedFatty> its not here yet
+Sep 29 17:32:41 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Shipping is very expensive
+Sep 29 17:33:11 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Ill buy 3 if the shipping costs as much as one
+Sep 29 17:33:23 <P64ProtocolBot>	[D] <5SpeedFatty> yea... still the phone shipped out all of 2 days ago
+Sep 29 17:33:47 <P64ProtocolBot>	[D] <5SpeedFatty> and the better shipping had it here in that time
+Sep 29 17:35:58 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Would it be possible to make firefox for desktop have the mobile style of tabs via extensions?
+Sep 29 18:59:57 <P64ProtocolBot>	[T] <Kbruns> Anyone tried to get a dual sim card adapter working?
+Sep 29 19:55:27 <P64ProtocolBot>	[T] <CarbonRed> Forwarded from derek:
+Sep 29 21:19:30 <P64ProtocolBot>	[T] <Sonic> 𝙄𝙩 𝙢𝙖𝙠𝙚𝙨 𝙢𝙚 𝙝𝙖𝙥𝙥𝙮 𝙩𝙚𝙡𝙡𝙞𝙣𝙜 𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙗𝙤𝙪𝙩 𝙩𝙝𝙞𝙨 𝙬𝙤𝙣𝙙𝙚𝙧𝙛𝙪𝙡 𝙞𝙣𝙫𝙚𝙨𝙩𝙢𝙚𝙣𝙩 𝙘𝙤𝙢𝙥𝙖𝙣𝙮 𝙩𝙝𝙖𝙩 𝙝𝙖𝙨 𝙥𝙖𝙞𝙙 𝙢𝙚 𝙢𝙖𝙣𝙮 𝙩𝙞𝙢𝙚𝙨 𝙖𝙣𝙙 𝙘𝙝𝙖𝙣𝙜𝙚𝙙 𝙢𝙮 𝙡𝙞𝙛𝙚
+Sep 29 21:19:31 <P64ProtocolBot>	[T] <Sonic> All thanks to Sir Scott Anderson
+Sep 29 21:19:32 <P64ProtocolBot>	[T] <Sonic> 👇👇👇👇
+Sep 29 21:19:33 <P64ProtocolBot>	[T] <Sonic> @PROFITS_WITH_SCOTT
+Sep 29 21:19:35 <P64ProtocolBot>	[T] <Sonic> https://t.me/joinchat/agtFal51AgVkMTI0
+Sep 29 21:19:36 <P64ProtocolBot>	[T] <Sonic> https://t.me/joinchat/agtFal51AgVkMTI0
+Sep 29 23:27:33 <P64ProtocolBot>	[D] <33YN2> It will take some time, especially with the shipping backups at major ports
+Sep 29 23:27:49 <P64ProtocolBot>	[D] <33YN2> I've been waiting a month for a NAS box
+Sep 29 23:28:17 <P64ProtocolBot>	[D] <33YN2> Hopefully only takes another month at most to arrive
+Sep 30 00:02:13 <P64ProtocolBot>	[T] <Wesat> Forwarded from unknown: I was referred to this platform by a friend online.i thought it was a scam. Company...but I was moved to try and here I earned.i just want to share this to you guys.
+Sep 30 00:02:14 <P64ProtocolBot>	[T] <Wesat> @fx_hubert_jason
+Sep 30 00:02:15 <P64ProtocolBot>	[T] <Wesat> 👇👇👇👇👇👇👇👇👇👇👇
+Sep 30 00:02:16 <P64ProtocolBot>	[T] <Wesat> https://t.me/joinchat/HIVqYoriY901MmRh
+Sep 30 00:09:44 <P64ProtocolBot>	[T] <Rosemarie> Forwarded from unknown: I now make money from the comfort of my home all thanks to @fx_hubert_jason , you too can contact him and also make money from home
+Sep 30 00:09:45 <P64ProtocolBot>	[T] <Rosemarie> Dm:@fx_hubert_jason
+Sep 30 00:09:46 <P64ProtocolBot>	[T] <Rosemarie> Link:https://t.me/joinchat/HIVqYoriY901MmRh
+Sep 30 00:55:29 <P64ProtocolBot>	[T] <OliviaJuya> Invertir en criptomonedas es realista, pero se perdió un 95%.     HASHBULLS ES RECONOCIDOhttps://cleanuri.com/9EPBdLhttps://cleanuri.com/9EPBdL : 
+Sep 30 01:46:07 <P64ProtocolBot>	[D] <Electr0Lyte> No soy hablo
+Sep 30 02:45:52 <P64ProtocolBot>	[D] <Electr0Lyte> that's ok, I will be fine with tabasco or ketchup
+Sep 30 02:46:00 <P64ProtocolBot>	[D] <Electr0Lyte> :P
+Sep 30 04:09:41 <P64ProtocolBot>	[D] <Krissy Silveropossum> I'd recommend editing the user agent in `about:config`
+Sep 30 04:09:41 <P64ProtocolBot>	[D] <Krissy Silveropossum> 
+Sep 30 04:09:42 <P64ProtocolBot>	[D] <Krissy Silveropossum> Leave everything the same, but *specifically* replace "Android" with "Linux"
+Sep 30 04:09:44 <P64ProtocolBot>	[D] <Krissy Silveropossum> 
+Sep 30 04:09:45 <P64ProtocolBot>	[D] <Krissy Silveropossum> Many websites will stop trying to harass you about android apps but will still present their mobile UIs
+Sep 30 04:11:55 <P64ProtocolBot>	[D] <Funeral> Better install an user agent switcher add-on. Sites detect the presence of a mobile phone in different ways, changing the user agent back to desktop will break a large amount of sites.
+Sep 30 04:12:10 <P64ProtocolBot>	[D] <Krissy Silveropossum> This does not change the user agent to desktop
+Sep 30 04:12:39 <P64ProtocolBot>	[D] <Krissy Silveropossum> The user agent string in this case still contains the word "Mobile", which appears to be what any site I've encountered thus far is relying on
+Sep 30 04:12:57 <P64ProtocolBot>	[D] <Krissy Silveropossum> if not the dimensions of screen, etc.
+Sep 30 04:16:31 <P64ProtocolBot>	[T] <yerbkhan> me and my buddy want to order 2 devices, but there is 1 device limit per order, is it possible to make it 2 cuz we are 2 persons? order is in EU
+Sep 30 04:17:04 <P64ProtocolBot>	[D] <Cyastis> have you tried..
+Sep 30 04:17:04 <P64ProtocolBot>	[D] <Cyastis> 
+Sep 30 04:17:06 <P64ProtocolBot>	[D] <Cyastis> changing privacy.resistFingerprinting to True?
+Sep 30 04:17:19 <P64ProtocolBot>	[D] <Cyastis> Because that'll make the userAgent show Windows NT
+Sep 30 04:17:59 <P64ProtocolBot>	[D] <Cyastis> yerbkhan I think you'd have to order them separately unfortunately
+Sep 30 04:18:23 <P64ProtocolBot>	[D] <Cyastis> it's a carrier limit, not an arbitrary limit pine64 makes
+Sep 30 04:20:45 <P64ProtocolBot>	[D] <thanos the they/them engine> yeah it's an issue of what they can send in the package, noy who orders it
+Sep 30 04:21:49 <P64ProtocolBot>	[D] <Funeral> To be fair, for the EU warehouse that doesn't apply, they are holding a stock there. But Pine probably can't or won't make the order process region-specific
+Sep 30 04:21:50 <P64ProtocolBot>	[D] <thanos the they/them engine> wait that actually works? I'd have assumed that they were just using the fact that it's a mobile layout to decide to shill the app
+Sep 30 04:22:48 <P64ProtocolBot>	[D] <Krissy Silveropossum> Based on my experience, they're just looking for the word "Android" in the user a gent
+Sep 30 04:22:48 <P64ProtocolBot>	[D] <Krissy Silveropossum> Based on my experience, they're just looking for the word "Android" in the user agent
+Sep 30 04:23:13 <P64ProtocolBot>	[D] <thanos the they/them engine> huh
+Sep 30 04:23:18 <P64ProtocolBot>	[D] <Krissy Silveropossum> Nothing is more annoying than reddit trying to thrust it's app upon me, imo XD
+Sep 30 04:23:25 <P64ProtocolBot>	[D] <Krissy Silveropossum> Nothing is more annoying than reddit trying to thrust its app upon me, imo XD
+Sep 30 04:23:31 <P64ProtocolBot>	[D] <thanos the they/them engine> might not be a bad idea to put this in a PR
+Sep 30 04:24:23 <P64ProtocolBot>	[D] <Krissy Silveropossum> I think that'd be a better default user agent personally
+Sep 30 04:24:28 <P64ProtocolBot>	[D] <Krissy Silveropossum> also more technically accurate X3
+Sep 30 04:25:01 <P64ProtocolBot>	[D] <thanos the they/them engine> if ti stops the app shilling then it already significantly improves the experience
+Oct 21 20:05:55 <P64ProtocolBot>	[T] <Brooks> If you have Bitcoin Wallet chat me for investment
+Oct 21 20:05:56 <P64ProtocolBot>	[T] <Brooks> $50 profit $550
+Oct 21 20:05:57 <P64ProtocolBot>	[T] <Brooks> $100 profit $1500
+Oct 21 20:05:59 <P64ProtocolBot>	[T] <Brooks> $200 profit $2500
+Oct 21 20:06:00 <P64ProtocolBot>	[T] <Brooks> $300 profit $3500
+Oct 21 20:06:01 <P64ProtocolBot>	[T] <Brooks> $400 profit $4500
+Oct 21 20:06:03 <P64ProtocolBot>	[T] <Brooks> $500 profit $5500
+Oct 21 20:06:04 <P64ProtocolBot>	[T] <Brooks> $600 profit $6600
+Oct 21 20:06:05 <P64ProtocolBot>	[T] <Brooks> $700 profit $7700
+Oct 21 20:06:07 <P64ProtocolBot>	[T] <Brooks> PROFIT IN 24 HOURS
+Oct 21 20:06:08 <P64ProtocolBot>	[T] <Brooks> No hidden charges 
+Oct 21 20:06:09 <P64ProtocolBot>	[T] <Brooks>   You can make money online without depending on your salary..Do you have  a PC or a phone... Try this and gain financial freedom...click on the link below👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+Oct 21 20:06:10 <P64ProtocolBot>	[T] <Brooks> @diannabrooks4
+Oct 21 20:06:12 <P64ProtocolBot>	[T] <Brooks> @diannabrooks4
+Oct 21 21:19:01 <P64ProtocolBot>	[D] <Computer boy> Yo? Thats me lmao
+Oct 21 21:20:15 <P64ProtocolBot>	[D] <Computer boy / Camden> Thank you for the kind words
+Oct 21 22:25:32 <P64ProtocolBot>	[T] <Cc> https://t.me/joinchat/FKbe8WVxS6szMmE8
+Oct 21 22:25:32 <P64ProtocolBot>	[T] <Cc> https://t.me/joinchat/FKbe8WVxS6szMmE8
+Oct 21 22:25:33 <P64ProtocolBot>	[T] <Cc> @PROFITS_WITH_SCOTT
+Oct 21 22:26:40 <P64ProtocolBot>	[D] <invisiblek> telegram seems fun
+Oct 21 22:26:54 <P64ProtocolBot>	[D] <invisiblek> 😛
+Oct 21 23:07:38 <P64ProtocolBot>	[D] <Electr0Lyte> coin toss
+Oct 21 23:11:45 <P64ProtocolBot>	[T] <Cerebropedal_mink> 
+Oct 21 23:14:33 <P64ProtocolBot>	[D] <thanos the they/them engine> Just get both
+Oct 22 00:25:28 <P64ProtocolBot>	[T] <Hawkinsant> Forwarded from unknown: I must confess that Forex trading still pays with a trust worthy manager that's why i'm proud of Mr Victor cordeiroi and you have full knowledge of what Forex is all about. He is indeed a helper and a God sent who always keeps to his words.I must say a very big thank you because you really changed my life and ambitions am indeed greatful and must always recommend you to everyone 
+Oct 22 00:25:29 <P64ProtocolBot>	[T] <Hawkinsant> Click the link to stay connected with him
+Oct 22 00:25:30 <P64ProtocolBot>	[T] <Hawkinsant>                       👇👇👇👇👇👇👇👇
+Oct 22 00:25:31 <P64ProtocolBot>	[T] <Hawkinsant> @Victorcordeiroi1
+Oct 22 00:25:33 <P64ProtocolBot>	[T] <Hawkinsant> https://t.me/joinchat/vVAqSN6oo01mMGJk
+Oct 22 02:39:13 <P64ProtocolBot>	[T] <Luaranc> If you have Bitcoin Wallet chat me for investment
+Oct 22 02:39:14 <P64ProtocolBot>	[T] <Luaranc> $50 profit $550
+Oct 22 02:39:15 <P64ProtocolBot>	[T] <Luaranc> $100 profit $1500
+Oct 22 02:39:16 <P64ProtocolBot>	[T] <Luaranc> $200 profit $2500
+Oct 22 02:39:18 <P64ProtocolBot>	[T] <Luaranc> $300 profit $3500
+Oct 22 02:39:19 <P64ProtocolBot>	[T] <Luaranc> $400 profit $4500
+Oct 22 02:39:20 <P64ProtocolBot>	[T] <Luaranc> $500 profit $5500
+Oct 22 02:39:22 <P64ProtocolBot>	[T] <Luaranc> $600 profit $6600
+Oct 22 02:39:23 <P64ProtocolBot>	[T] <Luaranc> $700 profit $7700
+Oct 22 02:39:24 <P64ProtocolBot>	[T] <Luaranc> PROFIT IN 24 HOURS
+Oct 22 02:39:25 <P64ProtocolBot>	[T] <Luaranc> No hidden charges 
+Oct 22 02:39:27 <P64ProtocolBot>	[T] <Luaranc>   You can make money online without depending on your salary..Do you have  a PC or a phone... Try this and gain financial freedom...click on the link below👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+Oct 22 02:39:28 <P64ProtocolBot>	[T] <Luaranc> @Nesvquez4
+Oct 22 02:39:29 <P64ProtocolBot>	[T] <Luaranc> @Nesvquez4
+Oct 22 11:14:55 <P64ProtocolBot>	[T] <Acanadianrose> Hi! I'm looking at buying a PinePhone but wondering where you can get apps for it and if there is a list that I can look at?
+Oct 22 11:26:08 <P64ProtocolBot>	[D] <fireTwoOneNine> are you familiar with using linux on a desktop or laptop? it's basically the same process
+Oct 22 11:26:28 <P64ProtocolBot>	[D] <fireTwoOneNine> there's not really an "app store" like you find on iOS or android
+Oct 22 11:27:19 <P64ProtocolBot>	[D] <fireTwoOneNine> though most of the interfaces you can use on the pinephone have a sort of "app store" looking thing that is a front end for the linux repositories
+Oct 22 11:29:21 <P64ProtocolBot>	[M] <dobey> depends on which OS you run on it
+Oct 22 11:29:57 <P64ProtocolBot>	[M] <dobey> for Ubuntu Touch there is https://open-store.io
+Oct 22 15:42:52 <P64ProtocolBot>	[D] <Anoop> Is there anyone I can chat with on the neural network & NPU side?
+Oct 22 15:42:55 <P64ProtocolBot>	[D] <Anoop> would love some advice 🙂
+Oct 22 15:56:51 <P64ProtocolBot>	[D] <Anoop> https://www.programmerall.com/article/81411814491/
+Oct 22 16:03:47 <P64ProtocolBot>	[D] <True_muse> i have boot questions can anyone help answer them? Because Google answers are too technical for me
+Oct 22 16:04:21 <P64ProtocolBot>	[D] <True_muse> i have boot questions can anyone help answer them? Because Google answers are too complicated for me
+Oct 22 16:40:31 <P64ProtocolBot>	[D] <curiocritters> My pleasure. That was a very well written piece of tech journalism.
+Oct 22 18:58:24 <P64ProtocolBot>	[T] <Jordi> CRYPTOBRITE.LTD es la mejor plataforma para invertir. Creo que has estado viendo muchos testimonios pero puedes confirmar todos estos a través de 👇👇👇👇👇👇👇👇👇👇 CRYPTOBRITE.LTD https://cryptorite.ltd : 
+Oct 22 19:36:03 <P64ProtocolBot>	[T] <llian paulo> Forwarded from unknown: It wasn't easy but trader maya made it possible, another payout today thank you. contact he for more information
+Oct 22 19:36:04 <P64ProtocolBot>	[T] <llian paulo> 👇👇👇👇👇
+Oct 22 19:36:05 <P64ProtocolBot>	[T] <llian paulo> https://t.me/joinchat/MoKqLSPo8e1iYjRk
+Oct 22 21:13:47 <P64ProtocolBot>	[D] <Philpax> easy to join, hard to automatically moderate
+Oct 22 21:17:55 <P64ProtocolBot>	[T] <UniversalSuperBox> It does, but no one cares about this network right now.
+Oct 22 21:23:54 <P64ProtocolBot>	[D] <Philpax> the telegram channels are globally accessible, while you need to join the network to access the channels on IRC
+Oct 22 22:13:45 <P64ProtocolBot>	[T] <fMdhWg> 
+Oct 22 22:44:48 <P64ProtocolBot>	[T] <Lisa> https://t.me/joinchat/ONp8NSZ-0ZA4NmY0oinchat/ONp8NSZ-0ZA4NmY0
+Oct 22 23:04:10 <P64ProtocolBot>	[D] <fireTwoOneNine> there was actually spam on IRC yesterday. someone pointed a spambot at us through the tor network and blasted this channel with messages from about 100 clients
+Oct 22 23:04:17 <P64ProtocolBot>	[D] <fireTwoOneNine> somehow it didn't make it across the bridge. i don't really know why.
+Oct 22 23:04:41 <P64ProtocolBot>	[D] <fireTwoOneNine> but normally, yea IRC doesn't really get spam because it's too small of a network
+Oct 22 23:05:55 <P64ProtocolBot>	[D] <fireTwoOneNine> actually... that wasn't public messages wasn't it. it was whispers and DMs just to me and abcde (one of the ops on the IRC network, for those not on it)
+Oct 22 23:06:04 <P64ProtocolBot>	[D] <fireTwoOneNine> that would be why it didn't cross the bridge 🙂
+Oct 22 23:07:37 <P64ProtocolBot>	[D] <fireTwoOneNine> but if you have IRC logs in this channel from about 32 hours ago, you'll see a shit ton of joins and then leaves from users with "real" names
+Oct 22 23:08:23 <P64ProtocolBot>	[D] <fireTwoOneNine> the bot master seems to have done it to advertise their turkish dating chat site (i'm not kidding...) in their quit message
+Oct 22 23:08:59 <P64ProtocolBot>	[D] <fireTwoOneNine> the bots weren't even spamming anything about that, their flood message was just keyboard mashing
+Oct 22 23:09:07 <P64ProtocolBot>	[D] <fireTwoOneNine> whole thing is very confusing
+Oct 22 23:10:31 <P64ProtocolBot>	[D] <Danct12> @fireTwoOneNine what was the message? i didn't get it :P
+Oct 22 23:10:46 <P64ProtocolBot>	[D] <Danct12> but i see that the irc server seems to do it's job well
+Oct 22 23:11:05 <P64ProtocolBot>	[D] <Danct12> https://cdn.discordapp.com/attachments/463285150898192384/901321809910181909/Screenshot_20211023_111057.png
+Oct 22 23:11:52 <P64ProtocolBot>	[D] <fireTwoOneNine> they're M2 screws
+Oct 22 23:12:10 <P64ProtocolBot>	[D] <fireTwoOneNine> https://wiki.pine64.org/wiki/Pinebook_Pro#Case_Dimensions_and_Data
+Oct 22 23:12:43 <P64ProtocolBot>	[D] <Danct12> @fireTwoOneNine as for joining over VPN or Tor, how about something like authentication over sasl?
+Oct 22 23:12:52 <P64ProtocolBot>	[D] <fireTwoOneNine> as for the spam message, it was this
+Oct 22 23:12:53 <P64ProtocolBot>	[D] <fireTwoOneNine> https://cdn.discordapp.com/attachments/463285150898192384/901322257127841822/unknown.png
+Oct 22 23:13:06 <P64ProtocolBot>	[D] <Danct12> lolwhat
+Oct 22 23:13:40 <P64ProtocolBot>	[D] <Danct12> is the "byeee" quit message a part of the irc server kicking?
+Oct 22 23:14:25 <P64ProtocolBot>	[D] <FatherlyFox> non-printable characters
+Oct 22 23:14:52 <P64ProtocolBot>	[D] <fireTwoOneNine> it's unicode 0xFFFD
+Oct 22 23:15:37 <P64ProtocolBot>	[D] <FatherlyFox> literal name being 'REPLACEMENT CHARACTER' lol
+Oct 22 23:15:47 <P64ProtocolBot>	[D] <fireTwoOneNine> i can only assume it's a text encoding or padding fail
+Oct 22 23:16:21 <P64ProtocolBot>	[D] <FatherlyFox> most likely encoding cause it looks like it was trying to do a line break but failed for some reason
+Oct 22 23:17:38 <P64ProtocolBot>	[D] <fireTwoOneNine> that's more of a #pinebook question. but off the top of my head, suspend to RAM is a bit of a weird case where it kinda works and kinda doesn't
+Oct 22 23:17:51 <P64ProtocolBot>	[D] <fireTwoOneNine> there will be people in that channel who can answer better than i can
+Oct 22 23:18:47 <P64ProtocolBot>	[D] <Danct12> @fireTwoOneNine but yeah, if you want you can setup sasl, so people that already had a nickserv account can login over tor or a vpn
+Oct 22 23:19:12 <P64ProtocolBot>	[D] <Danct12> this is what libera chat did and it seems to work
+Oct 22 23:19:29 <P64ProtocolBot>	[D] <fireTwoOneNine> i might have to look into that if this becomes a recurring problem
+Oct 22 23:20:03 <P64ProtocolBot>	[D] <fireTwoOneNine> higher priority for now is finding a way to stop (or at least slow down) the telegram spam
+Oct 22 23:20:34 <P64ProtocolBot>	[D] <fireTwoOneNine> other than just using someone else's bot and hoping it doesn't get taken over maliciously (not an uncommon thing with telegram bots sadly)
+Oct 22 23:22:06 <P64ProtocolBot>	[D] <FatherlyFox> Doesn't Telegram have an option to verify by CAPTCHA or something similar?
+Oct 22 23:22:39 <P64ProtocolBot>	[D] <fireTwoOneNine> there are bots that do something like that
+Oct 22 23:22:46 <P64ProtocolBot>	[D] <fireTwoOneNine> but it's not a native feature afaik
+Oct 22 23:25:00 <P64ProtocolBot>	[D] <FatherlyFox> ahh ok, digging a little deeper that does seem to be the only option atm; can only hope that they implement a native feature for it 🤞
+Oct 22 23:27:44 <P64ProtocolBot>	[D] <fireTwoOneNine> depends on how crazy we'd want to go
+Oct 22 23:28:08 <P64ProtocolBot>	[D] <fireTwoOneNine> just going off a word blacklist would be fairly effective (the telegram spam is pretty consistent)
+Oct 22 23:28:19 <P64ProtocolBot>	[D] <fireTwoOneNine> but it could backfire if a legit user says the wrong thing
+Oct 22 23:30:13 <P64ProtocolBot>	[D] <fireTwoOneNine> hm, that looks like it could be useful. might be an excuse to play with making a telegram bot this weekend 🙂
+Oct 22 23:31:28 <P64ProtocolBot>	[D] <fireTwoOneNine> thanks. looks pretty straightforward to use though
+Oct 22 23:33:25 <P64ProtocolBot>	[D] <fireTwoOneNine> though it may still have the problem of the bridge catching a message before this bot could delete
+Oct 22 23:33:46 <P64ProtocolBot>	[D] <fireTwoOneNine> especially if the classifier can take a while (i have no idea; basically asking you there 🙂 )
+Oct 22 23:34:45 <P64ProtocolBot>	[D] <fireTwoOneNine> i was just wondering the same thing. not sure if matterbridge has such an option. technically we could custom compile with a hardcoded delay, but that's obviously non-ideal
+Oct 22 23:35:55 <P64ProtocolBot>	[D] <fireTwoOneNine> license is the least of my worries there. MIT works just fine for me
+Oct 22 23:37:03 <P64ProtocolBot>	[D] <fireTwoOneNine> looks like matterbridge has some delay controls for IRC, but that's it
+Oct 22 23:38:09 <P64ProtocolBot>	[D] <fireTwoOneNine> lmao
+Oct 22 23:38:25 <P64ProtocolBot>	[D] <fireTwoOneNine> the matterbridge config is already enough of a nightmare, thanks 🙂
+Oct 22 23:38:51 <P64ProtocolBot>	[D] <fireTwoOneNine> pretty sure we have the biggest deployment of it anywhere
+Oct 22 23:41:15 <P64ProtocolBot>	[D] <fireTwoOneNine> i suppose i could expand the bot scope to connect to all the chat platforms and delete on those platforms if necessary
+Oct 22 23:41:22 <P64ProtocolBot>	[D] <fireTwoOneNine> i don't know
+Oct 22 23:41:58 <P64ProtocolBot>	[D] <fireTwoOneNine> that's true
+Oct 22 23:42:08 <P64ProtocolBot>	[D] <fireTwoOneNine> IRC already gets the short end of that stick
+Oct 22 23:42:55 <P64ProtocolBot>	[D] <fireTwoOneNine> is that an irc 2.0 feature? 🙂
+Oct 22 23:45:11 <P64ProtocolBot>	[D] <fireTwoOneNine> hell of a race condition to set up there. telegram bots have to get and send messages (or literally any action) over HTTP
+Oct 22 23:45:21 <P64ProtocolBot>	[D] <fireTwoOneNine> don't know how often matterbridge polls that either
+Oct 22 23:46:32 <P64ProtocolBot>	[D] <fireTwoOneNine> matterbridge does make use of the bot API for talking to telegram, yes
+Oct 22 23:48:11 <P64ProtocolBot>	[D] <fireTwoOneNine> see ya
+Oct 23 00:20:23 <P64ProtocolBot>	[D] <thanos the they/them engine> might also be useful to filter images
+Oct 23 00:21:08 <P64ProtocolBot>	[D] <thanos the they/them engine> just delete messages that have an image matching the checksum of the damn elon musk twitter screenshots they send
+Oct 23 00:21:57 <P64ProtocolBot>	[D] <thanos the they/them engine> I haven't checked but they probably do
+Oct 23 13:12:56 <P64ProtocolBot>	[T] <wytrzeszcz> hi
+Oct 23 13:14:57 <P64ProtocolBot>	[T] <wytrzeszcz> does clusterboard control ATX somehow or it just always on?
+Oct 23 17:57:03 <P64ProtocolBot>	[D] <Funeral> in geekbench*
+Oct 23 18:19:15 <P64ProtocolBot>	[T] <Julianbusinessaccount> I learnt to manage portfolio at HASHBULLS📌📌📌📌📌📌https://trhs.me/k4PZJhttps://trhs.me/k4PZJ : 
+Oct 23 18:23:02 <P64ProtocolBot>	[T] <patrickesther> Forwarded from unknown: I must confess that Forex trading still pays with a trust worthy manager that's why i'm proud of Mr Victor cordeiroi and you have full knowledge of what Forex is all about. He is indeed a helper and a God sent who always keeps to his words.I must say a very big thank you because you really changed my life and ambitions am indeed greatful and must always recommend you to everyone 
+Oct 23 18:23:02 <P64ProtocolBot>	[T] <patrickesther> Click the link to stay connected with him
+Oct 23 18:23:04 <P64ProtocolBot>	[T] <patrickesther>                       👇👇👇👇👇👇👇👇
+Oct 23 18:23:05 <P64ProtocolBot>	[T] <patrickesther> @Victorcordeiroi1
+Oct 23 18:23:06 <P64ProtocolBot>	[T] <patrickesther> https://t.me/joinchat/vVAqSN6oo01mMGJk
+Oct 23 18:25:38 <P64ProtocolBot>	[D] <Funeral> @Moderator spam invasion 😄
+Oct 23 18:25:57 <P64ProtocolBot>	[D] <fireTwoOneNine> i eat spam for dinner
+Oct 23 18:26:06 <P64ProtocolBot>	[D] <fireTwoOneNine> literally. i just had spam in rice for dinner
+Oct 23 18:26:07 <P64ProtocolBot>	[D] <PiZZaMartijn> at least it's just in general 😛
+Oct 23 18:26:08 <P64ProtocolBot>	[D] <pfeerick> lol... too slow 😛
+Oct 23 18:26:11 <P64ProtocolBot>	[D] <Funeral> hi @NotThatDarnFrogAgain
+Oct 23 18:26:18 <P64ProtocolBot>	[D] <Funeral> we need to watch some videos together
+Oct 23 18:26:31 <P64ProtocolBot>	[D] <pfeerick> That was a particularly spammy spam though...
+Oct 23 18:27:10 <P64ProtocolBot>	[D] <PiZZaMartijn> the spammiest spam
+Oct 23 19:09:11 <P64ProtocolBot>	[M] <pfeerick> Sounds like a perfect use for the rockpro64... mine is running as a NAS with to attached USB hard drives... has been running for nearly three years now 24x7... running docker containers, home assistant, and a few other bits an pieces... only issues I've had are usually self-inflicted ;)
+Oct 23 19:09:18 <P64ProtocolBot>	[M] <pfeerick> *two
+Oct 23 19:58:16 <P64ProtocolBot>	[D] <Ryu> Nvidia will be looking to make high end CPUs is what I am suspecting.  Think gaming computer levels of performance.
+Oct 24 02:52:37 <P64ProtocolBot>	[T] <Intradepartment_efficience> 
+Oct 24 03:30:45 <P64ProtocolBot>	[D] <MPDarkGuy> mine shipped from poland iirc, ye
+Oct 24 03:50:44 <P64ProtocolBot>	[D] <ScrumpyJack> morning GMT
+Oct 24 03:52:41 <P64ProtocolBot>	[D] <ScrumpyJack> what's the preferred way to get the HDMI output to fit a TV screen? disable_overscan in /boot/armbianEnv.txt didn't help.
+Oct 24 03:52:42 <P64ProtocolBot>	[D] <ScrumpyJack> (rockpro64/stock Ubuntu/No X11)
+Oct 24 04:11:03 <P64ProtocolBot>	[D] <pfeerick> 2x4TB USB3 Seagate Expansion drives plugged directly into the the rockpro64 for bulk storage. Samsung NVMe on PCIe riser for secondary NAS storage, docker containers, etc. EMMC boot, with Samsung EVO microSD as backup (yet to need). Still have the USB2 and TypeC ports free if I really need to plug anything else in. Poor thing is still running 4.4 kernel from 2018... why fix what ain't broke 😆 .
+Oct 24 04:16:35 <P64ProtocolBot>	[D] <pfeerick> hm... thought it was the other way around... ok, so it's 2xUSB3 drives plugged into the 2xUSB2 ports, leaving the USB3 and TypeC free.
+Oct 24 04:18:11 <P64ProtocolBot>	[D] <pfeerick> For it's intended purpose (bulk video/music storage) the USB2 ports are more than enough for my needs, with the NVMe drive doing any high speed stuff, since it can basically saturate the ethernet link...
+Oct 24 04:19:21 <P64ProtocolBot>	[D] <pfeerick> Yes, although they and the RP64 are both common-powered via a 12v solar battery supply.
+Oct 24 04:22:20 <P64ProtocolBot>	[D] <Segfault> Could also just plug both drives directly into the rockpro through the 3.0 type a and type c ports
+Oct 24 04:22:59 <P64ProtocolBot>	[D] <pfeerick> I have a second rockpro64, USB3 hub, and another pair of 4TB drives (they are the offline backups of the two that are in service)... I can always run that up and see what happens.
+Oct 24 04:23:21 <P64ProtocolBot>	[D] <pfeerick> That would defeat the "don't fix what ain't broke" adage 😛
+Oct 24 12:11:31 <P64ProtocolBot>	[T] <ideasquarebased> I thought there are 0 taxes (re @p64protocolbot: [D] <Funeral> They don't live in delaware? 😄)
+Oct 24 12:35:12 <P64ProtocolBot>	[D] <ayayagames> having  like an extra hundred bucks slapped on top of it yikes
+Oct 24 12:37:48 <P64ProtocolBot>	[D] <Funeral> It's put to good use, mostly 😛
+Oct 24 12:44:50 <P64ProtocolBot>	[D] <Philpax> something something healthcare 😛
+Oct 24 12:45:10 <P64ProtocolBot>	[D] <Funeral> That's what I first wrote in the chatbox but I removed it before sending it. 😄
+Oct 24 13:20:00 <P64ProtocolBot>	[T] <jackiemoore> I had a pine book pro I sold to a person in Europe who had me ship it to Delaware. They then forwarded it to the country where the buyer lives, think it was the Ukraine. (re @ideasquarebased: Why not to ship it to Delaware)
+Oct 24 13:24:14 <P64ProtocolBot>	[D] <Funeral> You still need to pay import taxes if you import it into the single market, even if it's forwarded via wherever. Otherwise it is tax evasion 😉
+Oct 24 13:24:58 <P64ProtocolBot>	[D] <Funeral> For countries like Russia they use forwarding services because customs block the orders otherwise
+Oct 24 13:57:11 <P64ProtocolBot>	[D] <Philpax> https://twitter.com/alyssarzg/status/1452082622876815361 heh TIL
+Oct 24 14:21:23 <P64ProtocolBot>	[D] <fireTwoOneNine> the 3399 has pretty healthy memory bandwidth for what it is
+Oct 24 14:21:32 <P64ProtocolBot>	[D] <fireTwoOneNine> the M1 is just.... well, the M1
+Oct 24 14:21:50 <P64ProtocolBot>	[M] <spicyoreo> How do you even pay import tax i live in us
+Oct 24 14:22:31 <P64ProtocolBot>	[M] <spicyoreo> I don't want to get in trouble  for not knowing  how to get my pinephone  paid for
+Oct 24 14:26:59 <P64ProtocolBot>	[D] <Philpax> the shipping company will ask you to pay tax if it's required
+Oct 24 14:28:02 <P64ProtocolBot>	[M] <spicyoreo> That would probably  be by email then
+Oct 24 14:31:59 <P64ProtocolBot>	[M] <spicyoreo> Thank you
+Oct 24 15:29:23 <P64ProtocolBot>	[D] <Funeral> spicyoreo: The US has no import tax, as far as I'm aware
+Oct 24 15:29:46 <P64ProtocolBot>	[D] <Funeral> The above discussion was about the EU import tax
+Oct 24 15:30:29 <P64ProtocolBot>	[T] <cooncat44> Maybe google it
+Oct 24 15:31:42 <P64ProtocolBot>	[T] <cooncat44> Customs Duty is a tariff or tax imposed on goods when transported across international borders. ... American Goods Returned (AGR) do not have to be declared, but you must be prepared to prove to U.S. Customs and Border Protection the articles are AGR or pay Customs duty. The Customs Duty Rate is a percentage.
+Oct 24 15:31:43 <P64ProtocolBot>	[T] <cooncat44> https://www.cbp.gov › travel › kbyg
+Oct 24 15:31:44 <P64ProtocolBot>	[T] <cooncat44> https://www.cbp.gov/travel/international-visitors/kbyg/customs-duty-info
+Oct 24 15:32:34 <P64ProtocolBot>	[D] <Funeral> That's not really helpful
+Oct 24 15:32:55 <P64ProtocolBot>	[T] <cooncat44> Whatever bud
+Oct 24 15:43:56 <P64ProtocolBot>	[D] <Funeral> spicyoreo: all you have to pay is the shipping costs
+Oct 24 15:48:24 <P64ProtocolBot>	[D] <koala> What is the "transit airport"? Is that the countries airport they're shipping it from? Or is it in my country? cause my watch just arrived at the transit country
+Oct 24 15:51:38 <P64ProtocolBot>	[D] <Philpax> that's up to your postal carrier but I assume it's the postal hub they're routing through
+Oct 24 15:52:32 <P64ProtocolBot>	[D] <koala> Hmm, you think my watch will most likely be here this week or next week then?
+Oct 24 16:05:12 <P64ProtocolBot>	[D] <Philpax> probably? again, depends on your postal carrier :P
+Oct 24 16:05:22 <P64ProtocolBot>	[D] <Philpax> all you can do is wait, I'm afraid
+Oct 24 16:10:26 <P64ProtocolBot>	[D] <koala> Gahhh the thing i hate doing the most too lol
+Oct 24 22:20:38 <P64ProtocolBot>	[M] <spicyoreo> Well normally  I only get things shipped from two places usps or ups
+Oct 24 22:21:27 <P64ProtocolBot>	[M] <spicyoreo> Well normally  I only get things shipped from two couriers usps or ups
+Oct 25 02:30:45 <P64ProtocolBot>	[D] <Bootleg Mandarr> I finally got Arch Phos to work with the Pinephone! 🎊
+Oct 25 02:30:59 <P64ProtocolBot>	[D] <Bootleg Mandarr> It runs alot faster than the default Majaro Plasma
+Oct 25 02:31:23 <P64ProtocolBot>	[D] <Bootleg Mandarr> Does Brave have a linux client yet that could work for mobile devices?
+Oct 25 02:36:06 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ 💉⃠ [ FREETARD ]> \>Le shill lion
+Oct 25 02:37:15 <P64ProtocolBot>	[D] <Bootleg Mandarr> Do you have a better recommendation for a privacy-based web browser that doesn't utilize TOR by default?
+Oct 25 02:37:39 <P64ProtocolBot>	[D] <Bootleg Mandarr> I prefer Lokinet over TOR regardless since most, if not all, TOR exit nodes by now are comped
+Oct 25 02:39:21 <P64ProtocolBot>	[D] <ShapeShifter499> hi
+Oct 25 02:39:27 <P64ProtocolBot>	[D] <ShapeShifter499> about time I joined here
+Oct 25 02:40:11 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ 💉⃠ [ FREETARD ]> I dont know if this was done before but you can configure the firefox tab bar using userchrome.css
+Oct 25 02:40:18 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ 💉⃠ [ FREETARD ]> Firefox is still awesome
+Oct 25 14:48:28 <P64ProtocolBot>	[D] <BrimsonKum> Hello
+Oct 25 16:10:49 <P64ProtocolBot>	[D] <Agu> Argentina someone?
+Oct 25 20:02:11 <P64ProtocolBot>	[T] <Phil Evans> Success comes to those who work hard to get it...Most people here are looking for free investment unknowning to you that there is an upfront fees waiting for you while some just sit there doubting while wise ones are getting rich...There are no hidden charges contact Mr LeonWilliamsFx today via the link below to earn big
+Oct 25 20:02:12 <P64ProtocolBot>	[T] <Phil Evans> 👇👇👇👇
+Oct 25 20:02:14 <P64ProtocolBot>	[T] <Phil Evans> @LeonWilliamsFx
+Oct 25 20:02:15 <P64ProtocolBot>	[T] <Phil Evans> @LeonWilliamsFx
+Oct 25 22:29:27 <P64ProtocolBot>	[T] <ScottGLindsey> Forwarded from unknown: My company need 30 people to come and work online for 3 days and receive $10,000 in 3 business days using your smartphone?  
+Oct 25 22:29:27 <P64ProtocolBot>	[T] <ScottGLindsey> Just say HOW!!! Or contact him via this link below
+Oct 25 22:29:28 <P64ProtocolBot>	[T] <ScottGLindsey> 👇👇👇👇
+Oct 25 22:29:30 <P64ProtocolBot>	[T] <ScottGLindsey> @Harrison_S_George
+Oct 25 22:29:31 <P64ProtocolBot>	[T] <ScottGLindsey> https://t.me/joinchat/wqWNTv90pc81MWI0
+Oct 25 22:29:32 <P64ProtocolBot>	[T] <ScottGLindsey> Stay at home and make money online
+Oct 26 11:39:21 <P64ProtocolBot>	[D] <koala> I knoowwwww, i constantly do this when ordering stuff lol, hell i even wrote a script for it ``` 
+Oct 26 11:39:21 <P64ProtocolBot>	[D] <koala> ~/Programming/python > ./track.py
+Oct 26 11:39:23 <P64ProtocolBot>	[D] <koala> [*] Sending request...
+Oct 26 11:39:24 <P64ProtocolBot>	[D] <koala> 
+Oct 26 11:39:25 <P64ProtocolBot>	[D] <koala> ID: <id>
+Oct 26 11:39:26 <P64ProtocolBot>	[D] <koala> 2021-10-26 14:44 ( The shipment is handed over in bulk, final acceptance of goods to be confirmed )
+Oct 26 11:39:28 <P64ProtocolBot>	[D] <koala> 2021-10-24 13:04 ( The item has arrived in the transit airport )
+Oct 26 11:39:29 <P64ProtocolBot>	[D] <koala> 2021-10-20 06:49 ( The item is ready for shipment )
+Oct 26 11:39:30 <P64ProtocolBot>	[D] <koala> 2021-10-20 06:46 ( The item is pre-advised to PostNL )
+Oct 26 11:39:32 <P64ProtocolBot>	[D] <koala> 2021-10-19 06:51 ( The Item is at the shippers warehouse )
+Oct 26 11:39:33 <P64ProtocolBot>	[D] <koala> ~/Programming/python > 
+Oct 26 11:39:34 <P64ProtocolBot>	[D] <koala> ```
+Oct 26 11:39:36 <P64ProtocolBot>	[D] <Danct12> do they provide an api for this?
+Oct 26 11:39:40 <P64ProtocolBot>	[D] <koala> sadly not, just a web scraper
+Oct 26 11:39:54 <P64ProtocolBot>	[D] <koala> actually
+Oct 26 11:39:55 <P64ProtocolBot>	[D] <koala> they dop
+Oct 26 11:39:56 <P64ProtocolBot>	[D] <koala> nevermind'
+Oct 26 11:40:14 <P64ProtocolBot>	[D] <koala> Although annoyingly i have to normally load in the web page *then* the API works for some reason
+Oct 26 11:42:19 <P64ProtocolBot>	[D] <Funeral> A watched pot never boils, @Philpax 😛
+Oct 26 11:42:58 <P64ProtocolBot>	[D] <Philpax> exactly :D
+Oct 26 11:43:03 <P64ProtocolBot>	[D] <NULL> Every time I see the announcement, I expect keyboard in stock
+Oct 26 11:43:08 <P64ProtocolBot>	[D] <NULL> 😫
+Oct 26 11:43:39 <P64ProtocolBot>	[D] <Funeral> Null must feel very betrayed, all the random stuff coming up
+Oct 26 11:43:45 <P64ProtocolBot>	[D] <Funeral> PinePhone Pro etc. 😛
+Oct 26 11:44:09 <P64ProtocolBot>	[D] <NULL> yea October end is near
+Oct 26 11:54:49 <P64ProtocolBot>	[T] <ZTIyqk> 
+Oct 26 11:59:14 <P64ProtocolBot>	[D] <Funeral> thanks mr 33yn2
+Oct 26 11:59:42 <P64ProtocolBot>	[D] <33YN2> Wasn't me
+Oct 26 12:00:09 <P64ProtocolBot>	[D] <Funeral> 👀
+Oct 26 12:00:19 <P64ProtocolBot>	[D] <Funeral> It was fire
+Oct 26 12:16:00 <P64ProtocolBot>	[T] <Brentwells> Interested members should click on the link below and chat me up for more information. https://soo.gd/qB4a : 
+Oct 26 12:16:17 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> Too bad no one's interested
+Oct 26 12:16:23 <P64ProtocolBot>	[D] <fireTwoOneNine> that's a different one
+Oct 26 12:16:33 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> Yeah it is
+Oct 26 13:16:37 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> I'm sad that they used the name PineCone on nutcracker thing. I was really looking forward to the PineCone Smart Speaker
+Oct 26 13:27:53 <P64ProtocolBot>	[D] <Exploding "Could be wrong" Pixel> but with a pinephone
+Oct 26 13:27:54 <P64ProtocolBot>	[D] <Exploding "Could be wrong" Pixel> https://cdn.discordapp.com/attachments/463285150898192384/902624588272386058/iu.png
+Oct 26 14:27:15 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> Pinegirlfiend?
+Oct 26 14:34:08 <P64ProtocolBot>	[M] <notsoslimshady:xslendi.xyz> > <@p64protocolbot:matrix.org> [D] <Porkyofthepine (sxmo btw)> Pinegirlfiend?
+Oct 26 14:34:10 <P64ProtocolBot>	[M] <notsoslimshady:xslendi.xyz> 
+Oct 26 14:34:11 <P64ProtocolBot>	[M] <notsoslimshady:xslendi.xyz> Good idea
+Oct 26 14:34:12 <P64ProtocolBot>	[M] <notsoslimshady:xslendi.xyz> Great idea
+Oct 26 14:55:12 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> Wait I don't think most guys want their gf to be "free and open source"
+Oct 26 15:01:39 <P64ProtocolBot>	[T] <UniversalSuperBox> please don't
+Oct 26 15:05:44 <P64ProtocolBot>	[D] <Crafty> hey lads, do you think the rk3588 will be pin compatible with the 3568?
+Oct 26 15:14:03 <P64ProtocolBot>	[D] <fireTwoOneNine> most likely not
+Oct 26 15:14:35 <P64ProtocolBot>	[D] <fireTwoOneNine> i don't exactly have datasheets for the 3588, but it almost certainly has more peripherals, which means it needs more pins
+Oct 26 15:19:07 <P64ProtocolBot>	[D] <Crafty> :(
+Oct 26 15:19:33 <P64ProtocolBot>	[D] <Crafty> I wanted to try to get a head start designing something
+Oct 26 15:19:54 <P64ProtocolBot>	[D] <Crafty> I guess I'll keep waiting for the rk3566 to show up on aliexpress
+Oct 26 16:38:21 <P64ProtocolBot>	[T] <Bach> hello guys
+Oct 26 16:38:28 <P64ProtocolBot>	[T] <Bach> i need help very fast
+Oct 26 16:38:53 <P64ProtocolBot>	[D] <Funeral> Spit it out
+Oct 26 16:39:08 <P64ProtocolBot>	[T] <Bach> i just order now pinephone
+Oct 26 16:39:17 <P64ProtocolBot>	[T] <Bach> but i see pinephone pro
+Oct 26 16:39:21 <P64ProtocolBot>	[T] <Bach> on pre order
+Oct 26 16:39:32 <P64ProtocolBot>	[T] <Bach> and now i want to change it huys
+Oct 26 16:39:34 <P64ProtocolBot>	[T] <Bach> guys
+Oct 26 16:39:42 <P64ProtocolBot>	[T] <Bach> how i can do that ?
+Oct 26 16:39:54 <P64ProtocolBot>	[D] <Funeral> The Pro isn't released yet, the pre-order is for a few dev devices
+Oct 26 16:40:17 <P64ProtocolBot>	[D] <Funeral> You can cancel your order, the terms of the store has the details
+Oct 26 16:40:46 <P64ProtocolBot>	[D] <Funeral> But again, the Pro is not released yet 😛
+Oct 26 16:41:29 <P64ProtocolBot>	[T] <Bach> whats you mean ?
+Oct 26 16:41:30 <P64ProtocolBot>	[T] <Bach> i can order this and wait no ?
+Oct 26 16:41:31 <P64ProtocolBot>	[T] <Bach> or its just for developer ?
+Oct 26 16:41:51 <P64ProtocolBot>	[D] <Funeral> It's only for developers
+Oct 26 16:42:00 <P64ProtocolBot>	[T] <Bach> okk right
+Oct 26 16:42:08 <P64ProtocolBot>	[T] <Bach> but its on road
+Oct 26 16:42:09 <P64ProtocolBot>	[T] <UniversalSuperBox> You may order a PinePhone. You may not order the PinePhone Pro yet.
+Oct 26 16:42:15 <P64ProtocolBot>	[T] <Bach> how much can its take ?
+Oct 26 16:42:28 <P64ProtocolBot>	[T] <UniversalSuperBox> If the order has shipped, you almost certainly are not receiving a PinePhone Pro.
+Oct 26 16:43:01 <P64ProtocolBot>	[T] <Bach> i just ship today
+Oct 26 16:43:05 <P64ProtocolBot>	[T] <Bach> i want to change that
+Oct 26 16:43:12 <P64ProtocolBot>	[D] <Funeral> When did you order, Bach?
+Oct 26 16:43:21 <P64ProtocolBot>	[T] <Bach> today
+Oct 26 16:43:25 <P64ProtocolBot>	[T] <Bach> now
+Oct 26 16:43:28 <P64ProtocolBot>	[T] <Bach> one hour
+Oct 26 16:43:34 <P64ProtocolBot>	[D] <Funeral> Just cancel it, it didn't ship yet
+Oct 26 16:43:58 <P64ProtocolBot>	[D] <Funeral> Are you in the EU, Bach?
+Oct 26 16:49:45 <P64ProtocolBot>	[T] <Bach> ok and for pro version
+Oct 26 16:49:46 <P64ProtocolBot>	[T] <Bach> yes
+Oct 26 16:49:48 <P64ProtocolBot>	[T] <Bach> 🇫🇷
+Oct 26 16:49:49 <P64ProtocolBot>	[T] <Bach> why ?
+Oct 26 16:50:47 <P64ProtocolBot>	[T] <Bach> how much time before i get pro versiob guys ? if i ordering tomorow
+Oct 26 16:51:05 <P64ProtocolBot>	[D] <Funeral> You can't order the Pro, it's not released 😄
+Oct 26 16:51:21 <P64ProtocolBot>	[D] <Funeral> Pre-order starts some time in November
+Oct 26 16:51:29 <P64ProtocolBot>	[T] <Bach> oh ok
+Oct 26 16:51:40 <P64ProtocolBot>	[T] <jptagaio> Hello everyone.
+Oct 26 16:51:55 <P64ProtocolBot>	[T] <Bach> so i just gonna order pinephone and wait for realease
+Oct 26 16:52:18 <P64ProtocolBot>	[T] <Bach> if i understand
+Oct 26 16:52:18 <P64ProtocolBot>	[D] <Funeral> Or you cancel and wait, yes
+Oct 26 16:52:26 <P64ProtocolBot>	[T] <jptagaio> When will be the pinebook pro be available to order?
+Oct 26 16:53:20 <P64ProtocolBot>	[T] <Bach> oh ok
+Oct 26 16:53:21 <P64ProtocolBot>	[T] <Bach> how much time we can wait for the pro ?
+Oct 26 16:53:43 <P64ProtocolBot>	[D] <Funeral> Make sure to read https://www.pine64.org/pinephonepro/
+Oct 26 16:53:44 <P64ProtocolBot>	[T] <jptagaio> I have been looking to get one but is currently out of stock. Is there any date announce for when this product will be available
+Oct 26 16:53:55 <P64ProtocolBot>	[T] <jptagaio> Thank you
+Oct 26 16:54:08 <P64ProtocolBot>	[D] <Funeral> jptagaio: not you, there are some discussions mixing up 😛
+Oct 26 16:54:59 <P64ProtocolBot>	[T] <jptagaio> I was just thank for listening 😅
+Oct 26 16:55:07 <P64ProtocolBot>	[D] <Funeral> jptagaio: https://www.pine64.org/availability-and-shipping-status/ says Q4 2021 or Q1 2022
+Oct 26 16:55:12 <P64ProtocolBot>	[T] <jptagaio> I was just thank you for listening 😅
+Oct 26 16:55:29 <P64ProtocolBot>	[D] <Funeral> Oh I was in the wrong column, I mean Q1 2022
+Oct 26 16:55:59 <P64ProtocolBot>	[T] <jptagaio> Ok so only next year
+Oct 26 16:56:07 <P64ProtocolBot>	[T] <jptagaio> Ok thank you
+Oct 26 16:58:04 <P64ProtocolBot>	[T] <jptagaio> I hope to be able to get one 😅 I love the arm processor. And it is basically a Raspberry Pie with a battery
+Oct 26 16:58:17 <P64ProtocolBot>	[T] <jptagaio> I hope to be able to get one 😅 I love the arm processor. And it is basically a Raspberry Pi with a battery
+Oct 26 17:22:09 <P64ProtocolBot>	[D] <ayayagames> PLEEEAASSEEE Q4 20201
+Oct 26 20:52:23 <P64ProtocolBot>	[D] <CalcProgrammer1> the real question - which comes first, the steam deck or the pinephone pro?
+Oct 26 20:52:40 <P64ProtocolBot>	[D] <CalcProgrammer1> Q1 2022 is going to be a good quarter for Linux
+Oct 26 21:14:24 <P64ProtocolBot>	[D] <NULL> steam deck
+Oct 26 21:21:45 <P64ProtocolBot>	[D] <Randall> I'm wondering if we'll see people using pinephone pros with keyboard attachments running as input devices for the steam deck
+Oct 26 21:35:08 <P64ProtocolBot>	[D] <eNos> Do we know the release window for Pinephone Pro Explorer Edition?
+Oct 26 21:44:26 <P64ProtocolBot>	[D] <Cyastis> Whenever half life 3 gets released
+Oct 26 21:46:18 <P64ProtocolBot>	[T] <dbcairyyywil> 
+Oct 26 21:49:44 <P64ProtocolBot>	[D] <eNos> Hmm, I don't remember subscribing to a cryptocurrency channel...
+Oct 26 22:27:09 <P64ProtocolBot>	[D] <ayayagames> Explorer edition is coming either in the next couple months this year or the start of next year
+Oct 26 23:13:20 <P64ProtocolBot>	[D] <eNos> I saw the Interview about the PPP, so hopefully Luke knew what he was saying when he claimed that Pine had gotten enough inventory to weather the chip shortage and that we don't end up with "where is the PS5" situation.
+Oct 27 02:50:07 <P64ProtocolBot>	[D] <ayayagames> Lmao the ps5
+Oct 27 02:50:26 <P64ProtocolBot>	[D] <ayayagames> nothing will be that bad again
+Oct 27 03:38:40 <P64ProtocolBot>	[T] <B͟͟͟͞͞͞l͟͟͟͞͞͞u͟͟͟͞͞͞e͟͟͟͞͞͞S͟͟͟͞͞͞t͟͟͟͞͞͞a͟͟͟͞͞͞r͟͟͟͞͞͞> Hi guys! I'm from Russia. Can I order PinePhone with delivery to Russia?
+Oct 27 03:41:00 <P64ProtocolBot>	[T] <B͟͟͟͞͞͞l͟͟͟͞͞͞u͟͟͟͞͞͞e͟͟͟͞͞͞S͟͟͟͞͞͞t͟͟͟͞͞͞a͟͟͟͞͞͞r͟͟͟͞͞͞> I didn't find anything on the site.
+Oct 27 10:51:55 <P64ProtocolBot>	[D] <JPenuchot> archlinux.org runs on an arch server btw 😛
+Oct 27 10:52:54 <P64ProtocolBot>	[D] <koala> yeahh anything rolling release on a server sketches me out though, i run proxmox and debian on mine
+Oct 27 10:54:49 <P64ProtocolBot>	[D] <JPenuchot> Nothing wrong as long as you don’t rely on software that breaks often. In my case it’s just a Minecraft server next to my couch
+Oct 27 11:15:54 <P64ProtocolBot>	[D] <Pal Infinite Plus> Introducing Pal Infinite Plus!
+Oct 27 11:39:54 <P64ProtocolBot>	[D] <koala> Fair enough, i run my DNS server, websites and stuff on it lol
+Oct 27 11:39:58 <P64ProtocolBot>	[D] <koala> so a bit more important
+Oct 27 11:46:58 <P64ProtocolBot>	[D] <romadr> Hello, I plan to use pine64 hardware to validate a new block-chain in a sustainable way with low power devices such as RP64 and coming soon Quartz64. I read  brand and logo guidelines https://wiki.pine64.org/wiki/PINE64_brand_and_logo and I was wondering whom to ask. Thanks for your answer.
+Oct 27 11:49:14 <P64ProtocolBot>	[D] <fireTwoOneNine> assuming it's non-commercial, i think that it's allowable as "software [that] is compatible with PINE64 hardware"
+Oct 27 12:01:34 <P64ProtocolBot>	[D] <Exaeta> As far as trademarks in the US, you can use the term "Pine64" as long as there is no "likelihood of confusion". E.g. you can say "Tested to work with Pine64" but not use Pine64 in the name of the project (generally speaking). The logo might be usable under fair use but it depends on the circumstances.
+Oct 27 12:03:36 <P64ProtocolBot>	[D] <Exaeta> For example, it's probably fair use to include the logo in a "compatible with" section, but not on a coffee mug as another example.
+Oct 27 12:13:02 <P64ProtocolBot>	[D] <Exaeta> You can contact info@pine64.org if you want to get permission first
+Oct 27 12:16:34 <P64ProtocolBot>	[D] <Exaeta> >>> Commercial use of the logo, logotype or brand name, as well as any derivatives or alterade logotypes, is not permitted without prior consent of Pine Store Ltd. This means that any software project, merchandise vendor or community endeavour that seeks to turn a financial profit based on the PINE64 brand name needs to first acquire appropriate consent from Pine Store Ltd.
+Oct 27 12:16:35 <P64ProtocolBot>	[D] <Exaeta> This is an interesting thing from their terms. As far as I know, US law doesn't allow companies to require pre-approval for trademark use. But it could be different depending on where you live.
+Oct 27 12:16:42 <P64ProtocolBot>	[D] <Exaeta> >>> Commercial use of the logo, logotype or brand name, as well as any derivatives or alterade logotypes, is not permitted without prior consent of Pine Store Ltd. This means that any software project, merchandise vendor or community endeavour that seeks to turn a financial profit based on the PINE64 brand name needs to first acquire appropriate consent from Pine Store Ltd.
+Oct 27 12:16:43 <P64ProtocolBot>	[D] <Exaeta> 
+Oct 27 12:16:44 <P64ProtocolBot>	[D] <Exaeta> 
+Oct 27 12:16:46 <P64ProtocolBot>	[D] <Exaeta> This is an interesting thing from their terms. As far as I know, US law doesn't allow companies to require pre-approval for trademark use. But it could be different depending on where you live.
+Oct 27 12:16:49 <P64ProtocolBot>	[D] <Exaeta> >>> Commercial use of the logo, logotype or brand name, as well as any derivatives or alterade logotypes, is not permitted without prior consent of Pine Store Ltd. This means that any software project, merchandise vendor or community endeavour that seeks to turn a financial profit based on the PINE64 brand name needs to first acquire appropriate consent from Pine Store Ltd.
+Oct 27 12:16:50 <P64ProtocolBot>	[D] <Exaeta> 
+Oct 27 12:16:51 <P64ProtocolBot>	[D] <Exaeta> <<<
+Oct 27 12:16:52 <P64ProtocolBot>	[D] <Exaeta> This is an interesting thing from their terms. As far as I know, US law doesn't allow companies to require pre-approval for trademark use. But it could be different depending on where you live.
+Oct 27 12:17:00 <P64ProtocolBot>	[D] <Exaeta> >>> Commercial use of the logo, logotype or brand name, as well as any derivatives or alterade logotypes, is not permitted without prior consent of Pine Store Ltd. This means that any software project, merchandise vendor or community endeavour that seeks to turn a financial profit based on the PINE64 brand name needs to first acquire appropriate consent from Pine Store Ltd.
+Oct 27 12:17:01 <P64ProtocolBot>	[D] <Exaeta> 
+Oct 27 12:17:03 <P64ProtocolBot>	[D] <Exaeta> <<<
+Oct 27 12:17:04 <P64ProtocolBot>	[D] <Exaeta>  This is an interesting thing from their terms. As far as I know, US law doesn't allow companies to require pre-approval for trademark use. But it could be different depending on where you live.
+Oct 27 12:17:14 <P64ProtocolBot>	[D] <Exaeta> >>> Commercial use of the logo, logotype or brand name, as well as any derivatives or alterade logotypes, is not permitted without prior consent of Pine Store Ltd. This means that any software project, merchandise vendor or community endeavour that seeks to turn a financial profit based on the PINE64 brand name needs to first acquire appropriate consent from Pine Store Ltd.
+Oct 27 12:17:16 <P64ProtocolBot>	[D] <Exaeta> 
+Oct 27 12:17:17 <P64ProtocolBot>	[D] <Exaeta> <<<
+Oct 27 12:17:18 <P64ProtocolBot>	[D] <Exaeta>  This is an interesting thing from their terms. As far as I know, US law doesn't allow companies to require pre-approval for trademark use. But it could be different depending on where you live.
+Oct 27 12:17:24 <P64ProtocolBot>	[D] <Exaeta> >>> Commercial use of the logo, logotype or brand name, as well as any derivatives or alterade logotypes, is not permitted without prior consent of Pine Store Ltd. This means that any software project, merchandise vendor or community endeavour that seeks to turn a financial profit based on the PINE64 brand name needs to first acquire appropriate consent from Pine Store Ltd.
+Oct 27 12:17:25 <P64ProtocolBot>	[D] <Exaeta> >>>
+Oct 27 12:17:26 <P64ProtocolBot>	[D] <Exaeta> 
+Oct 27 12:17:27 <P64ProtocolBot>	[D] <Exaeta>  This is an interesting thing from their terms. As far as I know, US law doesn't allow companies to require pre-approval for trademark use. But it could be different depending on where you live.
+Oct 27 12:17:36 <P64ProtocolBot>	[D] <Exaeta> >>> Commercial use of the logo, logotype or brand name, as well as any derivatives or alterade logotypes, is not permitted without prior consent of Pine Store Ltd. This means that any software project, merchandise vendor or community endeavour that seeks to turn a financial profit based on the PINE64 brand name needs to first acquire appropriate consent from Pine Store Ltd.
+Oct 27 12:17:44 <P64ProtocolBot>	[D] <Exaeta> This is an interesting thing from their terms. As far as I know, US law doesn't allow companies to require pre-approval for trademark use. But it could be different depending on where you live.
+Oct 27 12:19:57 <P64ProtocolBot>	[D] <33YN2> They are not based in the US.
+Oct 27 12:21:23 <P64ProtocolBot>	[D] <Exaeta> I would be surprised if EU law is significantly different.
+Oct 27 13:22:43 <P64ProtocolBot>	[D] <Exaeta> What do you mean? If you make software you can e.g.
+Oct 27 13:23:18 <P64ProtocolBot>	[D] <Exaeta> put 'Compatible with Windows 10' without asking microsoft's permission
+Oct 27 13:23:23 <P64ProtocolBot>	[D] <Exaeta> on the box
+Oct 27 13:24:54 <P64ProtocolBot>	[D] <Exaeta> I don't know about "allowed classes" of trademark use, that's not what my country uses.
+Oct 27 13:25:20 <P64ProtocolBot>	[D] <Exaeta> In my country, it's based on "likelihood of confusion".
+Oct 27 13:26:53 <P64ProtocolBot>	[D] <Exaeta> Well yes, there is case law for stuff like referencing a product. Which is allowed.
+Oct 27 13:30:57 <P64ProtocolBot>	[D] <Exaeta> >>>  an alleged infringer may assert the defenses of fair use and collateral use.  Fair use allows commentary or criticism that incidentally involves the use of a trademark so long as such use is for a purpose other than that normally made of a trademark.
+Oct 27 13:31:06 <P64ProtocolBot>	[D] <Exaeta> https://www.law.cornell.edu/wex/trademark_infringement
+Oct 27 13:31:16 <P64ProtocolBot>	[D] <Exaeta> Very brief overview here
+Oct 27 13:33:00 <P64ProtocolBot>	[T] <Panuozzo77> Hey guys, is there any other thing similar to the Pinebook Pro?
+Oct 27 13:33:02 <P64ProtocolBot>	[T] <Panuozzo77> I mean, a laptop with Arm64 + Linux and not Android
+Oct 27 13:33:25 <P64ProtocolBot>	[D] <Funeral> Just ask and you're good to go, I don't know why this has to be discussed. The rules were written because of 1-2 people severely misbehaving, while everyone else does not. 😄
+Oct 27 13:34:02 <P64ProtocolBot>	[D] <Funeral> Panuozzo77: that maybe fits better in the offtopic channel
+Oct 27 13:34:28 <P64ProtocolBot>	[T] <Panuozzo77> Hi guys
+Oct 27 13:35:07 <P64ProtocolBot>	[T] <Panuozzo77> Where can I find it? (re @p64protocolbot: [D] <Funeral> Panuozzo77: that maybe fits better in the offtopic channel)
+Oct 27 13:36:17 <P64ProtocolBot>	[T] <Panuozzo77> Where can I find it?
+Oct 27 13:36:17 <P64ProtocolBot>	[T] <Panuozzo77> Edit: found (re @p64protocolbot: [D] <Funeral> Panuozzo77: that maybe fits better in the offtopic channel)
+Oct 27 13:36:30 <P64ProtocolBot>	[D] <Funeral> https://t.me/pine64offtopic
+Oct 27 13:45:31 <P64ProtocolBot>	[D] <Exaeta> we have a channel for offtopic in discord
+Oct 27 13:45:37 <P64ProtocolBot>	[D] <Exaeta> is it not connected?
+Oct 27 13:46:08 <P64ProtocolBot>	[D] <Exaeta> not sure how telegram works
+Oct 27 14:12:14 <P64ProtocolBot>	[D] <Exaeta> I have a question, why does pine use SD cards when SD is a proprietary format?
+Oct 27 14:12:52 <P64ProtocolBot>	[D] <Exaeta> Shouldn't we use an open format?
+Oct 27 14:13:14 <P64ProtocolBot>	[D] <Exaeta> Like, assuming Pine wants to support open source
+Oct 27 14:14:18 <P64ProtocolBot>	[T] <UniversalSuperBox> Do you have an example
+Oct 27 14:15:40 <P64ProtocolBot>	[T] <UniversalSuperBox> Especially one that would be supported by the hardware the Pine64 uses
+Oct 27 14:16:07 <P64ProtocolBot>	[T] <UniversalSuperBox> Sometimes the truly open solution is not the best, nor is it at all reasonable.
+Oct 27 14:17:11 <P64ProtocolBot>	[T] <UniversalSuperBox> And a "but not *everything* you use is open" litmus test will only mean that you get to throw away all your computers and stare out the window for the rest of your life
+Oct 27 14:17:17 <P64ProtocolBot>	[M] <Strit> What would be an open alternative to the SD card?
+Oct 27 14:17:42 <P64ProtocolBot>	[M] <Strit> Taking what the SoC's can boot into account.
+Oct 27 14:42:27 <P64ProtocolBot>	[D] <Crafty> SD has a slower spi mode that's open
+Oct 27 14:43:38 <P64ProtocolBot>	[D] <Crafty> although who cares because absolutely no interfaces are open anyway
+Oct 27 14:44:07 <P64ProtocolBot>	[D] <Crafty> although who cares because almost no interfaces are open anyway
+Oct 27 15:43:35 <P64ProtocolBot>	[T] <Ajay> Hi
+Oct 27 16:54:47 <P64ProtocolBot>	[T] <ickcioatgv4> 
+Oct 27 18:30:33 <P64ProtocolBot>	[T] <Edwin Cook> Forwarded from unknown: I'm here to show appreciation🥰 to the manager who took me out from debt of over $6,000 I want to tell everyone please join this profitable platform 👇👇👇
+Oct 27 18:30:35 <P64ProtocolBot>	[T] <Edwin Cook> https://t.me/joinchat/C31Er4YBS6Y5YWFk
+Oct 27 18:38:06 <P64ProtocolBot>	[T] <Jayden Mathews> Forwarded from unknown: 𝙄𝙩 𝙖𝙡𝙡 𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙬𝙞𝙩𝙝 𝙖 𝙬𝙤𝙧𝙙 𝙩𝙤 𝙩𝙧𝙮 𝙨𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙣𝙚𝙬  𝙛𝙞𝙧𝙨𝙩 𝙥𝙖𝙮𝙢𝙚𝙣𝙩 𝙘𝙤𝙢𝙚 𝙖𝙛𝙩𝙚𝙧 5𝙙𝙖𝙮𝙨 𝙬𝙝𝙚𝙣 𝙄 𝙞𝙣𝙫𝙚𝙨𝙩𝙚𝙙 $3,000 𝙖𝙣𝙙 𝙨𝙞𝙣𝙘𝙚 𝙩𝙝𝙚𝙣 𝙄 
+Oct 27 18:38:07 <P64ProtocolBot>	[T] <Jayden Mathews> https://t.me/joinchat/C31Er4YBS6Y5YWFk
+Oct 27 18:44:03 <P64ProtocolBot>	[D] <fireTwoOneNine> something might have to
+Oct 27 19:02:05 <P64ProtocolBot>	[D] <fireTwoOneNine> no rush, i haven't had time to do anything with it
+Oct 27 19:04:24 <P64ProtocolBot>	[D] <fireTwoOneNine> if you want that's fine, but my hexchat has been logging for months 😉
+Oct 27 19:07:08 <P64ProtocolBot>	[D] <fireTwoOneNine> nope, this one has the most by far
+Oct 27 19:08:47 <P64ProtocolBot>	[D] <fireTwoOneNine> i probably ought to mention though that a telegram captcha bot is probably more effective (and easier) than the spam classifier
+Oct 27 19:09:00 <P64ProtocolBot>	[D] <fireTwoOneNine> preventive rather than reactive, and means the spam doesn't get to IRC 😉
+Oct 27 19:09:06 <P64ProtocolBot>	[D] <fireTwoOneNine> yes
+Oct 27 19:09:22 <P64ProtocolBot>	[D] <fireTwoOneNine> i tried to start one up a few days ago but ran into technical issues
+Oct 27 19:10:16 <P64ProtocolBot>	[D] <fireTwoOneNine> technically yes, but bots could still find the invites
+Oct 27 19:10:37 <P64ProtocolBot>	[D] <fireTwoOneNine> we're beyond the point of obscurity being effective
+Oct 27 19:11:26 <P64ProtocolBot>	[D] <fireTwoOneNine> standard telegram background noise for groups of our sizes, afaik
+Oct 27 19:11:40 <P64ProtocolBot>	[D] <fireTwoOneNine> would be nice if the telegram devs could fix their own shit, but ya know 🙂
+Oct 27 19:13:34 <P64ProtocolBot>	[T] <UniversalSuperBox> You'll never get rid of all of the spam on Telegram. But a captcha bot can get rid of a very good portion of it.
+Oct 27 19:13:36 <P64ProtocolBot>	[D] <fireTwoOneNine> a bit of column A, a bit of column B. but from what i've read, most of the bots are programmed very lazily
+Oct 27 19:13:53 <P64ProtocolBot>	[D] <fireTwoOneNine> the spam bots i mean
+Oct 27 19:14:04 <P64ProtocolBot>	[T] <UniversalSuperBox> Much like you still get a bit of noise in your gmail inbox, even though the scale is way different.
+Oct 27 19:15:02 <P64ProtocolBot>	[T] <UniversalSuperBox> congratulations
+Oct 27 19:15:48 <P64ProtocolBot>	[D] <fireTwoOneNine> the end goal probably will be to have a captcha bot to handle most of the spam, and the classifier bot to clean up the rest
+Oct 27 19:17:09 <P64ProtocolBot>	[D] <fireTwoOneNine> we'd already have the captcha bot, if mongodb actually built for arm64 (outside of niche cases)
+Oct 27 19:17:42 <P64ProtocolBot>	[D] <fireTwoOneNine> so i need to go looking for a different bot (because i really don't want to custom compile that for a production server)
+Oct 27 19:59:51 <P64ProtocolBot>	[T] <beingviking> Hi! I’m living in Korea. If I buy a pinephone ($149.99) now, Would it dispatch late november? I hope I haven’t been too late.
+Oct 27 20:07:23 <P64ProtocolBot>	[D] <fireTwoOneNine> that's a decent estimate
+Oct 27 20:11:39 <P64ProtocolBot>	[T] <clziianzgg> 
+Oct 27 20:39:13 <P64ProtocolBot>	[M] <fdgfyjncch> Hi, when will the pine note be released to the public?
+Oct 27 21:32:26 <P64ProtocolBot>	[D] <fireTwoOneNine> got it
+Oct 27 22:59:27 <P64ProtocolBot>	[T] <xdfvfi6> 
+Oct 27 23:03:20 <P64ProtocolBot>	[D] <Cyastis> @Moderator spam
+Oct 27 23:03:27 <P64ProtocolBot>	[D] <Segfault> thanks
+Oct 28 03:19:49 <P64ProtocolBot>	[T] <lkragvzruyk7> 
+Oct 28 03:21:30 <P64ProtocolBot>	[D] <thanos the they/them engine> @Moderator spam
+Oct 28 03:29:23 <P64ProtocolBot>	[T] <Oscar> .. .-.. .. -.- .   ... .--. .- --  .... .. .... .. -.. .   .--. .- ...-- -.. .... ....  --... ...--  ...-.- (re @p64protocolbot: [I] <kj7rrv> @Moderator ... .--. .- --)
+Oct 28 12:04:44 <P64ProtocolBot>	[T] <Luaranc> If you have Bitcoin Wallet chat me for investment
+Oct 28 12:04:45 <P64ProtocolBot>	[T] <Luaranc> $50 profit $550
+Oct 28 12:04:46 <P64ProtocolBot>	[T] <Luaranc> $100 profit $1500
+Oct 28 12:04:47 <P64ProtocolBot>	[T] <Luaranc> $200 profit $2500
+Oct 28 12:04:49 <P64ProtocolBot>	[T] <Luaranc> $300 profit $3500
+Oct 28 12:04:50 <P64ProtocolBot>	[T] <Luaranc> $400 profit $4500
+Oct 28 12:04:51 <P64ProtocolBot>	[T] <Luaranc> $500 profit $5500
+Oct 28 12:04:53 <P64ProtocolBot>	[T] <Luaranc> $600 profit $6600
+Oct 28 12:04:54 <P64ProtocolBot>	[T] <Luaranc> $700 profit $7700
+Oct 28 12:04:55 <P64ProtocolBot>	[T] <Luaranc> PROFIT IN 24 HOURS
+Oct 28 12:04:56 <P64ProtocolBot>	[T] <Luaranc> No hidden charges 
+Oct 28 12:04:58 <P64ProtocolBot>	[T] <Luaranc>   You can make money online without depending on your salary..Do you have  a PC or a phone... Try this and gain financial freedom...click on the link below👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+Oct 28 12:04:59 <P64ProtocolBot>	[T] <Luaranc> @diannabrooks1
+Oct 28 12:05:00 <P64ProtocolBot>	[T] <Luaranc> @diannabrooks1
+Oct 28 12:22:14 <P64ProtocolBot>	[D] <soft> seeing all this pine stuff has sort of inspired me to maybe make my own stuff
+Oct 28 12:24:18 <P64ProtocolBot>	[D] <soft> im an electrical engineer so i do some projects
+Oct 28 12:25:21 <P64ProtocolBot>	[D] <soft> or not these sort of "smart devices" or however you should describe it
+Oct 28 12:35:16 <P64ProtocolBot>	[D] <thanos the they/them engine> pick up a few nutcracker boards then
+Oct 28 12:49:26 <P64ProtocolBot>	[D] <fireTwoOneNine> there's nothing special about our websites' source code. the main site and store are wordpress, the forum is mybb, and the wiki is mediawiki
+Oct 28 12:49:35 <P64ProtocolBot>	[D] <fireTwoOneNine> all of those are already open source 🙂
+Oct 28 14:39:59 <P64ProtocolBot>	[T] <tripLr> Is there a link to the video ?
+Oct 28 14:59:42 <P64ProtocolBot>	[D] <Funeral> tripLr: which video are you referring to? I think there is some context missing
+Oct 28 16:15:45 <P64ProtocolBot>	[D] <CodingPanic> I think I’m going to have a pinebook pro, pinephone, and serial cable for sale…
+Oct 28 16:16:07 <P64ProtocolBot>	[D] <CodingPanic> I love my pine power and pinecil, but Havnt quite adjusted to these two
+Oct 28 16:16:17 <P64ProtocolBot>	[D] <CodingPanic> Plus, looking to find a pinenote
+Oct 28 18:28:08 <P64ProtocolBot>	[T] <cooncat44> Lol
+Oct 28 20:39:49 <P64ProtocolBot>	[D] <Exaeta> Any suggestions for discord client for pinephone?
+Oct 28 21:16:05 <P64ProtocolBot>	[D] <ayayagames> there are a few but i forgot
+Oct 28 21:16:16 <P64ProtocolBot>	[D] <ayayagames> and you have to use your token lol
+Oct 28 21:16:30 <P64ProtocolBot>	[D] <ayayagames> and they will ban you if found out lmao
+Oct 28 21:16:48 <P64ProtocolBot>	[D] <Segfault> There was cchat-gtk but I don't think it's being particularly actively developed
+Oct 28 21:16:52 <P64ProtocolBot>	[D] <Segfault> Also yeah custom clients are against TOS
+Oct 28 21:17:19 <P64ProtocolBot>	[D] <Crafty> the discord client is just a bunch of JS, has nobody gotten it working on ARM?
+Oct 28 21:17:37 <P64ProtocolBot>	[D] <Crafty> also, i think you could run the android version in anbox or something
+Oct 28 21:17:59 <P64ProtocolBot>	[D] <ayayagames> browser works lol
+Oct 28 21:18:13 <P64ProtocolBot>	[D] <ayayagames> anbox is ass lol
+Oct 28 21:18:53 <P64ProtocolBot>	[D] <Crafty> they collect a *lot* of analytics
+Oct 28 21:19:04 <P64ProtocolBot>	[D] <Crafty> under the /science url
+Oct 28 21:19:10 <P64ProtocolBot>	[D] <Segfault> Anbox runs really slowly, the official client has some proprietary files in it that I guess nobody has managed to decompile?
+Oct 28 21:19:13 <P64ProtocolBot>	[D] <Crafty> also they dont like the automation of user accounts
+Oct 28 21:19:15 <P64ProtocolBot>	[D] <ayayagames> waydroid is better from what i hear but i hate IOS and android even thoughi used an iphone 5 till the PP camne out amd have daily drove the pinephone for 2 years now
+Oct 28 21:19:29 <P64ProtocolBot>	[D] <Segfault> Someone made an open source electron wrapper for the website that I've heard works decently but eh
+Oct 28 21:19:51 <P64ProtocolBot>	[D] <Crafty> the official desktop client just loads the website anyway lmao
+Oct 28 21:20:03 <P64ProtocolBot>	[D] <Segfault> It does some other special things as well
+Oct 28 21:20:36 <P64ProtocolBot>	[D] <Crafty> yeah, for stuff like video streaming and detecting background button presses for push to talk
+Oct 28 21:21:26 <P64ProtocolBot>	[D] <Crafty> hey lads, anyone know when the allwinner t723 will be released
+Oct 28 21:21:45 <P64ProtocolBot>	[D] <Crafty> it's supposed to be basically the same as the rk3566
+Oct 28 21:23:03 <P64ProtocolBot>	[D] <Segfault> I can't find much info on it
+Oct 28 21:23:37 <P64ProtocolBot>	[D] <Crafty> it's supposedly coming out in 2021
+Oct 28 21:23:41 <P64ProtocolBot>	[D] <Crafty> but it's 2021 now
+Oct 28 21:24:05 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903469206664794152/Allwinner-2021-2022-roadmap.png
+Oct 28 21:24:45 <P64ProtocolBot>	[D] <Electr0Lyte> Amlogic beat them to it
+Oct 28 21:25:07 <P64ProtocolBot>	[D] <Crafty> yeah with the s905d3 / d4 but those dont work in mobile devices
+Oct 28 21:26:52 <P64ProtocolBot>	[D] <Crafty> huh, someone's got it working
+Oct 28 21:26:53 <P64ProtocolBot>	[D] <Crafty> https://www.cnx-software.com/2021/09/01/powkiddy-a20-an-amlogic-s905d3-powered-portable-android-game-console/
+Oct 28 21:27:04 <P64ProtocolBot>	[D] <Segfault> That sure is a name lmao
+Oct 28 21:27:26 <P64ProtocolBot>	[D] <Crafty> well if powkiddy managed to make it battery powered, i bet i could too
+Oct 28 21:28:55 <P64ProtocolBot>	[D] <Crafty> ive even got the footprint all punched in and everything
+Oct 28 21:28:55 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903470423331708948/unknown.png
+Oct 28 21:29:02 <P64ProtocolBot>	[D] <Crafty> this was a massive pain in the ass
+Oct 28 21:29:39 <P64ProtocolBot>	[D] <Crafty> should probably upload this somewhere too in case anyone ever wants it
+Oct 28 21:29:40 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903470611798581338/rk3566.kicad_mod
+Oct 28 21:31:50 <P64ProtocolBot>	[D] <Crafty> also these libraries
+Oct 28 21:31:50 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903471158815494154/rk817.lib
+Oct 28 21:31:51 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903471160736501810/rk3566.lib
+Oct 28 21:34:27 <P64ProtocolBot>	[D] <Crafty> and this why not, it's the amlogic footprint
+Oct 28 21:34:28 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903471820257243156/BGA-454_46x52_14.3x16.1mm.kicad_mod
+Oct 28 23:10:20 <P64ProtocolBot>	[T] <gtdlqtdo5slo> 
+Oct 29 01:22:31 <P64ProtocolBot>	[D] <rges> Hi, what bot is powering Pine64 Protocol Droid? Is it open source?
+Oct 29 01:24:55 <P64ProtocolBot>	[D] <Segfault> iirc it's matterbridge
+Oct 29 01:26:04 <P64ProtocolBot>	[D] <rges> Sounds likely indeed, thanks!
+Oct 29 03:31:07 <P64ProtocolBot>	[T] <Manuel> [D] Where would I get a rainproof case? (re @p64protocolbot: [I] <Arnavion> I'm planning to get a rain-proof case anyway)
+Oct 29 11:51:29 <P64ProtocolBot>	[D] <notLillie> Vincent lives at many houses, he is just really fast
+Oct 29 11:51:36 <P64ProtocolBot>	[D] <notLillie> @ventYl
+Oct 29 12:06:28 <P64ProtocolBot>	[T] <Robbie Hutchison> Forwarded from unknown: I’m still smiling! been so beneficial trying someone new. The step taken couldn’t be much. So glad i made $10k with
+Oct 29 12:06:28 <P64ProtocolBot>	[T] <Robbie Hutchison> 👇👇👇👇👇👇
+Oct 29 12:06:29 <P64ProtocolBot>	[T] <Robbie Hutchison> https://t.me/joinchat/0kGAHtqDkMZjMjM0
+Oct 29 12:08:59 <P64ProtocolBot>	[D] <Funeral> nice @GAMELASTER
+Oct 29 12:13:14 <P64ProtocolBot>	[D] <gamiee> ?
+Oct 29 12:13:26 <P64ProtocolBot>	[D] <Funeral> Nice cat pic
+Oct 29 12:13:37 <P64ProtocolBot>	[D] <Funeral> We want them on a regular basis 😄
+Oct 29 12:16:25 <P64ProtocolBot>	[D] <gamiee> aah xD
+Oct 29 13:48:23 <P64ProtocolBot>	[D] <ayayagames> @Moderator spam
+Oct 29 13:59:45 <P64ProtocolBot>	[D] <Crafty> hey the announcement thing has a typo, this says "hosteboards"
+Oct 29 13:59:46 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903719772728987688/updatefollowup_1.png
+Oct 29 13:59:57 <P64ProtocolBot>	[D] <Crafty> hey the announcement thing has a typo, this says "hosteboards" instead of "hostboards"
+Oct 29 13:59:57 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903719772728987688/updatefollowup_1.png
+Oct 29 14:00:50 <P64ProtocolBot>	[D] <kman> I cannot keep refreshing Pine64 twitter every day to get updates on the Keyboard. It has been like this for almost 50 days
+Oct 29 14:01:13 <P64ProtocolBot>	[D] <kman> Can you please DM me so i can place a pre order so they dont run out when i try to order
+Oct 29 14:01:36 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> They'll announce in here when you can order them
+Oct 29 14:03:20 <P64ProtocolBot>	[D] <lukasz> @Crafty gah ok, nothing to be done now 😛
+Oct 29 14:06:36 <P64ProtocolBot>	[D] <kman> Okay. And if anyone from the site has a salvaged PBP small side board i would appreciate adding it to the store. My USB ports have been broken for a while on one side of the laptop
+Oct 29 14:07:27 <P64ProtocolBot>	[D] <kman> I know the PBP isnt in production but this is something that seems really basic and there’s probably some nuked boards in the shop that have working spare parts  that could be added to the store
+Oct 29 14:09:45 <P64ProtocolBot>	[D] <lukasz> @Crafty fixed, not sure if it will propagate across platforms or not
+Oct 29 14:10:12 <P64ProtocolBot>	[D] <Crafty> damn that was fast
+Oct 29 15:37:10 <P64ProtocolBot>	[D] <Crafty> fellas, i've finished inputting all the amlogic soc stuff into kicad
+Oct 29 15:37:24 <P64ProtocolBot>	[D] <Crafty> https://cdn.discordapp.com/attachments/463285150898192384/903744344492752946/s905-s922-a311.lib
+Oct 29 18:48:25 <P64ProtocolBot>	[D] <donpdonp> Seeing the Pinecil on Adrian's Digital Basement was a kick.
+Oct 29 19:03:55 <P64ProtocolBot>	[D] <Crafty> hey lads, anyone know where i can buy an s905d3 chip
+Oct 29 19:04:17 <P64ProtocolBot>	[D] <Crafty> i can find the s922x and a311d but i want the lower power one
+Oct 29 19:04:44 <P64ProtocolBot>	[D] <Kenjiii> Have you checked the usual mouser, digikey, and other websites like that?
+Oct 29 19:05:00 <P64ProtocolBot>	[D] <Crafty> that and aliexpress
+Oct 29 20:04:59 <P64ProtocolBot>	[D] <Segfault> dormito: that info about only being able to have one set of cores active at a time is from nearly a decade ago when Linux/Android didn't have proper support for that kind of thing :)
+Oct 29 20:10:29 <P64ProtocolBot>	[D] <Segfault> Scroll down and have a read of the heterogeneous multi-processing section
+Oct 29 20:41:30 <P64ProtocolBot>	[D] <jm03> wait
+Oct 29 20:41:32 <P64ProtocolBot>	[D] <jm03> what
+Oct 29 20:41:37 <P64ProtocolBot>	[D] <jm03> **did you make the board?!**
+Oct 29 20:41:46 <P64ProtocolBot>	[D] <Crafty> no i just want to buy the chip first
+Oct 29 20:42:11 <P64ProtocolBot>	[D] <Electr0Lyte> #offtopic :)
+Oct 29 22:40:17 <P64ProtocolBot>	[D] <kman> Lion scared
+Oct 29 23:00:57 <P64ProtocolBot>	[T] <pjk2012> Hi. Trying to edit a conf file in Pinephone BE (plasma), but using nano, the Ctrl-O function isn't working on the keyboard.
+Oct 29 23:29:44 <P64ProtocolBot>	[D] <Topik> I'm digging the new server icon ngl
+Oct 29 23:29:47 <P64ProtocolBot>	[D] <Topik> Good work
+Oct 29 23:29:53 <P64ProtocolBot>	[T] <Sky> Forwarded from unknown: Hurry 🇺🇸🇺🇸🤩🤩 
+Oct 29 23:29:54 <P64ProtocolBot>	[T] <Sky> Congratulations to everyone who benefited from this company.  Believe it or live it! 
+Oct 29 23:29:55 <P64ProtocolBot>	[T] <Sky> Registration fee:$0:00
+Oct 29 23:29:57 <P64ProtocolBot>	[T] <Sky> Registration bonus:$30
+Oct 29 23:29:58 <P64ProtocolBot>	[T] <Sky> Daily earning :$1000
+Oct 29 23:29:59 <P64ProtocolBot>	[T] <Sky> Weeky earning $7500
+Oct 29 23:30:00 <P64ProtocolBot>	[T] <Sky> Monthly:$15,000
+Oct 29 23:30:02 <P64ProtocolBot>	[T] <Sky> Instant cash out 
+Oct 29 23:30:03 <P64ProtocolBot>	[T] <Sky> Ask me how
+Oct 29 23:30:04 <P64ProtocolBot>	[T] <Sky> Join channel 
+Oct 29 23:30:06 <P64ProtocolBot>	[T] <Sky> Believe it or leave it! 
+Oct 29 23:30:07 <P64ProtocolBot>	[T] <Sky> You stay at home and make $1400 daily and receive $8500 weekly 
+Oct 29 23:30:08 <P64ProtocolBot>	[T] <Sky> ask me how?👇👇👇👇@Crypto_Singax9
+Oct 29 23:43:03 <P64ProtocolBot>	[T] <Evelyn Fernandez> Forwarded from unknown: This is the biggest opportunity I had in making huge amount of money from the comfort of my home, continue the racks like never before I invested £1000 with his company and I make huge profit of £10,500 in just 48hours of trade. Thank you sir for your good works and also been honest. Reach out to him via the link below to earn massively.
+Oct 29 23:43:04 <P64ProtocolBot>	[T] <Evelyn Fernandez>                  🔽🔽🔽🔽
+Oct 29 23:43:06 <P64ProtocolBot>	[T] <Evelyn Fernandez> https://t.me/joinchat/NOeJDDBMA5UxMmZk
+Oct 30 00:41:23 <P64ProtocolBot>	[D] <ArMor> Oh, hi mark
+Oct 30 00:41:32 <P64ProtocolBot>	[D] <ArMor> Strange to see you here
+Oct 30 00:41:53 <P64ProtocolBot>	[D] <Crafty> oh neat you're in this server too
+Oct 30 00:50:46 <P64ProtocolBot>	[D] <Segfault> I don't think so
+Oct 30 00:51:09 <P64ProtocolBot>	[D] <Segfault> Maybe have a look at the radxa zero or the banana pi m2 zero
+Oct 30 00:51:41 <P64ProtocolBot>	[D] <pnill> Is the rockpro64 just like not supported very much? Some of the wiki info seems like it might be outdated the android builds 'boot' at best and I had something I wanted to use it for with an android application and I guess I didn't do enough research before picking one up lol.
+Oct 30 00:52:20 <P64ProtocolBot>	[D] <Segfault> It should be able to run a regular mainline kernel
+Oct 30 00:52:44 <P64ProtocolBot>	[D] <pnill> @Segfault like roll a version of android with mainline kernel or?
+Oct 30 00:53:02 <P64ProtocolBot>	[D] <Segfault> In theory most linux distros should "just work" as long as they have an ARM image
+Oct 30 00:53:27 <P64ProtocolBot>	[D] <pnill> yeah my main gripe is dual display port (DP over USB-C+HDMI) at the same time
+Oct 30 00:53:35 <P64ProtocolBot>	[D] <pnill> yeah my main gripe is dual display support (DP over USB-C+HDMI) at the same time
+Oct 30 00:53:43 <P64ProtocolBot>	[D] <Segfault> Yeah that's gonna need a custom kernel
+Oct 30 00:53:48 <P64ProtocolBot>	[D] <pnill> Like 7.1->8.0->9.0 though...
+Oct 30 00:53:50 <P64ProtocolBot>	[D] <Segfault> Hell even with a custom kernel that barely works at the moment
+Oct 30 00:54:02 <P64ProtocolBot>	[D] <pnill> 7.1 worked great, ran great it felt good.
+Oct 30 00:54:06 <P64ProtocolBot>	[D] <pnill> no dual display.
+Oct 30 00:54:10 <P64ProtocolBot>	[D] <pnill> 8.0 was slow as garbage.
+Oct 30 00:54:21 <P64ProtocolBot>	[D] <Segfault> Pine devices generally don't get very good android support unfortunately, I don't think much of the community is particularly interested in it outside of verifying that the hardware works
+Oct 30 00:54:27 <P64ProtocolBot>	[D] <pnill> 9.0 ran but was flashing the screen non-stop, was able to drive DP and HDMI at the same time but mirrored image
+Oct 30 00:54:28 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 00:54:33 <P64ProtocolBot>	[D] <pnill> I see
+Oct 30 00:54:42 <P64ProtocolBot>	[D] <pnill> Even the pinephone? lol
+Oct 30 00:54:55 <P64ProtocolBot>	[D] <Segfault> There were some efforts for android on the pinephone but I haven't heard anything about them lately
+Oct 30 00:55:13 <P64ProtocolBot>	[D] <Segfault> Heh
+Oct 30 00:55:34 <P64ProtocolBot>	[D] <pnill> I guess I'll look into rolling my own android support if I continue going down this path.
+Oct 30 00:55:52 <P64ProtocolBot>	[D] <pnill> despite dsimic's disagreement
+Oct 30 00:57:13 <P64ProtocolBot>	[D] <pnill> When you have software that you want to run and don't 'own' /didn't write yourself or have source to that are only compatible with android other than antbox I don't see much choice.
+Oct 30 01:00:31 <P64ProtocolBot>	[D] <pnill> Because I need exposed GPIO with at minimum two UART interfaces available, and dual display support.
+Oct 30 01:00:59 <P64ProtocolBot>	[D] <pnill> and I don't want to rely on software UART over GPIO or bitbanging either.
+Oct 30 01:01:46 <P64ProtocolBot>	[D] <pnill> I'm trying to come up with a drop in replacement for another board that's less powerful and runs android/some android applications on it
+Oct 30 01:01:57 <P64ProtocolBot>	[D] <pnill> in order to allow those applications to run at higher resolutions on one of the displays without lagging.
+Oct 30 01:02:36 <P64ProtocolBot>	[D] <pnill> Current board utilizes an H6 clocking the cortex cores at 1.8ghz
+Oct 30 01:02:56 <P64ProtocolBot>	[D] <Segfault> Ah yes the forgotten H6 :P
+Oct 30 01:02:59 <P64ProtocolBot>	[D] <pnill> So I figured the RK3399 might do nicely.
+Oct 30 01:03:11 <P64ProtocolBot>	[D] <pnill> The original board also only has 1gb of RAM.
+Oct 30 01:03:22 <P64ProtocolBot>	[D] <pnill> so the RAM upgrade was just a an addition to that and the poor performance.
+Oct 30 01:03:45 <P64ProtocolBot>	[D] <pnill> The idea was to fab a PCB adapter to breakout the GPIO into the connectors supported by the original device so it was literally a drop in replacement.
+Oct 30 01:04:28 <P64ProtocolBot>	[D] <pnill> but alas without proper android and dual display not gonna have a ton of luck.
+Oct 30 01:04:39 <P64ProtocolBot>	[D] <Segfault> I'm sure I'd get crucified for suggesting it but the RPI 4 could potentially also do the job, not sure if it's got a decent Android image available or not
+Oct 30 01:04:42 <P64ProtocolBot>	[D] <pnill> I've got a few boards, this was just the first to arrive out of the few I'm looking at.
+Oct 30 01:04:57 <P64ProtocolBot>	[D] <pnill> Nah, there's an unofficial port of lineage OS for it afaik
+Oct 30 01:05:00 <P64ProtocolBot>	[D] <pnill> and it doesn't work well
+Oct 30 01:05:03 <P64ProtocolBot>	[D] <pnill> worse than this infact.
+Oct 30 01:05:06 <P64ProtocolBot>	[D] <Segfault> :/
+Oct 30 01:05:07 <P64ProtocolBot>	[D] <Crafty> does the vim3 have android?
+Oct 30 01:05:30 <P64ProtocolBot>	[D] <Crafty> could be an option
+Oct 30 01:05:48 <P64ProtocolBot>	[D] <Segfault> Does it do video over USB-C?
+Oct 30 01:05:54 <P64ProtocolBot>	[D] <Segfault> It only seems to have a single HDMI port
+Oct 30 01:06:19 <P64ProtocolBot>	[D] <Segfault> Oh wait it has MIPI-DSI, good luck getting that working though
+Oct 30 01:06:55 <P64ProtocolBot>	[D] <pnill> haha
+Oct 30 01:07:14 <P64ProtocolBot>	[D] <pnill> I mean, initially I was crazy enough to think I'd find a board with LVDS on it...
+Oct 30 01:07:30 <P64ProtocolBot>	[D] <Segfault> Well the rockpro has eDP
+Oct 30 01:08:05 <P64ProtocolBot>	[D] <Segfault> I'm not entirely sure how you'd *use* it, in Linux it's probably just a dts edit, in Android... ¯\_(ツ)_/¯
+Oct 30 01:08:13 <P64ProtocolBot>	[D] <Crafty> edp is basically the same as dp
+Oct 30 01:08:55 <P64ProtocolBot>	[D] <pnill> Yea, I also wouldn't know how to go from eDP to LVDS (Only had luck finding adapters to do the opposite)
+Oct 30 01:09:36 <P64ProtocolBot>	[D] <Crafty> ah I know how to do that actually
+Oct 30 01:09:40 <P64ProtocolBot>	[D] <Crafty> ptn3460
+Oct 30 01:09:54 <P64ProtocolBot>	[D] <Segfault> Actually wow the rockpro has 4 display outputs, DSI, eDP, HDMI and USB-C
+Oct 30 01:09:56 <P64ProtocolBot>	[D] <Crafty> used one in my diy'd laptop
+Oct 30 01:10:00 <P64ProtocolBot>	[D] <Segfault> Can only do two at once though :(
+Oct 30 01:11:22 <P64ProtocolBot>	[D] <pnill> Would require making an adapter lol.... I don't know PCB design very well will be the first time trying to build such an adapter and that would complicate what I'd have to do heavily.
+Oct 30 01:11:43 <P64ProtocolBot>	[D] <pnill> I only need two at once lol 😦
+Oct 30 01:11:56 <P64ProtocolBot>	[D] <pnill> Does the armbian build support USB-C -> DP and HDMI at the same time?
+Oct 30 01:13:12 <P64ProtocolBot>	[D] <pnill> I don't know much about what would cause it not to work kernel wise, so I'm probably in over my head if I did go down the route of trying to add the support for it in android... but what actually causes it not to work? You mentioned custom kernel; I imagine drivers?
+Oct 30 01:14:44 <P64ProtocolBot>	[D] <Crafty> it's out of stock but this is what I have
+Oct 30 01:14:45 <P64ProtocolBot>	[D] <Crafty> https://www.aliexpress.com/item/32835211459.html?spm=a2g0s.9042311.0.0.27424c4d3IPJco
+Oct 30 01:14:59 <P64ProtocolBot>	[D] <Electr0Lyte> same dts but it has its own partition
+Oct 30 01:15:10 <P64ProtocolBot>	[D] <Electr0Lyte> dtbo i think ?
+Oct 30 01:15:57 <P64ProtocolBot>	[D] <Segfault> dtbos aren't really a thing outside of the rpi
+Oct 30 01:15:59 <P64ProtocolBot>	[D] <pnill> That listing title is so confusing lol, says it does the opposite shows on the board it doing what "we" would want, and then in the description says it the proper way.
+Oct 30 01:17:27 <P64ProtocolBot>	[D] <pnill> calling it a "driver board" looks like there's a good amount of listings though; https://www.aliexpress.com/item/1005001369234799.html
+Oct 30 01:18:45 <P64ProtocolBot>	[D] <Segfault> Also I'm not sure what cable you need for eDP on the rockpro
+Oct 30 01:19:39 <P64ProtocolBot>	[D] <Segfault> I don't even know if there's a standard for the mainboard side of eDP cables
+Oct 30 01:19:44 <P64ProtocolBot>	[D] <pnill> Well I still don't know if using eDP over the USB-C->DP would solve my problem of wanting two displays anyway.
+Oct 30 01:19:45 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 01:20:40 <P64ProtocolBot>	[D] <pnill> At this point what I wanted to do probably isn't worth the effort if I'm being honest, at least not based on the lack of performance increase I saw running the software on the rockpro
+Oct 30 01:20:45 <P64ProtocolBot>	[D] <Segfault> Getting an install with reliably working DP alt mode will need you to use the BSP kernel most likely
+Oct 30 01:20:59 <P64ProtocolBot>	[D] <pnill> Unless that was more related to the android drivers/support than it was the hardware itself.
+Oct 30 01:21:08 <P64ProtocolBot>	[D] <pnill> Another thing I'd noticed, 9.0 made my CPU fan not spin
+Oct 30 01:21:09 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 01:21:12 <P64ProtocolBot>	[D] <pnill> maybe bad DTS.
+Oct 30 01:22:24 <P64ProtocolBot>	[D] <pnill> I just thought maybe the rockpro64 wasn't well supported considering it doesn't seem like it's talked about much, and I assume rock64 is another board as far as channels in here.
+Oct 30 01:22:38 <P64ProtocolBot>	[D] <pnill> saw the #quartz64 was the 'newer' board but seems to have weaker hardware?
+Oct 30 01:22:43 <P64ProtocolBot>	[D] <pnill> correct me if I'm worng.
+Oct 30 01:22:44 <P64ProtocolBot>	[D] <pnill> *wrong
+Oct 30 01:23:09 <P64ProtocolBot>	[D] <fireTwoOneNine> eDP cabling is pretty much standardized
+Oct 30 01:23:19 <P64ProtocolBot>	[D] <fireTwoOneNine> there's "30 pin" and "40 pin" cables
+Oct 30 01:23:30 <P64ProtocolBot>	[D] <Segfault> Yeah on the display side of things
+Oct 30 01:23:35 <P64ProtocolBot>	[D] <Segfault> What about the rockpro itself
+Oct 30 01:23:45 <P64ProtocolBot>	[D] <Segfault> It's just a flat flex connector
+Oct 30 01:24:13 <P64ProtocolBot>	[D] <fireTwoOneNine> i haven't really ever looked at that, but i'm assuming it's the same connector as on the display side
+Oct 30 01:24:19 <P64ProtocolBot>	[D] <Segfault> Nope
+Oct 30 01:25:04 <P64ProtocolBot>	[D] <Segfault> eDP cables typically terminate like this on the display side
+Oct 30 01:25:05 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/903892240399736872/unknown.png
+Oct 30 01:25:36 <P64ProtocolBot>	[D] <Segfault> the rockpro just takes one of these (or something similar)
+Oct 30 01:25:37 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/903892372084129812/Flat-Flex-Cable.png
+Oct 30 01:26:29 <P64ProtocolBot>	[D] <fireTwoOneNine> yea you're right. i forgot about that. went to go look at a spare eDP panel i have sitting around 🙂
+Oct 30 01:27:12 <P64ProtocolBot>	[D] <fireTwoOneNine> it is 30pin on the RP64 though, and i do see straight through adapter cables
+Oct 30 01:27:20 <P64ProtocolBot>	[D] <fireTwoOneNine> i would assume that is the right cable
+Oct 30 01:27:27 <P64ProtocolBot>	[D] <fireTwoOneNine> it wouldn't be something custom 😉
+Oct 30 01:27:35 <P64ProtocolBot>	[D] <Segfault> Someone should try it :)
+Oct 30 01:28:20 <P64ProtocolBot>	[D] <fireTwoOneNine> i'd get one of those cables, but that spare display is probably a bit too power hungry (15.6")
+Oct 30 01:28:20 <P64ProtocolBot>	[D] <Segfault> I've got a quartz and an eDP panel somewhere, if noone's tried it by the time video output works on the quartz I'll buy a cable and give it a go
+Oct 30 01:28:50 <P64ProtocolBot>	[D] <Segfault> I'll have a look at the schematic, maybe see what regulator is powering that connector
+Oct 30 01:29:14 <P64ProtocolBot>	[D] <Segfault> (I'm doing a lot of schematic checking today lol)
+Oct 30 01:29:40 <P64ProtocolBot>	[D] <pnill> if 15.6" is too power hungry in my application it def would not work lol
+Oct 30 01:30:00 <P64ProtocolBot>	[D] <fireTwoOneNine> i'm guessing there. i'm just concerned about the backlight power consumption
+Oct 30 01:30:18 <P64ProtocolBot>	[D] <fireTwoOneNine> need to check schematic for RP and datasheet for a given panel
+Oct 30 01:30:20 <P64ProtocolBot>	[D] <Segfault> Most large signage displays probably use an external power source for the backlight
+Oct 30 01:30:53 <P64ProtocolBot>	[D] <pnill> This one is driven directly off the board, given the board gets supplied additional power from a power unit
+Oct 30 01:31:20 <P64ProtocolBot>	[D] <pnill> My plan was actually to do something stupid and go USB-C->HDMI (Or DP->HDMI off USB-C) into an LVDS driver board.
+Oct 30 01:31:26 <P64ProtocolBot>	[D] <pnill> because the driver board takes an external power source
+Oct 30 01:31:27 <P64ProtocolBot>	[D] <Segfault> It seems like on the rockpro the edp port can draw power from VCCA_0V9 and VCC1V8_DVP
+Oct 30 01:31:36 <P64ProtocolBot>	[D] <pnill> to feed the needed power into the display
+Oct 30 01:32:07 <P64ProtocolBot>	[D] <Segfault> Oh wait it seems like backlight power comes from EDPAUXP
+Oct 30 01:32:21 <P64ProtocolBot>	[D] <fireTwoOneNine> i'm pretty sure display backlights run off a beefier rail than 1v8...
+Oct 30 01:32:30 <P64ProtocolBot>	[D] <Segfault> Which from what I can tell draws from VCC3V3_S0
+Oct 30 01:33:16 <P64ProtocolBot>	[D] <Segfault> This seems to be the eDP connector on the rockpro
+Oct 30 01:33:16 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/903894303930195988/unknown.png
+Oct 30 01:33:47 <P64ProtocolBot>	[D] <Segfault> Apparently VCC3V3_S0 comes from the RK808
+Oct 30 01:33:47 <P64ProtocolBot>	[D] <fireTwoOneNine> oh ok, that backlight rail is straight from 12V Vcc
+Oct 30 01:33:54 <P64ProtocolBot>	[D] <Segfault> Wait 12V?
+Oct 30 01:33:55 <P64ProtocolBot>	[D] <fireTwoOneNine> that's all i was really worried about
+Oct 30 01:33:58 <P64ProtocolBot>	[D] <Segfault> Oh yeah there it is lol
+Oct 30 01:34:22 <P64ProtocolBot>	[D] <fireTwoOneNine> so as long as your power brick is up to the task, should be a non-issue
+Oct 30 01:34:24 <P64ProtocolBot>	[D] <Segfault> Yep
+Oct 30 01:34:33 <P64ProtocolBot>	[D] <Segfault> I'd imagine most panels don't draw more than 5W or so
+Oct 30 01:34:40 <P64ProtocolBot>	[D] <pnill> 12v is what's being driven into this LVDS display I'm referring to
+Oct 30 01:34:56 <P64ProtocolBot>	[D] <pnill> I think it has two separate 12v inputs though
+Oct 30 01:35:30 <P64ProtocolBot>	[D] <Segfault> I doubt the LVDS connector itself is rated for whatever crazy wattage those big signage panels use if that's what you're talking about
+Oct 30 01:35:54 <P64ProtocolBot>	[D] <Segfault> dsimic: bah that's yet another reason the next PBP should use a 2s battery config
+Oct 30 01:36:38 <P64ProtocolBot>	[D] <fireTwoOneNine> a big commercial sign panel is definitely not getting powered via LVDS
+Oct 30 01:36:50 <P64ProtocolBot>	[D] <fireTwoOneNine> at least not the main drive power. there may be logic power via that
+Oct 30 01:37:30 <P64ProtocolBot>	[D] <Segfault> @fireTwoOneNine what were those generic cables you were talking about?
+Oct 30 01:38:11 <P64ProtocolBot>	[D] <fireTwoOneNine> i just found them on aliexp https://www.aliexpress.com/i/32756336009.html
+Oct 30 01:38:34 <P64ProtocolBot>	[D] <Segfault> LOL
+Oct 30 01:38:35 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/903895636464762910/unknown.png
+Oct 30 01:39:08 <P64ProtocolBot>	[D] <Segfault> Well you're right in that they seem to be a direct pass through, I wonder what the pinout of the eDP connector itself is
+Oct 30 01:39:39 <P64ProtocolBot>	[D] <fireTwoOneNine> https://cdn.discordapp.com/attachments/463285150898192384/903895907353903124/iu.png
+Oct 30 01:39:48 <P64ProtocolBot>	[D] <pnill> Excuse my ignorance but when is the rk sd tool used? For most of these things I've just been using etcher.
+Oct 30 01:40:03 <P64ProtocolBot>	[D] <pnill> are there actually cases where you'd want/need that sd tool
+Oct 30 01:40:03 <P64ProtocolBot>	[D] <fireTwoOneNine> you don't need to worry about that tool
+Oct 30 01:40:13 <P64ProtocolBot>	[D] <Segfault> Yeah sure enough that pinout looks like a match
+Oct 30 01:40:17 <P64ProtocolBot>	[D] <fireTwoOneNine> all the images we have are made to be directly flashed to SD or eMMC
+Oct 30 01:40:37 <P64ProtocolBot>	[D] <Segfault> Niiice so those generic cables should work great then
+Oct 30 01:41:12 <P64ProtocolBot>	[D] <pnill> I like how you both just went down an eDP rabbit hole out of curiosity of how it's used lol.
+Oct 30 01:41:21 <P64ProtocolBot>	[D] <pnill> or implemented rather.
+Oct 30 01:41:30 <P64ProtocolBot>	[D] <Segfault> It's good to know these things :P
+Oct 30 01:41:37 <P64ProtocolBot>	[D] <pnill> I'm not judging
+Oct 30 01:41:52 <P64ProtocolBot>	[D] <pnill> The amount of crap I know about android I didn't a month ago is beyond what I wanted to ever know about it...
+Oct 30 01:41:58 <P64ProtocolBot>	[D] <pnill> because 'it's good to know these things'
+Oct 30 01:42:00 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 01:42:08 <P64ProtocolBot>	[D] <pnill> I'm more of a software guy than hardware though.
+Oct 30 01:42:09 <P64ProtocolBot>	[D] <fireTwoOneNine> i jumped into this conversation late and didn't read the context until later 😛
+Oct 30 01:42:33 <P64ProtocolBot>	[D] <Segfault> Actually fire you might find some of the scrollback in #pinebook somewhat interesting, we discovered why the main-daughterboard cable in the PBP is so damn wide
+Oct 30 01:43:08 <P64ProtocolBot>	[D] <pnill> So again, excuse my ignorance but, is fire not one of the people who designed some of this stuff?
+Oct 30 01:43:23 <P64ProtocolBot>	[D] <Segfault> I think they were mostly designed externally
+Oct 30 01:43:59 <P64ProtocolBot>	[D] <fireTwoOneNine> afraid i'm not. i'm pretty knowledgeable on a lot of the hardware (and designing new hardware), but for P64 i'm basically just a sysadmin
+Oct 30 01:44:07 <P64ProtocolBot>	[D] <pnill> Also I must say, trying to get one of these running for the first time... was nerve racking.
+Oct 30 01:44:22 <P64ProtocolBot>	[D] <pnill> I don't have an emmc module yet; and the wiki is basically 'if your lights blink it works'
+Oct 30 01:44:23 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 01:44:29 <P64ProtocolBot>	[D] <pnill> so I plug an sd card in with an android image
+Oct 30 01:44:43 <P64ProtocolBot>	[D] <pnill> have no idea how to establish UART except that the wiki tells you not to do it prior to U-Boot SPL
+Oct 30 01:44:47 <P64ProtocolBot>	[D] <pnill> for the rockchip
+Oct 30 01:44:51 <P64ProtocolBot>	[D] <pnill> so had no idea what was going wrong
+Oct 30 01:44:56 <P64ProtocolBot>	[D] <pnill> or the fact I had to push a power button
+Oct 30 01:44:57 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 01:45:12 <P64ProtocolBot>	[D] <Segfault> Huh I thought the rockpro powered on as soon as it got power, the quartz definitely does
+Oct 30 01:45:27 <P64ProtocolBot>	[D] <fireTwoOneNine> the rp64 definitely powers on when it gets plugged in
+Oct 30 01:45:33 <P64ProtocolBot>	[D] <pnill> There's power for sure, the ethernet starts lighting up; but I've had to hit the power button
+Oct 30 01:45:37 <P64ProtocolBot>	[D] <pnill> every time I've loaded a new image
+Oct 30 01:45:48 <P64ProtocolBot>	[D] <fireTwoOneNine> but the android images may be weird, idk
+Oct 30 01:45:52 <P64ProtocolBot>	[D] <pnill> This was on armbian too
+Oct 30 01:45:55 <P64ProtocolBot>	[D] <Segfault> ¯\_(ツ)_/¯
+Oct 30 01:45:58 <P64ProtocolBot>	[D] <pnill> when android wasn't working I went with armbian
+Oct 30 01:46:28 <P64ProtocolBot>	[D] <pnill> Nothing happened till I hit power button, then fan started spinning and I was excited/enamored because I didn't get a brick lol
+Oct 30 01:46:43 <P64ProtocolBot>	[D] <pnill> Then somewhat impatiently waited for HDMI to come up
+Oct 30 01:47:08 <P64ProtocolBot>	[D] <pnill> saw the armbian login screen
+Oct 30 01:47:08 <P64ProtocolBot>	[D] <fireTwoOneNine> actually maybe RP does need you to press the power button. it's been a while since i used mine 😒
+Oct 30 01:47:16 <P64ProtocolBot>	[D] <pnill> and went back to the android builds
+Oct 30 01:47:53 <P64ProtocolBot>	[D] <fireTwoOneNine> anyway, the docs around the android builds are probably sparse and archaic -- they were mostly just test images when the device was brand new
+Oct 30 01:48:04 <P64ProtocolBot>	[D] <fireTwoOneNine> very few people use them
+Oct 30 01:48:12 <P64ProtocolBot>	[D] <pnill> I've realized as much haha.
+Oct 30 01:49:03 <P64ProtocolBot>	[D] <Segfault> doesn't even auto-resize the partitions lol
+Oct 30 01:49:04 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/903898272345759754/unknown.png
+Oct 30 01:49:05 <P64ProtocolBot>	[D] <pnill> The unfortunate thing is I was skeptical about other boards because their android support was advertised as pretty much being 'unofficial' saw the pine wiki and was like wow there's a lot here, this must be an actively supported board and they have android builds
+Oct 30 01:49:14 <P64ProtocolBot>	[D] <pnill> and the wiki was well organized
+Oct 30 01:49:36 <P64ProtocolBot>	[D] <pnill> deceiving bastards with your organized stuff lol
+Oct 30 01:49:48 <P64ProtocolBot>	[D] <fireTwoOneNine> you're in a tiny minority needing android on an SBC 😉
+Oct 30 01:49:52 <P64ProtocolBot>	[D] <pnill> I know 😦
+Oct 30 01:50:04 <P64ProtocolBot>	[D] <pnill> If I had a choice it wouldn't be android lol.
+Oct 30 01:51:14 <P64ProtocolBot>	[D] <fireTwoOneNine> if those old test android images don't work out for you, you honestly might be better off running waydroid on linux lmao
+Oct 30 01:51:25 <P64ProtocolBot>	[D] <Segfault> :reeee:
+Oct 30 01:51:26 <P64ProtocolBot>	[D] <pnill> never heard of waydroid
+Oct 30 01:51:29 <P64ProtocolBot>	[D] <pnill> is there performance impact?
+Oct 30 01:51:35 <P64ProtocolBot>	[D] <Segfault> Anbox but less crap performance
+Oct 30 01:51:40 <P64ProtocolBot>	[D] <fireTwoOneNine> ^ that
+Oct 30 01:51:45 <P64ProtocolBot>	[D] <pnill> The complication would be dual display
+Oct 30 01:51:58 <P64ProtocolBot>	[D] <Segfault> I'm not sure how performance compares to native
+Oct 30 01:52:17 <P64ProtocolBot>	[D] <Segfault> Also USB-C support on mainline linux is "a bit dodgy" at the moment
+Oct 30 01:52:21 <P64ProtocolBot>	[D] <fireTwoOneNine> waydroid supposedly works pretty damn well on the pinephone pro, which is also RK3399 (downclocked from RP64, even)
+Oct 30 01:52:32 <P64ProtocolBot>	[D] <Segfault> PPP is also running a single display at 720p
+Oct 30 01:52:38 <P64ProtocolBot>	[D] <pnill> lame
+Oct 30 01:52:55 <P64ProtocolBot>	[D] <fireTwoOneNine> the problem with waydroid if anything would be CPU not GPU
+Oct 30 01:53:11 <P64ProtocolBot>	[D] <pnill> The SBC world is weird right now.
+Oct 30 01:53:12 <P64ProtocolBot>	[D] <Segfault> It might work on a BSP kernel but don't even ask me how you'd get the blob Mali driver working
+Oct 30 01:53:22 <P64ProtocolBot>	[D] <pnill> You go either pi4/pine or some dev board
+Oct 30 01:53:30 <P64ProtocolBot>	[D] <pnill> or some really weird chineese board supported by one guy
+Oct 30 01:53:35 <P64ProtocolBot>	[D] <pnill> who posts a ton of random source on github
+Oct 30 01:53:37 <P64ProtocolBot>	[D] <pnill> and hope it can compile
+Oct 30 01:53:38 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 01:54:06 <P64ProtocolBot>	[D] <pnill> That's personal experience thus far
+Oct 30 01:54:10 <P64ProtocolBot>	[D] <Segfault> Things have improved a lot lately but yeah it's still a bit archaic, especially if you can't deal with missing certain features like USB-C alt mode
+Oct 30 01:54:32 <P64ProtocolBot>	[D] <pnill> Well even if USB-C isn't there if I can go eDP to LVDS and still draw enough power for it to work.
+Oct 30 01:54:34 <P64ProtocolBot>	[D] <Segfault> fwiw USB alt mode *does* work on mainline, it's just very unreliable, probably not ideal for signage lol
+Oct 30 01:54:46 <P64ProtocolBot>	[D] <pnill> This isn't signage, but yeah..
+Oct 30 01:54:47 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 01:55:09 <P64ProtocolBot>	[D] <Segfault> Yep eDP to LVDS would probably work well, the main problem then would just be reliability of waydroid and whether it performs well enough
+Oct 30 01:55:13 <P64ProtocolBot>	[D] <pnill> So to give an idea of what this is; it's a virtual pinball machine.
+Oct 30 01:55:15 <P64ProtocolBot>	[D] <Segfault> RK3399 is quick but it's not magic
+Oct 30 01:55:34 <P64ProtocolBot>	[D] <pnill> and the reason for two displays is the "DMD (Dot Matrix Display)" despite it being an actual monitor in this case.
+Oct 30 01:55:40 <P64ProtocolBot>	[D] <pnill> where the game renders to a 'presentation api' in android
+Oct 30 01:55:46 <P64ProtocolBot>	[D] <pnill> to put that onto that second screen
+Oct 30 01:55:54 <P64ProtocolBot>	[D] <Segfault> Huh that's pretty cool
+Oct 30 01:56:07 <P64ProtocolBot>	[D] <pnill> the main screen is the play area where you see the 'play field' and the ball moving around and such
+Oct 30 01:56:21 <P64ProtocolBot>	[D] <Segfault> Actually I wonder if the eDP output would work with Android
+Oct 30 01:56:24 <P64ProtocolBot>	[D] <pnill> They shipped them with 720p, and 1080p runs fine on a lot of it except this one that emulates actual pinball roms
+Oct 30 01:56:31 <P64ProtocolBot>	[D] <pnill> so I'm guessing heavier compute involved.
+Oct 30 01:56:35 <P64ProtocolBot>	[D] <Segfault> Specifically the Android 7 image you said performed fine
+Oct 30 01:56:49 <P64ProtocolBot>	[D] <pnill> it seemed like it did, or better than the rest.
+Oct 30 01:56:53 <P64ProtocolBot>	[D] <pnill> HDMI seemed more functional
+Oct 30 01:57:02 <P64ProtocolBot>	[D] <pnill> and my CPU fan worked
+Oct 30 01:57:02 <P64ProtocolBot>	[D] <pnill> lol
+Oct 30 01:57:04 <P64ProtocolBot>	[D] <Segfault> Yeah now I'm curious if eDP would work with that image
+Oct 30 01:58:02 <P64ProtocolBot>	[D] <pnill> Yeah, so; in some cases some people replace their display with non LVDS ones
+Oct 30 01:58:19 <P64ProtocolBot>	[D] <pnill> dsimic: Yeah no rush on this, it's more of an experiment than anything.
+Oct 30 01:58:31 <P64ProtocolBot>	[D] <pnill> I just wanted to see if things -could- run better.
+Oct 30 01:58:58 <P64ProtocolBot>	[D] <pnill> These pinball things shipped with 1080p displays but drove 720p at software level
+Oct 30 01:59:07 <P64ProtocolBot>	[D] <Segfault> Everyone's eagerly awaiting dp alt mode being fixed lol
+Oct 30 01:59:08 <P64ProtocolBot>	[D] <pnill> Oh I meant than the stock PCB.
+Oct 30 01:59:10 <P64ProtocolBot>	[D] <pnill> heh.
+Oct 30 01:59:47 <P64ProtocolBot>	[D] <pnill> I have no idea, I've just started using it tonight.
+Oct 30 01:59:50 <P64ProtocolBot>	[D] <pnill> I think it stays powered down
+Oct 30 01:59:57 <P64ProtocolBot>	[D] <pnill> but I'm using the button to turn it off.
+Oct 30 02:00:30 <P64ProtocolBot>	[D] <pnill> Segfault some other cool things about these virtual pinball things is that they have feedback mechanisms via push solenoids.
+Oct 30 02:00:37 <P64ProtocolBot>	[D] <pnill> That's why the 2 UART interfaces are necessary
+Oct 30 02:00:46 <P64ProtocolBot>	[D] <pnill> one accepts input the other gets written to for the feedback mechanism to be fired.
+Oct 30 02:00:48 <P64ProtocolBot>	[D] <Segfault> Oh I see
+Oct 30 02:00:49 <P64ProtocolBot>	[D] <pnill> when bumpers/slingshots are hit.
+Oct 30 02:01:09 <P64ProtocolBot>	[D] <Segfault> I'd have expected things like that to use I2C
+Oct 30 02:01:16 <P64ProtocolBot>	[D] <pnill> There's a gyro hooked to i2c
+Oct 30 02:01:18 <P64ProtocolBot>	[D] <pnill> but that's about it
+Oct 30 02:01:35 <P64ProtocolBot>	[D] <pnill> I don't know that I've 'discovered' any issues lol.
+Oct 30 02:01:50 <P64ProtocolBot>	[D] <pnill> I tried to run android, and was told android doesn't work 😛
+Oct 30 02:02:02 <P64ProtocolBot>	[D] <pnill> I imagine a lot of those 'problems' are isolated to android itself
+Oct 30 02:02:08 <P64ProtocolBot>	[D] <pnill> or the kernels being used in those builds
+Oct 30 02:02:47 <P64ProtocolBot>	[D] <Segfault> If the program you were running was able to work on Linux I'd say run BSP Debian, that way dp alt mode works perfectly
+Oct 30 02:02:50 <P64ProtocolBot>	[D] <pnill> Yeah, I'm not complaining about it just saying that I don't really expect those issues to be fixed lol.
+Oct 30 02:03:06 <P64ProtocolBot>	[D] <pnill> I'm gonna try waydroid on armbian
+Oct 30 02:03:35 <P64ProtocolBot>	[D] <Segfault> The waydroid part should work, I think it's a mainline kernel so dp alt mode may or may not
+Oct 30 02:03:46 <P64ProtocolBot>	[D] <Segfault> As for performance in waydroid... ¯\_(ツ)_/¯
+Oct 30 02:04:21 <P64ProtocolBot>	[D] <pnill> Like I said this is more curiosity at the moment than anything.
+Oct 30 02:04:34 <P64ProtocolBot>	[D] <Segfault> Can't hurt to try
+Oct 30 02:04:43 <P64ProtocolBot>	[D] <pnill> If it worked and did things better than what was there, was going to open source a PCB design that had the stock IDC connector/JST from the system converted to the GPIO
+Oct 30 02:04:54 <P64ProtocolBot>	[D] <pnill> and make some software to help dump/port the original over to the 'new' board.
+Oct 30 02:04:56 <P64ProtocolBot>	[D] <pnill> whatever that may be
+Oct 30 02:05:13 <P64ProtocolBot>	[D] <pnill> so it was 'plug and play' for the most part.
+Oct 30 02:16:48 <P64ProtocolBot>	[D] <pnill> Also for clarification Android 9.0 (and whatever kernel it was using) was weird... it actually mirrored the image on both but made the HDMI distorted at the same time (green).
+Oct 30 04:39:13 <P64ProtocolBot>	[T] <Helen> Don't depend on smartphones,you canyour salary only, if you have a computer or start earning $2,000 daily and $10,000 weekly
+Oct 30 04:39:14 <P64ProtocolBot>	[T] <Helen>  if you are interested click on the link below for more info........ 👇👇👇
+Oct 30 04:39:15 <P64ProtocolBot>	[T] <Helen> @Hannahmartins_fx
+Oct 30 04:39:17 <P64ProtocolBot>	[T] <Helen> @Hannahmartins_fx
+Oct 30 13:36:19 <P64ProtocolBot>	[D] <Frostclaw20> Hi
+Oct 30 13:48:47 <P64ProtocolBot>	[D] <Blockycleric> Hello.
+Oct 30 14:18:43 <P64ProtocolBot>	[D] <Synth> It seems that after I updated sxmo, the button bindings have gotten messed up. Anyone have any clue on how to fix this?
+Oct 30 14:32:17 <P64ProtocolBot>	[T] <qnerop> 
+Oct 30 14:57:23 <P64ProtocolBot>	[D] <ayayagames> If it’s mostly in suspend mode and it should last all day
+Oct 30 14:57:35 <P64ProtocolBot>	[D] <ayayagames> Especially with the keyboard plus battery
+Oct 30 15:00:44 <P64ProtocolBot>	[D] <Funeral> Jaguar: the pro is not released yet, the first devices ship to the developers in December. So you won't find any numbers. Megi had numbers for the non-S variant of the RK3399 but those numbers are only of limited use
+Oct 30 15:00:46 <P64ProtocolBot>	[T] <Oscar> @Moderator telegram spam
+Oct 30 15:02:09 <P64ProtocolBot>	[D] <Funeral> That would be for the best. For now you could only get wrong estimates
+Oct 30 15:02:15 <P64ProtocolBot>	[D] <Funeral> in both directions
+Oct 30 15:04:42 <P64ProtocolBot>	[D] <ayayagames> The only thing that’s missing is Bluetooth headphone calling capability
+Oct 30 15:05:46 <P64ProtocolBot>	[D] <ayayagames> Granted I’ve only had a single pair of Mic Bluetooth headphones, And they say it should work but it’s not it’s probably a Linux thing or something in the Bluetooth stack but audiobooks and everything else works so I just can’t pick up a call nor get sound from my headphones via call
+Oct 30 15:25:35 <P64ProtocolBot>	[T] <kunrooted> pribiet
+Oct 30 15:25:44 <P64ProtocolBot>	[T] <kunrooted> priviet
+Oct 30 16:34:37 <P64ProtocolBot>	[T] <kunrooted> when will Pinebook Pro be available again?
+Oct 30 16:57:08 <P64ProtocolBot>	[D] <Cody> the pinephone convergence package will ship in two shipments, right? i received my pinephone, but not the dock
+Oct 30 17:01:29 <P64ProtocolBot>	[D] <Funeral> @Cody did you order the 3GB or the 2GB version?
+Oct 30 17:01:38 <P64ProtocolBot>	[D] <Cody> 3GB
+Oct 30 17:01:54 <P64ProtocolBot>	[D] <Cody> as far as i know, convergence edition is the 3GB pinephone with a usb-c dock
+Oct 30 17:02:22 <P64ProtocolBot>	[D] <Funeral> The USB-C dock is underneath the plastic shell in which the phone lays on top
+Oct 30 17:03:07 <P64ProtocolBot>	[D] <Cody> :LaughLiz: I'm an idiot. Thank you
+Oct 30 17:03:14 <P64ProtocolBot>	[D] <Funeral> No worries
+Oct 30 21:00:45 <P64ProtocolBot>	[D] <NULL> lol
+Oct 30 21:25:37 <P64ProtocolBot>	[T] <Kenneth Sanchez> Forwarded from unknown: ɪᴛ ᴀʟʟ ꜱᴛᴀʀᴛᴇᴅ ᴡɪᴛʜ ᴀ ᴡᴏʀᴅ ᴛᴏ ᴛʀʏ ꜱᴏᴍᴇᴛʜɪɴɢ ɴᴇᴡ. ᴍʏ ꜰɪʀꜱᴛ ᴘᴀʏᴍᴇɴᴛ ᴄᴏᴍᴇ ᴀꜰᴛᴇʀ 24ʜᴏᴜʀꜱ ᴡʜᴇɴ ɪ ɪɴᴠᴇꜱᴛᴇᴅ $300 ᴀɴᴅ ꜱɪɴᴄᴇ ᴛʜᴇɴ ɪ ʜᴀᴠᴇ ʀᴇᴄᴇɪᴠᴇᴅ ᴄᴏᴜɴᴛʟᴇꜱꜱ ᴘᴀʏᴍᴇɴᴛ, ʜɪꜱ ᴡᴏʀᴛʜʏ ᴛᴏ
+Oct 30 21:25:43 <P64ProtocolBot>	[T] <Kenneth Sanchez> https://t.me/joinchat/kjxCuDmU8I4wOGY0
+Oct 30 22:09:27 <P64ProtocolBot>	[T] <nunomgnunes> @admin (re @unknown: )
+Oct 30 22:14:26 <P64ProtocolBot>	[T] <gqnbzv4> 
+Oct 30 22:15:20 <P64ProtocolBot>	[T] <nunomgnunes> /report (re @gqnbzv4: )
+Oct 30 22:15:43 <P64ProtocolBot>	[T] <nunomgnunes> @admin spam (re @gqnbzv4: )
+Oct 31 13:05:19 <P64ProtocolBot>	[D] <peac> hi, I have received an email from sales@pine64.org requesting info for the second time and i'm not sure if they receive my emails. Is there someone from the team who could help ?
+Oct 31 13:06:47 <P64ProtocolBot>	[M] <Strit> This chat is community run. There are no representatives from Pine64 company here.
+Oct 31 13:07:21 <P64ProtocolBot>	[D] <Funeral> Well, technically there are and we can also forward stuff to the right people 😛
+Oct 31 13:08:57 <P64ProtocolBot>	[D] <Funeral> But mail issues is usually just the long response time and/or mishaps
+Oct 31 13:10:09 <P64ProtocolBot>	[D] <peac> basically they asked me to confirm an order on the 25th which i answered within 15 minutes and I just received the same email stating "2nd notice" in scary red
+Oct 31 13:15:13 <P64ProtocolBot>	[D] <Funeral> We can try to ask @GAMELASTER to look into it as friendly as possible :>>
+Oct 31 13:20:13 <P64ProtocolBot>	[D] <gamiee> hi @peac I will contact you in DM
+Oct 31 13:20:18 <P64ProtocolBot>	[D] <peac> thank you !
+Oct 31 13:20:24 <P64ProtocolBot>	[D] <Funeral> thanks mr gamiee
+Oct 31 13:20:55 <P64ProtocolBot>	[D] <gamiee> :vincent:
+Oct 31 13:21:15 <P64ProtocolBot>	[D] <Funeral> https://tenor.com/view/cool-cat-gif-18199666
+Oct 31 13:21:30 <P64ProtocolBot>	[D] <Danct12> give more vincent pics
+Oct 31 14:42:20 <P64ProtocolBot>	[D] <fireTwoOneNine> ooh
+Oct 31 14:42:40 <P64ProtocolBot>	[D] <fireTwoOneNine> sure
+Oct 31 14:44:14 <P64ProtocolBot>	[T] <kunrooted> dsimic: thx for the info (re @p64protocolbot: [I] <dsimic> that's still unknown, unfortunately)
+Oct 31 14:44:29 <P64ProtocolBot>	[T] <kunrooted> I think I'll get Pinecil for now haha
+Oct 31 14:51:19 <P64ProtocolBot>	[T] <kunrooted> oh Yeah, that's right
+Oct 31 14:51:36 <P64ProtocolBot>	[T] <kunrooted> I just wanted to learn hardware hacking to be honest and Pinecil seems as the most reasonable choice

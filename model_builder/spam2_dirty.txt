@@ -1,0 +1,1828 @@
+Sep 22 00:51:57 <P64ProtocolBot>	[M] <@mbohun> Is there actually a plan for a Pine64 "car dash-cam recording system" ?
+Sep 22 00:51:58 <P64ProtocolBot>	[M] <@mbohun> - modular/extensible
+Sep 22 00:52:00 <P64ProtocolBot>	[M] <@mbohun> - i would really love to build one with night vision / heat sensor for wildlife detection/avoidance (kangaroos, deer, wombats, echidnas, foxes, etc. EVERYWHERE! )
+Sep 22 00:52:38 <phone>	hey aussie ;-)  one would assume it would start with a pinecube thing
+Sep 22 00:53:25 <P64ProtocolBot>	[M] <@mbohun> yes, that is what i meant, pine64 seems to have all the different parts
+Sep 22 00:53:33 <P64ProtocolBot>	[M] <@mbohun> already
+Sep 22 00:54:08 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has joined
+Sep 22 00:54:22 <phone>	yeah. 
+Sep 22 00:55:51 <P64ProtocolBot>	[D] <@gamiee> Ayaay nice
+Sep 22 01:08:15 *	yjftsjthsd has quit (Ping timeout: 180 seconds)
+Sep 22 01:10:57 *	smcavoy (smcavoy@Clk-1FE7676A.home.cgocable.net) has joined
+Sep 22 01:43:00 *	yjftsjthsd (yjftsjthsd@Clk-962CBAF.bc.googleusercontent.com) has joined
+Sep 22 01:54:24 *	BArray (Thunderbir@Clk-FBD9CB5F.sparkbb.co.nz) has joined
+Sep 22 01:56:19 *	B[] has quit (Ping timeout: 180 seconds)
+Sep 22 01:56:20 *	BArray is now known as B[]
+Sep 22 02:06:36 *	raster (raster@Clk-B66961B5.range81-159.btcentralplus.com) has joined
+Sep 22 02:18:56 <P64ProtocolBot>	[M] <@mbohun> https://matrix.org/_matrix/media/v1/download/matrix.org/NwkxodNaknswfzWBQggezNiq
+Sep 22 02:25:48 *	tomboy64_ (Dingbat@3BF5D841.B4921182.12C7AAA1.IP) has joined
+Sep 22 02:27:32 *	tomboy64 has quit (Ping timeout: 180 seconds)
+Sep 22 02:31:10 *	ibx2496 has quit (Ping timeout: 180 seconds)
+Sep 22 02:31:53 <P64ProtocolBot>	[D] <@Electr0Lyte> wat
+Sep 22 02:33:24 <P64ProtocolBot>	[M] <@gamelaster (gamiee)> mbohun: I was thinking about this for a longer time
+Sep 22 02:37:03 <P64ProtocolBot>	[D] <@Funeral> Tell us your thoughts
+Sep 22 02:44:28 <P64ProtocolBot>	[M] <@gamelaster (gamiee)> it should be possible with to do with Allwinner S3 which is currently used in PineCube
+Sep 22 02:45:30 *	lopsided has quit (Ping timeout: 180 seconds)
+Sep 22 02:45:49 *	lopsided (quassel@Clk-BA2DCB58.hsd1.ma.comcast.net) has joined
+Sep 22 02:47:57 <P64ProtocolBot>	[T] <@fredd774> Forwarded from fredd774: Withdrawal profit received successfully 💯💯This is indeed the best paying platform ❤️Capital-base is an investment company based in UK they offers 120% and 140% daily interest with 5% referral bonus.  You can register for free and access your dashboard Best paying platform for crypto currencieshttps://is.gd/ur2tsS : 
+Sep 22 02:54:59 <P64ProtocolBot>	[D] <@Funeral> that's even possible with an ESP32 or ESP32-cam 😄
+Sep 22 02:57:34 <P64ProtocolBot>	[D] <@gamiee> but low fps, no recording, etc.
+Sep 22 03:01:40 *	libero1 (libero3@3451818D.E102DA89.8D9E2CBD.IP) has joined
+Sep 22 03:10:39 *	inky has quit (Ping timeout: 181 seconds)
+Sep 22 03:11:26 *	libero1 has quit (Ping timeout: 180 seconds)
+Sep 22 03:25:59 *	inky (inky@Clk-26DD9DD7.zerolo.gs) has joined
+**** BEGIN LOGGING AT Wed Sep 22 10:44:14 2021
+
+Sep 22 10:44:14 *	Now talking on #Pine64
+Sep 22 10:44:14 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 22 10:44:14 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 22 10:44:14 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 22 10:44:14 *	ChanServ gives channel operator status to fire219
+Sep 22 10:53:12 <P64ProtocolBot>	[D] <@jurapura13> @arch frajer sa frizurom Tbh I have no idea what I would order
+Sep 22 10:53:20 <P64ProtocolBot>	[D] <@jurapura13> I got a second hand PinePhone here
+Sep 22 10:53:29 <P64ProtocolBot>	[D] <@jurapura13> Maybe a PineBook Pro
+Sep 22 10:53:36 <P64ProtocolBot>	[D] <@jurapura13> For uni
+Sep 22 11:08:47 <P64ProtocolBot>	[T] <@Rahulraj> Is pine phone shipping available to India?
+Sep 22 11:14:08 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> lol ok then
+Sep 22 11:14:47 <P64ProtocolBot>	[M] <@Strit> > <@p64protocolbot:matrix.org> [T] <@Rahulraj> Is pine phone shipping available to India?
+Sep 22 11:14:47 <P64ProtocolBot>	[M] <@Strit> 
+Sep 22 11:14:48 <P64ProtocolBot>	[M] <@Strit> I don't think so. Because of some customs law.
+Sep 22 11:15:38 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> are you going to fer, too, perchance?
+Sep 22 11:26:08 <P64ProtocolBot>	[D] <@Funeral> Rahulraj: nah, they don't ship to India
+Sep 22 11:26:40 <P64ProtocolBot>	[D] <@Funeral> @arch frajer sa frizurom mind that discord replies are not supported by the bridge
+Sep 22 11:29:33 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> ok i wont use replies
+Sep 22 11:38:03 *	pikudoz has quit (Read error)
+Sep 22 11:40:30 *	pikudoz (puppy@6458642D.6F5913E1.B8E90D82.IP) has joined
+Sep 22 12:08:37 *	inky has quit (Ping timeout: 180 seconds)
+Sep 22 12:27:49 <P64ProtocolBot>	[T] <@L> Hi
+Sep 22 12:27:58 <P64ProtocolBot>	[T] <@L> How may I get my order status
+Sep 22 12:28:01 <P64ProtocolBot>	[T] <@L> ?
+Sep 22 12:28:27 <jak>	easiest thing to do is wait
+Sep 22 12:29:17 <P64ProtocolBot>	[T] <@L> That's my last alternative
+Sep 22 12:29:35 <P64ProtocolBot>	[T] <@L> I don't know if was shipped or not
+Sep 22 12:29:57 <P64ProtocolBot>	[D] <@Segfault> You get two emails, one with an order confirmation and one later on with a tracking number
+Sep 22 12:30:07 <P64ProtocolBot>	[D] <@Segfault> If you haven't received the second email then it hasn't shipped yet
+Sep 22 12:52:14 <P64ProtocolBot>	[D] <@jurapura13> @arch frajer sa frizurom I'm not going to FER, I'm going to a different city but virtually the same course
+Sep 22 12:54:53 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> kewl
+Sep 22 15:02:22 *	Disconnected ()
+**** ENDING LOGGING AT Wed Sep 22 15:02:22 2021
+
+**** BEGIN LOGGING AT Wed Sep 22 15:02:40 2021
+
+Sep 22 15:02:39 *	Now talking on #Pine64
+Sep 22 15:02:40 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 22 15:02:40 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 22 15:02:39 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 22 15:02:39 *	ChanServ gives channel operator status to fire219
+Sep 22 15:04:47 *	Fq has quit (Read error)
+Sep 22 15:05:04 *	Fq (l@CD16DD39.EE461B70.5E651CE3.IP) has joined
+Sep 22 15:57:13 *	raster has quit (Quit: Gettin' stinky!)
+Sep 22 16:05:17 *	Lord_of_Life_ (Lord@ED234F13.B212413B.FDD0E13A.IP) has joined
+Sep 22 16:07:28 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Sep 22 16:07:28 *	Lord_of_Life_ is now known as Lord_of_Life
+Sep 22 16:08:54 *	pyu has quit (Quit: nyaa~)
+Sep 22 16:34:20 *	libero1 has quit (Ping timeout: 180 seconds)
+Sep 22 17:15:08 <P64ProtocolBot>	[M] <@taner.veriyol> Hi guys!!
+Sep 22 17:15:19 <P64ProtocolBot>	[M] <@taner.veriyol> i have a question about shipping
+Sep 22 17:15:35 <P64ProtocolBot>	[D] <@Funeral> Spit it out
+Sep 22 17:16:24 <P64ProtocolBot>	[M] <@taner.veriyol> if i ordered one pinephone and 2x pinetime, How can I find out when it will be at my address?
+Sep 22 17:16:46 <P64ProtocolBot>	[M] <@taner.veriyol> date field on site not working
+Sep 22 17:17:03 <P64ProtocolBot>	[D] <@Funeral> You could order the PinePhone only individually, without the pinetime. For both orders you will get a mail with the tracking number once it ships
+Sep 22 17:17:10 <P64ProtocolBot>	[D] <@Funeral> Which date field?
+Sep 22 17:17:39 <P64ProtocolBot>	[D] <@Funeral> Or are you asking how long it would roughly take?
+Sep 22 17:17:51 <P64ProtocolBot>	[M] <@taner.veriyol> I have a flight on the 9th of next month it has to catch up
+Sep 22 17:18:15 <P64ProtocolBot>	[M] <@taner.veriyol> we can say from today until october 8
+Sep 22 17:18:21 <P64ProtocolBot>	[D] <@Funeral> They ship from China and the PinePhone is usually a pre-order depending on your location
+Sep 22 17:18:51 <P64ProtocolBot>	[M] <@taner.veriyol> i'm in pennsylvania
+Sep 22 17:19:12 <P64ProtocolBot>	[D] <@Funeral> Then it also depends on the shipping method, courier or slow shipping 😛
+Sep 22 17:20:01 <P64ProtocolBot>	[M] <@taner.veriyol> May I know roughly how long it takes in America?
+Sep 22 17:27:10 <P64ProtocolBot>	[D] <@Funeral> Nah, that's not possible
+Sep 22 17:27:16 <P64ProtocolBot>	[D] <@Funeral> 3 to 40 days
+Sep 22 17:28:45 <P64ProtocolBot>	[D] <@Funeral> Like said, it's a pre-order, there are different shipping methods
+Sep 22 17:28:46 <P64ProtocolBot>	[M] <@taner.veriyol> OMG
+Sep 22 17:28:57 <P64ProtocolBot>	[M] <@taner.veriyol> thanks man!
+Sep 22 17:29:00 <P64ProtocolBot>	[M] <@taner.veriyol> thats bad for me :(
+Sep 22 17:29:17 <P64ProtocolBot>	[M] <@taner.veriyol> i want to get pinephone but i will leave from USA
+Sep 22 17:29:26 <P64ProtocolBot>	[M] <@taner.veriyol> and you are not shipping Turkey yet
+Sep 22 17:30:37 <P64ProtocolBot>	[D] <@Funeral> Well, did you order courier or standard and when?
+Sep 22 17:31:21 <P64ProtocolBot>	[M] <@taner.veriyol> I haven't done it yet, I'm looking for the fastest way
+Sep 22 17:31:51 <P64ProtocolBot>	[D] <@Funeral> courier is fast but it's a pre-order 😄
+Sep 22 17:32:47 <P64ProtocolBot>	[D] <@Funeral> The PinePhone ships roughly twice a month, so with some unlucky timing it might not reach you in time
+Sep 22 17:35:29 *	Disconnected ()
+**** ENDING LOGGING AT Wed Sep 22 17:35:29 2021
+
+**** BEGIN LOGGING AT Wed Sep 22 17:35:47 2021
+
+Sep 22 17:35:46 *	Now talking on #Pine64
+Sep 22 17:35:47 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 22 17:35:47 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 22 17:35:46 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 22 17:35:46 *	ChanServ gives channel operator status to fire219
+Sep 22 17:56:11 *	lyubov has quit (Ping timeout: 180 seconds)
+Sep 22 17:56:35 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has joined
+Sep 22 18:35:22 *	TheCreeper (TheCreeper@4489CCCE.912A1E72.3A0A298.IP) has joined
+Sep 22 18:36:51 <P64ProtocolBot>	[D] <@GCJohnsonChevalier> https://cdn.discordapp.com/attachments/463285150898192384/890381157961723934/2021-09-22-163552.webm
+Sep 22 18:37:25 <P64ProtocolBot>	[D] <@GCJohnsonChevalier> @fireTwoOneNine custom GPU on the PinePhone64 System on a Chip ?
+Sep 22 18:40:16 <P64ProtocolBot>	[D] <@fireTwoOneNine> the GPU on the pinephone is built into the same chip as the CPU
+Sep 22 19:05:31 *	Cuban has quit (Ping timeout: 180 seconds)
+Sep 22 19:16:13 <Fq>	By the way, regarding the new devzone, I think it will be very useful to provide read-only access for the whole Pine64 community
+Sep 22 19:17:10 <Fq>	This will keep everyone informed and will also make the whole community to feel as part of the process, including the non-developers
+Sep 22 19:17:36 <Fq>	without interrupting the developers with (shipping/support?) questions
+Sep 22 19:18:26 <Fq>	It will also help those who answer support questions by saying "devs are working on this or that".
+Sep 22 19:21:21 <Fq>	Much like the linux kernel dev mailing lists are readable by anyone.
+Sep 22 19:28:12 <P64ProtocolBot>	[D] <@gamiee> @PiZZaMartijn i guess this is good idea
+Sep 22 19:32:18 *	SynMonger has quit (Quit: Wait, what?)
+Sep 22 19:33:22 *	SynMonger (syn@29880B85.64B44AC.3A70C692.IP) has joined
+Sep 22 19:33:49 <P64ProtocolBot>	[D] <@notLillie> I want more boards
+Sep 22 19:34:12 <P64ProtocolBot>	[D] <@notLillie> what would you all buy? 😛
+Sep 22 19:34:44 <P64ProtocolBot>	[D] <@notLillie> I don’t have any pine64 SBCs, excluding the pinetime, and pinebook pro
+Sep 22 19:36:50 <P64ProtocolBot>	[D] <@notLillie> These two I won’t buy (quartz maybe later)
+Sep 22 19:36:51 <P64ProtocolBot>	[D] <@notLillie> Quartz64: No, waiting for that one to mature. (Mostly because of the USB issue.)
+Sep 22 19:36:52 <P64ProtocolBot>	[D] <@notLillie> Pine A64: far too slow.
+Sep 22 19:37:37 *	lyubov has quit (Ping timeout: 181 seconds)
+Sep 22 19:38:58 <P64ProtocolBot>	[D] <@notLillie> I guess that leaves the rockpro64. Rock64 is starting to show its age anyways… 😛
+Sep 22 19:39:36 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has joined
+Sep 22 19:43:19 <P64ProtocolBot>	[D] <@caleb (they/them)> @GAMELASTER i like your banner !
+Sep 22 19:43:31 <P64ProtocolBot>	[D] <@PiZZaMartijn> @GAMELASTER having devzone be public is not a good idea
+Sep 22 19:44:23 <P64ProtocolBot>	[D] <@gamiee> Not everything public, only parts which could be public
+Sep 22 19:44:28 <P64ProtocolBot>	[D] <@gamiee> Thanks 😀
+Sep 22 19:44:37 <P64ProtocolBot>	[D] <@PiZZaMartijn> that eeh, mostly will keep it down to nothing
+Sep 22 19:44:53 <P64ProtocolBot>	[D] <@caleb (they/them)> surely anything that would be public on devzone should be on the wiki instead
+Sep 22 19:44:58 <P64ProtocolBot>	[D] <@PiZZaMartijn> yes
+Sep 22 19:45:00 <P64ProtocolBot>	[D] <@PiZZaMartijn> exactly
+Sep 22 19:56:19 <P64ProtocolBot>	[D] <@gamiee> That's true
+Sep 22 20:22:16 <Fq>	@PiZZaMartijn why is it not a good idea to have a ** read-only ** devzone publicly?
+Sep 22 20:23:14 <P64ProtocolBot>	[D] <@PiZZaMartijn> because stuff shows up there before it's announced
+Sep 22 20:24:02 <Fq>	you mean potential new products that get discussed beforehand?
+Sep 22 20:24:17 <Fq>	(and maybe dropped)
+Sep 22 20:24:56 <P64ProtocolBot>	[D] <@PiZZaMartijn> exactly
+Sep 22 20:25:39 <Fq>	now, from my understanding devzone also has the purpose of developing for **current** products also. Is that not true?
+Sep 22 20:26:30 <P64ProtocolBot>	[D] <@PiZZaMartijn> yup
+Sep 22 20:26:53 <P64ProtocolBot>	[D] <@PiZZaMartijn> but that's mostly done in the public channels
+Sep 22 20:27:20 <Fq>	So that is my main point, that all discussion and development about **current** products remains open.
+Sep 22 20:28:08 <Fq>	Otherwise the community will end up divided into the "elite" class that has been accepted into the devzone, and the second-citizen class; 
+Sep 22 20:28:19 <Fq>	the Linux kernel mailing lists are open to all for reading
+Sep 22 20:28:20 <Alho>	but the whole idea of "some" of it is handled in closed devzone makes Pine64 a NOT opensorce software and hardware product anymore
+Sep 22 20:28:48 <P64ProtocolBot>	[D] <@PiZZaMartijn> ofcourse everything is as open as possible, but not everything can be public, which is why this needs to exist
+Sep 22 20:29:11 <P64ProtocolBot>	[D] <@PiZZaMartijn> it's not like all the open developments is going away 😛
+Sep 22 20:29:12 <Alho>	The devzone is really a misfoster - and a disaster from the beginning
+Sep 22 20:29:15 <Fq>	I could see how new products that are not announced should be discussed beforehand, but I see no reason for current products
+Sep 22 20:29:27 <Fq>	especially if the access is read-only
+Sep 22 20:29:50 <Fq>	This is the kind of thing that tends to break communities
+Sep 22 20:30:05 <Alho>	exactly
+Sep 22 20:30:18 <P64ProtocolBot>	[D] <@PiZZaMartijn> you seem to think that the things that are in devzone were public before
+Sep 22 20:30:50 <Fq>	In other words, the devzone should be divided into two clear areas: 1) new possible products that will never be announced, and 2) discussion about existing products
+Sep 22 20:31:10 <Fq>	What I am focusing on is that 2) be open read-only to the public
+Sep 22 20:31:15 <P64ProtocolBot>	[D] <@caleb (they/them)> there isn't much reason for development work for current devices to happen on devzone
+Sep 22 20:31:31 <P64ProtocolBot>	[D] <@caleb (they/them)> the wiki, public channels and mailing lists are far better platforms
+Sep 22 20:31:46 <Alho>	but that will most likely happen as it is now
+Sep 22 20:31:50 <Fq>	But @PiZZaMartijn said that some of the development for current products is happening there too
+Sep 22 20:31:51 <P64ProtocolBot>	[D] <@caleb (they/them)> i don't think there's any intention of devzone being used for active development of stuff that you can go buy
+Sep 22 20:32:06 <P64ProtocolBot>	[D] <@PiZZaMartijn> no the current projects are listed in the devzone
+Sep 22 20:32:12 <P64ProtocolBot>	[D] <@PiZZaMartijn> so far nothing has happened on them
+Sep 22 20:32:32 <P64ProtocolBot>	[D] <@PiZZaMartijn> devzone is also just neat to keep track of who has which devkits etc, this is not replacing all the open development
+Sep 22 20:33:18 <P64ProtocolBot>	[D] <@caleb (they/them)> there's obviously no benefit to gatekeeping development efforts, that would kinda defeat the purpose of pine64... to the best of my knowledge it's not something anyone ever planned as a usecase for it
+Sep 22 20:33:28 <P64ProtocolBot>	[D] <@caleb (they/them)> for the reasons you've stated - it would be dumb
+Sep 22 20:34:42 <Fq>	one of the reasons stated for devzone is that it was hard to track development with everything mixed in different places, so different people seem to have different ideas about what devzone is
+Sep 22 20:35:05 <P64ProtocolBot>	[D] <@PiZZaMartijn> devzone is the bucket where all the small features are thrown in that are needed for organizing
+Sep 22 20:35:38 <Fq>	small features of existing products?
+Sep 22 20:36:05 <Fq>	but you just said there is no development there for existing products, only for potential products that may never be announced.
+Sep 22 20:36:11 <P64ProtocolBot>	[D] <@PiZZaMartijn> no, features for organizing. like developer lists, the signup stuff, timeline tracking
+Sep 22 20:36:21 <Fq>	I see
+Sep 22 20:36:33 <P64ProtocolBot>	[D] <@caleb (they/them)> ie for the people who are being sent devices for the purposes of working on them
+Sep 22 20:36:35 <Fq>	There is no reason for those features to be closed to the public
+Sep 22 20:36:43 <P64ProtocolBot>	[D] <@PiZZaMartijn> there definetly is
+Sep 22 20:36:48 <P64ProtocolBot>	[D] <@Philpax> there are plenty of reasons
+Sep 22 20:36:55 <P64ProtocolBot>	[D] <@PiZZaMartijn> do you want to publicly list all the GDPR protected contact info of developers?
+Sep 22 20:37:15 <Fq>	Ahh, i see
+Sep 22 20:37:19 <P64ProtocolBot>	[D] <@PiZZaMartijn> timeline might be public, but it's not exciting at all, and mostly used for tracking products that are not public yet
+Sep 22 20:37:51 <P64ProtocolBot>	[D] <@Philpax> something something D1 SBC :>
+Sep 22 20:38:05 <P64ProtocolBot>	[D] <@Philpax> although I'm still trying to figure out whether I want that
+Sep 22 20:38:32 <Fq>	I think if it is clearly slated for potential products that may or may not be produced then it is okay
+Sep 22 20:38:37 <P64ProtocolBot>	[D] <@Philpax> I'll probably get it just for the novelty of RISC-V that's not a softcore
+Sep 22 20:39:18 <Fq>	but if it breaks the community of existing products then I think it needs to be done very carefuly
+Sep 22 20:40:22 <Fq>	this has happened in open source projects in the past, in the beginning there was no problem, but with time things broke down.
+Sep 22 20:40:34 <P64ProtocolBot>	[D] <@PiZZaMartijn> that's not the intention ofcourse, and most of that development is already done split over the public chats here thanks to all the bridging that's done so devs on all platforms can talk together
+Sep 22 20:40:47 <P64ProtocolBot>	[D] <@PiZZaMartijn> and a lot of development just happens in distribution specific chat channels
+Sep 22 20:41:17 <Fq>	yes, but many of those channels are visible to the public in some way 
+Sep 22 20:41:43 <Fq>	this is why I was advocating read-only access for that kind of information (not for private information)
+Sep 22 20:41:59 <Fq>	Just like it is done for linux kernel dev.
+Sep 22 20:42:02 <P64ProtocolBot>	[D] <@Philpax> I'm not a -huge- fan of knowledge being gated behind devzone, but my understanding is that it is primarily for knowledge that can't be shared for legal or other reasons
+Sep 22 20:42:11 <P64ProtocolBot>	[D] <@PiZZaMartijn> if there is any info that _can_ be public, it _is_ public
+Sep 22 20:42:27 <P64ProtocolBot>	[D] <@Philpax> the development talks you refer to already happen outside of devzone
+Sep 22 20:43:17 <Fq>	@Philpax, I see; if it is maintained that way then it makes sense.
+Sep 22 20:44:01 <Fq>	There are a few discussions about the linux kernel (like some intel hardware security bugs) that had to be discussed in private, but that is the very rare exception.
+Sep 22 20:44:13 <Fq>	I would hope devzone would be like that.
+Sep 22 20:45:12 <P64ProtocolBot>	[D] <@Philpax> mm, same
+Sep 22 20:45:26 <P64ProtocolBot>	[D] <@Philpax> I guess we'll see, I'm hoping for the best
+Sep 22 20:46:04 <P64ProtocolBot>	[D] <@Philpax> I'll be signing up for devzone once I get some working devices going and can do some dev
+Sep 22 20:47:43 <Fq>	Yes, I really would hate to see such great progress be hampered by something that can be prevented early with a clear policy about making public what can be public, like @PiZZaMartijn says. It needs to be clearly established so that it doesn't come and byte the community in the future.
+Sep 22 20:49:40 <P64ProtocolBot>	[D] <@Philpax> I think, if the decision to publicise something is made because of policy, that the battle has already been lost
+Sep 22 20:49:57 <P64ProtocolBot>	[D] <@Philpax> This only really works if people want their work to be public
+Sep 22 20:50:59 <P64ProtocolBot>	[D] <@PiZZaMartijn> heh, who doesn't want credit
+Sep 22 20:51:37 <P64ProtocolBot>	[D] <@PiZZaMartijn> it's not like the developers are pine64 developers and they start working in-company now, the developers working on pine products usually do that because they like working in the open 🙂
+Sep 22 20:52:40 <Fq>	Yes, that is the case now, but with time it could break if you set up an environment that is not open; this is what I was warning about.
+Sep 22 20:53:11 <P64ProtocolBot>	[D] <@♦ Б̸̔̈а̶̋̽р̶͐͂о̵̟̇н̶̒̐ ♦> I want to apologize to the dev teams for the PR nightmare, and express my gratitude for the fact you didn't permaban me the moment I walked in here
+Sep 22 20:54:56 <Fq>	Philpax, oh yes, I agree with you.
+Sep 22 21:07:53 <P64ProtocolBot>	[D] <@Tenacious-Techhunter> So, what are the plans if ARM won’t license legitimate ARM cores to Rockchip anymore on account of the recent China shenanigans?
+Sep 22 22:48:19 *	pikudoz has quit (Ping timeout: 180 seconds)
+Sep 22 23:02:45 *	Fq has quit (Read error)
+Sep 22 23:03:04 *	Fq (l@Clk-FFB2B6C.zwiebeltoralf.de) has joined
+Sep 22 23:11:59 *	TheCreeper has quit (Read error)
+Sep 22 23:12:14 *	TheCreeper (TheCreeper@AB887D8D.8E47D507.434A97A5.IP) has joined
+Sep 22 23:30:19 *	TheCreeper has quit (Read error)
+Sep 22 23:30:45 *	TheCreeper (TheCreeper@5A55DB7.D2E399F4.28DA137F.IP) has joined
+Sep 22 23:37:22 *	m01 has quit (Quit: Konversation terminated.)
+Sep 22 23:38:37 *	m01 (quassel@Clk-93216FF2.m01.eu) has joined
+Sep 23 00:17:38 *	craftyguy (craftyguy@D6DB2646.DB521B1.9987D59.IP) has joined
+Sep 23 00:19:41 <P64ProtocolBot>	[T] <@la concentida Ri> Forwarded from unknown: ᴬᵐ ᵛᵉʳʸ ᵍʳᵃᵗᵉᶠᵘˡ, ʷʰᵃᵗ ʷⁱˡˡ ⁱ ʳᵉᵃˡˡʸ ᵈᵒ ᵗᵒ ᵃᵖᵖʳᵉᶜⁱᵃᵗᵉ ʸᵒᵘ ˢⁱʳ, ᵇᵉᶜᵃᵘˢᵉ ⁱ ᵈᵒⁿᵗ ᵏⁿᵒʷ ʰᵒʷ ᵗᵒ ᵗʰᵃⁿᵏ ʸᵒᵘ ᵉⁿᵒᵘᵍʰ ᶠᵒʳ ᵇᵉⁱⁿᵍ ˢᵒ ᵏⁱⁿᵈ ᵃⁿᵈ ᵍᵒᵒᵈ ᵗᵒ ᵐᵉ ⁱⁿ ʸᵒᵘʳ ᵖˡᵃᵗᶠᵒʳᵐ, ⁱᵗ'ˢ 
+Sep 23 00:19:42 <P64ProtocolBot>	[T] <@la concentida Ri> 👇👇👇
+Sep 23 00:19:43 <P64ProtocolBot>	[T] <@la concentida Ri> @Expat_trader
+Sep 23 00:19:45 <P64ProtocolBot>	[T] <@la concentida Ri> 👇👇👇👇👇
+Sep 23 00:19:46 <P64ProtocolBot>	[T] <@la concentida Ri> https://t.me/joinchat/Dm2C-u-n3TkwMmQ0
+Sep 23 00:34:27 *	luke-jr has quit (Ping timeout: 180 seconds)
+Sep 23 00:40:33 *	Cuban (Cuban@67ACD7B0.2EFF6A0A.9BF7B63.IP) has joined
+Sep 23 00:53:59 *	TheCreeper has quit (Ping timeout: 181 seconds)
+Sep 23 01:02:54 *	TheCreeper (TheCreeper@Clk-A9064E56.svea.net) has joined
+Sep 23 01:14:50 *	TheCreeper1 (TheCreeper@Clk-A5F6A641.telenet.unc.edu) has joined
+Sep 23 01:15:19 *	K0HAX has quit (Ping timeout: 180 seconds)
+Sep 23 01:16:06 *	TheCreeper has quit (Ping timeout: 180 seconds)
+Sep 23 01:16:11 *	K0HAX (michael@A9AA9150.776E4109.E96F505D.IP) has joined
+Sep 23 01:33:10 *	luke-jr (luke-jr@54BD180.725B773B.E185F254.IP) has joined
+Sep 23 02:19:51 *	raster (raster@Clk-B66961B5.range81-159.btcentralplus.com) has joined
+Sep 23 02:20:11 *	Bebef (bebef@283EC51E.E9C6FA91.46943644.IP) has joined
+Sep 23 02:32:42 *	BArray (Thunderbir@Clk-FBD9CB5F.sparkbb.co.nz) has joined
+Sep 23 02:35:07 *	B[] has quit (Ping timeout: 180 seconds)
+Sep 23 02:35:07 *	BArray is now known as B[]
+Sep 23 02:37:48 *	dsimic (dsimic@8392493.4F8B56B8.6812344F.IP) has joined
+Sep 23 02:38:35 <dsimic>	@fire219 : the IRC server still pushes mandatory joins to the #pine-community channel that no longer exists
+Sep 23 02:38:41 <dsimic>	which should be corrected
+Sep 23 02:39:17 <dsimic>	also, the IRC server's greeting message should be updated to include the #lts-sopine channel
+Sep 23 02:39:35 <dsimic>	^^^ fireTwoOneNine
+Sep 23 02:39:41 <fire219>	shit i forgot to change that
+Sep 23 02:40:55 <dsimic>	the IRC server's greeting message should be updated not to include the #pine-community channel
+Sep 23 02:41:53 <fire219>	i did change the MOTD, dunno why it's not sending the updated version :/
+Sep 23 02:43:09 <fire219>	alright both should be fixed now 
+Sep 23 02:44:00 <dsimic>	great, thank you!
+Sep 23 02:51:55 *	carlos (user@5A55DB7.D2E399F4.28DA137F.IP) has joined
+Sep 23 02:56:40 *	razzy (razzy@Clk-584B38F2.nat.epc.tmcz.cz) has joined
+Sep 23 02:57:33 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 23 03:05:30 *	hendursa1 (weechat@1A70E8FF.EC6325BA.9574C1CF.IP) has joined
+Sep 23 03:05:49 *	dsimic (dsimic@8392493.4F8B56B8.6812344F.IP) has left
+Sep 23 03:06:57 *	razzy has quit (Ping timeout: 180 seconds)
+Sep 23 03:08:14 *	lodovico (lodovico@40E2838F.B7FE86C8.A481047D.IP) has joined
+Sep 23 03:21:45 *	sdr73 (libero3@FE8F7FAF.DD1D6965.A0982429.IP) has joined
+Sep 23 03:23:45 *	lodovico has quit (Ping timeout: 180 seconds)
+Sep 23 03:30:55 *	carlos has quit (Ping timeout: 180 seconds)
+Sep 23 03:39:19 *	xmn (xmn@Clk-429648EB.nyc.res.rr.com) has joined
+Sep 23 03:43:56 *	anarsoul has quit (Read error)
+Sep 23 03:44:43 *	anarsoul (anarsoul@Clk-769A644D.vf.shawcable.net) has joined
+Sep 23 03:55:34 *	razzy (razzy@Clk-8F54FE55.nat.epc.tmcz.cz) has joined
+Sep 23 04:02:49 *	carlos (user@Clk-730F04F5.zbau.f3netze.de) has joined
+Sep 23 04:02:50 *	razzy has quit (Ping timeout: 180 seconds)
+Sep 23 04:18:17 *	B[] has quit (Ping timeout: 180 seconds)
+Sep 23 04:19:02 *	B[] (Thunderbir@Clk-FBD9CB5F.sparkbb.co.nz) has joined
+Sep 23 04:22:34 *	razzy (razzy@Clk-7108A270.nat.epc.tmcz.cz) has joined
+Sep 23 04:27:38 <P64ProtocolBot>	[T] <@Alvaro> I am so fortunate that I am now making $ 1500 free weekly from the company as a representative.  Best online trading company ever.  capital-base
+Sep 23 04:27:38 <P64ProtocolBot>	[T] <@Alvaro> They give 120% and 140% profit after 24 hours Mining session and 5% referral commission
+Sep 23 04:27:39 <P64ProtocolBot>	[T] <@Alvaro> Best paying platform 💯
+Sep 23 04:27:41 <P64ProtocolBot>	[T] <@Alvaro> https://is.gd/ur2tsS
+Sep 23 04:27:49 *	carlos has quit (Ping timeout: 180 seconds)
+Sep 23 04:33:05 <P64ProtocolBot>	[T] <@EricGLivingston> English is the international language of business; i.e. productivity. Anyone who doesn’t want to learn it is a culturalist and probably a racist. (re @Kirfkin: There's people from all over the world. English isn't everyone's first language.)
+Sep 23 04:35:00 <P64ProtocolBot>	[D] <@Funeral> Best to keep politics out
+Sep 23 04:36:49 <P64ProtocolBot>	[T] <@EricGLivingston> 👍 (re @p64protocolbot: [D] <@Funeral> Best to keep politics out)
+Sep 23 04:37:29 <P64ProtocolBot>	[T] <@widex90> We don't need political words. I don't like English because I favourite two other foreign languages. This is but no reason that I don't try to communicate in this language. This is important that we could collaborate over cultures (re @EricGLivingston: English is the international language of business; i.e. productivity. Anyone who doesn’t want to learn it is a culturalist and probably a racist.)
+Sep 23 04:41:21 *	WoC (WoC@Clk-CAEFC4B3.satx.res.rr.com) has joined
+Sep 23 04:53:50 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> Eric, you deserve to become a meme 😂
+Sep 23 04:54:13 *	SkunkyLaptop (skunky@Clk-4E0EAC08.dyn.optonline.net) has joined
+Sep 23 04:55:56 <P64ProtocolBot>	[D] <@Funeral> Eh, please be nice. And I highly recommend not to deepen the topic
+Sep 23 05:00:58 *	inky has quit (Ping timeout: 180 seconds)
+**** BEGIN LOGGING AT Thu Sep 23 12:06:07 2021
+
+Sep 23 12:06:07 *	Now talking on #Pine64
+Sep 23 12:06:07 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 23 12:06:07 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 23 12:06:07 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 23 12:06:07 *	NickServ sets mode +r on fire219
+Sep 23 12:06:07 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 23 12:06:07 *	ChanServ gives channel operator status to fire219
+Sep 23 12:10:26 *	argonautx has quit (Ping timeout: 180 seconds)
+Sep 23 12:27:34 *	chupi (Chupi@Clk-99255EE0.access.telenet.be) has joined
+Sep 23 12:29:49 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 23 12:31:33 *	SkunkyLaptop has quit (Read error)
+Sep 23 12:56:36 <P64ProtocolBot>	[D] <@Thanos the tank engine> lodge a ticket with support
+Sep 23 13:00:59 *	chupi has quit (Ping timeout: 180 seconds)
+Sep 23 13:03:44 *	chupi (Chupi@Clk-99255EE0.access.telenet.be) has joined
+Sep 23 13:06:01 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 23 13:09:26 *	Rathann (rathann@E3910F41.E5848269.484D7D84.IP) has joined
+Sep 23 13:22:56 *	philpax (sid516926@Clk-48BD5A00.irccloud.com) has joined
+Sep 23 13:23:29 *	philpax (sid516926@Clk-48BD5A00.irccloud.com) has left
+Sep 23 13:28:03 *	TheCreeper1 has quit (Ping timeout: 180 seconds)
+Sep 23 13:29:40 *	pavlushka has quit (Read error)
+Sep 23 13:30:59 *	TheCreeper1 (TheCreeper@8CDE9246.EC6325BA.9574C1CF.IP) has joined
+Sep 23 13:59:21 *	sdr73 (libero3@Clk-5C339D3F.threembb.co.uk) has joined
+Sep 23 14:02:05 *	argonautx (argonautx@Clk-2F81E658.pool.telefonica.de) has joined
+Sep 23 14:15:14 *	erictheblack (Thunderbir@Clk-6ACAD895.adsl.xs4all.nl) has joined
+Sep 23 14:23:38 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 23 14:45:47 *	razzy (razzy@Clk-ED8FFF6A.nat.epc.tmcz.cz) has joined
+Sep 23 14:48:57 *	razzy has quit (Ping timeout: 180 seconds)
+Sep 23 14:50:48 *	razzy (razzy@Clk-20F12FE5.hlucinnet.cz) has joined
+Sep 23 15:04:32 *	argonautx has quit (Ping timeout: 180 seconds)
+Sep 23 15:06:46 *	P64ProtocolBot has quit (Read error)
+Sep 23 15:08:08 *	P64ProtocolBot (P64Protoco@109D42B7.1FA7ECB3.FD28D2E3.IP) has joined
+Sep 23 15:11:15 *	Robson (Robson@Clk-696CB3B8.play-internet.pl) has joined
+Sep 23 15:12:03 <P64ProtocolBot>	[D] <@Zen> Does `bash` have a way of populating a variable in a background thread with the script waiting for that to complete before using the variable?
+Sep 23 15:12:45 <P64ProtocolBot>	[D] <@gamiee> #offtopic
+Sep 23 15:13:08 <P64ProtocolBot>	[D] <@Zen> Alright, ty
+Sep 23 15:13:15 <P64ProtocolBot>	[D] <@gamiee> np :)
+Sep 23 15:23:25 *	luke-jr has quit (Ping timeout: 180 seconds)
+Sep 23 15:32:07 *	Robson has quit (Quit: Leaving)
+Sep 23 15:36:22 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 23 15:37:38 *	razzy has quit (Quit: leaving)
+Sep 23 15:50:03 *	erictheblack has quit (Ping timeout: 180 seconds)
+Sep 23 15:50:33 *	Rathann has quit (Read error)
+Sep 23 15:51:42 *	luke-jr (luke-jr@A4E9950E.2674C0B2.E0AF2252.IP) has joined
+Sep 23 15:59:02 *	luke-jr has quit (Ping timeout: 180 seconds)
+Sep 23 15:59:47 *	TheCreeper1 has quit (Ping timeout: 180 seconds)
+Sep 23 16:00:24 *	TheCreeper1 (TheCreeper@AFCADB7D.776E4109.E96F505D.IP) has joined
+Sep 23 16:07:01 *	Lord_of_Life_ (Lord@34D97693.34C8660.FDD0E13A.IP) has joined
+Sep 23 16:07:04 *	mecrisp has quit (Quit: leaving)
+Sep 23 16:07:47 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Sep 23 16:07:47 *	Lord_of_Life_ is now known as Lord_of_Life
+Sep 23 16:07:56 *	user-5576 (webchat@Clk-157A7BBC) has joined
+Sep 23 16:09:29 *	user-5576 has quit (Quit: Page closed)
+Sep 23 16:10:53 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 23 16:16:39 *	sdr73 has quit (Ping timeout: 180 seconds)
+Sep 23 16:21:40 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 23 16:27:20 *	luke-jr (luke-jr@BD90044E.AA869625.E0AF2252.IP) has joined
+Sep 23 16:29:06 *	xmn (xmn@Clk-429648EB.nyc.res.rr.com) has joined
+Sep 23 16:31:22 <xmn>	what happen to the #pine-community, I get this error, "Cannot join channel: The Pine64 IRC server has only a small number of approved channels."
+Sep 23 16:32:38 *	nihilazo has quit (Quit: Leaving)
+Sep 23 16:34:01 <P64ProtocolBot>	[T] <@UniversalSuperBox> It's been closed. This room supersedes it.
+Sep 23 16:36:44 <xmn>	oh really? Any reason given? any link explaining? And guess not irc only :)
+Sep 23 16:36:53 <xmn>	thanks for the info btw
+Sep 23 16:38:55 <P64ProtocolBot>	[T] <@UniversalSuperBox> People were using the Pine64 room as a general space. So now it is.
+Sep 23 16:39:10 <P64ProtocolBot>	[T] <@UniversalSuperBox> There is  sopine and lts room now for the actual Pine64 PINE64 boards
+Sep 23 16:43:52 *	sdr73 (libero3@Clk-5C339D3F.threembb.co.uk) has joined
+Sep 23 16:59:43 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 23 17:03:54 *	hoover (hoover@62869489.ABC9AEF5.1E0BBAFC.IP) has joined
+Sep 23 17:13:45 *	sdr73 has quit (Ping timeout: 180 seconds)
+Sep 23 17:13:59 *	raingloom (quassel@Clk-42D4FC78.catv.pool.telekom.hu) has joined
+Sep 23 17:15:36 <xmn>	I see thx
+Sep 23 17:42:40 *	raster has quit (Quit: Gettin' stinky!)
+Sep 23 17:44:36 *	hoover has quit (Quit: Leaving)
+Sep 23 18:00:15 *	dsimic (dsimic@8392493.4F8B56B8.6812344F.IP) has joined
+Sep 23 18:00:56 <dsimic>	fire219: how about creating a channel dedicated to creating open-source firmware for the PinePhone modem?
+Sep 23 18:01:09 <dsimic>	people would be able to leave the feedback there, etc.
+Sep 23 18:01:54 <dsimic>	biktorgj already created a Matrix room (is that the right term?) for that purpose, but it might be better to keep such discussions on the Pine64 IRC servers
+Sep 23 18:02:26 <dsimic>	^^^ fireTwoOneNine
+Sep 23 18:03:11 <dsimic>	maybe #openmodem would be a good name for the channel :)
+Sep 23 18:05:09 <dsimic>	let's also ping lukasz_erecinski
+Sep 23 18:17:43 *	xmn_ (xmn@Clk-429648EB.nyc.res.rr.com) has joined
+Sep 23 18:18:40 *	xmn has quit (Ping timeout: 180 seconds)
+Sep 23 18:19:20 <P64ProtocolBot>	[D] <@ayayagames> Scrolls up like 50 messages lmao wtf baby
+Sep 23 18:24:42 *	trekkie1701c has quit (Quit: :P)
+Sep 23 18:57:21 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 23 19:03:38 *	Cuban has quit (Ping timeout: 180 seconds)
+Sep 23 19:16:30 <P64ProtocolBot>	[D] <@fireTwoOneNine> dsimic: i really don't want to be making more niche purpose channels. this network's already getting unwieldy to manage
+Sep 23 19:19:16 *	kj7rrv has quit (Read error)
+Sep 23 19:19:51 *	kj7rrv (kj7rrv@Clk-48F982BE.sub-174-204-198.myvzw.com) has joined
+Sep 23 19:22:53 *	kj7rrv has quit (Read error)
+Sep 23 19:23:10 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 23 19:39:25 *	raingloom has quit (Ping timeout: 180 seconds)
+Sep 23 19:40:21 <Fq>	@fireTwoOneNine, may be a good time to delegate some of your work to someone you trust in the community; that way you won't burn out (since you said it is getting 'unwieldy to manage')
+Sep 23 19:40:48 <dsimic>	fireTwoOneNine: no problem, thank you anyway
+Sep 23 19:42:45 <Fq>	we all need to help each other and not burnout
+Sep 23 19:44:35 <dsimic>	of course, but it's up to fire219 to decide about that
+Sep 23 19:45:39 <xmn_>	fireTwoOneNine, so the irc only was causing issues or just wasn't used enough? Just curious.
+Sep 23 19:46:19 <Fq>	ohh yes, for sure. Not intending to force anything, just from times in the past when I was about to burn out and I didn't notice myself, thought it might help
+Sep 23 19:46:38 *	neoz2 (localhost@EE784E15.EB2454EF.46E06837.IP) has joined
+Sep 23 19:48:07 <Fq>	Someone mentioned to me that I could burn out if I kept doing what I was doing, I really had not noticed. I followed the advice of this friend and it really helped the people I was serving.
+Sep 23 19:48:37 <dsimic>	too much of the good stuff is sometimes bad :)
+Sep 23 19:48:46 <Fq>	hehehe yup
+Sep 23 19:49:25 <dsimic>	but also delegating things can be tough, meaning that it can end up in even more work
+Sep 23 19:49:42 <Fq>	yes, has to be someone you trust to be responsible
+Sep 23 19:52:49 <P64ProtocolBot>	[D] <@mite> would be cool to see a powerful arm64 workstation be developed
+Sep 23 19:53:57 <Fq>	By the way, it would be good to keep an eye on what https://frame.work/ is doing with their DIY laptops, it has some very good ideas that Pine64 could use
+Sep 23 19:54:21 <Fq>	(like pasting a sticker with a bar code on the replaceable parts)
+Sep 23 19:55:24 <Fq>	here is a review: https://www.youtube.com/watch?v=0rkTgPt3M4k
+Sep 23 19:55:43 <Fq>	s/bar code/qr code/
+Sep 23 19:58:55 <Fq>	(or putting a little shutter window over the webcam lens)
+Sep 23 20:00:28 <Fq>	If you watch the video you may want to skip until he actually shows the hardware, he talks a lot :)
+Sep 23 20:05:36 <dsimic>	having QR code stickers on all parts is a nice idea, and Pine64 SBCs already come with some stickers with QR codes
+Sep 23 20:06:05 <dsimic>	I haven't checked what's in those QR codes, though :)
+Sep 23 20:08:24 <dsimic>	as a note, there's already a privacy switch for the webcam on the PBP, which cuts power to the webcam
+Sep 23 20:08:33 <Fq>	one of the best things they did is the expansion slots, starting at 5min 15sec in the video
+Sep 23 20:12:15 <dsimic>	let me watch the video...
+Sep 23 20:15:01 <Fq>	ahh, I didn't know the SBCs came with QR codes with links to parts info and  how to replace them, great!
+Sep 23 20:21:07 <dsimic>	quite frankly, I don't like those modular expansion slots, because the interface exposed by the motherbord is USB
+Sep 23 20:21:26 <dsimic>	which means that none of those modules provides native ports
+Sep 23 20:22:04 <dsimic>	for example, there isn't possible to have a native Ethernet port, which I think non-consumer laptops should have
+Sep 23 20:24:48 <dsimic>	not to mention that those expansion slots and modules add to the cost :)
+Sep 23 20:32:50 <dsimic>	if the Framework laptop fails to deliver motherboard upgrades down the road, the whole thing won't make much sense :)
+Sep 23 20:34:10 <dsimic>	also, with those modules isn't possible to have a modular native microSD slot, which is essential on ARM systems
+Sep 23 21:10:33 <P64ProtocolBot>	[T] <@Vijay> Hello All
+Sep 23 21:11:44 <P64ProtocolBot>	[T] <@Vijay> Can any one help with pine64 smartwatch development related questions
+Sep 23 21:12:32 <P64ProtocolBot>	[T] <@Vijay> Is this the correct forum?
+Sep 23 21:13:18 <Alho>	No, try #pinetime-dev
+Sep 23 21:38:17 *	ecs has quit (Read error)
+Sep 23 21:38:23 *	ecs (ecs@Clk-F55F7F5C.net) has joined
+Sep 23 21:43:00 *	nomasteryoda has quit (Quit: Konversation terminated!)
+Sep 23 21:45:41 <P64ProtocolBot>	[D] <@ayayagames> ha so i still use ,y iphone5 at home for small things like amazon and GPS when i need it...... I AM LOCKED OUT OF AMAZON VIA I NEED UPDATE IOS13
+Sep 23 21:46:02 <P64ProtocolBot>	[D] <@ayayagames> they are on 12.5
+Sep 23 21:46:04 <P64ProtocolBot>	[D] <@ayayagames> :moon2H:
+Sep 23 21:46:07 *	hendursaga (weechat@Clk-51CFC221.zbau.f3netze.de) has joined
+Sep 23 21:46:36 <P64ProtocolBot>	[D] <@ayayagames> what the fuck kina bull this is that
+Sep 23 22:01:55 <P64ProtocolBot>	[D] <@Tenacious-Techhunter> @dsimic, what makes MicroSD so important on a system that can take SSDs?
+Sep 23 22:16:28 *	l_ (l@Clk-3BFA0B4E.ip-51-77-52.eu) has joined
+Sep 23 22:17:45 *	Fq has quit (Ping timeout: 180 seconds)
+Sep 23 22:26:38 *	cowgomoo (quassel@Clk-73566B80.hsd1.fl.comcast.net) has joined
+Sep 23 22:27:43 *	cowgomoo has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+Sep 23 22:33:22 *	kj7rrv has quit (Read error)
+Sep 23 22:33:33 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 23 22:34:17 *	kj7rrv has quit (Read error)
+Sep 23 22:34:23 *	kj7rrv (kj7rrv@Clk-3447FB5B.sub-174-204-202.myvzw.com) has joined
+Sep 23 22:35:14 *	pikudoz has quit (Ping timeout: 180 seconds)
+Sep 23 22:35:41 *	cowgomoo (quassel@Clk-73566B80.hsd1.fl.comcast.net) has joined
+Sep 23 22:44:56 *	kj7rrv has quit (Ping timeout: 180 seconds)
+Sep 23 22:45:11 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 23 23:14:30 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has joined
+Sep 23 23:31:15 <P64ProtocolBot>	[D] <@SirOggy> impressive performance from bpfilter
+Sep 23 23:31:18 <P64ProtocolBot>	[D] <@SirOggy> https://cdn.discordapp.com/attachments/463285150898192384/890817643479719956/image.png
+Sep 23 23:37:22 *	m01 has quit (Quit: Konversation terminated.)
+Sep 23 23:38:37 *	m01 (quassel@Clk-93216FF2.m01.eu) has joined
+Sep 23 23:44:51 *	xmn_ has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+Sep 23 23:52:04 <P64ProtocolBot>	[D] <@Cyastis> dsimic: you can have a minimum 1Gbps ethernet connection from usb c so I assume it will cone with time
+Sep 23 23:53:36 <P64ProtocolBot>	[D] <@Cyastis> dsimic: you can have a minimum 1Gbps ethernet connection from usb c so I assume it will come with time
+Sep 23 23:53:37 <P64ProtocolBot>	[D] <@Cyastis> 
+Sep 23 23:53:38 <P64ProtocolBot>	[D] <@Cyastis> ~~also it'd probably be 10x cheaper to get adapters sadly~~
+Sep 24 00:10:48 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 24 00:21:14 *	RonWhoCaresHP520 (rpiggott@Clk-88E9654.cable.user.start.ca) has joined
+Sep 24 00:22:47 *	RonWhoCares (ronpi@Clk-88E9654.cable.user.start.ca) has joined
+Sep 24 00:38:05 <P64ProtocolBot>	[D] <@Ocawesome101> dsimic: they support thunderbolt 4 iirc
+Sep 24 00:40:31 *	Cuban (Cuban@4E09A3B.2A99D5D9.D05383D1.IP) has joined
+Sep 24 00:44:10 *	dsimic has quit (Ping timeout: 180 seconds)
+Sep 24 00:45:58 *	m01 has quit (Quit: Konversation terminated.)
+Sep 24 00:47:16 *	dsimic (dsimic@6F222017.4F8B56B8.6812344F.IP) has joined
+Sep 24 00:52:07 *	trekkie1701c has quit (Quit: :P)
+Sep 24 01:03:48 *	ibx2496 (FE865@33103A12.B2FE6E6.10208662.IP) has joined
+Sep 24 01:09:59 *	chupi has quit (Ping timeout: 180 seconds)
+Sep 24 01:12:03 *	chupi (Chupi@Clk-99255EE0.access.telenet.be) has joined
+Sep 24 01:39:50 <P64ProtocolBot>	[D] <@arch frajer sa frizurom> i thought bpfilter is abandoned?
+Sep 24 02:15:36 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 24 02:19:08 *	raster (raster@Clk-B66961B5.range81-159.btcentralplus.com) has joined
+Sep 24 02:21:31 *	xmn (xmn@Clk-429648EB.nyc.res.rr.com) has joined
+Sep 24 02:29:38 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 24 02:30:29 <P64ProtocolBot>	[T] <@P. Salvatore> Buongiorno. Sono interessato all'acquisto del Pinenote, sono residente in Italia, ma sul sito www.pine64.org/pinenote/ non si puo' accedere alla procedura di acqisto. C'è una alternativa? Grazie
+Sep 24 02:32:26 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Sep 24 02:32:55 <P64ProtocolBot>	[D] <@Segfault> Hey we try to keep discussion here in English, it's easier to moderate that way and you're more likely to get a response
+Sep 24 02:32:56 <P64ProtocolBot>	[D] <@Segfault> As for the question, the pinenote isn't available for purchase yet as far as I can tell, it'll be available soon as a development unit though
+Sep 24 02:34:36 *	Lord_of_Life (Lord@34D97693.34C8660.FDD0E13A.IP) has joined
+Sep 24 02:34:43 *	android (android@Clk-EB3634E3.res.spectrum.com) has joined
+Sep 24 02:35:26 <android>	may peace rest upon this channel?
+Sep 24 02:35:49 *	erictheblack (Thunderbir@Clk-6ACAD895.adsl.xs4all.nl) has joined
+Sep 24 02:41:03 *	android has quit (Read error)
+Sep 24 02:41:19 *	android (android@Clk-EB3634E3.res.spectrum.com) has joined
+**** BEGIN LOGGING AT Fri Sep 24 10:43:30 2021
+
+Sep 24 10:43:30 *	Now talking on #Pine64
+Sep 24 10:43:30 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 24 10:43:30 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 24 10:43:30 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 24 10:43:30 *	NickServ sets mode +r on fire219
+Sep 24 10:43:30 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 24 10:43:30 *	ChanServ gives channel operator status to fire219
+Sep 24 10:43:45 <dsimic>	I see laptopts as self-contained units
+Sep 24 10:43:58 <P64ProtocolBot>	[D] <@Segfault> With m.2 E key you could absolutely solder wires to take the SDIO and UART connections for a wifi module elsewhere while still leaving the PCIe connection on the multiphy PCIe connection in place for an SSD in that slot
+Sep 24 10:44:00 <P64ProtocolBot>	[D] <@Philpax> what would you do with a PCIe 4x inside the laptop, dsimic? the only thing I can really think of is storage or the LiteFury or something
+Sep 24 10:44:02 <dsimic>	which should be as powerful as possible without the need to attache a whole bunch of stuff
+Sep 24 10:44:30 <P64ProtocolBot>	[D] <@Philpax> (to be clear, I agree with you, I think having as much in the laptop is good, but I'm trying to figure out what you could actually add here)
+Sep 24 10:44:42 <P64ProtocolBot>	[D] <@Thanos the tank engine> imagine the bottleneck factor of ann RTX 3090 connected to the rk3588 based pinebook pro pro
+Sep 24 10:44:42 <dsimic>	I'd use PCIe for an SSD (or even two, for RAID 1) and WiFi card
+Sep 24 10:44:44 <P64ProtocolBot>	[D] <@Segfault> And the beauty of it all is that if that big PCIe controller plays nice with GPUs and thunderbolt then there's literally no reason that idea couldn't work in theory
+Sep 24 10:44:44 <P64ProtocolBot>	[D] <@Philpax> (nobody ships GPUs on NVMe, do they? :P)
+Sep 24 10:45:01 <P64ProtocolBot>	[D] <@Philpax> M.2, bah, I keep mixing those up
+Sep 24 10:45:17 <P64ProtocolBot>	[D] <@Thanos the tank engine> no, GPUs on M.2 are not a thing
+Sep 24 10:45:27 <P64ProtocolBot>	[D] <@Segfault> There are framebuffer/blitter units that output over vga but that's it
+Sep 24 10:45:32 <dsimic>	theer are some M.2 GPUs, but they are basic
+Sep 24 10:45:40 <P64ProtocolBot>	[D] <@Thanos the tank engine> not exactly super useful
+Sep 24 10:45:57 <dsimic>	right, just for a console
+Sep 24 10:45:59 <P64ProtocolBot>	[D] <@Philpax> @Thanos the tank engine sometimes you just need to machine learn at a coffee shop and your RTX 3090
+Sep 24 10:46:40 <dsimic>	oh, yeah :)
+Sep 24 10:47:09 <P64ProtocolBot>	[D] <@Segfault> So yeah if I ever disappear for a few months after we get an RK3588 pinebook you can probably assume I've gone into some kind of "I will not go online until I finish this crazy project and make a blog post about it" thing lol
+Sep 24 10:47:13 <dsimic>	lugging around external GPUs is fun, with their 350 W PSU bricks :)
+Sep 24 10:47:33 <P64ProtocolBot>	[D] <@Segfault> dsimic: my home setup it a ThinkPad with an external RX 570
+Sep 24 10:47:38 <P64ProtocolBot>	[D] <@Philpax> I will cheer you on Segfault o7
+Sep 24 10:47:52 <P64ProtocolBot>	[D] <@Thanos the tank engine> >sets down Pinebook on table at coffee shop
+Sep 24 10:47:53 <P64ProtocolBot>	[D] <@Thanos the tank engine> >pulls RTX 3090 eGPU out of bag and sets it on the floor, plugging it in to the nearest outlet
+Sep 24 10:47:54 <P64ProtocolBot>	[D] <@Thanos the tank engine> >the lights dim for a second as the sheer power of your rig is too much for the building to handle
+Sep 24 10:47:55 <dsimic>	but do you lug the GPU around, Segfault?
+Sep 24 10:47:55 <P64ProtocolBot>	[D] <@Thanos the tank engine> >all the peasants are staring at you, jealous of your rig
+Sep 24 10:48:07 <P64ProtocolBot>	[D] <@Segfault> I took it to a LAN party once
+Sep 24 10:48:23 <dsimic>	once doesn't count :)
+Sep 24 10:48:34 <P64ProtocolBot>	[D] <@Philpax> you have a decent laptop that becomes a workstation when you're at home, and you can bring your workstation with you if you really need to
+Sep 24 10:49:09 <P64ProtocolBot>	[D] <@Thanos the tank engine> >you start training an AI on it, the heat output raising the temperature of the building noticeably
+Sep 24 10:49:09 <P64ProtocolBot>	[D] <@Thanos the tank engine> >people start leaving, throwing dirty looks at you
+Sep 24 10:49:11 <P64ProtocolBot>	[D] <@Thanos the tank engine> >they're still just jealous
+Sep 24 10:49:29 <P64ProtocolBot>	[D] <@Philpax> I was tempted by the Flow X13 which takes this concept to the extreme (small ultrabook-ish device with a 3080 eGPU), but it was ungodly expensive
+Sep 24 10:49:49 <dsimic>	let me express my thoughts again: laptops should be as powerful as possible as self-contained units, and having powerful expansion ports on them is perfectly fine if that doesn't collide with the previous objective
+Sep 24 10:50:13 <P64ProtocolBot>	[D] <@Segfault> dsimic: then clearly you're not the target market for an egpu :P
+Sep 24 10:50:29 <dsimic>	that's correct
+Sep 24 10:50:30 *	inky has quit (Ping timeout: 180 seconds)
+Sep 24 10:50:48 <P64ProtocolBot>	[D] <@Philpax> oh, I agree: but that's what I mean, you can't really extend the laptop internally in a way that will make it substantially more powerful
+Sep 24 10:50:57 <P64ProtocolBot>	[D] <@Philpax> WiFi can be engineered into the device in this hypothetical future
+Sep 24 10:50:59 <P64ProtocolBot>	[D] <@Thanosthetankengine> the entire point of egpus and things like convergence on phones is just having one device
+Sep 24 10:51:26 <P64ProtocolBot>	[D] <@Segfault> My pinebook already has the best SSD I own lol
+Sep 24 10:51:27 <P64ProtocolBot>	[D] <@Philpax> RAID on a laptop is a possible outcome, but again, probably not the target market for a PBU
+Sep 24 10:51:38 <dsimic>	yeah, but making the laptop weak so an eGPU could be connected makes little sense
+Sep 24 10:51:58 <dsimic>	I'd love to have RAID 1, for example -- not everyone whats the same :)
+Sep 24 10:52:02 <P64ProtocolBot>	[D] <@Philpax> you're not making it weaker though, imo! :p
+Sep 24 10:52:03 <dsimic>	wants *
+Sep 24 10:52:21 <P64ProtocolBot>	[D] <@Segfault> I don't see much point in RAID unless you've already got like 4-6 drives lol
+Sep 24 10:52:30 <P64ProtocolBot>	[D] <@Philpax> true, but my opinion is the number of use cases enabled by external connectivity outweighs that of internal connectivity
+Sep 24 10:52:31 <dsimic>	yeah, but putting PCIe x4 onto the TB port would leave not much
+Sep 24 10:52:35 <P64ProtocolBot>	[D] <@Segfault> It's just not cost effective otherwise
+Sep 24 10:52:53 <dsimic>	RAID 1 for data safety and better read performance
+Sep 24 10:53:10 <dsimic>	keeping my data safe is priceless :)
+Sep 24 10:53:24 <P64ProtocolBot>	[D] <@Segfault> dsimic: in theory at least, connecting the SSD to a multiphy would only lose you 50mb/s at most, at least on slower drives like the 660p which I already think is plenty fast enough
+Sep 24 10:53:58 <dsimic>	660p turns into ~120 MB/s writes once the cache is exhausted
+Sep 24 10:54:03 <P64ProtocolBot>	[D] <@Segfault> The biggest hit would actually be wifi because you'd be stuck with SDIO modules rather than PCIe
+Sep 24 10:54:23 <P64ProtocolBot>	[D] <@Segfault> I'm not exhausting the cache lol
+Sep 24 10:54:40 <dsimic>	see, I don't use WiFi at all, but I still care about other people getting good WiFI performance :)
+Sep 24 10:55:08 <dsimic>	I would've exhausted the 660p cache many times :)
+Sep 24 10:55:15 <P64ProtocolBot>	[D] <Thanos the tank engine> so yeah there's a tradeoff
+Sep 24 10:55:32 <P64ProtocolBot>	[D] <Segfault> Absolutely, but I also don't particularly care about wifi performance as long as it's faster than my internet connection so in this theoretical world I don't care about the small performance loss from a setup like that
+Sep 24 10:55:47 <dsimic>	but I still think that getting good SSD performance and good WiFi performance is much more important than connecting an eGPU :)
+Sep 24 10:55:55 <P64ProtocolBot>	[D] <Segfault> Even the PBPs current WiFi module is adequate for me
+Sep 24 10:56:20 <P64ProtocolBot>	[D] <Segfault> So yes in this theoretical world I don't actually lose any significant SSD or wifi performance
+Sep 24 10:56:20 <dsimic>	not all peopla use WiFi to access the Internet only
+Sep 24 10:56:24 <dsimic>	people *
+Sep 24 10:56:30 <P64ProtocolBot>	[D] <Thanos the tank engine> splitting t5he 4 lanes from the pcie3.0 into 2 sets of 2 lanes could be fun for putting 2 SSDs in RAID
+Sep 24 10:56:39 <dsimic>	many people have local NASes, for example
+Sep 24 10:56:43 <P64ProtocolBot>	[D] <Segfault> If the controller supports it
+Sep 24 10:56:53 <dsimic>	yes, if supported
+Sep 24 10:57:04 <P64ProtocolBot>	[D] <Philpax> only four lanes is pretty limiting though :(
+Sep 24 10:57:14 <P64ProtocolBot>	[D] <Segfault> Four lanes is quite a bit at 3.0 speeds
+Sep 24 10:57:19 <P64ProtocolBot>	[D] <Segfault> 32gbit/s
+Sep 24 10:57:31 <P64ProtocolBot>	[D] <Thanos the tank engine> two drives in a raid1 could be faster than one drive with the full bandwidth
+Sep 24 10:57:35 <P64ProtocolBot>	[D] <Segfault> I'd be surprised if the interconnect rockchip designs will be able to handle that much tbh
+Sep 24 10:57:51 <dsimic>	RAID 1 allows faster reads
+Sep 24 10:58:15 <dsimic>	right, the RK3588 probably wouldn't be able to handle all that :)
+Sep 24 10:58:20 <dsimic>	but the PCHs are no better
+Sep 24 10:58:29 <dsimic>	they also cannot handle all that's connected to them
+Sep 24 10:58:32 <P64ProtocolBot>	[D] <Thanos the tank engine> in a raid0 you'd get fdaster everything but no redundancy
+Sep 24 10:58:55 <P64ProtocolBot>	[D] <Thanos the tank engine> raid1 would have the redundancy benefits at least
+Sep 24 10:58:58 <P64ProtocolBot>	[D] <Segfault> We can only hope rockchip sees this as an opportunity to create a future proof design (like with the 32gb ram limit) so they iron out the bottlenecks before they can become a problem in the next generation
+Sep 24 10:59:14 <dsimic>	NVMe SSDa are already fast, but I'd like to have redundancy
+Sep 24 10:59:19 <dsimic>	* SSDs
+Sep 24 10:59:30 <P64ProtocolBot>	[D] <Philpax> can a PCIE 3.0 lane be bifurcated into two PCIE 2.0 lanes?
+Sep 24 10:59:47 <dsimic>	right, let's hope that the RK3588 will be really done right :)
+Sep 24 10:59:59 <dsimic>	that depends on the controller
+Sep 24 11:00:06 <P64ProtocolBot>	[D] <Segfault> It wouldn't be 2.0 lanes
+Sep 24 11:00:06 <dsimic>	^^^ Philpax
+Sep 24 11:00:19 <dsimic>	2 x x2 3.0 lanes
+Sep 24 11:00:26 <P64ProtocolBot>	[D] <Segfault> If it can it would be splitting it into two 3.0 2x lanes yeah
+Sep 24 11:00:35 <dsimic>	x2, not 2x :)
+Sep 24 11:00:37 <P64ProtocolBot>	[D] <Segfault> Or possibly even something like one 3.0 1x and one 3.0 3x
+Sep 24 11:00:53 <P64ProtocolBot>	[D] <Segfault> iirc there's technically nothing stopping PCIe from working with odd numbers of lanes
+Sep 24 11:01:07 <dsimic>	I'm not aware of such layouts
+Sep 24 11:01:25 <P64ProtocolBot>	[D] <Segfault> Non standard of course
+Sep 24 11:01:34 <P64ProtocolBot>	[D] <Segfault> But theoretically I think they can work
+Sep 24 11:01:46 <dsimic>	even having 4 x x1 would be nice :)
+Sep 24 11:01:55 <P64ProtocolBot>	[D] <Segfault> I'm pretty sure there's also at least one 32x implementation
+Sep 24 11:02:12 <dsimic>	I've seen some x24 slots, IIRC
+Sep 24 11:02:24 <dsimic>	again, x2, not 2x, for example :)
+Sep 24 11:02:44 <P64ProtocolBot>	[D] <Segfault> Bah that's semantics :P
+Sep 24 11:03:06 <dsimic>	well, we should strive to correctness :)
+Sep 24 11:03:18 <P64ProtocolBot>	[D] <Philpax> ah right, I thought 3.0 was double 2.0 but that's only true of 4.0 and above
+Sep 24 11:03:28 <P64ProtocolBot>	[D] <Segfault> No 3.0 is double 2.0
+Sep 24 11:03:31 <P64ProtocolBot>	[D] <Segfault> Just as 2.0 is double 1.0
+Sep 24 11:03:44 <dsimic>	bifurcation can't change the generation
+Sep 24 11:03:45 <P64ProtocolBot>	[D] <Philpax> negatory, 2.0 is 5 GT/s, 3.0 is 8 GT/s
+Sep 24 11:03:54 <P64ProtocolBot>	[D] <Segfault> Almost double :P
+Sep 24 11:04:18 <P64ProtocolBot>	[D] <Segfault> iirc the real world numbers for 2.0 are actually 4gt/s
+Sep 24 11:04:36 <P64ProtocolBot>	[D] <Philpax> yeah, I was just wondering if it was possible to reconfigure a PCI-E 3.0 port with 4 lanes into a PCI-E 2.0 port with 8 lanes essentially
+Sep 24 11:04:38 <P64ProtocolBot>	[D] <Segfault> And for 3.0 they're like 7.8gt/s or something
+Sep 24 11:04:44 <P64ProtocolBot>	[D] <Segfault> Yeah no
+Sep 24 11:04:47 <dsimic>	nope, bifurcation can't change the generation
+Sep 24 11:04:53 <P64ProtocolBot>	[D] <Philpax> yep, that's what I thought
+Sep 24 11:04:58 <P64ProtocolBot>	[D] <Philpax> ah well :-)
+Sep 24 11:05:05 <P64ProtocolBot>	[D] <Segfault> Part of how 3.0 got extra speed was reducing error correction btw
+Sep 24 11:05:10 <dsimic>	we can't have it all :)
+Sep 24 11:05:17 <dsimic>	different encoding
+Sep 24 11:05:27 <P64ProtocolBot>	[D] <Segfault> Those 5/8 numbers are theoretical numbers before encoding yeah
+Sep 24 11:05:47 <dsimic>	IIRC, those are numbers after deducing the encoding overhead
+Sep 24 11:06:02 <P64ProtocolBot>	[D] <Segfault> I'm fairly certain it's before
+Sep 24 11:06:13 <P64ProtocolBot>	[D] <Segfault> Because PCIe 2.0 x1 is 500MB/s real world
+Sep 24 11:06:24 <P64ProtocolBot>	[D] <Segfault> Which is 4GT/s
+Sep 24 11:06:26 <P64ProtocolBot>	[D] <Segfault> Not 5
+Sep 24 11:07:21 <dsimic>	https://en.wikipedia.org/wiki/PCI_Express#History_and_revisions
+Sep 24 11:07:37 <dsimic>	"Throughput indicates the unencoded bandwidth (without 8b/10b or 128b/130b encoding overhead)."
+Sep 24 11:07:56 <dsimic>	see, I wrote chunks of the PCI Express article :)
+Sep 24 11:08:33 <dsimic>	but you're right
+Sep 24 11:08:47 <dsimic>	those are the numbers that don't take the overhead into account
+Sep 24 11:08:57 <P64ProtocolBot>	[D] <Segfault> Oh weird
+Sep 24 11:09:32 <P64ProtocolBot>	[D] <Philpax> well, we're dreaming - take the Framework approach and turn the PCI-E interface into a modular component that you can switch out to a M.2 port or a Thunderbolt port as you wish :P
+Sep 24 11:11:26 <P64ProtocolBot>	[D] <Segfault> Oh also talking about thunderbolt again, I've got more uses for it than just egpus so for someone like me a TB mod for the pbp could actually be insanely useful
+Sep 24 11:11:26 <P64ProtocolBot>	[D] <Segfault> Note how I say mod, because for 99% of people it wouldn't make sense, I just happen to be the 1% of people crazy enough that something like that might just work :P
+Sep 24 11:12:20 <dsimic>	better said, the GT/s numbers refer to the encoded data (including the overhead), while the GB/s numbers refer to the payload (exlcuding the overhead)
+Sep 24 11:12:48 <dsimic>	"Transfer rate is expressed in transfers per second instead of bits per second because the number of transfers includes the overhead bits, which do not provide additional throughput;[48] PCIe 1.x uses an 8b/10b encoding scheme, resulting in a 20% (= 2/10) overhead on the raw channel bandwidth.[49] So in the PCIe terminology, transfer rate refers to the encoded bit rate: 2.5 GT/s is 2.5 Gbps on the encoded 
+Sep 24 11:12:54 <dsimic>	serial link. This corresponds to 2.0 Gbps of pre-coded data or 250 MB/s, which is referred to as throughput in PCIe."
+Sep 24 11:13:52 <P64ProtocolBot>	[D] <Philpax> @Segfault I'll take the bait, what do you use TB for?
+Sep 24 11:14:05 <dsimic>	eGPU
+Sep 24 11:14:22 <P64ProtocolBot>	[D] <Segfault> Well, GPUs, high speed networking and storage, and other small things that involve PCIe
+Sep 24 11:14:23 <P64ProtocolBot>	[D] <Philpax> they mentioned other uses
+Sep 24 11:15:03 <dsimic>	I'd fully support having a TB port if we had enough PCIe lanes
+Sep 24 11:15:22 <P64ProtocolBot>	[D] <Segfault> Oh the experiments I could run if I could plug a box into my PBP with a PCIe slot in it
+Sep 24 11:15:46 <dsimic>	get a RockPro64 and enjoy :)
+Sep 24 11:16:16 <P64ProtocolBot>	[D] <Segfault> I've got the box :)
+Sep 24 11:16:17 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/890995058545917992/unknown.jpeg
+Sep 24 11:16:43 <P64ProtocolBot>	[D] <Electr0Lyte> he's got a box
+Sep 24 11:16:54 <P64ProtocolBot>	[D] <Segfault> Yeah but it's nowhere near as convenient having a whole separate machine to my laptop to connect things like that to
+Sep 24 11:17:15 <dsimic>	I understand, but there are always limitations
+Sep 24 11:17:22 *	erictheblack (Thunderbir@Clk-6ACAD895.adsl.xs4all.nl) has joined
+Sep 24 11:17:29 *	pavlushka has quit (Ping timeout: 180 seconds)
+Sep 24 11:17:46 <P64ProtocolBot>	[D] <Philpax> what's the 3x PCIe 2.0 used for if you don't use the SATA port?
+Sep 24 11:18:03 <P64ProtocolBot>	[D] <Segfault> On the RK3588?
+Sep 24 11:18:09 <P64ProtocolBot>	[D] <Philpax> yup
+Sep 24 11:18:18 <P64ProtocolBot>	[D] <Segfault> I think only two of the multiphys will have PCIe
+Sep 24 11:18:35 <P64ProtocolBot>	[D] <Segfault> So it's actually 2x PCIe 2.0 x1 I'm pretty sure
+Sep 24 11:18:57 <P64ProtocolBot>	[D] <Segfault> Theoretically one would be used for an m.2 E key slot so you can use a pcie wifi module
+Sep 24 11:19:10 <P64ProtocolBot>	[D] <Segfault> The other one... beats me...
+Sep 24 11:19:16 <P64ProtocolBot>	[D] <Segfault> ¯\\_(ツ)\_/¯
+Sep 24 11:19:25 <dsimic>	hmm, "3x PCIe 2.0" should mean "3 x x1 PCIe 2.0" or "x2 PCIe 2.0 and x1 PCIe 2.0"
+Sep 24 11:19:55 <P64ProtocolBot>	[D] <Segfault> That 3x PCIe 2.0 comes from a cnx article which I'm pretty sure is riddled with errors
+Sep 24 11:20:19 <P64ProtocolBot>	[D] <Segfault> I think they mistook 3 multiphys as 3 PCIe 2.0 controllers
+Sep 24 11:20:42 <P64ProtocolBot>	[D] <Segfault> I'd imagine the rk3588 will probably have a multiphy layout similar to the RK3568
+Sep 24 11:21:02 <dsimic>	it's most probably just x1 PCIe 2.0 muxed with a SATA port
+Sep 24 11:21:34 <dsimic>	because there's only one SATA port
+Sep 24 11:21:40 <P64ProtocolBot>	[D] <Segfault> At least one of the controllers should be configured the same way it is on the quartz, so SATA/PCIe
+Sep 24 11:21:56 <P64ProtocolBot>	[D] <Segfault> And I think one will be configured for USB 3.0/SATA
+Sep 24 11:22:05 <P64ProtocolBot>	[D] <Segfault> But I'm not sure on that
+Sep 24 11:22:16 <P64ProtocolBot>	[D] <Segfault> And I don't know what the 3rd one is configured as
+Sep 24 11:22:20 <dsimic>	with that in mind, it's most probably only x1 PCIe 2.0
+Sep 24 11:22:24 <P64ProtocolBot>	[D] <Segfault> Again, check the RK3568 specs
+Sep 24 11:22:50 <P64ProtocolBot>	[D] <Segfault> Nono I think it's 2 separate pcie 2.0 x1 links assuming all multiphys that can be used for PCIe are
+Sep 24 11:23:02 <P64ProtocolBot>	[D] <Philpax> https://eji4evk5kxx.exactdn.com/wp-content/uploads/2020/11/RK3588-Rockchip-Developer-Conference-2020.jpg
+Sep 24 11:23:29 <P64ProtocolBot>	[D] <Philpax> I believe that says, exactly, "three lanes PCI-e 2.0/SATA 3.0"
+Sep 24 11:23:32 <P64ProtocolBot>	[D] <Philpax> make of that what you will
+Sep 24 11:24:14 <dsimic>	RK3568: SATA 3.0 x3, PCIE 2.1(1x1Lane), Combo with 3 Serdes Lanes, PCIE3.0 1 ×2 Lanes/2 ×1 Lane @ 8Gbps
+Sep 24 11:24:17 *	banterface (webchat@Clk-157A7BBC) has joined
+Sep 24 11:24:54 *	banterface has quit (Quit: Page closed)
+Sep 24 11:25:30 <P64ProtocolBot>	[D] <Philpax> also while researching this, I saw this, and that seems like tough pricing to make
+Sep 24 11:25:31 <dsimic>	if that's to be believed, there can be two PCIe 3.0 x1 root ports, or one PCIe 3.0 x2 root port
+Sep 24 11:25:31 <P64ProtocolBot>	[D] <Philpax> https://cdn.discordapp.com/attachments/463285150898192384/890997380881711154/unknown.png
+Sep 24 11:25:33 <P64ProtocolBot>	[D] <Philpax> time will tell I suppose
+Sep 24 11:26:37 <dsimic>	so, there will be support for bifurcation :)
+Sep 24 11:26:39 <P64ProtocolBot>	[D] <Segfault> Maybe see if they had a similar slide for the RK3568? Since that's actually been released we could compare what they said to what we got
+Sep 24 11:26:55 <dsimic>	good point
+Sep 24 11:28:11 <dsimic>	https://www.96rocks.com/img/blog/introduce-rk3568/rk3568_block_diagram.png
+Sep 24 11:28:46 <P64ProtocolBot>	[D] <Segfault> Ignore the pcie 3.0 controller in that diagram btw, that's specific to the RK3568, sort of like the 3.0 x4 controller in the 3588
+Sep 24 11:28:54 <dsimic>	according to that RK3568 block diagram, PCIe 3.0 x2 supports bifurcation into 2 x x1
+Sep 24 11:29:08 <P64ProtocolBot>	[D] <Philpax> yep I think that image is from the same conference (Rockchip DC 2020)
+Sep 24 11:29:19 <P64ProtocolBot>	[D] <Philpax> it's September 2021, where did the time go? :-)
+Sep 24 11:29:21 <P64ProtocolBot>	[D] <Segfault> That sounds hopeful for the 3588 3.0 controller doing the same then
+Sep 24 11:29:55 <dsimic>	there's a total of three serdes/PHYs for USB 3.0, SATA and PCIe 2.0
+Sep 24 11:30:36 <dsimic>	so it should be possible to have one more PCIe 2.0 x1 and two USB 3.0 ports, for example
+Sep 24 11:30:40 <P64ProtocolBot>	[D] <Segfault> https://cdn.discordapp.com/attachments/463285150898192384/890998679845085244/unknown.jpeg
+Sep 24 11:30:48 <P64ProtocolBot>	[D] <Segfault> That's the 3568
+Sep 24 11:30:57 <P64ProtocolBot>	[D] <Segfault> Those muxes are the multiphys
+Sep 24 11:31:08 <P64ProtocolBot>	[D] <Segfault> I would imagine the 3588 will be laid out the same way
+Sep 24 11:31:11 *	Langoor has quit (Ping timeout: 180 seconds)
+Sep 24 11:31:28 <dsimic>	most probably
+Sep 24 11:31:34 *	Langoor (niels@17DB8CA0.C7DE255E.DD6D9BB8.IP) has joined
+Sep 24 11:31:48 <P64ProtocolBot>	[D] <Segfault> Although maybe not because that only has a single pcie 2.0 controller
+Sep 24 11:31:54 <dsimic>	having one more PCIe 2.0 x1 and two USB 3.0 ports would be a nice choice for a laptop
+Sep 24 11:32:13 <P64ProtocolBot>	[D] <Segfault> Maybe mux0 on the rk3588 will also have another pcie2.0 controller or something
+Sep 24 11:32:21 <dsimic>	the more, the better :)
+Sep 24 11:32:35 <P64ProtocolBot>	[D] <Segfault> And iirc compared to that image the 3566 deleted the qsgmii controller and mux0
+Sep 24 11:32:44 <P64ProtocolBot>	[D] <Segfault> As well as the PCIe 3.0 contriller
+Sep 24 11:33:40 <dsimic>	RK35666 support only one GE interface, so it makes sense
+Sep 24 11:33:51 <dsimic>	* RK3566
+Sep 24 11:33:56 <dsimic>	* supports
+Sep 24 11:34:23 <dsimic>	hmm, GE interfaces are listed separately
+Sep 24 11:34:37 <dsimic>	does that mean that RK3568 can have a total of six GE interfaces?
+Sep 24 11:40:29 *	PsySc0rpi0n (psysc0rpi0@Clk-D8D7D899.dsl.telepac.pt) has joined
+Sep 24 11:42:56 <dsimic>	https://drive.google.com/file/d/18_MCl-3p0iDTzeady8N40X_qUbECTNmd/view
+Sep 24 11:43:13 <P64ProtocolBot>	[D] <Segfault> Potentially?
+Sep 24 11:43:28 <P64ProtocolBot>	[D] <Segfault> I think it can do at least three although idk how qsgmii works
+Sep 24 11:43:39 <dsimic>	according to the datasheet, the answer should be "yes"
+Sep 24 11:44:14 <dsimic>	https://en.wikipedia.org/wiki/Media-independent_interface#Quad_serial_gigabit_media-independent_interface
+Sep 24 11:44:51 <P64ProtocolBot>	[D] <Segfault> Oh I see
+Sep 24 11:44:54 <P64ProtocolBot>	[D] <Segfault> Interesting
+Sep 24 11:45:00 <dsimic>	yes
+Sep 24 11:45:11 <P64ProtocolBot>	[D] <Segfault> So yeah I guess the RK3568 can run 6 Ethernet ports directly with the right hardware
+Sep 24 11:45:22 <dsimic>	though, using an external switch ASIC, as the Banana RK3566 Router :) does, is a better option
+Sep 24 11:45:38 <P64ProtocolBot>	[D] <Segfault> Why not both :P
+Sep 24 11:45:47 <P64ProtocolBot>	[D] <Segfault> Wouldn't qsgmii give you better performance?
+Sep 24 11:46:02 <dsimic>	the RK3568 cannot process the packets at wire speed as a switch ASIC can
+Sep 24 11:46:04 <P64ProtocolBot>	[D] <Segfault> Because you've got a direct link to every port
+Sep 24 11:46:48 <P64ProtocolBot>	[D] <Segfault> Does increasing packet size markedly decrease CPU use?
+Sep 24 11:47:25 <dsimic>	it depends on the way network interface does its job, but in general, it should
+Sep 24 11:47:49 <P64ProtocolBot>	[D] <Segfault> I wonder if the CPU would be powerful enough to route the theoretical what 12gbit/s of 9000mtu packets you could do with that many Ethernet ports lol
+Sep 24 11:47:55 <dsimic>	in this case, it would be frame size :)
+Sep 24 11:48:12 <dsimic>	I don't think so :)
+Sep 24 11:48:25 <P64ProtocolBot>	[D] <Segfault> That is a **lot** of packets lol
+Sep 24 11:48:44 <dsimic>	that's why a better option is to use an external switch ASIC
+Sep 24 11:48:54 <P64ProtocolBot>	[D] <Segfault> Although for applications where maximum performance isn't needed it might be a good idea anyway because it gives you better firewalling ability and such
+Sep 24 11:49:19 <dsimic>	though, it would be interesting to keep the main two Ethernet ports separate, and connect two additional ports to the switch ASIC, in a bonded fashion :)
+Sep 24 11:50:27 <dsimic>	those two main ports should be good enough to saturate the capabilities of the RK3568 as a firewall :)
+Sep 24 11:50:39 <P64ProtocolBot>	[D] <Segfault> It's crazy how Rockchip finds new ways to make their chips so versatile lol
+Sep 24 11:50:50 <dsimic>	it's nice
+Sep 24 11:51:00 <P64ProtocolBot>	[D] <Segfault> I mean the RK3568 could do so many things, it could be a high end router one minute and a NAS the next
+Sep 24 11:51:17 <P64ProtocolBot>	[D] <Segfault> Or even a phone! :P
+Sep 24 11:51:26 <dsimic>	I'm already working on interfacing with a couple of switch ASICs :)
+Sep 24 11:52:04 <P64ProtocolBot>	[D] <Segfault> I mean hell this generation they were like "hmm this chip doesn't do enough stuff, let's just let it *modify itself on the fly*" with muxes :P
+Sep 24 11:52:29 <dsimic>	let's see what will the favorite meme do :)
+Sep 24 11:53:09 *	str1ngs (str1ngs@Clk-4AA11257.vps.ovh.ca) has joined
+Sep 24 11:53:26 *	str1ngs has quit (Quit: ZNC 1.8.1 - https://znc.in)
+Sep 24 11:56:56 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 24 12:02:39 *	sdr73 (libero3@Clk-5C339D3F.threembb.co.uk) has joined
+Sep 24 12:03:22 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 24 16:11:15 *	Disconnected ()
+**** ENDING LOGGING AT Fri Sep 24 16:11:15 2021
+
+**** BEGIN LOGGING AT Fri Sep 24 16:11:29 2021
+
+Sep 24 16:11:29 *	Now talking on #Pine64
+Sep 24 16:11:29 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 24 16:11:29 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 24 16:11:29 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 24 16:11:29 *	ChanServ gives channel operator status to fire219
+Sep 24 16:18:47 <P64ProtocolBot>	[D] <Funeral> android: strange chats go into the offtopic channel
+Sep 24 16:22:01 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 24 16:23:19 *	android has quit (Ping timeout: 181 seconds)
+Sep 24 16:23:57 *	android (android@AFCADB7D.776E4109.E96F505D.IP) has joined
+Sep 24 16:26:02 *	testguest has quit (Ping timeout: 180 seconds)
+Sep 24 16:28:33 *	android has quit (Ping timeout: 180 seconds)
+Sep 24 16:29:39 *	android (android@Clk-E6964A5E.zbau.f3netze.de) has joined
+Sep 24 16:30:08 *	android has quit (Quit: AndroidIrc Disconnecting)
+Sep 24 16:32:10 *	rdorsch has quit (Ping timeout: 181 seconds)
+Sep 24 16:33:23 *	trekkie1701c has quit (Quit: :P)
+Sep 24 17:15:43 *	Disconnected ()
+**** ENDING LOGGING AT Fri Sep 24 17:15:43 2021
+
+**** BEGIN LOGGING AT Sat Sep 25 11:55:04 2021
+
+Sep 25 11:55:04 *	Now talking on #Pine64
+Sep 25 11:55:04 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 25 11:55:04 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 25 11:55:04 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 25 11:55:04 *	NickServ sets mode +r on fire219
+Sep 25 11:55:04 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 25 11:55:04 *	ChanServ gives channel operator status to fire219
+Sep 25 11:59:44 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 25 12:12:19 <phone>	next pine product:  pineball machine
+Sep 25 12:15:07 <dsimic>	:)
+Sep 25 12:15:30 <CounterPillow>	the pineacle of arcade machines
+Sep 25 12:17:49 *	Rome (somebody@Clk-5BB01C0D.zbau.f3netze.de) has joined
+Sep 25 12:21:03 *	Slimestone (webchat@Clk-157A7BBC) has joined
+Sep 25 12:21:03 *	sdr73 (libero3@Clk-5C339D3F.threembb.co.uk) has joined
+Sep 25 12:21:24 *	Slimestone (webchat@Clk-157A7BBC) has left
+Sep 25 12:23:57 *	chupi (Chupi@Clk-99255EE0.access.telenet.be) has joined
+Sep 25 12:30:38 *	trekkie1701c has quit (Quit: :P)
+Sep 25 12:43:21 *	chupi has quit (Read error)
+Sep 25 12:45:57 *	chupi (Chupi@Clk-99255EE0.access.telenet.be) has joined
+Sep 25 12:53:12 *	luke-jr has quit (Ping timeout: 180 seconds)
+Sep 25 12:58:52 *	testguest (testguest@Clk-84B11764.rev.stofanet.dk) has joined
+Sep 25 13:06:41 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 25 13:07:25 *	xaep (xaep@3ED3ADA4.6F4FC0F8.CDD92ABE.IP) has joined
+Sep 25 13:07:40 <kj7rrv>	Will there ever be a pine router?
+Sep 25 13:09:17 *	inky has quit (Ping timeout: 180 seconds)
+Sep 25 13:09:19 <dsimic>	maybe, but there are no official plans yet
+Sep 25 13:09:31 *	raster (raster@Clk-B66961B5.range81-159.btcentralplus.com) has joined
+Sep 25 13:10:24 <P64ProtocolBot>	[T] <saifage> PINEPHONE will ship to India in future?
+Sep 25 13:11:43 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 25 13:12:04 <P64ProtocolBot>	[D] <Funeral> @Avamander could you add the general Pine64 chat and the lts-and-sopine channel to your Matrix space? And maybe one or two of the admins
+Sep 25 13:12:38 <P64ProtocolBot>	[D] <Funeral> saifage: not as of now. Pine tried it but there have been severe issues with the customs, from how I've understood it
+Sep 25 13:17:57 <P64ProtocolBot>	[D] <Avamander> Provide the full channel address
+Sep 25 13:18:38 *	immibis_ (hexchat@Clk-3B8E343A.pool.telefonica.de) has joined
+Sep 25 13:18:45 <P64ProtocolBot>	[D] <Funeral> https://riot.im/app/#/room/#pine64:matrix.org (#pine64:matrix.org) and https://riot.im/app/#/room/#pine64sopine:matrix.org (#pine64sopine:matrix.org), see https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms. Thankks, @Avamander
+Sep 25 13:19:56 *	immibis has quit (Ping timeout: 180 seconds)
+Sep 25 13:21:43 <P64ProtocolBot>	[D] <Avamander> Done
+Sep 25 13:21:51 <P64ProtocolBot>	[D] <Funeral> 👍
+Sep 25 13:23:33 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 25 13:24:30 *	luke-jr (luke-jr@BD90044E.AA869625.E0AF2252.IP) has joined
+Sep 25 13:26:16 *	inky (inky@Clk-BB2BC85C.zbau.f3netze.de) has joined
+Sep 25 14:07:00 *	Disconnected ()
+**** ENDING LOGGING AT Sat Sep 25 14:07:00 2021
+
+**** BEGIN LOGGING AT Sat Sep 25 14:07:14 2021
+
+Sep 25 14:07:14 *	Now talking on #Pine64
+Sep 25 14:07:14 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 25 14:07:14 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 25 14:07:14 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 25 14:07:14 *	ChanServ gives channel operator status to fire219
+Sep 25 14:07:19 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 25 14:10:51 <P64ProtocolBot>	[D] <Thanos the tank engine> Yeah, I have been told that indian customs made it practically impossible for Pine to send anything there
+Sep 25 14:11:27 <dsimic>	IIRC, they require IMEIs to be recorded on all imported phones
+Sep 25 14:11:41 <P64ProtocolBot>	[D] <Thanos the tank engine> So your only option is a mail forwarding service right bow
+Sep 25 14:23:10 *	trekkie1701c has quit (Quit: :P)
+Sep 25 14:24:38 *	lodovico has quit (Read error)
+Sep 25 14:34:05 *	rdorsch has quit (Ping timeout: 181 seconds)
+Sep 25 14:34:56 *	Rome has quit (Quit: Leaving)
+Sep 25 14:36:04 *	pavlushka has quit (Read error)
+Sep 25 14:41:02 *	testguest has quit (Ping timeout: 180 seconds)
+Sep 25 14:41:57 *	hendursaga (weechat@Clk-BB2BC85C.zbau.f3netze.de) has left
+Sep 25 14:59:54 <P64ProtocolBot>	[D] <_deepfire> There used to be an #accessories channel -- and it's now no more..
+Sep 25 15:00:51 <P64ProtocolBot>	[D] <_deepfire> ..and it's still weirdly listed in #information-and-rules : -)
+Sep 25 15:04:24 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 25 15:11:09 *	zz_z3ntu_bouncer has quit (Quit: ZNC 1.8.2 - https://znc.in)
+Sep 25 15:11:50 *	zz_z3ntu_bouncer (z3ntu@Clk-DBDD0E2A.z3ntu.xyz) has joined
+Sep 25 15:29:45 *	rex has quit (Ping timeout: 180 seconds)
+Sep 25 15:32:01 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 25 15:32:53 *	rex (rex@Clk-142EDA3A.hsi5.kabel-badenwuerttemberg.de) has joined
+Sep 25 15:34:17 *	abnormal has quit (Quit: Konversation terminated!)
+Sep 25 15:35:26 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 25 15:37:16 *	immibis_ has quit (Read error)
+Sep 25 15:43:10 *	rock644gb (webchat@Clk-157A7BBC) has joined
+Sep 25 15:43:20 <rock644gb>	Hello, is rock64 going to be available anytime soon?
+Sep 25 15:43:26 <rock644gb>	4gb variant
+Sep 25 16:00:31 *	jean (jean@Clk-71EF7245.washdc.fios.verizon.net) has joined
+Sep 25 16:01:23 *	rock644gb has quit (Quit: Page closed)
+Sep 25 16:01:54 *	jean has quit (Quit: Konversation terminated!)
+Sep 25 16:04:19 *	jean (jean@Clk-71EF7245.washdc.fios.verizon.net) has joined
+Sep 25 16:08:10 *	trekkie1701c has quit (Quit: :P)
+Sep 25 16:08:25 *	Lord_of_Life_ (Lord@4F65E4E1.56792AA0.FDD0E13A.IP) has joined
+Sep 25 16:09:38 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Sep 25 16:09:38 *	Lord_of_Life_ is now known as Lord_of_Life
+Sep 25 16:11:19 *	martijnbraam has quit (Quit: WeeChat 3.2)
+Sep 25 16:11:47 *	erictheblack has quit (Ping timeout: 180 seconds)
+Sep 25 16:32:48 *	_william_ has quit (Ping timeout: 181 seconds)
+Sep 25 16:34:09 <P64ProtocolBot>	[T] <willwelker> Is three a chat specifically for the Pinephone?  Was wondering about anybody with AT&T usage.
+Sep 25 16:34:17 <P64ProtocolBot>	[T] <UniversalSuperBox> @pinephone
+Sep 25 16:34:33 <P64ProtocolBot>	[T] <willwelker> Thanks (re @UniversalSuperBox: @pinephone)
+Sep 25 16:34:44 <P64ProtocolBot>	[T] <UniversalSuperBox> anytime :)
+Sep 25 16:38:21 *	libero1 has quit (Ping timeout: 180 seconds)
+Sep 25 16:38:30 <P64ProtocolBot>	[D] <FTN95> hey im doing a small project and i need a single board computer to act as a network proxy - I've got few questions which dont really belong into any of the sbc chats (cuz tbf its about choosing the device), so i hope nobody minds asking here. My main question is which (if any) sb computer can act as a network proxy (wirless best, but in case id have to hook up 2 wifi dongles itll also do) for reverse engineering assu
+Sep 25 16:39:15 <P64ProtocolBot>	[D] <FTN95> hey im doing a small project and i need a single board computer to act as a network proxy - I've got few questions which dont really belong into any of the sbc chats (cuz tbf its about choosing the device), so i hope nobody minds asking here. My main question is which (if any) sb computer can act as a network proxy (wirless best, but in case id have to hook up 2 wifi dongles itll also do) for reverse engineering assu
+Sep 25 16:44:42 <P64ProtocolBot>	[D] <[REDACTED]> What do we do when we buy a replacement cable and the barrel plug doesn't fit?
+Sep 25 16:44:43 <P64ProtocolBot>	[D] <[REDACTED]> normal people: return it
+Sep 25 16:44:44 <P64ProtocolBot>	[D] <[REDACTED]> Me: create a new cable that has the potential to break the device and make it a smoke machine but that's chill too 🙂
+Sep 25 16:44:56 *	_william_ (william@Clk-5B30230E.w90-114.abo.wanadoo.fr) has joined
+Sep 25 17:01:17 *	kj7rrv has quit (Read error)
+Sep 25 17:01:42 *	kj7rrv (kj7rrv@Clk-93B3562E.sub-174-204-195.myvzw.com) has joined
+Sep 25 17:13:31 *	Caesar-EW (webchat@Clk-157A7BBC) has joined
+Sep 25 17:18:22 *	kj7rrv has quit (Read error)
+Sep 25 17:18:26 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 25 17:28:32 <dsimic>	FTN95: SBCs have reached the point where pretty much any actual model can do a lot
+Sep 25 17:30:02 <dsimic>	if you want a Pine64 SBC, I'd suggest RockPro64 because it can do quite a lot, but make sure to ensure rather good cooling of the RK3399 SoC
+Sep 25 17:31:09 <dsimic>	* s/actual/current/
+Sep 25 17:46:58 *	raingloom has quit (Ping timeout: 180 seconds)
+Sep 25 17:48:00 *	kj7rrv has quit (Read error)
+Sep 25 17:48:26 *	kj7rrv (kj7rrv@Clk-93B3562E.sub-174-204-195.myvzw.com) has joined
+Sep 25 17:53:15 *	wild has quit (Read error)
+Sep 25 17:53:30 *	raster has quit (Quit: Gettin' stinky!)
+Sep 25 18:01:45 *	carlos has quit (Ping timeout: 180 seconds)
+Sep 25 18:03:06 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 25 18:24:43 *	Disconnected ()
+**** ENDING LOGGING AT Sat Sep 25 18:24:43 2021
+
+**** BEGIN LOGGING AT Sat Sep 25 18:24:57 2021
+
+Sep 25 18:24:57 *	Now talking on #Pine64
+Sep 25 18:24:57 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 25 18:24:57 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 25 18:24:57 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 25 18:24:57 *	ChanServ gives channel operator status to fire219
+Sep 25 18:25:22 *	trekkie1701c has quit (Quit: :P)
+Sep 25 18:28:10 *	Caesar-EW has quit (Ping timeout: 180 seconds)
+Sep 25 18:54:01 *	Giants2710 (webchat@Clk-157A7BBC) has joined
+Sep 25 18:57:01 *	Giants2710 has quit (Ping timeout: 180 seconds)
+Sep 25 19:03:17 *	neoz2 (localhost@Clk-8CEF12D9.effi.org) has joined
+Sep 25 19:03:49 *	Cuban has quit (Ping timeout: 180 seconds)
+Sep 25 19:28:21 *	Disconnected ()
+**** ENDING LOGGING AT Sat Sep 25 19:28:21 2021
+
+**** BEGIN LOGGING AT Sat Sep 25 19:28:35 2021
+
+Sep 25 19:28:35 *	Now talking on #Pine64
+Sep 25 19:28:35 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 25 19:28:35 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 25 19:28:35 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 25 19:28:35 *	ChanServ gives channel operator status to fire219
+Sep 25 19:29:13 *	xmn (xmn@Clk-429648EB.nyc.res.rr.com) has joined
+Sep 25 19:29:37 <P64ProtocolBot>	[T] <Aleks> Hi everyone. Anyone knows why the delivery in Europe(I had ordered pinephone) it’s taking so long, waiting already more than 2 weeks, is that normal?!!
+Sep 25 19:34:30 <Alho>	They normally ships one time weekly in EU - and then it may take up to a week to get it (normally faster). Have your recieved a tracking notification ?
+Sep 25 19:45:14 *	kj7rrv has quit (Ping timeout: 180 seconds)
+Sep 25 19:48:22 <P64ProtocolBot>	[T] <Aleks> Thanks for reply, Not yet, didn’t get any tracking number
+Sep 25 19:52:50 <rex>	m
+Sep 25 20:05:36 *	neoz2 has quit (Quit: -)
+Sep 25 20:13:02 *	neoz2 (localhost@6AE26F63.7802DEB.679E3986.IP) has joined
+Sep 25 20:16:13 *	neoz2 has quit (Ping timeout: 180 seconds)
+Sep 25 20:21:07 <P64ProtocolBot>	[M] <pinaperr> hey, i received a pinephone a couple of months ago and only yesterday i had the opportunity to try it. at first it ran ok, although i did see some error message on booting. now though the screen is turned off every second, sometimes when i touch it and sometimes just by itself. totally unusable. i'm running the default os (manjaro) and i did play with the screen settings, but this behaviors doesn't make any sense.
+Sep 25 20:26:57 *	doomquakekeen has quit (Ping timeout: 180 seconds)
+Sep 25 20:30:04 *	doomquakekeen (doomquakek@Clk-26DE9E69.w90-42.abo.wanadoo.fr) has joined
+Sep 25 20:50:15 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 25 21:02:22 *	kj7rrv has quit (Read error)
+Sep 25 21:50:58 *	Disconnected ()
+**** ENDING LOGGING AT Sat Sep 25 21:50:58 2021
+
+**** BEGIN LOGGING AT Sat Sep 25 21:51:12 2021
+
+Sep 25 21:51:12 *	Now talking on #Pine64
+Sep 25 21:51:12 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 25 21:51:12 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 25 21:51:12 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 25 21:51:12 *	ChanServ gives channel operator status to fire219
+Sep 25 21:59:35 *	neoz2 (localhost@Clk-8CEF12D9.effi.org) has joined
+Sep 25 21:59:39 *	hendursaga (weechat@AD981B26.34775CAE.F1C7FE9D.IP) has joined
+Sep 25 22:05:09 <P64ProtocolBot>	[D] <Cyastis> ~~but it supports discord calling~~
+Sep 25 22:09:30 <P64ProtocolBot>	[D] <33YN2> The PinePhone could do Voip calling though, @Riff
+Sep 25 22:10:20 <P64ProtocolBot>	[D] <33YN2> (Using software, but you will need a data sim or wifi connectiom obv)
+Sep 25 22:15:37 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has joined
+Sep 25 22:45:46 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has left
+Sep 25 22:49:33 *	_inky_sailfish (sailfish@DC88017A.975C182A.91BA1983.IP) has joined
+Sep 25 22:55:52 *	trekkie1701c_ (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 25 22:56:49 *	trekkie1701c has quit (Ping timeout: 180 seconds)
+Sep 25 23:14:09 *	neoz2 has quit (Quit: -)
+Sep 25 23:15:57 *	neoz2 (localhost@Clk-8CEF12D9.effi.org) has joined
+Sep 25 23:23:35 *	kj7rrv has quit (Read error)
+Sep 25 23:24:09 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 25 23:41:37 *	jean has quit (Quit: Quitter)
+Sep 25 23:42:32 *	jean (jean@Clk-71EF7245.washdc.fios.verizon.net) has joined
+Sep 25 23:46:50 *	jean has quit (Quit: Quitter)
+Sep 25 23:47:40 *	jean (jean@Clk-71EF7245.washdc.fios.verizon.net) has joined
+Sep 26 00:01:31 *	trekkie1701c_ has quit (Quit: :P)
+Sep 26 00:02:17 *	kj7rrv has quit (Read error)
+Sep 26 00:40:26 *	wild (help@B405BADA.100859EB.AAF16E7C.IP) has joined
+Sep 26 00:40:31 *	Cuban (Cuban@D405D17B.12243401.F1F993B8.IP) has joined
+Sep 26 00:42:13 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 26 00:44:16 *	dsimic has quit (Ping timeout: 180 seconds)
+Sep 26 00:47:24 *	dsimic (dsimic@92BC88F5.4F8B56B8.6812344F.IP) has joined
+Sep 26 00:55:16 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 26 01:41:40 *	areusome (quassel@Clk-4F79FD26.static.asianet.co.th) has joined
+Sep 26 01:42:13 *	areusome has quit (Read error)
+Sep 26 01:58:02 *	raster (raster@Clk-B66961B5.range81-159.btcentralplus.com) has joined
+Sep 26 02:18:57 *	erictheblack (Thunderbir@Clk-6ACAD895.adsl.xs4all.nl) has joined
+Sep 26 02:57:57 <P64ProtocolBot>	[D] <Sameer9793> Hello Poeples!
+Sep 26 02:58:33 <P64ProtocolBot>	[D] <gamiee> Helol :)
+Sep 26 02:58:35 <P64ProtocolBot>	[D] <gamiee> Hello :)
+Sep 26 02:59:36 <P64ProtocolBot>	[D] <Sameer9793> can i ask for support about linux on amlogic devices here? they are basically a SBC now
+Sep 26 03:00:34 <P64ProtocolBot>	[D] <Electr0Lyte> sorry server is meant for discussing Pine64 devices
+Sep 26 03:00:36 <P64ProtocolBot>	[D] <gamiee> PINE64 doesn't have any devices with amlogic SoCs, so this is not correct place, although, you can try to ask in #offtopic and maybe someone will help you
+Sep 26 03:01:16 <P64ProtocolBot>	[D] <Sameer9793> oaky, thanks for the help.
+Sep 26 03:21:14 *	lyubov has quit (Ping timeout: 180 seconds)
+Sep 26 03:22:13 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has joined
+Sep 26 03:24:52 *	raingloom (quassel@Clk-42D4FC78.catv.pool.telekom.hu) has joined
+Sep 26 03:57:12 *	erictheblack has quit (Ping timeout: 180 seconds)
+Sep 26 04:26:36 *	carlos (user@Clk-730F04F5.zbau.f3netze.de) has joined
+Sep 26 04:57:37 *	carlos has quit (Ping timeout: 180 seconds)
+Sep 26 05:00:25 *	carlos (user@F95DBF59.8E47D507.434A97A5.IP) has joined
+Sep 26 05:05:19 *	Skunky (skunky@DCA917BB.2516CFE0.FACAE235.IP) has joined
+Sep 26 05:05:33 <Riff>	Thanks much all!
+**** BEGIN LOGGING AT Sun Sep 26 12:18:10 2021
+
+Sep 26 12:18:10 *	Now talking on #Pine64
+Sep 26 12:18:10 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 26 12:18:10 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 26 12:18:10 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 26 12:18:10 *	NickServ sets mode +r on fire219
+Sep 26 12:18:10 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 26 12:18:10 *	ChanServ gives channel operator status to fire219
+Sep 26 12:21:56 *	trekkie1701c has quit (Quit: :P)
+Sep 26 12:28:38 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 26 12:31:25 *	testguest has quit (Ping timeout: 180 seconds)
+Sep 26 12:32:45 *	str1ngs (str1ngs@Clk-4AA11257.vps.ovh.ca) has joined
+Sep 26 12:33:18 *	str1ngs has quit (Quit: ZNC 1.8.1 - https://znc.in)
+Sep 26 12:45:25 <P64ProtocolBot>	[D] <ayayagames> Lmao I Couldn’t find my sxmo arch phone for like 3 weeks I found it just now and it ran 100+ updates in like 2 mins
+Sep 26 12:45:51 <P64ProtocolBot>	[D] <ayayagames> Phosh does 100+ in like 10 mins
+Sep 26 12:49:12 *	Linebeck (webchat@Clk-157A7BBC) has joined
+Sep 26 12:50:49 <P64ProtocolBot>	[T] <Schugy> could be 1 min with eufs and 1x1 AC wifi
+Sep 26 12:52:55 *	SkunkyLaptop has quit (Read error)
+Sep 26 12:52:58 <dsimic>	speed costs money; how fast do you want to go? :)
+Sep 26 12:58:27 <P64ProtocolBot>	[D] <ayayagames> Lol trueee
+Sep 26 12:58:36 <P64ProtocolBot>	[D] <ayayagames> All the speeds
+Sep 26 13:08:22 *	lyubov has quit (Ping timeout: 180 seconds)
+Sep 26 13:09:13 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has joined
+Sep 26 13:12:12 <P64ProtocolBot>	[T] <Schugy> 2 GB/s is adequate speed for embedded storage i think
+Sep 26 13:15:22 <dsimic>	2 GB/s?  I'm fine with the speeds our eMMC modules are capable of
+Sep 26 13:15:39 *	braewoods (webchat@Clk-157A7BBC) has joined
+Sep 26 13:17:13 *	lyubov has quit (Ping timeout: 180 seconds)
+Sep 26 13:18:45 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has joined
+Sep 26 13:32:04 *	megi (megi@Clk-CB68739.net.upcbroadband.cz) has joined
+Sep 26 13:50:58 *	Skunky has quit (Quit: Leaving)
+Sep 26 13:51:20 *	Skunky (skunky@Clk-8EF9C644.skunky.org) has joined
+Sep 26 13:54:26 *	PsySc0rpi0n has quit (Ping timeout: 181 seconds)
+Sep 26 13:56:36 *	PsySc0rpi0n (psysc0rpi0@Clk-D8D7D899.dsl.telepac.pt) has joined
+Sep 26 14:02:25 *	raingloom (quassel@Clk-42D4FC78.catv.pool.telekom.hu) has joined
+Sep 26 14:15:41 *	hiraghm (webchat@Clk-157A7BBC) has joined
+Sep 26 14:16:16 *	hiraghm has quit (Quit: Page closed)
+Sep 26 14:18:20 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 26 14:23:32 *	pavlushka has quit (Read error)
+Sep 26 14:34:10 *	trekkie1701c has quit (Quit: :P)
+Sep 26 14:35:50 *	raingloom has quit (Ping timeout: 180 seconds)
+Sep 26 14:43:51 *	jean has quit (Ping timeout: 180 seconds)
+Sep 26 14:43:54 *	jean (jean@Clk-71EF7245.washdc.fios.verizon.net) has joined
+Sep 26 14:49:33 *	TheCreeper (TheCreeper@Clk-7AABA01E.zbau.f3netze.de) has joined
+Sep 26 14:50:21 *	adduc has quit (Read error)
+Sep 26 14:51:42 *	adduc (adduc@ED00453D.41607CC2.C52FA57C.IP) has joined
+Sep 26 14:51:45 *	lyubov has quit (Ping timeout: 180 seconds)
+Sep 26 14:52:49 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has joined
+Sep 26 15:04:26 *	hendursaga has quit (Ping timeout: 180 seconds)
+Sep 26 15:07:41 *	hendursaga (weechat@CD16DD39.EE461B70.5E651CE3.IP) has joined
+Sep 26 15:12:55 *	raingloom (quassel@Clk-42D4FC78.catv.pool.telekom.hu) has joined
+Sep 26 15:35:46 *	braewoods has quit (Quit: Page closed)
+Sep 26 15:42:45 *	jean has quit (Ping timeout: 180 seconds)
+Sep 26 15:45:00 *	jean (jean@Clk-71EF7245.washdc.fios.verizon.net) has joined
+Sep 26 15:51:16 *	Linebeck has quit (Ping timeout: 180 seconds)
+Sep 26 15:58:16 *	erictheblack has quit (Ping timeout: 180 seconds)
+Sep 26 15:59:06 *	Linebeck (webchat@Clk-157A7BBC) has joined
+Sep 26 16:08:36 *	Lord_of_Life_ (Lord@8E7625D8.56792AA0.FDD0E13A.IP) has joined
+Sep 26 16:10:17 <P64ProtocolBot>	[D] <Vord> lol https://twitter.com/sephr/status/1441655526807334914
+Sep 26 16:10:28 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Sep 26 16:10:28 *	Lord_of_Life_ is now known as Lord_of_Life
+Sep 26 16:19:55 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 26 16:36:01 <P64ProtocolBot>	[T] <KanoIta> Vivaldi browser is cool
+Sep 26 16:42:38 *	B[] has quit (Read error)
+Sep 26 16:49:15 *	trekkie1701c has quit (Quit: :P)
+Sep 26 17:00:26 *	smitop has quit (Quit: leaving)
+Sep 26 17:27:04 *	megi has quit (Ping timeout: 180 seconds)
+Sep 26 17:46:22 *	pyu has quit (Ping timeout: 180 seconds)
+Sep 26 17:46:44 <P64ProtocolBot>	[T] <Z> An Australian here very interested in ordering a PinePhone as soon as possible.
+Sep 26 17:46:44 <P64ProtocolBot>	[T] <Z>  
+Sep 26 17:46:46 <P64ProtocolBot>	[T] <Z> My knowledge level for potential carrier/connection/service suitability is novice.
+Sep 26 17:46:47 <P64ProtocolBot>	[T] <Z> Thanks for this group and any thoughts/comments/guidance is sincerely welcome.
+Sep 26 17:49:17 <dsimic>	I'd suggest that you head over to the #pinephone channel: https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms
+Sep 26 17:49:33 <P64ProtocolBot>	[T] <Z> Appreciated!
+Sep 26 17:50:56 *	megi (megi@Clk-27FCC28E.net.upcbroadband.cz) has joined
+Sep 26 17:51:09 *	B[] (Thunderbir@Clk-FBD9CB5F.sparkbb.co.nz) has joined
+Sep 26 18:06:26 *	_inky_sailfish_ (sailfish@EDB80345.A9239167.B6011B4C.IP) has joined
+Sep 26 18:11:12 *	megi1 (megi@Clk-52FC9C61.net.upcbroadband.cz) has joined
+Sep 26 18:12:56 *	megi has quit (Ping timeout: 180 seconds)
+Sep 26 18:22:20 *	ak_hepcat (leif@Clk-4B108D77.akhepcat.com) has joined
+Sep 26 18:22:32 *	ak_hepcat (leif@Clk-4B108D77.akhepcat.com) has left
+Sep 26 18:31:10 *	abnormal has quit (Quit: The "Not normal" idiot left the server......)
+Sep 26 18:56:50 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 26 19:02:30 *	Cuban has quit (Ping timeout: 180 seconds)
+Sep 26 19:05:58 *	B[] has quit (Read error)
+Sep 26 19:06:14 *	B[] (Thunderbir@Clk-FBD9CB5F.sparkbb.co.nz) has joined
+Sep 26 19:14:08 *	raster has quit (Quit: Gettin' stinky!)
+Sep 26 19:27:43 *	trekkie1701c has quit (Quit: :P)
+Sep 26 19:41:50 *	luke-jr has quit (Ping timeout: 181 seconds)
+Sep 26 19:48:11 *	ganbold has quit (Ping timeout: 180 seconds)
+Sep 26 20:07:05 *	raingloom has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+Sep 26 20:15:31 *	_inky_sailfish (sailfish@EDB80345.A9239167.B6011B4C.IP) has joined
+Sep 26 20:15:38 *	_inky_sailfish_ has quit (Read error)
+Sep 26 20:18:55 *	_inky_sailfish_ (sailfish@DC88017A.975C182A.91BA1983.IP) has joined
+Sep 26 20:20:01 *	_inky_sailfish has quit (Ping timeout: 180 seconds)
+Sep 26 20:24:05 *	areusome (quassel@Clk-4F79FD26.static.asianet.co.th) has joined
+Sep 26 20:30:41 *	ganbold (ganbold@24BBD860.2B489E8D.CE23EEAB.IP) has joined
+Sep 26 20:33:21 *	inky (inky@Clk-9CE6782A.digitale-gesellschaft.ch) has joined
+Sep 26 20:56:09 *	areusome_ (quassel@Clk-4F79FD26.static.asianet.co.th) has joined
+Sep 26 20:56:33 *	areusome has quit (Ping timeout: 180 seconds)
+Sep 26 21:04:44 *	luke-jr (luke-jr@BD90044E.AA869625.E0AF2252.IP) has joined
+Sep 26 21:06:39 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 26 21:09:37 *	areusome_ has quit (Read error)
+Sep 26 21:11:35 *	Linebeck has quit (Quit: )
+Sep 26 22:02:12 *	megi1 has quit (Ping timeout: 180 seconds)
+Sep 26 22:09:05 *	areusome (quassel@Clk-4F79FD26.static.asianet.co.th) has joined
+Sep 26 22:12:33 *	areusome has quit (Ping timeout: 180 seconds)
+Sep 26 22:15:55 *	areusome (quassel@Clk-4F79FD26.static.asianet.co.th) has joined
+Sep 26 22:19:39 *	areusome has quit (Read error)
+Sep 26 22:19:58 *	pikudoz has quit (Ping timeout: 180 seconds)
+Sep 26 22:34:51 *	rex has quit (Quit: Bye)
+Sep 26 23:28:54 <P64ProtocolBot>	[M] <benjamin_southern> whats up with this "Pine64 Protocol Droid" bot? Are these just messages from Telegram/Discord? I was under the impression that matrix bridges would allow for non-matrix messages to still show up without the need for a bot like this...
+Sep 26 23:33:36 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has joined
+Sep 26 23:33:58 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has left
+Sep 26 23:35:35 *	nomasteryoda (jeff@Clk-537C47A.mc.at.cox.net) has joined
+Sep 26 23:38:59 *	nomasteryoda has quit (Ping timeout: 180 seconds)
+Sep 26 23:44:05 <phone>	between irc, matrix, telegram, and discord.
+Sep 27 00:01:31 *	trekkie1701c has quit (Quit: :P)
+Sep 27 00:05:21 *	megi1 (megi@Clk-52FC9C61.net.upcbroadband.cz) has joined
+Sep 27 00:19:46 <P64ProtocolBot>	[M] <pinaperr> can anyone here help me? not sure what to do
+Sep 27 00:21:03 <phone>	perhaps. what device do you have and what problem? probably a better channel but we can direct you.
+Sep 27 00:21:07 <P64ProtocolBot>	[M] <Strit> That depends entirely on what your issue is.
+Sep 27 00:21:35 <P64ProtocolBot>	[M] <pinaperr> i wrote yesterday. here it is: "hey, i received a pinephone a couple of months ago and only yesterday i had the opportunity to try it. at first it ran ok, although i did see some error message on booting. now though the screen is turned off every second, sometimes when i touch it and sometimes just by itself. totally unusable. i'm running the default os (manjaro) and i did play with the screen settings, but this b
+Sep 27 00:22:54 <P64ProtocolBot>	[M] <Strit> It's made by the screen settings KCM writing bogus config files. Remove the ~/.config/powermanagementrc file if you can (maybe through JumpDrive on an SD card)
+Sep 27 00:23:42 <P64ProtocolBot>	[M] <pinaperr> thanks, i'll give it a try! :)
+Sep 27 00:24:10 <Fq>	pinaperr, better to ask in #pinephone, but make sure you charge the battery fully with a 5V 3A charger, since you had it sitting there for two months I presume without charging it
+Sep 27 00:40:32 *	Cuban (Cuban@F3D4FC29.47085ED2.34706CC8.IP) has joined
+Sep 27 00:43:46 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 27 00:45:09 *	dsimic has quit (Ping timeout: 180 seconds)
+Sep 27 00:48:15 *	dsimic (dsimic@F104066E.4F8B56B8.6812344F.IP) has joined
+Sep 27 01:09:43 *	avane (avane@Clk-C1E544CB.range109-152.btcentralplus.com) has joined
+Sep 27 01:18:49 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 27 01:26:00 *	TheCreeper has quit (Ping timeout: 181 seconds)
+Sep 27 01:26:23 <P64ProtocolBot>	[T] <Thorsten Schragle> I have earned more from trading Stock..all thanks you and your team for your trust and honestly. @Elliot_Finances
+Sep 27 01:26:24 <P64ProtocolBot>	[T] <Thorsten Schragle> https://t.me/joinchat/LcYrRXbptyNkZjVk
+Sep 27 01:29:59 *	TheCreeper (TheCreeper@547D71BD.99D7DB19.3BE338D5.IP) has joined
+Sep 27 01:47:40 <P64ProtocolBot>	[M] <mbohun> pinaperr: same over here, i got my PinePhone in the end of June 2021. The manjaro + plasma-mobile installed on it are not for everyday use. Plus the modem was dying often even after 2 hours, etc.
+Sep 27 01:47:40 <P64ProtocolBot>	[M] <mbohun> HOWEVER then I installed postmarketOS phosh (the edge version) - and now I always smile, works really good
+Sep 27 01:54:06 *	xmn has quit (Ping timeout: 180 seconds)
+Sep 27 02:00:21 *	Qlaras (quassel@Clk-F4EE0208.mpls.qwest.net) has joined
+Sep 27 02:19:11 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has joined
+Sep 27 02:27:14 *	andyrtr has quit (Ping timeout: 180 seconds)
+Sep 27 02:28:22 *	TheCreeper has quit (Ping timeout: 180 seconds)
+Sep 27 02:30:01 *	neoz2 has quit (Quit: -)
+Sep 27 02:30:28 *	andyrtr (andyrtr@Clk-D98FEC03.dynamic.kabel-deutschland.de) has joined
+**** BEGIN LOGGING AT Mon Sep 27 10:46:44 2021
+
+Sep 27 10:46:43 *	Now talking on #Pine64
+Sep 27 10:46:44 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 27 10:46:44 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 27 10:46:43 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 27 10:46:44 *	NickServ sets mode +r on fire219
+Sep 27 10:46:43 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 27 10:46:43 *	ChanServ gives channel operator status to fire219
+Sep 27 10:48:41 <P64ProtocolBot>	[D] <Funeral> @Philpax that and how Pine links then. IRC has a server linked, Discord has an invite link public and Matrix and Telegram both link individual channels, both also have a spam issue here
+Sep 27 10:51:22 *	kj7rrv has quit (Ping timeout: 180 seconds)
+Sep 27 10:57:46 *	chili-b has quit (Read error)
+Sep 27 11:01:38 *	raster has quit (Quit: Gettin' stinky!)
+Sep 27 11:16:24 *	neoz2 (localhost@6AE26F63.7802DEB.679E3986.IP) has joined
+Sep 27 11:19:39 *	neoz2 has quit (Quit: -)
+Sep 27 11:22:13 *	kj7rrv (kj7rrv@Clk-B7A4E63E.sub-174-204-208.myvzw.com) has joined
+Sep 27 11:22:26 *	libero1 has quit (Ping timeout: 180 seconds)
+Sep 27 11:23:37 *	Rome (somebody@Clk-410E8BCB.tor-exit.calyxinstitute.org) has joined
+Sep 27 11:24:34 *	jabrwcky (webchat@Clk-157A7BBC) has joined
+Sep 27 11:27:18 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 27 11:27:34 *	jabrwcky has quit (Ping timeout: 180 seconds)
+Sep 27 11:28:15 *	kj7rrv has quit (Ping timeout: 180 seconds)
+Sep 27 11:28:21 *	downhill (webchat@Clk-157A7BBC) has joined
+Sep 27 11:28:45 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 27 11:35:26 *	chili-b (quassel@Clk-38A17631.dsl.bell.ca) has joined
+Sep 27 11:35:49 <downhill>	I am seeking some assistance (Total NOOB). PinePhone didn't work out of Box. PinePhone Support told me to Flash OS to eMMC myself...attempted booting from Flashed microSD card, that didn't work. Then tried using JumpDrive, that didn't work. When plugged in, RED light turns on in top left of screen, screen barely lights up, then everything shuts down. Any assistance is greatly appreciated. Thanks
+Sep 27 11:36:55 <downhill>	[DISCLAIMER] I hope I am just doing something really stupid and missing something that should be obvious, but I'm not great with tech...more chemical engineer type. THANKS!!
+Sep 27 11:38:22 *	james (webchat@Clk-157A7BBC) has joined
+Sep 27 11:38:34 *	james (webchat@Clk-157A7BBC) has left
+Sep 27 11:39:21 *	james (webchat@Clk-157A7BBC) has joined
+Sep 27 11:40:52 <syonyk>	Get a serial interface on it and go from there.
+Sep 27 11:41:51 *	james_ (webchat@Clk-157A7BBC) has joined
+Sep 27 11:42:00 *	james_ (webchat@Clk-157A7BBC) has left
+Sep 27 11:42:21 *	james has quit (Ping timeout: 180 seconds)
+Sep 27 11:42:35 <CounterPillow>	downhill: that does sound worrisome though. I'd ask in the #pinephone channel either way. Ideally you let them know what method you used to flash the images to SD.
+Sep 27 12:20:13 *	kj7rrv has quit (Ping timeout: 180 seconds)
+Sep 27 13:01:14 *	Disconnected ()
+**** ENDING LOGGING AT Mon Sep 27 13:01:14 2021
+
+**** BEGIN LOGGING AT Mon Sep 27 13:01:28 2021
+
+Sep 27 13:01:27 *	Now talking on #Pine64
+Sep 27 13:01:28 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 27 13:01:28 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 27 13:01:27 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 27 13:01:27 *	ChanServ gives channel operator status to fire219
+Sep 27 13:02:49 *	pavlushka has quit (Read error)
+Sep 27 13:07:45 *	Bebef has quit (Quit: bye)
+Sep 27 13:09:42 *	Bebef (bebef@283EC51E.E9C6FA91.46943644.IP) has joined
+Sep 27 13:16:31 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 27 13:19:04 *	TheCreeper (TheCreeper@540BBA15.61DBE95C.5AA0927C.IP) has joined
+Sep 27 13:25:26 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 27 13:30:29 *	Linebeck (webchat@Clk-157A7BBC) has joined
+Sep 27 13:47:30 <dsimic>	_deepfire: these two products are rather interesting and they may provide some ideas for possible future Pine64 products: https://www.firefly.store/goods.php?id=111 and https://en.t-firefly.com/product/coreboard/core_3399_jd4
+Sep 27 13:50:47 <dsimic>	also, I'd love to see an official Pine64 rackmount or desktop case made specifically for the Clusterboard, because there are very few third-party mini-ITX cases that fit the Clusterboard well :)
+Sep 27 13:51:31 *	rdorsch has quit (Ping timeout: 181 seconds)
+Sep 27 13:51:44 <dsimic>	let's ping tl_lim as well about all this, as a possible suggestion ^^^
+Sep 27 14:03:04 *	kj7rrv has quit (Read error)
+Sep 27 14:03:18 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 27 14:04:15 *	adduc has quit (Read error)
+Sep 27 14:05:08 *	adduc (adduc@ED00453D.41607CC2.C52FA57C.IP) has joined
+Sep 27 14:05:33 *	kj7rrv has quit (Read error)
+Sep 27 14:05:57 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 27 14:09:15 *	nomasteryoda has quit (Read error)
+Sep 27 14:10:53 *	adduc has quit (Read error)
+Sep 27 14:11:55 <P64ProtocolBot>	[D] <_deepfire> dsimic, maybe you also could voice that in the forum thread? : -)
+Sep 27 14:11:59 *	libero1 (libero3@Clk-23937921.threembb.co.uk) has joined
+Sep 27 14:16:51 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 27 14:17:42 *	af (af@Clk-784A5DB4.me) has joined
+Sep 27 14:17:47 *	adduc (adduc@ED00453D.41607CC2.C52FA57C.IP) has joined
+Sep 27 14:20:57 <dsimic>	_deepfire: I'll make a note to reply in the forum thread as well :)
+Sep 27 14:24:41 <P64ProtocolBot>	[D] <quantomworks> Are there any plans to use matrix?
+Sep 27 14:25:09 <CounterPillow>	... all the chat channels are already bridged to matrix?
+Sep 27 14:31:14 *	benharri (ben@E0B54CEE.83CF62F4.AD00B623.IP) has joined
+Sep 27 14:36:43 *	kj7rrv has quit (Read error)
+Sep 27 14:37:05 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 27 14:38:38 *	kj7rrv has quit (Read error)
+Sep 27 14:39:01 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 27 14:50:22 *	kj7rrv has quit (Read error)
+Sep 27 14:50:47 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 27 15:02:54 *	megi1 has quit (Ping timeout: 180 seconds)
+Sep 27 15:14:20 <P64ProtocolBot>	[M] <cyckl> can confirm, am typing this from matrix
+Sep 27 15:14:37 *	TheCreeper has quit (Ping timeout: 181 seconds)
+Sep 27 15:17:04 <P64ProtocolBot>	[M] <fakeroot> can confirm, also typing from matrix
+Sep 27 15:20:30 *	adduc has quit (Ping timeout: 180 seconds)
+Sep 27 15:26:19 <P64ProtocolBot>	[D] <quantomworks> Ooooooo
+Sep 27 15:26:45 *	megi1 (megi@Clk-8F96A59F.net.upcbroadband.cz) has joined
+Sep 27 15:39:06 *	drzacek has quit (Quit: Leaving)
+Sep 27 15:40:14 *	immibis (hexchat@4099B237.981B7EAC.69A14B63.IP) has joined
+Sep 27 15:45:16 *	TheCreeper (TheCreeper@9DA93A13.776E4109.E96F505D.IP) has joined
+Sep 27 15:59:17 *	Rome has quit (Quit: Leaving)
+Sep 27 16:00:08 *	downhill has quit (Quit: Page closed)
+Sep 27 16:06:22 *	lft2496 has quit (Quit: WeeChat 2.8)
+Sep 27 16:08:31 *	erictheblack has quit (Ping timeout: 180 seconds)
+Sep 27 16:10:14 *	Lord_of_Life_ (Lord@1C1A82E2.CC25AE55.FDD0E13A.IP) has joined
+Sep 27 16:11:11 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Sep 27 16:11:11 *	Lord_of_Life_ is now known as Lord_of_Life
+Sep 27 16:12:01 *	adduc (adduc@ED00453D.41607CC2.C52FA57C.IP) has joined
+Sep 27 16:15:16 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 27 16:34:01 *	xmn (xmn@Clk-429648EB.nyc.res.rr.com) has joined
+Sep 27 17:04:33 *	af has quit (Ping timeout: 180 seconds)
+Sep 27 17:06:44 *	hendursaga has quit (Ping timeout: 180 seconds)
+Sep 27 17:06:57 *	hendursaga (weechat@Clk-C656B306.hviv.nl) has joined
+Sep 27 17:08:47 *	libero1 has quit (Ping timeout: 180 seconds)
+Sep 27 17:10:55 *	skonky (webchat@Clk-157A7BBC) has joined
+Sep 27 17:11:47 *	skonky has quit (Quit: Page closed)
+Sep 27 18:04:14 *	carlos (user@Clk-1A38742A.tor.shh.sh) has joined
+Sep 27 18:09:04 *	rex has quit (Ping timeout: 180 seconds)
+Sep 27 18:10:12 *	rex (rex@Clk-142EDA3A.hsi5.kabel-badenwuerttemberg.de) has joined
+**** BEGIN LOGGING AT Mon Sep 27 19:31:04 2021
+
+Sep 27 19:31:05 *	Now talking on #Pine64
+Sep 27 19:31:04 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 27 19:31:04 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 27 19:31:05 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 27 19:31:04 *	NickServ sets mode +r on fire219
+Sep 27 19:31:05 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 27 19:31:05 *	ChanServ gives channel operator status to fire219
+Sep 27 19:38:11 *	str1ngs (str1ngs@Clk-4AA11257.vps.ovh.ca) has joined
+Sep 27 19:43:58 *	str1ngs has quit (Quit: ZNC 1.8.1 - https://znc.in)
+Sep 27 20:33:13 *	neoz2 (localhost@DE758400.93011E3.3BE338D5.IP) has joined
+Sep 27 20:45:30 *	Linebeck has quit (Quit: )
+Sep 27 21:00:50 *	dni has quit (Ping timeout: 180 seconds)
+Sep 27 21:07:33 *	veremit (me@AE090697.FF6DBD74.6A8E0311.IP) has joined
+Sep 27 21:16:27 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has joined
+Sep 27 21:20:57 <P64ProtocolBot>	[D] <Mk> Hello Anyone have the link to download the latest Ubuntu touch version for pinephone thanks?
+Sep 27 21:22:06 *	xmn has quit (Ping timeout: 180 seconds)
+Sep 27 21:22:35 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has left
+Sep 27 21:23:14 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has left (WeeChat 3.0)
+Sep 27 21:47:50 *	ventyl_ (ventyl@Clk-3AB3B813.t-com.sk) has joined
+Sep 27 21:48:49 *	PReDiToR (pi@Clk-A2B5663.threembb.co.uk) has joined
+Sep 27 22:00:33 <P64ProtocolBot>	[D] <Caleb Christopher Fontenot> I use #offtopic and #pinephone so often I forgot there was a general channel lol
+Sep 27 22:05:35 *	adduc has quit (Read error)
+Sep 27 22:06:33 *	adduc (adduc@ED00453D.41607CC2.C52FA57C.IP) has joined
+Sep 27 22:19:45 *	adduc has quit (Read error)
+Sep 27 22:20:42 *	adduc (adduc@ED00453D.41607CC2.C52FA57C.IP) has joined
+Sep 27 22:33:55 *	dni (dni@Clk-5A7B580F.eu-central-1.compute.amazonaws.com) has joined
+Sep 27 23:01:16 *	lyubov (lyubov@Clk-8CDB3B5A.lightspeed.sntcca.sbcglobal.net) has joined
+Sep 27 23:11:09 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has joined
+Sep 27 23:31:05 *	adduc has quit (Read error)
+Sep 27 23:31:56 *	adduc (adduc@ED00453D.41607CC2.C52FA57C.IP) has joined
+Sep 28 00:01:31 *	trekkie1701c has quit (Quit: :P)
+Sep 28 00:04:44 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has left
+Sep 28 00:07:00 <P64ProtocolBot>	[D] <Funeral> The general chat is new. Like a week old @CCF_100
+Sep 28 00:08:23 <P64ProtocolBot>	[D] <Funeral> @Mk see https://wiki.pine64.org/wiki/PinePhone_Software_Releases#Ubuntu_Touch
+Sep 28 00:10:59 *	chupi has quit (Ping timeout: 180 seconds)
+Sep 28 00:13:02 *	chupi (Chupi@Clk-99255EE0.access.telenet.be) has joined
+Sep 28 00:23:50 <P64ProtocolBot>	[M] <Strit> In matrix the topic for this channel reads: "General discussion for the Pine64 Chat Network. Product-specific questions and discussion and better suited to other chats."
+Sep 28 00:27:03 <P64ProtocolBot>	[D] <Funeral> Yeah, but new folks will ask specific product questions here anyway. That is something to life with, IMO.
+Sep 28 00:27:48 <dsimic>	quite frankly, I think that nobody reads those topics :)
+Sep 28 00:28:17 <dsimic>	it's just that many new people probably "default" to the #pine64 channel :)
+Sep 28 00:30:42 <P64ProtocolBot>	[D] <Funeral> Its also laziness. Ask in the first channel you can find. Same like people asking things you have to look up yourself just to get the link, what the asking persons could have done themselves.
+Sep 28 00:31:22 <dsimic>	laziness is something that will never go away :)
+Sep 28 00:31:41 *	losuler has quit (Quit: oh no)
+Sep 28 00:32:56 *	losuler (losuler@Clk-385A6D5A.ip4.superloop.com) has joined
+Sep 28 00:40:32 *	Cuban (Cuban@85854AC3.582E1A0E.34706CC8.IP) has joined
+Sep 28 00:45:22 *	dsimic has quit (Ping timeout: 180 seconds)
+Sep 28 00:46:25 *	Danct12 has quit (Ping timeout: 181 seconds)
+Sep 28 00:48:26 *	dsimic (dsimic@C2376087.4F8B56B8.6812344F.IP) has joined
+Sep 28 01:08:21 *	af (af@8A827FBD.C9B32569.27E2C421.IP) has joined
+Sep 28 01:15:47 *	jacky (jacky@Clk-82E87220.wtf) has joined
+Sep 28 01:47:31 *	ventyl_ is now known as ventYl
+Sep 28 01:50:53 *	TheCreeper has quit (Read error)
+Sep 28 01:51:07 *	TheCreeper (TheCreeper@Clk-62FF1707.relay.coldhak.com) has joined
+Sep 28 01:59:38 *	carlos has quit (Read error)
+Sep 28 02:00:44 *	ibx2496 (FE865@33103A12.B2FE6E6.10208662.IP) has joined
+Sep 28 02:01:24 *	carlos (user@5071DB58.E3EFC7F6.8C227BA4.IP) has joined
+Sep 28 02:05:51 *	carlos has quit (Read error)
+Sep 28 02:06:05 *	carlos (user@Clk-3C4DB87.t-3.net) has joined
+Sep 28 02:09:03 *	libero1 (libero3@Clk-23937921.threembb.co.uk) has joined
+Sep 28 02:14:30 *	evilbunny (evilbunny@Clk-5CD7E528.b4961a.syd.static.aussiebb.net) has joined
+Sep 28 02:14:38 *	wild (help@B405BADA.100859EB.AAF16E7C.IP) has left
+Sep 28 02:14:47 *	evilbunny (evilbunny@Clk-5CD7E528.b4961a.syd.static.aussiebb.net) has left
+Sep 28 02:17:02 *	neoz2 has quit (Ping timeout: 180 seconds)
+Sep 28 02:19:04 *	raster (raster@Clk-B66961B5.range81-159.btcentralplus.com) has joined
+Sep 28 02:19:47 <P64ProtocolBot>	[M] <Ben Finney> I asked questions about "free-software open-design alternative to FitBit, where the user has full control over their own data"
+Sep 28 02:20:13 <P64ProtocolBot>	[M] <Ben Finney> and was led to the PineTime. It does a lot more than I'd need from such a device but seems to have the right sensors and connectivity.
+Sep 28 02:21:09 <P64ProtocolBot>	[M] <Ben Finney> How well does it make the data avilable? Are there standard "show me data from my wearable" apps for GNU+Linux, and for LineageOS, which work with this?
+Sep 28 02:24:53 *	carlos has quit (Quit: carlos)
+Sep 28 02:38:12 <P64ProtocolBot>	[D] <gamiee> Hi Ben Finney, I recommend you to join PineTime Matrix channel, you can find link on our wiki page https://wiki.pine64.org/ :)
+**** BEGIN LOGGING AT Tue Sep 28 11:43:16 2021
+
+Sep 28 11:43:16 *	Now talking on #Pine64
+Sep 28 11:43:16 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 28 11:43:16 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 28 11:43:16 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 28 11:43:16 *	NickServ sets mode +r on fire219
+Sep 28 11:43:16 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 28 11:43:16 *	ChanServ gives channel operator status to fire219
+Sep 28 11:43:17 *	erictheblack (Thunderbir@Clk-6ACAD895.adsl.xs4all.nl) has joined
+Sep 28 11:43:58 *	carlos has quit (Read error)
+Sep 28 11:45:44 *	carlos (user@Clk-648FB1E8.com) has joined
+Sep 28 11:51:51 *	l_ (l@Clk-5BB01C0D.zbau.f3netze.de) has joined
+Sep 28 11:53:05 *	Fq has quit (Ping timeout: 180 seconds)
+Sep 28 11:53:49 <P64ProtocolBot>	[D] <fervi> I think there is a bug with pine64 website. You have one (old version) of website without www and newest with www.
+Sep 28 11:58:19 <P64ProtocolBot>	[D] <gamiee> what? :o
+Sep 28 11:58:40 <veremit>	rut-roh ! :)
+Sep 28 11:59:02 <P64ProtocolBot>	[T] <UniversalSuperBox> https://pine64.org should redirect to https://www.pine64.org. It does for me...
+Sep 28 11:59:05 <veremit>	does anyone know what the new channel for the pine64 sbc Is? (reference above log)
+Sep 28 11:59:25 <veremit>	ah dns caching issue maybe?
+Sep 28 12:01:56 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 28 12:02:38 *	anjan has quit (Ping timeout: 180 seconds)
+Sep 28 12:05:22 <P64ProtocolBot>	[D] <Julian Zb.> I tried it too - works for me
+Sep 28 12:06:26 <P64ProtocolBot>	[D] <Julian Zb.> There is also https://pine64.com/, which I am pretty sure is a different site intentionally
+Sep 28 12:08:05 <dsimic>	veremit: it's #lts-sopine
+Sep 28 12:08:27 <veremit>	dsimic: thanks!
+Sep 28 12:09:32 <dsimic>	you're welcome
+Sep 28 12:13:01 <P64ProtocolBot>	[D] <Funeral> @fervi test again with pressing control+F5 to reload your local cache
+Sep 28 12:14:16 <P64ProtocolBot>	[D] <fervi> @Funeral Maybe the bug is, cause I get a website to old version
+Sep 28 12:14:17 <P64ProtocolBot>	[D] <fervi> I mean
+Sep 28 12:14:18 <P64ProtocolBot>	[D] <fervi> https://pine64.com/product-category/single-board-computers/
+Sep 28 12:14:45 <P64ProtocolBot>	[D] <fervi> sorry - anyway, it should be removed or just merged
+Sep 28 12:14:49 <P64ProtocolBot>	[D] <Funeral> That's the shop, which is a different site and a different organization behind it
+Sep 28 12:15:11 <P64ProtocolBot>	[D] <fervi> ok, but if you then click on "Home button", the redirect wont work
+Sep 28 12:15:26 <P64ProtocolBot>	[D] <Funeral> The store has more issues than that 😛
+Sep 28 12:15:33 <P64ProtocolBot>	[D] <fervi> ok 😛
+Sep 28 12:15:46 <P64ProtocolBot>	[D] <Funeral> Click on Cart > Orders while having an empty cart for example
+Sep 28 12:25:41 *	SkunkyLaptop has quit (Read error)
+Sep 28 12:28:35 <P64ProtocolBot>	[D] <fervi> But is the shop open source?
+Sep 28 12:28:52 <P64ProtocolBot>	[D] <Funeral> You mean the shop software? 😄
+Sep 28 12:28:55 <P64ProtocolBot>	[D] <fervi> yep
+Sep 28 12:29:06 <P64ProtocolBot>	[D] <fervi> Maybe I should add some bugs
+Sep 28 12:29:07 <P64ProtocolBot>	[D] <fervi> 😛
+Sep 28 12:29:56 <P64ProtocolBot>	[D] <Funeral> Looks like Wordpress but enhancing the site is not a focus 😛
+Sep 28 12:30:34 *	trekkie1701c has quit (Quit: :P)
+Sep 28 12:31:03 *	pikudoz (puppy@6458642D.6F5913E1.B8E90D82.IP) has joined
+Sep 28 12:35:25 *	str1ngs (str1ngs@Clk-4AA11257.vps.ovh.ca) has joined
+Sep 28 12:35:26 *	str1ngs has quit (Read error)
+Sep 28 12:55:00 *	jk_0 (jk_0@Clk-80C537EF.pool.telefonica.de) has joined
+Sep 28 12:58:58 <P64ProtocolBot>	[T] <Magnus> hi I just got the Pinephone and im new to Linux can anyone help me what this is about? : 
+Sep 28 12:59:54 <P64ProtocolBot>	[D] <fervi> Magnus: What distro do you use?
+Sep 28 13:00:22 <dsimic>	I'd suggest that you head over to the #pinephone channel: https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms
+Sep 28 13:00:27 <P64ProtocolBot>	[D] <fervi> ok
+Sep 28 13:00:35 <P64ProtocolBot>	[T] <Magnus> im on the defoult that came with the phone how can i check to make sure?
+Sep 28 13:01:13 <P64ProtocolBot>	[M] <Strit> I would suggest updating via terminal/pacman instead of discover.
+Sep 28 13:01:44 <P64ProtocolBot>	[M] <Strit> Discover has issues with pacman 6 / packagekit for some reason.
+Sep 28 13:02:02 <P64ProtocolBot>	[T] <Magnus> okay thx
+Sep 28 13:02:23 <P64ProtocolBot>	[D] <fervi> Anyway - is there any news about supporting Bitcoin in Pine64 payments?
+Sep 28 13:03:12 *	inky has quit (Ping timeout: 180 seconds)
+Sep 28 13:03:43 *	Twig (Twig@B222866F.72572798.79F42766.IP) has joined
+Sep 28 13:18:09 *	_inky_sailfish_ (sailfish@DC88017A.975C182A.91BA1983.IP) has joined
+Sep 28 13:18:20 *	inky (inky@F23CE41A.953D40CB.15596A43.IP) has joined
+Sep 28 13:35:40 *	libero2 (libero3@Clk-23937921.threembb.co.uk) has joined
+Sep 28 13:40:22 <P64ProtocolBot>	[T] <Thorsten Schragle> I have earned more from trading Stock..all thanks you and your team for your trust and honestly. @Elliot_Finances
+Sep 28 13:40:23 <P64ProtocolBot>	[T] <Thorsten Schragle> https://t.me/joinchat/LcYrRXbptyNkZjVk
+Sep 28 13:44:05 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> @Moderator telegram's back at it again with the white vans
+Sep 28 13:47:18 <P64ProtocolBot>	[D] <Funeral> Maybe fervi spawned the crypto spam @Porkyofthepine 😛
+Sep 28 13:47:48 *	raster has quit (Quit: Gettin' stinky!)
+Sep 28 13:51:47 <P64ProtocolBot>	[D] <Porkyofthepine (sxmo btw)> Lol maybe
+Sep 28 13:58:25 <P64ProtocolBot>	[D] <fervi> Probably 😄
+Sep 28 13:58:41 <P64ProtocolBot>	[D] <fervi> Unlimited power! 😄
+Sep 28 13:59:45 *	CabriDIY has quit (Quit: Page closed)
+Sep 28 14:13:53 <P64ProtocolBot>	[T] <errquilibria> 
+Sep 28 14:16:29 <P64ProtocolBot>	[T] <errquilibria> My ancient pineA64+ doing well thx to the uboot-pine64 boot file and the dkms wayland driver for the mali-utgard gpu 👌🏼 (re @errquilibria: )
+Sep 28 14:19:40 <P64ProtocolBot>	[T] <errquilibria> My ancient pineA64+ doing well thx to the uboot-pine64 boot file and the dkms wayland driver for the mali-utgard gpu 👌🏼 thanks for the help and support on pine64 etc @strit it was a good guide (re @errquilibria: )
+Sep 28 14:23:11 <P64ProtocolBot>	[D] <gamiee> uuuuh llvmpipe
+Sep 28 14:23:53 *	carlos has quit (Quit: carlos)
+Sep 28 14:25:44 *	WoC has quit (Ping timeout: 180 seconds)
+Sep 28 14:26:09 <P64ProtocolBot>	[M] <Strit> I would have thought Arch would be using Lima like the rest of us on mainline kernel.
+Sep 28 14:34:12 <P64ProtocolBot>	[T] <errquilibria> I found the wayland driver from sunxi50i-a64 support site is the smoothest and supporting graphic acceleration, not that it's a large device but I get about 28 fps in 720p resolution
+Sep 28 14:35:10 <P64ProtocolBot>	[T] <errquilibria> Yeah it picked the llvm automatically (re @p64protocolbot: [D] <gamiee> uuuuh llvmpipe)
+Sep 28 14:35:54 <P64ProtocolBot>	[T] <errquilibria> How does Lima differ from llvm
+Sep 28 14:36:30 <P64ProtocolBot>	[M] <Strit> Lima is a hardware driver, where llvm is a software driver I believe.
+Sep 28 14:36:48 <P64ProtocolBot>	[M] <Strit> So llvm will use the CPU instead of the GPU.
+Sep 28 14:38:40 <P64ProtocolBot>	[T] <errquilibria> Oh OK, I'll look into that, wayland is a kernel driver though but I'll see if there is Lima support on this mali-400 etc hardware (re @p64protocolbot: [M] <Strit> Lima is a hardware driver, where llvm is a software driver I believe.)
+Sep 28 14:39:16 <P64ProtocolBot>	[M] <Strit> You can check in your kernel with `zgrep LIMA /proc/config.gz`.
+Sep 28 14:39:25 <P64ProtocolBot>	[T] <errquilibria> Ah yes, I understand, interesting stuff (re @p64protocolbot: [M] <Strit> So llvm will use the CPU instead of the GPU.)
+Sep 28 14:40:39 <P64ProtocolBot>	[T] <errquilibria> I'll have a look yes thx for the info, it's bit late by me, almost 10 pm so will see tomorrow (re @p64protocolbot: [M] <Strit> You can check in your kernel with `zgrep LIMA /proc/config.gz`.)
+Sep 28 14:41:44 <P64ProtocolBot>	[T] <errquilibria> I'll look @ arch wiki solong tho
+Sep 28 15:00:56 *	superkuh has quit (Ping timeout: 181 seconds)
+Sep 28 15:01:47 *	superkuh (superkuh@Clk-53FC041D.hsd1.wi.comcast.net) has joined
+Sep 28 15:05:07 *	SynMonger has quit (Ping timeout: 180 seconds)
+Sep 28 15:06:41 <P64ProtocolBot>	[T] <FlyFrog> Hi guys! I bought a few things on the site pine64.com, order # 199856 and they never sent me any product or track number. no explanation ... Is this not your site? Is this a fake that your company pretends to be?
+Sep 28 15:06:42 <P64ProtocolBot>	[T] <FlyFrog> Is there someone from the store support here?
+Sep 28 15:07:31 <P64ProtocolBot>	[T] <UniversalSuperBox> No, you won't find store support here. But pine64.com is the pine64 store. You can email the support address listed on pine64.com for order help. But you won't receive anything but your order confirmation until the item ships, which depending on the item could be several weeks.
+Sep 28 15:08:48 <P64ProtocolBot>	[D] <gamiee> FlyFrog, when you placed your order?
+Sep 28 15:13:24 <P64ProtocolBot>	[T] <FlyFrog> A month passed, I wrote to the mail several times, they never answered, I began to worry, as I bought several products. (re @UniversalSuperBox: No, you won't find store support here. But pine64.com is the pine64 store. You can email the support address listed on pine64.com for order help. But you won't receive anything but your order confirmation until the item ships, which depending on the item could be several we
+Sep 28 15:13:37 <P64ProtocolBot>	[T] <FlyFrog> [Order #199856] (August 29, 2021) (re @p64protocolbot: [D] <gamiee> FlyFrog, when you placed your order?)
+Sep 28 15:19:58 *	jk_0 has quit (Quit: Leaving)
+Sep 28 15:20:15 *	jk_0 (jk_0@Clk-80C537EF.pool.telefonica.de) has joined
+Sep 28 15:20:32 *	jk_0 has quit (Quit: Leaving)
+Sep 28 15:21:19 <P64ProtocolBot>	[T] <gamiee> That's definitely weird @FlyFrog , please, try ask http://support.pine64.org
+Sep 28 15:21:37 <P64ProtocolBot>	[T] <gamiee> If you will not receive an answer within few days, please come back here again and ping me
+Sep 28 15:21:39 *	jlucas (jlucas@Clk-8A47B837.cpe.netcabo.pt) has left
+Sep 28 15:22:23 <P64ProtocolBot>	[T] <FlyFrog> Thank you! (re @gamiee: That's definitely weird @FlyFrog , please, try ask http://support.pine64.org)
+Sep 28 15:23:20 *	adduc has quit (Read error)
+Sep 28 15:23:56 *	adduc (adduc@ED00453D.41607CC2.C52FA57C.IP) has joined
+Sep 28 15:26:10 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 28 15:26:59 *	pavlushka has quit (Read error)
+Sep 28 15:30:04 *	Twig has quit (Ping timeout: 180 seconds)
+Sep 28 15:34:26 *	superkuh has quit (Ping timeout: 180 seconds)
+Sep 28 15:35:15 *	superkuh (superkuh@Clk-53FC041D.hsd1.wi.comcast.net) has joined
+Sep 28 15:36:51 *	CMoH|notebook has quit (Read error)
+Sep 28 15:37:44 *	CMoH|notebook (cipi@C66BE421.2CA5194A.5203BF0A.IP) has joined
+Sep 28 16:00:58 *	libero2 has quit (Ping timeout: 180 seconds)
+Sep 28 16:09:48 *	WoC (WoC@Clk-CAEFC4B3.satx.res.rr.com) has joined
+Sep 28 16:10:42 *	Lord_of_Life_ (Lord@62BC4886.BF710E4.FDD0E13A.IP) has joined
+Sep 28 16:12:17 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Sep 28 16:12:17 *	Lord_of_Life_ is now known as Lord_of_Life
+Sep 28 16:21:59 <P64ProtocolBot>	[T] <Precious> Words alone won't express how thankful I'm to you @Fxprofitable1 , investing with you has been a good opportunity for me and family I just received my profit of $ 11,200 within a 48hours of active trading, thank you so very much 
+Sep 28 16:22:00 <P64ProtocolBot>	[T] <Precious> Reach him through this link
+Sep 28 16:22:01 <P64ProtocolBot>	[T] <Precious> 👇👇👇
+Sep 28 16:22:02 <P64ProtocolBot>	[T] <Precious> https://t.me/joinchat/RgoRdoQwRpM5MzJk
+Sep 28 16:24:31 *	erictheblack has quit (Ping timeout: 181 seconds)
+Sep 28 16:33:21 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 28 16:36:12 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 28 16:45:11 *	xmn (xmn@Clk-429648EB.nyc.res.rr.com) has joined
+Sep 28 16:45:41 *	tebruno99 has quit (Quit: I'm out!)
+Sep 28 16:45:47 *	tebruno99 (tebruno@Clk-E385460F.hsd1.il.comcast.net) has joined
+**** BEGIN LOGGING AT Tue Sep 28 17:43:13 2021
+
+Sep 28 17:43:13 *	Now talking on #Pine64
+Sep 28 17:43:13 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 28 17:43:13 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 28 17:43:13 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 28 17:43:13 *	NickServ sets mode +r on fire219
+Sep 28 17:43:13 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 28 17:43:13 *	ChanServ gives channel operator status to fire219
+Sep 28 17:47:07 *	SynMonger (syn@29880B85.64B44AC.3A70C692.IP) has joined
+Sep 28 17:50:40 *	kj7rrv has quit (Read error)
+Sep 28 17:50:57 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 17:54:44 *	kj7rrv has quit (Read error)
+Sep 28 17:55:13 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 18:03:29 *	kj7rrv has quit (Read error)
+Sep 28 18:03:32 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 18:05:04 *	kj7rrv has quit (Read error)
+Sep 28 18:05:31 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 18:10:23 *	drpixel (drpixel@Clk-AC548885.rev.sfr.net) has joined
+Sep 28 18:10:38 *	drpixel (drpixel@Clk-AC548885.rev.sfr.net) has left (Leaving)
+Sep 28 18:11:04 *	drpixel (drpixel@Clk-AC548885.rev.sfr.net) has joined
+Sep 28 18:11:35 *	drpixel has quit (Quit: Leaving)
+Sep 28 18:12:21 *	kj7rrv has quit (Read error)
+Sep 28 18:12:43 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 18:14:05 *	drpixel (drpixel@Clk-AC548885.rev.sfr.net) has joined
+Sep 28 18:17:59 *	kj7rrv has quit (Read error)
+Sep 28 18:18:33 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 18:20:49 *	kj7rrv has quit (Read error)
+Sep 28 18:21:20 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 18:36:23 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 28 18:43:07 *	anarsoul (anarsoul@Clk-769A644D.vf.shawcable.net) has joined
+Sep 28 18:44:49 *	kj7rrv has quit (Read error)
+Sep 28 18:44:57 *	kj7rrv (kj7rrv@Clk-A1351BDE.sub-174-204-194.myvzw.com) has joined
+Sep 28 18:45:48 *	anarsoul has quit (Quit: ZNC 1.8.2 - https://znc.in)
+Sep 28 18:50:20 *	anarsoul (anarsoul@Clk-769A644D.vf.shawcable.net) has joined
+Sep 28 18:53:32 *	anjan (anjan@Clk-FC53CE88.bchsia.telus.net) has joined
+Sep 28 19:06:59 *	Cuban has quit (Ping timeout: 181 seconds)
+Sep 28 19:07:14 *	trekkie1701c has quit (Quit: :P)
+Sep 28 19:28:28 *	bdju has quit (Ping timeout: 180 seconds)
+Sep 28 19:31:38 *	kj7rrv has quit (Ping timeout: 180 seconds)
+Sep 28 19:31:47 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 19:32:08 *	superkuh has quit (Ping timeout: 180 seconds)
+Sep 28 19:32:20 *	superkuh (superkuh@Clk-53FC041D.hsd1.wi.comcast.net) has joined
+Sep 28 19:32:44 *	WoC has quit (Ping timeout: 180 seconds)
+Sep 28 19:36:04 *	WoC (WoC@Clk-CAEFC4B3.satx.res.rr.com) has joined
+Sep 28 19:55:56 *	str1ngs (str1ngs@Clk-4AA11257.vps.ovh.ca) has joined
+Sep 28 19:55:57 *	str1ngs has quit (Read error)
+Sep 28 19:56:17 *	str1ngs (str1ngs@Clk-4AA11257.vps.ovh.ca) has joined
+Sep 28 20:00:00 *	naruciakk has quit (Quit: Ding-dong-ding-dong)
+Sep 28 20:00:18 *	naruciakk (naruciakk@Clk-DC1AFD4C.clients.your-server.de) has joined
+Sep 28 20:48:13 *	bdju (bard@8A92CC3D.577FFB07.58FB3838.IP) has joined
+Sep 28 20:51:49 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> https://cdn.discordapp.com/attachments/463285150898192384/892589453628043304/unknown.png
+Sep 28 20:52:00 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> https://cdn.discordapp.com/attachments/463285150898192384/892589498569990244/unknown.png
+Sep 28 20:52:02 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> 🙃
+Sep 28 20:57:16 *	test-guest (test-guest@Clk-84B11764.rev.stofanet.dk) has joined
+Sep 28 21:00:58 *	neoz2 has quit (Quit: -)
+Sep 28 21:06:38 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 28 21:07:55 *	l_ is now known as Fq
+Sep 28 21:10:01 <P64ProtocolBot>	[M] <c2a1 (@c2a1:matrix.org)> Just of of curiosity how easy is it to make your pinebook/general arm64 device unbootable by using the wrong partition scheme
+Sep 28 21:10:20 <P64ProtocolBot>	[M] <c2a1 (@c2a1:matrix.org)> I.e deleting u boot
+Sep 28 21:11:12 <P64ProtocolBot>	[M] <c2a1 (@c2a1:matrix.org)> The fact that the bootloader needs to be run from a specific device on arm always gave me anxiety
+Sep 28 21:15:21 <P64ProtocolBot>	[T] <Fx Mo> Forwarded from unknown: 𝐈𝐧 𝐫𝐞𝐜𝐞𝐧𝐭 𝐲𝐞𝐚𝐫𝐬 𝐛𝐢𝐭𝐜𝐨𝐢𝐧 𝐢𝐧𝐯𝐞𝐬𝐭𝐦𝐞𝐧𝐭 𝐡𝐚𝐯𝐞 𝐛𝐞𝐜𝐨𝐦𝐞 𝐨𝐧𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐭𝐫𝐮𝐬𝐭𝐞𝐝 𝐚𝐧𝐝 𝐫𝐞𝐥𝐢𝐚𝐛𝐥𝐞 𝐬𝐨𝐮𝐫𝐜𝐞𝐬 𝐨𝐟 𝐦𝐚𝐤𝐢𝐧𝐠 𝐦𝐨𝐫𝐞 𝐦𝐨𝐧𝐞𝐲 �
+Sep 28 21:15:22 <P64ProtocolBot>	[T] <Fx Mo>  𝐒𝐨 𝐰𝐢𝐭𝐡 𝐡𝐚𝐩𝐩𝐲 𝐡𝐞𝐚𝐫𝐭, 𝐈 𝐬𝐚𝐲 𝐭𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐭𝐨 𝐭𝐡𝐞 𝐦𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐨𝐟 CRYPTO GOLDEN FX
+Sep 28 21:15:23 <P64ProtocolBot>	[T] <Fx Mo> 𝐘𝐨𝐮'𝐫𝐞 𝐃𝐞𝐯𝐢𝐧𝐞💙
+Sep 28 21:15:24 <P64ProtocolBot>	[T] <Fx Mo> 𝐇𝐚𝐯𝐞 𝐂𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞𝐦 𝐡𝐞𝐫𝐞
+Sep 28 21:15:26 <P64ProtocolBot>	[T] <Fx Mo> 👇👇👇
+Sep 28 21:15:27 <P64ProtocolBot>	[T] <Fx Mo> https://t.me/joinchat/FVmheLMh1j9mYmQ0
+Sep 28 21:29:05 *	kj7rrv has quit (Read error)
+Sep 28 21:29:18 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 21:29:56 *	phipli_ (phipli@Clk-9CA2C497.range86-153.btcentralplus.com) has joined
+Sep 28 21:30:14 *	phipli has quit (Ping timeout: 180 seconds)
+Sep 28 21:31:16 *	kj7rrv has quit (Read error)
+Sep 28 21:31:48 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 28 21:35:28 *	Linebeck has quit (Quit: )
+Sep 28 22:37:03 *	carlos (user@8CDE9246.EC6325BA.9574C1CF.IP) has joined
+Sep 28 22:38:42 *	pikudoz has quit (Ping timeout: 180 seconds)
+Sep 28 23:12:39 *	TheCreeper has quit (Read error)
+Sep 28 23:13:00 *	TheCreeper (TheCreeper@Clk-BCC13C36.relay.coldhak.com) has joined
+Sep 28 23:32:39 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has joined
+Sep 28 23:34:18 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has left
+Sep 28 23:39:53 *	anarsoul has quit (Quit: ZNC 1.8.2 - https://znc.in)
+Sep 28 23:40:45 *	anarsoul (anarsoul@Clk-769A644D.vf.shawcable.net) has joined
+Sep 28 23:44:31 *	carlos has quit (Quit: carlos)
+Sep 28 23:47:19 *	branon has quit (Read error)
+Sep 28 23:47:52 *	branon (branon@Clk-4C9B4CB4.hsd1.md.comcast.net) has joined
+Sep 29 00:01:31 *	trekkie1701c has quit (Quit: :P)
+Sep 29 00:03:59 *	ToxicGumbo has quit (Ping timeout: 180 seconds)
+Sep 29 00:12:07 <P64ProtocolBot>	[T] <tele_33yn2> With happy heart, your banned.
+Sep 29 00:15:08 <P64ProtocolBot>	[D] <Segfault> c2a1: A64 devices will load the bootloader from an SD card first if one is available so those are effectively unbrickable
+Sep 29 00:15:35 <P64ProtocolBot>	[D] <Segfault> RK3399 devices are a bit more tricky, they'll load from eMMC first, so a physical switch is included that disconnects the eMMC if needed
+Sep 29 00:16:00 <P64ProtocolBot>	[D] <Segfault> Although before even that they'll load from SPI so if you want some reassurance you can also flash the SPI chip on devices that have it like the PBP
+Sep 29 00:23:24 *	luke-jr has quit (Ping timeout: 180 seconds)
+Sep 29 00:24:18 *	SynMonger has quit (Ping timeout: 181 seconds)
+Sep 29 00:36:51 *	SynMonger (syn@29880B85.64B44AC.3A70C692.IP) has joined
+Sep 29 00:40:32 *	Cuban (Cuban@A8D3E2CD.BC43B8F7.3D7FD720.IP) has joined
+Sep 29 00:44:45 *	dsimic has quit (Ping timeout: 180 seconds)
+Sep 29 00:47:50 *	dsimic (dsimic@85E494D2.4F8B56B8.6812344F.IP) has joined
+Sep 29 00:51:40 *	luke-jr (luke-jr@6FEBA905.AA869625.E0AF2252.IP) has joined
+Sep 29 00:59:39 *	TheCreeper has quit (Ping timeout: 180 seconds)
+Sep 29 00:59:52 *	TheCreeper (TheCreeper@540BBA15.61DBE95C.5AA0927C.IP) has joined
+Sep 29 01:06:03 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 29 01:12:20 *	yjftsjthsd has quit (Ping timeout: 180 seconds)
+Sep 29 01:21:01 *	ibx2496 (FE865@33103A12.B2FE6E6.10208662.IP) has joined
+Sep 29 01:24:19 *	xmn has quit (Ping timeout: 180 seconds)
+Sep 29 01:25:05 *	pavlushka has quit (Read error)
+Sep 29 01:33:26 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 29 01:36:28 *	erictheblack (Thunderbir@Clk-6ACAD895.adsl.xs4all.nl) has joined
+Sep 29 01:36:38 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 29 01:50:20 <P64ProtocolBot>	[T] <Aaron> Forwarded from unknown: I really appreciate al her efforts with the little investment of €2,000 with joy all over me after withdrawing by of €12,700 through the coach of https://t.me/joinchat/sz7bG_wdB3U5ZDc0
+Sep 29 01:56:42 *	TheCreeper has quit (Ping timeout: 180 seconds)
+Sep 29 02:00:16 <P64ProtocolBot>	[D] <Skunkynator> oh cmon
+Sep 29 02:03:49 *	ibx2496 has quit (Read error)
+Sep 29 02:04:02 <kj7rrv>	Forwarded from unknown: I really appreciate all her efforts to help me turn my little investment of $100 into $0 on some sketchy Bitcoin site. See how I did it https://m.youtube.com/watch?v=dQw4w9WgXcQ
+Sep 29 02:04:31 *	raster (raster@Clk-B66961B5.range81-159.btcentralplus.com) has joined
+Sep 29 02:07:45 *	naruciakk has quit (Ping timeout: 180 seconds)
+Sep 29 02:07:47 *	naruciakk (naruciakk@Clk-DC1AFD4C.clients.your-server.de) has joined
+Sep 29 02:08:06 *	esotericnonsense has quit (Ping timeout: 180 seconds)
+Sep 29 02:08:18 *	esotericnonsense (esotericno@Clk-225685A9.clients.your-server.de) has joined
+Sep 29 02:12:45 *	ibx2496 (FE865@33103A12.B2FE6E6.10208662.IP) has joined
+Sep 29 02:17:12 *	ibx2496 has quit (Read error)
+Sep 29 02:17:55 *	ibx2496 (FE865@33103A12.B2FE6E6.10208662.IP) has joined
+Sep 29 02:28:23 *	ToxicGumbo (toxicgumbo@Clk-29E1894B.ks.ks.cox.net) has joined
+**** BEGIN LOGGING AT Wed Sep 29 10:54:36 2021
+
+Sep 29 10:54:36 *	Now talking on #Pine64
+Sep 29 10:54:36 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 29 10:54:36 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 29 10:54:36 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 29 10:54:36 *	NickServ sets mode +r on fire219
+Sep 29 10:54:36 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 29 10:54:36 *	ChanServ gives channel operator status to fire219
+**** ENDING LOGGING AT Wed Sep 29 10:59:44 2021
+
+**** BEGIN LOGGING AT Wed Sep 29 11:01:21 2021
+
+Sep 29 11:01:21 *	Now talking on #Pine64
+Sep 29 11:01:21 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 29 11:01:21 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 29 11:01:21 -HostServ-	Your vhost of pine64.org is now activated.
+Sep 29 11:01:21 *	NickServ sets mode +r on fire219
+Sep 29 11:01:21 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 29 11:01:21 *	ChanServ gives channel operator status to fire219
+Sep 29 11:04:42 *	trekkie1701c has quit (Quit: :P)
+Sep 29 11:20:14 *	Twig (Twig@36354412.24AB9F9C.69ED7390.IP) has joined
+Sep 29 11:46:23 <P64ProtocolBot>	[T] <t00sik> Hello everybody!  Can I buy pinephone with delivery to Russia?
+Sep 29 11:46:28 *	carlos has quit (Read error)
+Sep 29 11:48:30 *	carlos (user@74911244.EC6325BA.9574C1CF.IP) has joined
+Sep 29 12:58:26 *	Disconnected ()
+**** ENDING LOGGING AT Wed Sep 29 12:58:26 2021
+
+**** BEGIN LOGGING AT Wed Sep 29 12:58:40 2021
+
+Sep 29 12:58:40 *	Now talking on #Pine64
+Sep 29 12:58:40 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 29 12:58:40 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 29 12:58:40 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 29 12:58:40 *	ChanServ gives channel operator status to fire219
+Sep 29 13:21:12 *	mapi (mapi@Clk-9F9BE5B.net.upcbroadband.cz) has joined
+Sep 29 13:24:33 *	trekkie1701c has quit (Quit: :P)
+Sep 29 13:32:08 *	Linebeck (webchat@Clk-157A7BBC) has joined
+Sep 29 13:48:29 *	drpixel972 (drpixel@Clk-AC548885.rev.sfr.net) has joined
+Sep 29 13:48:36 *	drpixel972 has quit (Read error)
+Sep 29 13:48:44 *	drpixel (drpixel@Clk-AC548885.rev.sfr.net) has joined
+Sep 29 13:50:29 *	carlos has quit (Ping timeout: 180 seconds)
+Sep 29 13:50:51 *	drpixel76 has quit (Ping timeout: 181 seconds)
+Sep 29 13:55:05 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 29 13:57:02 *	libero2 (libero3@Clk-23937921.threembb.co.uk) has joined
+Sep 29 14:02:35 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 29 14:03:25 *	TheCreeper has quit (Read error)
+Sep 29 14:03:42 *	TheCreeper (TheCreeper@808CBABA.B6FBD5EB.F3C2303E.IP) has joined
+Sep 29 14:12:18 *	Robson (Robson@Clk-6727CE3A.play-internet.pl) has joined
+Sep 29 14:14:27 *	skyfaller (skyfaller@Clk-FD203CCB.phlapa.fios.verizon.net) has joined
+Sep 29 14:17:06 *	skyfaller has quit (Quit: skyfaller)
+Sep 29 14:18:14 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 29 14:19:50 *	libero2 has quit (Ping timeout: 180 seconds)
+Sep 29 14:22:00 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 29 14:25:55 *	libero2 (libero3@Clk-23937921.threembb.co.uk) has joined
+Sep 29 14:31:35 *	raingloom (quassel@Clk-42D4FC78.catv.pool.telekom.hu) has joined
+Sep 29 14:34:42 *	bhh (ben@E0B54CEE.83CF62F4.AD00B623.IP) has joined
+Sep 29 14:34:42 *	benharri has quit (Read error)
+Sep 29 14:37:32 *	skyfaller (skyfaller@Clk-FD203CCB.phlapa.fios.verizon.net) has joined
+Sep 29 14:37:33 *	skyfaller has quit (Quit: skyfaller)
+Sep 29 14:54:36 *	RonWhoCares has quit (Quit: Konversation terminated!)
+Sep 29 15:00:15 *	RonWhoCares (ronpi@Clk-88E9654.cable.user.start.ca) has joined
+Sep 29 15:02:14 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 29 15:07:00 *	_william_ has quit (Ping timeout: 180 seconds)
+Sep 29 15:07:41 *	Twig has quit (Ping timeout: 181 seconds)
+Sep 29 15:08:45 *	djj (djj@Clk-C34C049C.kapsi.fi) has joined
+Sep 29 15:10:16 *	_william_ (william@Clk-5B30230E.w90-114.abo.wanadoo.fr) has joined
+Sep 29 15:11:56 *	Robson has quit (Quit: Leaving)
+Sep 29 15:17:27 *	hl has quit (Ping timeout: 180 seconds)
+Sep 29 15:17:41 *	grimmware (oholiab@6D34BB80.B9B8331.DBA06563.IP) has joined
+Sep 29 15:17:52 *	hl (hl@6C5B3C90.EE39CC34.192EFD37.IP) has joined
+Sep 29 15:22:50 *	clee has quit (Quit: leaving)
+Sep 29 15:27:59 *	_inky_sailfish_ (sailfish@DC88017A.975C182A.91BA1983.IP) has joined
+Sep 29 15:29:29 *	_inky_sailfish has quit (Ping timeout: 180 seconds)
+Sep 29 15:29:49 *	inky has quit (Ping timeout: 180 seconds)
+Sep 29 15:30:43 *	libero2 has quit (Ping timeout: 180 seconds)
+Sep 29 15:38:50 *	drzacek has quit (Quit: Leaving)
+Sep 29 15:44:46 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 29 15:52:13 *	inky (inky@Clk-F8D70CF3.anonymizing-proxy.digitalcourage.de) has joined
+Sep 29 15:59:52 *	qastokes (qastokes@Clk-9B7BA968.hsd1.wa.comcast.net) has joined
+Sep 29 16:05:22 *	libero2 (libero3@Clk-23937921.threembb.co.uk) has joined
+Sep 29 16:08:16 *	qastokes has quit (Quit: qastokes)
+Sep 29 16:08:28 *	qastokes (qastokes@Clk-9B7BA968.hsd1.wa.comcast.net) has joined
+Sep 29 16:10:48 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 29 16:11:49 *	Lord_of_Life_ (Lord@60244AF6.34C8660.FDD0E13A.IP) has joined
+Sep 29 16:12:53 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Sep 29 16:12:53 *	Lord_of_Life_ is now known as Lord_of_Life
+Sep 29 16:16:40 *	qastokes has quit (Quit: qastokes)
+Sep 29 16:19:11 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 29 16:50:08 *	Disconnected ()
+**** ENDING LOGGING AT Wed Sep 29 16:50:08 2021
+
+**** BEGIN LOGGING AT Wed Sep 29 16:50:22 2021
+
+Sep 29 16:50:22 *	Now talking on #Pine64
+Sep 29 16:50:22 *	Topic for #Pine64 is: General (bridged) discussion | The wiki always needs improvement! https://wiki.pine64.org
+Sep 29 16:50:22 *	Topic for #Pine64 set by fire219 (Tue Sep 21 17:58:28 2021)
+Sep 29 16:50:22 *	ChanServ sets mode +q on #Pine64 fire219
+Sep 29 16:50:22 *	ChanServ gives channel operator status to fire219
+Sep 29 16:54:11 *	raingloom has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+Sep 29 16:56:21 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 29 16:57:41 *	klm has quit (Quit: Page closed)
+Sep 29 17:00:23 *	kj7rrv has quit (Read error)
+Sep 29 17:00:49 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 29 17:01:07 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 29 17:03:09 *	ventyl has quit (Ping timeout: 180 seconds)
+Sep 29 17:04:04 <P64ProtocolBot>	[D] <5SpeedFatty> so how do i go about using discord on a pinephone
+Sep 29 17:06:39 *	libero2 has quit (Ping timeout: 180 seconds)
+Sep 29 17:09:59 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> WayDroid
+Sep 29 17:10:09 *	rdorsch has quit (Ping timeout: 180 seconds)
+Sep 29 17:10:11 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> https://cdn.discordapp.com/attachments/463285150898192384/892896058533879858/WhyAmILikeThis_WIP_5.mp3
+Sep 29 17:10:54 <P64ProtocolBot>	[D] <5SpeedFatty> thank you
+Sep 29 17:11:45 <P64ProtocolBot>	[D] <Caleb Fontenot (He/Him)> no problem
+Sep 29 17:17:52 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> > <@p64protocolbot:matrix.org> [D] <Caleb Fontenot (He/Him)> WayDroid
+Sep 29 17:17:52 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> 
+Sep 29 17:17:53 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Doesnt discord have a web client
+Sep 29 17:19:46 *	kj7rrv has quit (Read error)
+Sep 29 17:20:21 *	kj7rrv (kj7rrv@7BF3B678.F690DFF.7F144038.IP) has joined
+Sep 29 17:20:24 <P64ProtocolBot>	[D] <5SpeedFatty> yes but the useragent on the pinephone is setup to make it think you are on android, which blocks that part of the site form access
+Sep 29 17:20:40 <P64ProtocolBot>	[D] <5SpeedFatty> im sure i could fake it but the thought was see what teh community uses before i go poking
+Sep 29 17:20:55 <P64ProtocolBot>	[D] <5SpeedFatty> im sure i could fake it but the thought was see what the community uses before i go poking
+Sep 29 17:20:58 *	raster has quit (Quit: Gettin' stinky!)
+Sep 29 17:26:29 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Useragent changer addons can be made to work on a per site basis
+Sep 29 17:27:12 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Im sure its possible in both firefox and chrom*um
+Sep 29 17:27:28 <P64ProtocolBot>	[D] <5SpeedFatty> so far havent installed firefox
+Sep 29 17:27:41 <P64ProtocolBot>	[D] <5SpeedFatty> was checking it out on "anglefish"
+Sep 29 17:28:56 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> It looks more mobile friendly
+Sep 29 17:29:15 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> I dont own a pinephone
+Sep 29 17:29:53 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> But you could try firefox too and also falkon
+Sep 29 17:29:54 <P64ProtocolBot>	[D] <5SpeedFatty> yea i just got mine and im poking around seeign what the default OS looks like bfore i flash the multi image on it and go looking around
+Sep 29 17:31:12 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Im more interested in the smartwatch
+Sep 29 17:32:01 <P64ProtocolBot>	[D] <5SpeedFatty> i messed up and didnt pay for the good shipping on my watch
+Sep 29 17:32:05 <P64ProtocolBot>	[D] <5SpeedFatty> its not here yet
+Sep 29 17:32:41 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Shipping is very expensive
+Sep 29 17:32:43 *	C_dy (crich@Clk-671F24B4.hsd1.pa.comcast.net) has joined
+Sep 29 17:33:11 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Ill buy 3 if the shipping costs as much as one
+Sep 29 17:33:23 <P64ProtocolBot>	[D] <5SpeedFatty> yea... still the phone shipped out all of 2 days ago
+Sep 29 17:33:47 <P64ProtocolBot>	[D] <5SpeedFatty> and the better shipping had it here in that time
+Sep 29 17:35:58 <P64ProtocolBot>	[M] <SteelCaptain 🇷🇴 ⩩ [ milsugi ] [ miolingi ]> Would it be possible to make firefox for desktop have the mobile style of tabs via extensions?
+Sep 29 17:40:21 *	SynMonger (syn@29880B85.64B44AC.3A70C692.IP) has joined
+Sep 29 17:58:42 *	drpixel76 (drpixel@Clk-AC548885.rev.sfr.net) has joined
+Sep 29 18:01:13 *	drpixel has quit (Ping timeout: 181 seconds)
+Sep 29 18:11:20 *	trekkie1701c has quit (Quit: :P)
+Sep 29 18:16:48 *	silver (silver@449BAE96.AA157EDE.C96E5DE8.IP) has joined
+Sep 29 18:42:29 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 29 18:59:57 <P64ProtocolBot>	[T] <Kbruns> Anyone tried to get a dual sim card adapter working?
+Sep 29 19:07:16 *	Cuban has quit (Ping timeout: 180 seconds)
+Sep 29 19:39:32 *	argonautx has quit (Ping timeout: 181 seconds)
+Sep 29 19:55:27 <P64ProtocolBot>	[T] <CarbonRed> Forwarded from derek:
+Sep 29 20:54:47 *	luke-jr has quit (Ping timeout: 180 seconds)
+Sep 29 20:56:07 *	neoz2 (localhost@EE784E15.EB2454EF.46E06837.IP) has joined
+Sep 29 21:06:47 *	xmn_ (xmn@Clk-429648EB.nyc.res.rr.com) has joined
+Sep 29 21:07:12 *	xmn has quit (Ping timeout: 180 seconds)
+Sep 29 21:19:30 <P64ProtocolBot>	[T] <Sonic> 𝙄𝙩 𝙢𝙖𝙠𝙚𝙨 𝙢𝙚 𝙝𝙖𝙥𝙥𝙮 𝙩𝙚𝙡𝙡𝙞𝙣𝙜 𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙗𝙤𝙪𝙩 𝙩𝙝𝙞𝙨 𝙬𝙤𝙣𝙙𝙚𝙧𝙛𝙪𝙡 𝙞𝙣𝙫𝙚𝙨𝙩𝙢𝙚𝙣𝙩 𝙘𝙤𝙢𝙥𝙖𝙣𝙮 𝙩𝙝𝙖𝙩 𝙝𝙖𝙨 𝙥𝙖𝙞𝙙 𝙢𝙚 𝙢𝙖𝙣𝙮 𝙩𝙞𝙢𝙚𝙨 𝙖𝙣𝙙 𝙘𝙝𝙖𝙣𝙜𝙚𝙙 𝙢𝙮 𝙡𝙞𝙛𝙚
+Sep 29 21:19:31 <P64ProtocolBot>	[T] <Sonic> All thanks to Sir Scott Anderson
+Sep 29 21:19:32 <P64ProtocolBot>	[T] <Sonic> 👇👇👇👇
+Sep 29 21:19:33 <P64ProtocolBot>	[T] <Sonic> @PROFITS_WITH_SCOTT
+Sep 29 21:19:35 <P64ProtocolBot>	[T] <Sonic> https://t.me/joinchat/agtFal51AgVkMTI0
+Sep 29 21:19:36 <P64ProtocolBot>	[T] <Sonic> https://t.me/joinchat/agtFal51AgVkMTI0
+Sep 29 21:23:04 *	luke-jr (luke-jr@72C6127C.725B773B.E185F254.IP) has joined
+Sep 29 21:26:09 *	luke-jr has quit (Ping timeout: 180 seconds)
+Sep 29 21:26:55 *	itseris49 has quit (Ping timeout: 180 seconds)
+Sep 29 21:27:10 *	itseris49 (itseris@Clk-BACAB630.bchsia.telus.net) has joined
+Sep 29 21:45:01 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has joined
+Sep 29 21:46:30 *	pete (pete@B3E724F3.8A1861B6.A14F49F7.IP) has left
+Sep 29 21:53:23 *	luke-jr (luke-jr@72C6127C.725B773B.E185F254.IP) has joined
+Sep 29 21:56:23 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 29 22:18:26 *	xmn_ has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+Sep 29 22:21:31 <kj7rrv>	Is it okay to "advertise" FOSS projects in #OffTopic ?
+Sep 29 22:57:31 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 29 22:59:19 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 29 23:27:33 <P64ProtocolBot>	[D] <33YN2> It will take some time, especially with the shipping backups at major ports
+Sep 29 23:27:49 <P64ProtocolBot>	[D] <33YN2> I've been waiting a month for a NAS box
+Sep 29 23:28:17 <P64ProtocolBot>	[D] <33YN2> Hopefully only takes another month at most to arrive
+Sep 29 23:35:11 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 29 23:36:09 *	drpixel76 has quit (Quit: Leaving)
+Sep 29 23:36:31 *	drpixel (drpixel@Clk-AC548885.rev.sfr.net) has joined
+Sep 29 23:44:21 *	ecs has quit (Ping timeout: 180 seconds)
+Sep 29 23:45:03 *	trekkie1701c has quit (Ping timeout: 180 seconds)
+Sep 29 23:45:06 *	samueldr has quit (Ping timeout: 180 seconds)
+Sep 29 23:45:16 *	Skunky has quit (Ping timeout: 180 seconds)
+Sep 29 23:45:18 *	anarsoul has quit (Ping timeout: 180 seconds)
+Sep 29 23:45:19 *	ssgelm has quit (Ping timeout: 180 seconds)
+Sep 29 23:46:10 *	ssgelm (ssgelm@B392079.351E8D34.A4D0B326.IP) has joined
+Sep 29 23:46:10 *	trekkie1701c (trekkie170@Clk-6CF2E1E9.us-east-2.compute.amazonaws.com) has joined
+Sep 29 23:46:11 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 29 23:46:12 *	Skunky (skunky@Clk-8EF9C644.skunky.org) has joined
+Sep 29 23:46:14 *	larbob (larbob@2631295E.281ADE13.89AF6C05.IP) has joined
+Sep 29 23:46:27 *	ecs (ecs@Clk-F55F7F5C.net) has joined
+Sep 29 23:46:29 *	stilbruch (stilbruch@E8CE1B38.707DFE91.D06563A1.IP) has joined
+Sep 29 23:46:32 *	anarsoul (anarsoul@Clk-769A644D.vf.shawcable.net) has joined
+Sep 29 23:46:58 *	captain_morgan (morgan@Clk-61D4B874.cloud) has joined
+Sep 29 23:47:16 *	samueldr (samuel@Clk-E862FC33.popalot.net) has joined
+Sep 29 23:48:19 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 29 23:49:58 *	houghtelin (houghtelin@C00DD529.8EAF27F3.2D85B14E.IP) has joined
+Sep 29 23:52:24 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 29 23:53:06 *	pavlushka has quit (Read error)
+Sep 29 23:54:18 *	naut-bit (naut@BDD3312F.471F64B0.9E82ED99.IP) has joined
+Sep 30 00:01:31 *	trekkie1701c has quit (Quit: :P)
+Sep 30 00:02:13 <P64ProtocolBot>	[T] <Wesat> Forwarded from unknown: I was referred to this platform by a friend online.i thought it was a scam. Company...but I was moved to try and here I earned.i just want to share this to you guys.
+Sep 30 00:02:14 <P64ProtocolBot>	[T] <Wesat> @fx_hubert_jason
+Sep 30 00:02:15 <P64ProtocolBot>	[T] <Wesat> 👇👇👇👇👇👇👇👇👇👇👇
+Sep 30 00:02:16 <P64ProtocolBot>	[T] <Wesat> https://t.me/joinchat/HIVqYoriY901MmRh
+Sep 30 00:09:44 <P64ProtocolBot>	[T] <Rosemarie> Forwarded from unknown: I now make money from the comfort of my home all thanks to @fx_hubert_jason , you too can contact him and also make money from home
+Sep 30 00:09:45 <P64ProtocolBot>	[T] <Rosemarie> Dm:@fx_hubert_jason
+Sep 30 00:09:46 <P64ProtocolBot>	[T] <Rosemarie> Link:https://t.me/joinchat/HIVqYoriY901MmRh
+Sep 30 00:16:28 *	Linebeck has quit (Quit: )
+Sep 30 00:23:01 *	ibx2496 (FE865@33103A12.B2FE6E6.10208662.IP) has joined
+Sep 30 00:25:33 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 30 00:27:21 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 30 00:40:32 *	Cuban (Cuban@2206A1DF.3641415C.FB665CEC.IP) has joined
+Sep 30 00:41:16 *	ventyl (ventyl@Clk-3AB3B813.t-com.sk) has joined
+Sep 30 00:45:09 *	dsimic has quit (Ping timeout: 181 seconds)
+Sep 30 00:48:14 *	dsimic (dsimic@28E84111.4F8B56B8.6812344F.IP) has joined
+Sep 30 00:55:29 <P64ProtocolBot>	[T] <OliviaJuya> Invertir en criptomonedas es realista, pero se perdió un 95%.     HASHBULLS ES RECONOCIDOhttps://cleanuri.com/9EPBdLhttps://cleanuri.com/9EPBdL : 
+Sep 30 00:58:26 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 30 00:59:42 <kj7rrv>	Yo no quiero criptomonedas. ¿Por qué usas español? Mas personas aqui hablan ingles.
+Sep 30 01:03:14 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 30 01:04:44 *	Twig (Twig@3D91A0C3.72572798.79F42766.IP) has joined
+Sep 30 01:10:19 <dsimic>	:)
+Sep 30 01:13:23 *	rdorsch (rdo@Clk-777072D6.hsi8.kabel-badenwuerttemberg.de) has joined
+Sep 30 01:27:55 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 30 01:40:25 *	Twig has quit (Ping timeout: 180 seconds)
+Sep 30 01:44:48 *	test-guest has quit (Ping timeout: 180 seconds)
+Sep 30 01:46:07 <P64ProtocolBot>	[D] <Electr0Lyte> No soy hablo
+Sep 30 01:49:17 *	carlos (user@Clk-F72E3BF8.dicedonions.xyz) has joined
+Sep 30 01:52:27 <ventyl>	no soy sauce
+Sep 30 01:57:21 *	carlos has quit (Ping timeout: 180 seconds)
+Sep 30 01:59:44 *	Twig (Twig@DE63E85.BD3AF2F8.6CC74273.IP) has joined
+Sep 30 02:16:41 *	BigShip has quit (Ping timeout: 180 seconds)
+Sep 30 02:18:25 *	Twig has quit (Ping timeout: 180 seconds)
+Sep 30 02:20:29 *	raster (raster@Clk-B66961B5.range81-159.btcentralplus.com) has joined
+Sep 30 02:45:52 <P64ProtocolBot>	[D] <Electr0Lyte> that's ok, I will be fine with tabasco or ketchup
+Sep 30 02:45:58 *	rdorsch has quit (Ping timeout: 181 seconds)
+Sep 30 02:46:00 <P64ProtocolBot>	[D] <Electr0Lyte> :P
+Sep 30 02:52:30 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 30 02:53:02 *	argonautx (argonautx@55F44CDC.B9BC3A1D.98C175D.IP) has joined
+Sep 30 03:05:03 *	hendursa1 (weechat@C0BCC305.B476ECB3.113FC9C6.IP) has joined
+Sep 30 03:06:35 *	BigShip (BigShip@Clk-72FE258E.hsd1.or.comcast.net) has joined
+Sep 30 03:06:59 *	hendursaga has quit (Ping timeout: 181 seconds)
+Sep 30 03:10:31 *	pavlushka (pavlushka@B000B7F3.FF236731.61B19839.IP) has joined
+Sep 30 03:19:06 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has joined
+Sep 30 03:56:56 *	neoz2 has quit (Quit: -)
+Sep 30 03:57:25 *	carlos (user@D566D54E.776E4109.E96F505D.IP) has joined
+Sep 30 04:00:57 *	neoz2 (localhost@75206490.11369C77.E2429E6B.IP) has joined
+Sep 30 04:07:11 *	silver has quit (Ping timeout: 180 seconds)
+Sep 30 04:09:41 <P64ProtocolBot>	[D] <Krissy Silveropossum> I'd recommend editing the user agent in `about:config`
+Sep 30 04:09:41 <P64ProtocolBot>	[D] <Krissy Silveropossum> 
+Sep 30 04:09:42 <P64ProtocolBot>	[D] <Krissy Silveropossum> Leave everything the same, but *specifically* replace "Android" with "Linux"
+Sep 30 04:09:44 <P64ProtocolBot>	[D] <Krissy Silveropossum> 
+Sep 30 04:09:45 <P64ProtocolBot>	[D] <Krissy Silveropossum> Many websites will stop trying to harass you about android apps but will still present their mobile UIs
+Sep 30 04:11:55 <P64ProtocolBot>	[D] <Funeral> Better install an user agent switcher add-on. Sites detect the presence of a mobile phone in different ways, changing the user agent back to desktop will break a large amount of sites.
+Sep 30 04:12:10 <P64ProtocolBot>	[D] <Krissy Silveropossum> This does not change the user agent to desktop
+Sep 30 04:12:39 <P64ProtocolBot>	[D] <Krissy Silveropossum> The user agent string in this case still contains the word "Mobile", which appears to be what any site I've encountered thus far is relying on
+Sep 30 04:12:57 <P64ProtocolBot>	[D] <Krissy Silveropossum> if not the dimensions of screen, etc.
+Sep 30 04:13:38 *	neoz2 has quit (Read error)
+Sep 30 04:13:47 *	Xavi92 (Xavi92@Clk-4F8EF3FC.org) has left
+Sep 30 04:14:43 *	neoz2 (localhost@75206490.11369C77.E2429E6B.IP) has joined
+Sep 30 04:16:31 <P64ProtocolBot>	[T] <yerbkhan> me and my buddy want to order 2 devices, but there is 1 device limit per order, is it possible to make it 2 cuz we are 2 persons? order is in EU
+Sep 30 04:16:56 *	SynMonger has quit (Ping timeout: 180 seconds)
+Sep 30 04:17:04 <P64ProtocolBot>	[D] <Cyastis> have you tried..
+Sep 30 04:17:04 <P64ProtocolBot>	[D] <Cyastis> 
+Sep 30 04:17:06 <P64ProtocolBot>	[D] <Cyastis> changing privacy.resistFingerprinting to True?
+Sep 30 04:17:19 <P64ProtocolBot>	[D] <Cyastis> Because that'll make the userAgent show Windows NT
+Sep 30 04:17:59 <P64ProtocolBot>	[D] <Cyastis> yerbkhan I think you'd have to order them separately unfortunately
+Sep 30 04:18:23 <P64ProtocolBot>	[D] <Cyastis> it's a carrier limit, not an arbitrary limit pine64 makes
+Sep 30 04:20:45 <P64ProtocolBot>	[D] <thanos the they/them engine> yeah it's an issue of what they can send in the package, noy who orders it
+Sep 30 04:21:49 <P64ProtocolBot>	[D] <Funeral> To be fair, for the EU warehouse that doesn't apply, they are holding a stock there. But Pine probably can't or won't make the order process region-specific
+Sep 30 04:21:50 <P64ProtocolBot>	[D] <thanos the they/them engine> wait that actually works? I'd have assumed that they were just using the fact that it's a mobile layout to decide to shill the app
+Sep 30 04:22:48 <P64ProtocolBot>	[D] <Krissy Silveropossum> Based on my experience, they're just looking for the word "Android" in the user a gent
+Sep 30 04:22:48 <P64ProtocolBot>	[D] <Krissy Silveropossum> Based on my experience, they're just looking for the word "Android" in the user agent
+Sep 30 04:23:13 <P64ProtocolBot>	[D] <thanos the they/them engine> huh
+Sep 30 04:23:18 <P64ProtocolBot>	[D] <Krissy Silveropossum> Nothing is more annoying than reddit trying to thrust it's app upon me, imo XD
+Sep 30 04:23:25 <P64ProtocolBot>	[D] <Krissy Silveropossum> Nothing is more annoying than reddit trying to thrust its app upon me, imo XD
+Sep 30 04:23:31 <P64ProtocolBot>	[D] <thanos the they/them engine> might not be a bad idea to put this in a PR
+Sep 30 04:24:23 <P64ProtocolBot>	[D] <Krissy Silveropossum> I think that'd be a better default user agent personally
+Sep 30 04:24:28 <P64ProtocolBot>	[D] <Krissy Silveropossum> also more technically accurate X3
+Sep 30 04:25:01 <P64ProtocolBot>	[D] <thanos the they/them engine> if ti stops the app shilling then it already significantly improves the experience
