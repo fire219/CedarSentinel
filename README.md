@@ -5,7 +5,7 @@
 
 ```bash
 git clone https://github.com/fire219/CedarSentinel.git
-pip install pyyaml
+pip install pyyaml discord.py
 cp exampleconfig.yaml config.yaml
 # edit the config file with your editor of choice!
 ```
@@ -21,7 +21,7 @@ An example model (and the training data used to create it) is included in this r
 - Samuel Sloniker ([kj7rrv](https://github.com/kj7rrv "kj7rrv")) for creating **GPTC** and the **modelbuilder.py** file included in this repo.
 
 ### License
-MIT Licence
+MIT License
 
 ```
 Copyright 2021 Matthew Petry (fireTwoOneNine)
