@@ -1,6 +1,9 @@
 ---
     discordToken        : ABCDEF1234567890 # Make sure to put your bot token here before starting!
     spamModel           : models/p64model1.json # file name for your spam model
+    alertThreshold      : 0.5 # Minimum spam confidence value to trigger alert
+    logThreshold        : 0.7 # Minimum spam confidence value to trigger save to spam file
+    spamFile            : "spamLog.json" # filename to save messages that meet log threshold
     classifyBypass      : true # true to enable the known user classification bypass
     messageThreshold    : 5 # number of previous messages a user must have sent before qualifying for classify bypass
     persistKnownUsers   : True, # set to true to enable persistence of known user data across bot restarts
@@ -9,3 +12,4 @@
     spamNotifyPing      : Moderator   # put a role name here to ping it for spam notifications. Leave blank for no ping.
     spamNotifyMessage   : Potential spam detected. # message to use in spam notifications
     bridgeBot           : Pine64 Protocol Droid#9618 # if your server uses a bridgebot (like matterbridge) to connect other networks, put its discord name + discriminator here
+    debugMode           : false # output additional data in console and notification messages. Unless you know otherwise, you should probably have this set to false.

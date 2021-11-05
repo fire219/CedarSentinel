@@ -21,8 +21,9 @@ import gptc
 import yaml
 from yaml.loader import SafeLoader
 import json
+import datetime
 
-version = "0.1"
+version = "0.2"
 configFile = "config.yaml"
 
 knownUsers = {}
@@ -55,15 +56,18 @@ def checkMessage(author, content):
         if (author == config["bridgeBot"]):
             author = content.split('>', 1)[0]
             author = author.split('<', 1)[1].replace('@', '').strip()
-        knownUser = validateUser(author.name)
+        knownUser = validateUser(author)
     if knownUser:
-        return "good"
+        return {"good": 1, "spam": 0}
     else: 
-        return classifier.classify(content)
+        confidence = {"good": 0, "spam": 0} # set defaults for good and spam to prevent KeyErrors in parsing
+        confidence.update(classifier.confidence(content))
+        return confidence
+        
 
 
 # Prepare and send notification about detected spam    
-async def sendNotifMessage(message):
+async def sendNotifMessage(message, confidence):
     # begin discord-specific code
     notifChannel = None
     notifPing = ""
@@ -75,10 +79,21 @@ async def sendNotifMessage(message):
             notifPing = role.mention
     if notifChannel:
         await notifChannel.send(notifPing+" "+config["spamNotifyMessage"]+" "+message.jump_url)
+        if (config["debugMode"]): await notifChannel.send("DEBUG: Confidence value on the above message is: "+ str(confidence))
     else:
         print("Notification channel not found! Sending in same channel as potential spam.")
         await message.channel.send(notifPing+" "+config["spamNotifyMessage"])
+        if (config["debugMode"]): await message.channel.send("DEBUG: Confidence value on the above message is: "+ str(confidence))
     # end discord-specific code
+
+# log spam message to file for later analysis
+async def logSpam(message, confidence):
+    with open(config["spamFile"], 'w+') as f:
+        logTime = datetime.datetime.today()
+        f.write(",\n") # append to previous JSON dump, and make this prettier for human eyes
+        logEntry = {'time': logTime, 'message': message, 'confidence': confidence}
+        json.dump(logEntry, f)
+
 
 # begin discord-specific code
 class BotInstance(discord.Client):
@@ -91,9 +106,13 @@ class BotInstance(discord.Client):
         if not (message.author == bot.user): 
             author = message.author.name+"#"+message.author.discriminator
             content = message.content
-            messageClass = str(checkMessage(author, content))
-        if messageClass == "spam": 
-            await sendNotifMessage(message)
+            messageClass = checkMessage(author, content)
+            if (config["debugMode"]): 
+                print(messageClass)
+            if messageClass["spam"] > config["alertThreshold"]: 
+                await sendNotifMessage(message, messageClass["spam"])
+            if messageClass["spam"] > config["logThreshold"]:     
+                await logSpam(message, messageClass)
 # end discord-specific code
 
 # load files 
