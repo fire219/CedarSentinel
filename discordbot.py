@@ -67,6 +67,7 @@ def checkMessage(message):
 
 # Prepare and send notification about detected spam    
 async def sendNotifMessage(message):
+    # begin discord-specific code
     notifChannel = None
     notifPing = ""
     for channel in message.guild.text_channels:
@@ -80,6 +81,7 @@ async def sendNotifMessage(message):
     else:
         print("Notification channel not found! Sending in same channel as potential spam.")
         await message.channel.send(notifPing+" "+config["spamNotifyMessage"])
+    # end discord-specific code
 
 # begin discord-specific code
 class BotInstance(discord.Client):
