@@ -49,12 +49,7 @@ def validateUser(username):
 
 
 # Extract username of message sender, and return status based on classification and/or known user bypass
-def checkMessage(message):
-    # begin discord-specific section
-    author = message.author.name+"#"+message.author.discriminator
-    content = message.content
-    # end discord-specific section
-
+def checkMessage(author, content):
     knownUser = False
     if (config["classifyBypass"]):
         if (author == config["bridgeBot"]):
@@ -94,7 +89,9 @@ class BotInstance(discord.Client):
         print('Message from {0.author}: {0.content}'.format(message))
         messageClass = None
         if not (message.author == bot.user): 
-            messageClass = str(checkMessage(message))
+            author = message.author.name+"#"+message.author.discriminator
+            content = message.content
+            messageClass = str(checkMessage(author, content))
         if messageClass == "spam": 
             await sendNotifMessage(message)
 # end discord-specific code
