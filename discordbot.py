@@ -89,7 +89,7 @@ async def sendNotifMessage(message, confidence):
 # log spam message to file for later analysis
 async def logSpam(message, confidence):
     with open(config["spamFile"], 'w+') as f:
-        logTime = datetime.datetime.today()
+        logTime = str(datetime.datetime.today())
         f.write(",\n") # append to previous JSON dump, and make this prettier for human eyes
         logEntry = {'time': logTime, 'message': message, 'confidence': confidence}
         json.dump(logEntry, f)
