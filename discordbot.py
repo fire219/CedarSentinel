@@ -14,7 +14,9 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
+# begin discord-specific code
 import discord
+# end discord-specific code
 import gptc
 import yaml
 from yaml.loader import SafeLoader
