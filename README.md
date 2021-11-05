@@ -5,6 +5,7 @@
 
 ```bash
 git clone https://github.com/fire219/CedarSentinel.git
+cd CedarSentinel
 pip install pyyaml discord.py
 cp exampleconfig.yaml config.yaml
 # edit the config file with your editor of choice!
