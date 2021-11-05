@@ -45,20 +45,25 @@ def validateUser(username):
                 json.dump(knownUsers, f)
         return False
 
+
 # Extract username of message sender, and return status based on classification and/or known user bypass
 def checkMessage(message):
+    # begin discord-specific section
+    author = message.author.name+"#"+message.author.discriminator
+    content = message.content
+    # end discord-specific section
+
     knownUser = False
     if (config["classifyBypass"]):
-        if (message.author.name+"#"+message.author.discriminator == config["bridgeBot"]):
-            realAuthor = message.content.split('>', 1)[0]
-            realAuthor = realAuthor.split('<', 1)[1].replace('@', '').strip()
-            knownUser = validateUser(realAuthor)
-        else:
-            knownUser = validateUser(message.author.name+"#"+message.author.discriminator)
-    if knownUser: 
-        return "good"        
+        if (author == config["bridgeBot"]):
+            author = content.split('>', 1)[0]
+            author = author.split('<', 1)[1].replace('@', '').strip()
+        knownUser = validateUser(author.name)
+    if knownUser:
+        return "good"
     else: 
-        return classifier.classify(message.content)
+        return classifier.classify(content)
+
 
 # Prepare and send notification about detected spam    
 async def sendNotifMessage(message):
