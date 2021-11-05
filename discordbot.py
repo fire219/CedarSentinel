@@ -14,7 +14,9 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
+# begin discord-specific code
 import discord
+# end discord-specific code
 import gptc
 import yaml
 from yaml.loader import SafeLoader
@@ -45,23 +47,24 @@ def validateUser(username):
                 json.dump(knownUsers, f)
         return False
 
+
 # Extract username of message sender, and return status based on classification and/or known user bypass
-def checkMessage(message):
+def checkMessage(author, content):
     knownUser = False
     if (config["classifyBypass"]):
-        if (message.author.name+"#"+message.author.discriminator == config["bridgeBot"]):
-            realAuthor = message.content.split('>', 1)[0]
-            realAuthor = realAuthor.split('<', 1)[1].replace('@', '').strip()
-            knownUser = validateUser(realAuthor)
-        else:
-            knownUser = validateUser(message.author.name+"#"+message.author.discriminator)
-    if knownUser: 
-        return "good"        
+        if (author == config["bridgeBot"]):
+            author = content.split('>', 1)[0]
+            author = author.split('<', 1)[1].replace('@', '').strip()
+        knownUser = validateUser(author.name)
+    if knownUser:
+        return "good"
     else: 
-        return classifier.classify(message.content)
+        return classifier.classify(content)
+
 
 # Prepare and send notification about detected spam    
 async def sendNotifMessage(message):
+    # begin discord-specific code
     notifChannel = None
     notifPing = ""
     for channel in message.guild.text_channels:
@@ -75,7 +78,9 @@ async def sendNotifMessage(message):
     else:
         print("Notification channel not found! Sending in same channel as potential spam.")
         await message.channel.send(notifPing+" "+config["spamNotifyMessage"])
+    # end discord-specific code
 
+# begin discord-specific code
 class BotInstance(discord.Client):
     async def on_ready(self):
         print('Logged on as {0}!'.format(self.user))
@@ -84,9 +89,12 @@ class BotInstance(discord.Client):
         print('Message from {0.author}: {0.content}'.format(message))
         messageClass = None
         if not (message.author == bot.user): 
-            messageClass = str(checkMessage(message))
+            author = message.author.name+"#"+message.author.discriminator
+            content = message.content
+            messageClass = str(checkMessage(author, content))
         if messageClass == "spam": 
             await sendNotifMessage(message)
+# end discord-specific code
 
 # load files 
 with open(configFile) as f:
@@ -105,4 +113,6 @@ print("Cedar Sentinel version "+version+" starting up.")
 classifier = gptc.Classifier(spamModel)
 print("Spam Model Loaded!")
 bot = BotInstance()
+# begin discord-specific code
 bot.run(config["discordToken"])
+# end discord-specific code
