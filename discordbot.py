@@ -81,6 +81,7 @@ async def sendNotifMessage(message):
         print("Notification channel not found! Sending in same channel as potential spam.")
         await message.channel.send(notifPing+" "+config["spamNotifyMessage"])
 
+# begin discord-specific code
 class BotInstance(discord.Client):
     async def on_ready(self):
         print('Logged on as {0}!'.format(self.user))
@@ -92,6 +93,7 @@ class BotInstance(discord.Client):
             messageClass = str(checkMessage(message))
         if messageClass == "spam": 
             await sendNotifMessage(message)
+# end discord-specific code
 
 # load files 
 with open(configFile) as f:
@@ -110,4 +112,6 @@ print("Cedar Sentinel version "+version+" starting up.")
 classifier = gptc.Classifier(spamModel)
 print("Spam Model Loaded!")
 bot = BotInstance()
+# begin discord-specific code
 bot.run(config["discordToken"])
+# end discord-specific code
