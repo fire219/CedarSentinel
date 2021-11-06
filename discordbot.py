@@ -86,9 +86,9 @@ async def sendNotifMessage(message, confidence):
         if (config["debugMode"]): await message.channel.send("DEBUG: Confidence value on the above message is: "+ str(confidence))
     # end discord-specific code
 
-# log spam message to file for later analysis
-async def logSpam(message, confidence):
-    with open(config["spamFile"], 'w+') as f:
+# log message to file for later analysis
+async def logMessage(message, confidence):
+    with open(config["spamFile"], 'a') as f:
         logTime = str(datetime.datetime.today())
         f.write(",\n") # append to previous JSON dump, and make this prettier for human eyes
         logEntry = {'time': logTime, 'message': message, 'confidence': confidence}
@@ -111,8 +111,10 @@ class BotInstance(discord.Client):
                 print(messageClass)
             if messageClass["spam"] > config["alertThreshold"]: 
                 await sendNotifMessage(message, messageClass["spam"])
-            if messageClass["spam"] > config["logThreshold"]:     
-                await logSpam(message, messageClass)
+            if (messageClass["spam"] > config["logThresholdHigh"]) \
+             or (messageClass["spam"] < config["logThresholdLow"]) \
+             or (messageClass["good"] < config["logThresholdLow"]):
+                await logMessage(message.content, messageClass)
 # end discord-specific code
 
 # load files 
