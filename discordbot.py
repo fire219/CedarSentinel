@@ -56,6 +56,7 @@ def checkMessage(author, content):
         if (author == config["bridgeBot"]):
             author = content.split('>', 1)[0]
             author = author.split('<', 1)[1].replace('@', '').strip()
+            content = content.split('>', 1)[1]
         knownUser = validateUser(author)
     if knownUser:
         return {"good": 1, "spam": 0}
@@ -112,8 +113,7 @@ class BotInstance(discord.Client):
             if messageClass["spam"] > config["alertThreshold"]: 
                 await sendNotifMessage(message, messageClass["spam"])
             if (messageClass["spam"] > config["logThresholdHigh"]) \
-             or (messageClass["spam"] < config["logThresholdLow"]) \
-             or (messageClass["good"] < config["logThresholdLow"]):
+             or ((messageClass["spam"] < 0.6) and (messageClass["good"] < 0.6)):
                 await logMessage(message.content, messageClass)
 # end discord-specific code
 
