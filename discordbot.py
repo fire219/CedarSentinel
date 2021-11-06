@@ -2,7 +2,7 @@
 # A Discord Bot for using trained models to detect spam
 # Built for the Pine64 Chat Network
 
-# Copyright 2021 Matthew Petry (fireTwoOneNine)
+# Copyright 2021 Matthew Petry (fireTwoOneNine), SamuelbSloniker (kj7rrv)
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), 
 # to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
 # and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -88,7 +88,7 @@ async def sendNotifMessage(message, confidence):
     # end discord-specific code
 
 # log message to file for later analysis
-async def logMessage(message, confidence):
+def logMessage(message, confidence):
     with open(config["spamFile"], 'a') as f:
         logTime = str(datetime.datetime.today())
         f.write(",\n") # append to previous JSON dump, and make this prettier for human eyes
@@ -114,7 +114,7 @@ class BotInstance(discord.Client):
                 await sendNotifMessage(message, messageClass["spam"])
             if (messageClass["spam"] > config["logThresholdHigh"]) \
              or (max(messageClass["spam"], messageClass["good"]) < config["logThresholdLow"]):
-                await logMessage(message.content, messageClass)
+                logMessage(message.content, messageClass)
 # end discord-specific code
 
 # load files 
@@ -133,7 +133,7 @@ if (config["persistKnownUsers"]):
 print("Cedar Sentinel version "+version+" starting up.")
 classifier = gptc.Classifier(spamModel)
 print("Spam Model Loaded!")
-bot = BotInstance()
 # begin discord-specific code
+bot = BotInstance()
 bot.run(config["discordToken"])
 # end discord-specific code
