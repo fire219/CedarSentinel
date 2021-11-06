@@ -113,7 +113,7 @@ class BotInstance(discord.Client):
             if messageClass["spam"] > config["alertThreshold"]: 
                 await sendNotifMessage(message, messageClass["spam"])
             if (messageClass["spam"] > config["logThresholdHigh"]) \
-             or ((messageClass["spam"] < 0.6) and (messageClass["good"] < 0.6)):
+             or (max(messageClass["spam"], messageClass["good"]) < config["logThresholdLow"]):
                 await logMessage(message.content, messageClass)
 # end discord-specific code
 
