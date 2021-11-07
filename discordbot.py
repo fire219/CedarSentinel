@@ -126,15 +126,21 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
     def on_welcome(self, connection, event):
         for target in config["channels"].split(' '):
             connection.join(target)
+        if config["notificationChannel"].startswith("#"):
+            connection.join(config["notificationChannel"])
 
     def on_pubmsg(self, connection, event):
         author = event.source.split('!')[0].strip()
         content = event.arguments[0]
         is_spam, confidence, author = handle_message(author, content)
         if is_spam:
-            print(config["spamNotifyPing"] + ": " + config["spamNotifyMessage"] + " (" + author + " -> " + event.target + ") " + content)
+            notification_channel = config["notificationChannel"]
+            if notification_channel == "*":
+                notification_channel = event.target
+
+            connection.privmsg(notification_channel, config["spamNotifyPing"] + ": " + config["spamNotifyMessage"] + " (" + author + " -> " + event.target + ") " + content)
             if (config["debugMode"]):
-                print("DEBUG: Confidence value on the above message is: "+ str(confidence))
+                connection.privmsg(notification_channel, "DEBUG: Confidence value on the above message is: "+ str(confidence))
 
 
 # load files 
