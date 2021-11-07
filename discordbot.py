@@ -15,7 +15,7 @@
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
 import discord
-import irc
+import irc.bot
 import gptc
 import yaml
 from yaml.loader import SafeLoader
@@ -67,7 +67,7 @@ def checkMessage(author, content):
 
 
 # Prepare and send notification about detected spam 
-async def sendNotifMessageDiscord(message, confidence):
+async def sendNotifMessage(message, confidence):
     notifChannel = None
     notifPing = ""
     for channel in message.guild.text_channels:
@@ -107,10 +107,22 @@ class BotInstance(discord.Client):
             if (config["debugMode"]): 
                 print(messageClass)
             if messageClass["spam"] > config["alertThreshold"]: 
-                await sendNotifMessageDiscord(message, messageClass["spam"])
+                await sendNotifMessage(message, messageClass["spam"])
             if (messageClass["spam"] > config["logThresholdHigh"]) \
              or (max(messageClass["spam"], messageClass["good"]) < config["logThresholdLow"]):
                 logMessage(message.content, messageClass)
+
+class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
+    def on_nicknameinuse(self, c, e):
+        c.nick(c.get_nickname() + "_")
+
+    def on_welcome(self, connection, event):
+        for target in config["channels"].split(' '):
+            connection.join(target)
+
+    def on_pubmsg(self, connection, event):
+        print(event.arguments[0])
+
 
 # load files 
 with open(configFile) as f:
@@ -131,3 +143,7 @@ print("Spam Model Loaded!")
 if config["platform"] == "discord":
     bot = BotInstance()
     bot.run(config["discordToken"])
+elif config["platform"] == "irc":
+    print(config)
+    bot = CedarSentinelIRC([irc.bot.ServerSpec(config["ircServer"], int(config["ircPort"]))], config["ircNick"], config["ircNick"])
+    bot.start()
