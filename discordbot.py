@@ -14,9 +14,10 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
-# begin discord-specific code
-import discord
-# end discord-specific code
+is_discord = True
+
+if is_discord:
+    import discord
 import gptc
 import yaml
 from yaml.loader import SafeLoader
@@ -67,25 +68,24 @@ def checkMessage(author, content):
         
 
 
-# Prepare and send notification about detected spam    
-async def sendNotifMessage(message, confidence):
-    # begin discord-specific code
-    notifChannel = None
-    notifPing = ""
-    for channel in message.guild.text_channels:
-        if channel.name == config["notificationChannel"]:
-            notifChannel = channel
-    for role in message.guild.roles:
-        if role.name == config["spamNotifyPing"]:
-            notifPing = role.mention
-    if notifChannel:
-        await notifChannel.send(notifPing+" "+config["spamNotifyMessage"]+" "+message.jump_url)
-        if (config["debugMode"]): await notifChannel.send("DEBUG: Confidence value on the above message is: "+ str(confidence))
-    else:
-        print("Notification channel not found! Sending in same channel as potential spam.")
-        await message.channel.send(notifPing+" "+config["spamNotifyMessage"])
-        if (config["debugMode"]): await message.channel.send("DEBUG: Confidence value on the above message is: "+ str(confidence))
-    # end discord-specific code
+if is_discord:
+    # Prepare and send notification about detected spam 
+    async def sendNotifMessage(message, confidence):
+        notifChannel = None
+        notifPing = ""
+        for channel in message.guild.text_channels:
+            if channel.name == config["notificationChannel"]:
+                notifChannel = channel
+        for role in message.guild.roles:
+            if role.name == config["spamNotifyPing"]:
+                notifPing = role.mention
+        if notifChannel:
+            await notifChannel.send(notifPing+" "+config["spamNotifyMessage"]+" "+message.jump_url)
+            if (config["debugMode"]): await notifChannel.send("DEBUG: Confidence value on the above message is: "+ str(confidence))
+        else:
+            print("Notification channel not found! Sending in same channel as potential spam.")
+            await message.channel.send(notifPing+" "+config["spamNotifyMessage"])
+            if (config["debugMode"]): await message.channel.send("DEBUG: Confidence value on the above message is: "+ str(confidence))
 
 # log message to file for later analysis
 def logMessage(message, confidence):
@@ -96,26 +96,25 @@ def logMessage(message, confidence):
         json.dump(logEntry, f)
 
 
-# begin discord-specific code
-class BotInstance(discord.Client):
-    async def on_ready(self):
-        print('Logged on as {0}!'.format(self.user))
+if is_discord:
+    class BotInstance(discord.Client):
+        async def on_ready(self):
+            print('Logged on as {0}!'.format(self.user))
 
-    async def on_message(self, message):
-        print('Message from {0.author}: {0.content}'.format(message))
-        messageClass = None
-        if not (message.author == bot.user): 
-            author = message.author.name+"#"+message.author.discriminator
-            content = message.content
-            messageClass = checkMessage(author, content)
-            if (config["debugMode"]): 
-                print(messageClass)
-            if messageClass["spam"] > config["alertThreshold"]: 
-                await sendNotifMessage(message, messageClass["spam"])
-            if (messageClass["spam"] > config["logThresholdHigh"]) \
-             or (max(messageClass["spam"], messageClass["good"]) < config["logThresholdLow"]):
-                logMessage(message.content, messageClass)
-# end discord-specific code
+        async def on_message(self, message):
+            print('Message from {0.author}: {0.content}'.format(message))
+            messageClass = None
+            if not (message.author == bot.user): 
+                author = message.author.name+"#"+message.author.discriminator
+                content = message.content
+                messageClass = checkMessage(author, content)
+                if (config["debugMode"]): 
+                    print(messageClass)
+                if messageClass["spam"] > config["alertThreshold"]: 
+                    await sendNotifMessage(message, messageClass["spam"])
+                if (messageClass["spam"] > config["logThresholdHigh"]) \
+                 or (max(messageClass["spam"], messageClass["good"]) < config["logThresholdLow"]):
+                    logMessage(message.content, messageClass)
 
 # load files 
 with open(configFile) as f:
@@ -133,7 +132,6 @@ if (config["persistKnownUsers"]):
 print("Cedar Sentinel version "+version+" starting up.")
 classifier = gptc.Classifier(spamModel)
 print("Spam Model Loaded!")
-# begin discord-specific code
-bot = BotInstance()
-bot.run(config["discordToken"])
-# end discord-specific code
+if is_discord:
+    bot = BotInstance()
+    bot.run(config["discordToken"])
