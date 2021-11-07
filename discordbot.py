@@ -121,7 +121,7 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
             connection.join(target)
 
     def on_pubmsg(self, connection, event):
-        print(event.arguments[0])
+        print(checkMessage(event.source, event.arguments[0]))
 
 
 # load files 
