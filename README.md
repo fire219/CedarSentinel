@@ -1,13 +1,13 @@
 # Cedar Sentinel
-## A Discord Bot for using trained models to detect spam
+## A Discord/IRC Bot for using trained models to detect spam
 
 ### How to install
 
 ```bash
 git clone https://github.com/fire219/CedarSentinel.git
 cd CedarSentinel
-pip install pyyaml discord.py
-cp exampleconfig.yaml config.yaml
+pip install pyyaml discord.py irc
+cp exampleconfig_<irc|discord>.yaml config.yaml
 # edit the config file with your editor of choice!
 ```
 You must also install [**GPTC**](https://github.com/kj7rrv/gptc "GPTC") (as of Cedar Sentinel v0.2, the "algo2" branch of **GPTC** is required). Currently, this is not available in the PyPI repositories. Therefore, installing it manually to your Python packages directory is recommended.
