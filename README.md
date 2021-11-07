@@ -1,12 +1,12 @@
 # Cedar Sentinel
-## A Discord Bot for using trained models to detect spam
+## A Discord/IRC Bot for using trained models to detect spam
 
 ### How to install
 
 ```bash
 git clone https://github.com/fire219/CedarSentinel.git
 cd CedarSentinel
-pip install pyyaml discord.py
+pip install pyyaml discord.py irc
 cp exampleconfig.yaml config.yaml
 # edit the config file with your editor of choice!
 ```

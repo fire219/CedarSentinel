@@ -1,4 +1,5 @@
 ---
+    platform            : discord
     discordToken        : ABCDEF1234567890 # Make sure to put your bot token here before starting!
     spamModel           : models/p64model1.json # file name for your spam model
     alertThreshold      : 0.5 # Minimum spam confidence value to trigger alert
