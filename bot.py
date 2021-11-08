@@ -51,11 +51,11 @@ def validateUser(username):
 # Extract username of message sender, and return status based on classification and/or known user bypass
 def handle_message(author, content):
     knownUser = False
+    if (author == config["bridgeBot"]):
+        author = content.split('>', 1)[0]
+        author = author.split('<', 1)[1].replace('@', '').strip()
+        content = content.split('>', 1)[1]
     if (config["classifyBypass"]):
-        if (author == config["bridgeBot"]):
-            author = content.split('>', 1)[0]
-            author = author.split('<', 1)[1].replace('@', '').strip()
-            content = content.split('>', 1)[1]
         knownUser = validateUser(author)
     if knownUser:
         confidence = {"good": 1, "spam": 0}
