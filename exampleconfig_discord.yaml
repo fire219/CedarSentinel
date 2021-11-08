@@ -1,7 +1,7 @@
 ---
     platform            : discord
     discordToken        : ABCDEF1234567890 # Make sure to put your bot token here before starting!
-    spamModel           : models/p64model1.json # file name for your spam model
+    spamModel           : compiled_model.json # file name for your spam model
     alertThreshold      : 0.5 # Minimum spam confidence value to trigger alert
     logThresholdHigh    : 0.8 # High spam confidence value to trigger save to spam file
     logThresholdLow     : 0.6 # Low spam/good confidence value to trigger save to spam file

@@ -4,7 +4,7 @@
     ircPort             : 6667 # IRC port (TLS is not yet supported)
     ircNick             : NoMoreSpam # IRC nick
     channels            : "#spammychannel #anotherspammychannel" # Channels to monitor
-    spamModel           : models/p64model1.json # file name for your spam model
+    spamModel           : compiled_model.json # file name for your spam model
     alertThreshold      : 0.5 # Minimum spam confidence value to trigger alert
     logThresholdHigh    : 0.8 # High spam confidence value to trigger save to spam file
     logThresholdLow     : 0.6 # Low spam/good confidence value to trigger save to spam file
