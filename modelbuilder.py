@@ -22,8 +22,13 @@ import json
 import gptc
 import sys
 
-with open('model_work.json') as f:
-    workspace = json.load(f)
+try:
+    with open('model_work.json') as f:
+        workspace = json.load(f)
+except FileNotFoundError:
+    print("No existing model workspace found. Continuing fresh.")
+    workspace = {"messages": [], "model": []}
+
 
 if 'compile' in sys.argv:
     with open('compiled_model.json', 'w+') as f:
@@ -33,7 +38,7 @@ if 'compile' in sys.argv:
 try:
     if 'import' in sys.argv:
         spam_log = [] 
-        with open('spamLog.json') as f:
+        with open('spamLog.json', encoding='utf-8') as f:
             lines = f.readlines()
             for line in lines:
                 try:
