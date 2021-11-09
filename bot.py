@@ -88,20 +88,20 @@ async def sendNotifMessage(message, confidence):
             notifPing = role.mention
     if notifChannel:
         await notifChannel.send(
-            notifPing + " " + config["spamNotifyMessage"] + " " + message.jump_url
+            f'{notifPing} {config["spamNotifyMessage"]} {message.jump_url}'
         )
         if config["debugMode"]:
             await notifChannel.send(
-                "DEBUG: Confidence value on the above message is: " + str(confidence)
+                f"DEBUG: Confidence value on the above message is: {confidence}"
             )
     else:
         print(
             "Notification channel not found! Sending in same channel as potential spam."
         )
-        await message.channel.send(notifPing + " " + config["spamNotifyMessage"])
+        await message.channel.send(f'{notifPing} {config["spamNotifyMessage"]}')
         if config["debugMode"]:
             await message.channel.send(
-                "DEBUG: Confidence value on the above message is: " + str(confidence)
+                f"DEBUG: Confidence value on the above message is: {confidence}"
             )
 
 
@@ -118,14 +118,14 @@ def logMessage(message, confidence):
 
 class BotInstance(discord.Client):
     async def on_ready(self):
-        print("Logged on as {0}!".format(self.user))
+        print(f"Logged on as {self.user}!")
 
     async def on_message(self, message):
         if not (message.author == bot.user):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
             is_spam, confidence, author = handle_message(author, content)
-            print("Message from {0.author}: {0.content}".format(message))
+            print(f"Message from {author}: {content}")
             if config["debugMode"]:
                 print(confidence)
             if is_spam:
@@ -157,21 +157,12 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
 
             connection.privmsg(
                 notification_channel,
-                config["spamNotifyPing"]
-                + ": "
-                + config["spamNotifyMessage"]
-                + " ("
-                + author
-                + " -> "
-                + event.target
-                + ") "
-                + content,
+                f'{config["spamNotifyPing"]}: {config["spamNotifyMessage"]} ({author} -> {event.target}) {content}',
             )
             if config["debugMode"]:
                 connection.privmsg(
                     notification_channel,
-                    "DEBUG: Confidence value on the above message is: "
-                    + str(confidence),
+                    f"DEBUG: Confidence value on the above message is: {confidence}",
                 )
 
 
