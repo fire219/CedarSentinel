@@ -124,7 +124,7 @@ class BotInstance(discord.Client):
         if not (message.author == bot.user):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
-            is_spam, confidence, author = handle_message(author, content)
+            is_spam, confidence, author, content = handle_message(author, content)
             print(f"Message from {author}: {content}")
             if config["debugMode"]:
                 print(confidence)
