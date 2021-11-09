@@ -8,6 +8,7 @@
     alertThreshold      : 0.5 # Minimum spam confidence value to trigger alert
     logThresholdHigh    : 0.8 # High spam confidence value to trigger save to spam file
     logThresholdLow     : 0.6 # Low spam/good confidence value to trigger save to spam file
+    minMessageLength    : 20 # minimum message length (in characters) before a message is scanned
     spamFile            : "spamLog.json" # filename to save messages that meet log threshold
     classifyBypass      : true # true to enable the known user classification bypass
     messageThreshold    : 5 # number of previous messages a user must have sent before qualifying for classify bypass

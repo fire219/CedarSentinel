@@ -1,3 +1,12 @@
+#     / \ 
+#     [o]<===========
+#    /===\
+#   /_____\
+#   /     \
+#  /_______\
+#  /       \
+# /_________\   
+#
 # Cedar Sentinel
 # A Discord Bot for using trained models to detect spam
 # Built for the Pine64 Chat Network
@@ -22,7 +31,7 @@ from yaml.loader import SafeLoader
 import json
 import datetime
 
-version = "0.2"
+version = "0.3"
 configFile = "config.yaml"
 
 knownUsers = {}
@@ -55,6 +64,8 @@ def handle_message(author, content):
         author = author.split("<", 1)[1].replace("@", "").strip()
         content = content.split(">", 1)[1]
     if config["classifyBypass"] and validateUser(author):
+        confidence = {"good": 1, "spam": 0}
+    elif len(content) < config["minMessageLength"]:
         confidence = {"good": 1, "spam": 0}
     else:
         confidence = {
