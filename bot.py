@@ -50,28 +50,26 @@ def validateUser(username):
 
 # Extract username of message sender, and return status based on classification and/or known user bypass
 def handle_message(author, content):
-    knownUser = False
     if (author == config["bridgeBot"]):
         author = content.split('>', 1)[0]
         author = author.split('<', 1)[1].replace('@', '').strip()
         content = content.split('>', 1)[1]
-    if (config["classifyBypass"]):
-        knownUser = validateUser(author)
-    if knownUser:
+    if config["classifyBypass"] and validateUser(author):
         confidence = {"good": 1, "spam": 0}
     else: 
         confidence = {"good": 0, "spam": 0} # set defaults for good and spam to prevent KeyErrors in parsing
         confidence.update(classifier.confidence(content))
 
+    content = content.strip()
+    author = author.strip()
+
     is_spam = False
-    if (config["debugMode"]): 
-        print(confidence)
     if confidence["spam"] > config["alertThreshold"]: 
         is_spam = True
     if (confidence["spam"] > config["logThresholdHigh"]) \
      or (max(confidence["spam"], confidence["good"]) < config["logThresholdLow"]):
         logMessage(content, confidence)
-    return is_spam, confidence["spam"], author
+    return is_spam, confidence["spam"], author, content
         
 
 
@@ -106,11 +104,13 @@ class BotInstance(discord.Client):
         print('Logged on as {0}!'.format(self.user))
 
     async def on_message(self, message):
-        print('Message from {0.author}: {0.content}'.format(message))
         if not (message.author == bot.user): 
             author = message.author.name+"#"+message.author.discriminator
             content = message.content
             is_spam, confidence, author = handle_message(author, content)
+            print('Message from {0.author}: {0.content}'.format(message))
+            if (config["debugMode"]): 
+                print(confidence)
             if is_spam:
                 await sendNotifMessage(message, confidence)
 
@@ -128,8 +128,10 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
     def on_pubmsg(self, connection, event):
         author = event.source.split('!')[0].strip()
         content = event.arguments[0]
+        is_spam, confidence, author, content = handle_message(author, content)
         print(f'Message from {author}: {content}')
-        is_spam, confidence, author = handle_message(author, content)
+        if (config["debugMode"]): 
+            print(confidence)
         if is_spam:
             notification_channel = config["notificationChannel"]
             if notification_channel == "*":
@@ -145,7 +147,7 @@ with open(configFile) as f:
     config = yaml.load(f, Loader=SafeLoader)
 with open(config["spamModel"]) as f:
     spamModel = json.load(f)
-if (config["persistKnownUsers"]):
+if (config["classifyBypass"] and config["persistKnownUsers"]):
     try:
         with open(config["persistFile"]) as f:
             knownUsers = json.load(f)
