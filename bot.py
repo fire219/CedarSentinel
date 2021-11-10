@@ -1,11 +1,11 @@
-#     / \ 
+#     / \
 #     [o]<===========
 #    /===\
 #   /_____\
 #   /     \
 #  /_______\
 #  /       \
-# /_________\   
+# /_________\
 #
 # Cedar Sentinel
 # A Discord Bot for using trained models to detect spam
@@ -63,27 +63,29 @@ def handle_message(author, content):
         author = content.split(">", 1)[0]
         author = author.split("<", 1)[1].replace("@", "").strip()
         content = content.split(">", 1)[1]
-    if config["classifyBypass"] and validateUser(author):
-        confidence = {"good": 1, "spam": 0}
-    elif len(content) < config["minMessageLength"]:
-        confidence = {"good": 1, "spam": 0}
-    else:
-        confidence = {
-            "good": 0,
-            "spam": 0,
-        }  # set defaults for good and spam to prevent KeyErrors in parsing
-        confidence.update(classifier.confidence(content))
+
+    confidence = {
+        "good": 0,
+        "spam": 0,
+    }  # set defaults for good and spam to prevent KeyErrors in parsing
+    confidence.update(classifier.confidence(content))
 
     content = content.strip()
     author = author.strip()
 
-    is_spam = False
-    if confidence["spam"] > config["alertThreshold"]:
-        is_spam = True
     if (confidence["spam"] > config["logThresholdHigh"]) or (
         max(confidence["spam"], confidence["good"]) < config["logThresholdLow"]
     ):
         logMessage(content, confidence)
+
+    if (config["classifyBypass"] and validateUser(author)) or (
+        len(content) < config["minMessageLength"]
+    ):
+        confidence = {"good": 1, "spam": 0}
+    is_spam = False
+    if confidence["spam"] > config["alertThreshold"]:
+        is_spam = True
+
     return is_spam, confidence["spam"], author, content
 
 
