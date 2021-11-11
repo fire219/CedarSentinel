@@ -53,6 +53,8 @@ try:
         if message.startswith("[") and ">" in message:
             message = message.split(">", 1)[1]
         message = message.strip()
+        if not any((char == "'") or char.isalpha() for char in message):
+            continue
         if not message:
             continue
         print(message)

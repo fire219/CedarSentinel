@@ -93,29 +93,27 @@ def handle_message(author, content):
 async def sendNotifMessage(message, confidence):
     notifChannel = None
     notifPing = ""
+
     for channel in message.guild.text_channels:
         if channel.name == config["notificationChannel"]:
             notifChannel = channel
-    for role in message.guild.roles:
-        if role.name == config["spamNotifyPing"]:
-            notifPing = role.mention
-    if notifChannel:
-        await notifChannel.send(
-            f'{notifPing} {config["spamNotifyMessage"]} {message.jump_url}'
-        )
-        if config["debugMode"]:
-            await notifChannel.send(
-                f"DEBUG: Confidence value on the above message is: {confidence}"
-            )
-    else:
+    if notifChannel is None:
+        notifChannel = message.channel
         print(
             "Notification channel not found! Sending in same channel as potential spam."
         )
-        await message.channel.send(f'{notifPing} {config["spamNotifyMessage"]}')
-        if config["debugMode"]:
-            await message.channel.send(
-                f"DEBUG: Confidence value on the above message is: {confidence}"
-            )
+
+    for role in message.guild.roles:
+        if role.name == config["spamNotifyPing"]:
+            notifPing = role.mention
+
+    await notifChannel.send(
+        f'{notifPing} {config["spamNotifyMessage"]} {message.jump_url}'
+    )
+    if config["debugMode"]:
+        await notifChannel.send(
+            f"DEBUG: Confidence value on the above message is: {confidence}"
+        )
 
 
 # log message to file for later analysis
