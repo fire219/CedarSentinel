@@ -37,9 +37,9 @@ configFile = "config.yaml"
 knownUsers = {}
 
 # Check if a user meets the threshold for classification immunity
-def validateUser(username):
+def validateUser(username, is_spam):
     try:
-        knownUsers[username] = knownUsers[username] + 1
+        knownUsers[username] = knownUsers[username] + (-1 if is_spam else 1)
         userAppearances = knownUsers[username]
         if config["persistKnownUsers"]:
             with open(config["persistFile"], "w") as f:
@@ -50,7 +50,7 @@ def validateUser(username):
         else:
             return False
     except KeyError:
-        knownUsers[username] = 1
+        knownUsers[username] = -1 if is_spam else 1
         if config["persistKnownUsers"]:
             with open(config["persistFile"], "w") as f:
                 json.dump(knownUsers, f)
@@ -78,13 +78,12 @@ def handle_message(author, content):
     ):
         logMessage(content, confidence)
 
-    if (config["classifyBypass"] and validateUser(author)) or (
+    is_spam = confidence["spam"] > config["alertThreshold"]
+
+    if (config["classifyBypass"] and validateUser(author, is_spam)) or (
         len(content) < config["minMessageLength"]
     ):
-        confidence = {"good": 1, "spam": 0}
-    is_spam = False
-    if confidence["spam"] > config["alertThreshold"]:
-        is_spam = True
+        is_spam = False
 
     return is_spam, confidence["spam"], author, content
 
