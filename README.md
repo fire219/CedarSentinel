@@ -49,10 +49,10 @@ As a starting point, **empty_model.json** is included for use in training from
 scratch. If you wish to do so, configure CedarSentinel to use this model. If
 you want to build on the existing data, leave it with the default model. Now,
 let it sit running in your chat for a while. Assuming you haven't dramatically
-changed the spam thresholds, it should start logging messages in your server.
-*(If you used the empty_model, it will likely log all messages!)*. After an
-indeterminate amount of time (up to you, but more messages are better!), it's
-time to use the Model Builder.
+changed `script.txt` (see "CedarScript" below), it should start logging
+messages in your server. *(If you used the empty_model, it will likely log all
+messages!)*. After an indeterminate amount of time (up to you, but more
+messages are better!), it's time to use the Model Builder.
 
 First, run it as `modelbuilder.py import`. This will import the messages from
 your "spam" log into its workspace. It should then show you a message and ask
@@ -80,6 +80,16 @@ file (**model_work.json**), it will build on your existing model. ***It will
 take time to get CedarSentinel fully acclimated with your server, so don't be
 alarmed if the first few iterations aren't very effective!*** As the model
 improves, so will the detection rate.
+
+### CedarScript
+
+CedarSentinel's responses to messages are defined by `script.txt`.
+CedarScript's syntax is not documented yet, but the default script should work
+well. Note that a syntax error in `script.txt` will likely result in an error
+message that appears to be caused by a bug in CedarSentinel. (If you do get an
+error, please submit an issue anyway, just in case it is a CedarSentinel
+issue. If you have changed `script.txt`, please include your modified
+version.)
 
 ### Contributors
 
