@@ -1,0 +1,14 @@
+if [20 length]
+    if <0.5 confidence>
+        if [reputation 5]
+            flag
+        end
+        decrease_reputation
+    else
+        increase_reputation
+    end
+
+    if <0.4 confidence 0.6> or <0.9 confidence>
+        log
+    end
+end

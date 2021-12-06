@@ -30,32 +30,32 @@ import yaml
 from yaml.loader import SafeLoader
 import json
 import datetime
+import cedarscript
 
-version = "0.3"
+version = "0.4"
 configFile = "config.yaml"
 
 knownUsers = {}
 
-# Check if a user meets the threshold for classification immunity
-def validateUser(username, is_spam):
+def change_reputation(username, change):
     try:
-        knownUsers[username] = knownUsers[username] + (-1 if is_spam else 1)
-        userAppearances = knownUsers[username]
-        if config["persistKnownUsers"]:
-            with open(config["persistFile"], "w") as f:
-                json.dump(knownUsers, f)
-        if userAppearances > config["messageThreshold"]:
-            print("classify bypass")
-            return True
-        else:
-            return False
+        knownUsers[username] = knownUsers[username] + change
     except KeyError:
-        knownUsers[username] = -1 if is_spam else 1
+        knownUsers[username] = change
+
+    if config["persistKnownUsers"]:
+        with open(config["persistFile"], "w") as f:
+            json.dump(knownUsers, f)
+
+def get_reputation(username):
+    try:
+        return knownUsers[username]
+    except KeyError:
+        knownUsers[username] = 0
         if config["persistKnownUsers"]:
             with open(config["persistFile"], "w") as f:
                 json.dump(knownUsers, f)
-        return False
-
+        return 0
 
 # Extract username of message sender, and return status based on classification and/or known user bypass
 def handle_message(author, content):
@@ -64,28 +64,32 @@ def handle_message(author, content):
         author = author.split("<", 1)[1].replace("@", "").strip()
         content = content.split(">", 1)[1]
 
-    confidence = {
+    confidences = {
         "good": 0,
         "spam": 0,
     }  # set defaults for good and spam to prevent KeyErrors in parsing
-    confidence.update(classifier.confidence(content))
+    confidences.update(classifier.confidence(content))
 
     content = content.strip()
     author = author.strip()
 
-    if (confidence["spam"] > config["logThresholdHigh"]) or (
-        max(confidence["spam"], confidence["good"]) < config["logThresholdLow"]
-    ):
+    confidence = confidences["spam"]
+    length = len(content)
+    reputation = get_reputation(author)
+
+    actions = interpreter.interpret(confidence, length, reputation)
+
+    if "log" in actions:
         logMessage(content, confidence)
 
-    is_spam = confidence["spam"] > config["alertThreshold"]
+    if "increasereputation" in actions:
+        change_reputation(author, 1)
+    elif "decreasereputation" in actions:
+        change_reputation(author, -1)
 
-    if (config["classifyBypass"] and validateUser(author, is_spam)) or (
-        len(content) < config["minMessageLength"]
-    ):
-        is_spam = False
+    is_spam = "flag" in actions
 
-    return is_spam, confidence["spam"], author, content
+    return is_spam, confidence, author, content
 
 
 # Prepare and send notification about detected spam
@@ -181,7 +185,8 @@ with open(configFile) as f:
     config = yaml.load(f, Loader=SafeLoader)
 with open(config["spamModel"]) as f:
     spamModel = json.load(f)
-if config["classifyBypass"] and config["persistKnownUsers"]:
+
+if config["persistKnownUsers"]:
     try:
         with open(config["persistFile"]) as f:
             knownUsers = json.load(f)
@@ -192,6 +197,12 @@ if config["classifyBypass"] and config["persistKnownUsers"]:
 print("Cedar Sentinel version " + version + " starting up.")
 classifier = gptc.Classifier(spamModel)
 print("Spam Model Loaded!")
+
+with open('script.txt') as f:
+    script = f.read()
+interpreter = cedarscript.Interpreter(script)
+print("CedarScript Interpreter Loaded!")
+
 if config["platform"] == "discord":
     bot = BotInstance()
     bot.run(config["discordToken"])
