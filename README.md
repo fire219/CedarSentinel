@@ -8,13 +8,12 @@
 ```bash
 git clone https://github.com/fire219/CedarSentinel.git
 cd CedarSentinel
-pip install pyyaml discord.py irc
+pip install pyyaml discord.py irc git+https://github.com/kj7rrv/gptc@stable
 cp exampleconfig_<irc|discord>.yaml config.yaml
 # edit the config file with your editor of choice!
 ```
-You must also install [**GPTC**](https://github.com/kj7rrv/gptc "GPTC"). Currently, this is not available in the PyPI repositories. Therefore, installing it manually to your Python packages directory is recommended.
 
-After doing so, Cedar Sentinel can be executed in the same way as any other Python script.
+After doing this, Cedar Sentinel can be executed in the same way as any other Python script.
 
 ### Using CedarSentinel
 
