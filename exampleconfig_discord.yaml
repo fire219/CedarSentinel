@@ -2,13 +2,7 @@
     platform            : discord
     discordToken        : ABCDEF1234567890 # Make sure to put your bot token here before starting!
     spamModel           : compiled_model.json # file name for your spam model
-    alertThreshold      : 0.5 # Minimum spam confidence value to trigger alert
-    logThresholdHigh    : 0.8 # High spam confidence value to trigger save to spam file
-    logThresholdLow     : 0.6 # Low spam/good confidence value to trigger save to spam file
-    minMessageLength    : 20 # minimum message length (in characters) before a message is scanned
     spamFile            : "spamLog.json" # filename to save messages that meet log threshold
-    classifyBypass      : true # true to enable the known user classification bypass
-    messageThreshold    : 5 # number of previous messages a user must have sent before qualifying for classify bypass
     persistKnownUsers   : True, # set to true to enable persistence of known user data across bot restarts
     persistFile         : knownUsers.json # file name for known user persistence
     notificationChannel : spam-tracker # name of the channel you want to receive spam notifications in. If this channel is not accessible, notifications will occur in the same channel as spam.
