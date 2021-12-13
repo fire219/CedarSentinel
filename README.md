@@ -83,13 +83,86 @@ improves, so will the detection rate.
 
 ### CedarScript
 
-CedarSentinel's responses to messages are defined by `script.txt`.
-CedarScript's syntax is not documented yet, but the default script should work
-well. Note that a syntax error in `script.txt` will likely result in an error
-message that appears to be caused by a bug in CedarSentinel. (If you do get an
-error, please submit an issue anyway, just in case it is a CedarSentinel
-issue. If you have changed `script.txt`, please include your modified
-version.)
+CedarSentinel's responses to messages are defined by `script.txt`. Note that a
+syntax error in `script.txt` will likely result in an error message that
+appears to be caused by a bug in CedarSentinel. (If you do get an error,
+please submit an issue anyway, just in case it is a CedarSentinel bug. If you
+have changed `script.txt`, please include your modified version.)
+
+#### `if ... end`
+
+    if ...
+        ...
+    end
+
+#### `if ... else ... end`
+
+    if ...
+        ...
+    else
+        ...
+    end
+
+#### Comparisons
+
+CedarScript's comparison syntax is different from that of most programming
+languages. The following are some simple comparisons:
+
+    <0.5 confidence>
+    [20 length]
+    {5 reputation}
+    /5 reputation\
+
+The syntax is an opening comparator, a space-separated list of values, and a
+closing comparator. The following comparators are defined:
+
+| Comparators | Python equivalent |
+|-------------|-------------------|
+| `<...>`     | `<`               |
+| `[...]`     | `<=`              |
+| `{...}`     | `==`              |
+| `/...\`     | `!=`              |
+
+Items in a comparison are compared in order, left to right. For `{...}` and
+`/...\`, order is not significant, but it is for `<...>` and `[...]`. The
+example comparisons listed above translate to the following in Python:
+
+    0.5 < confidence
+    20 <= length
+    5 == reputation
+    5 != reputation
+
+Comparisons are not limited to two values, although having more than three is
+rarely, if ever, useful. `<0.4 confidence 0.6>` translates to `0.4 <
+confidence < 0.6`.
+
+##### Conjunctions, grouping, and order of operations.
+
+CedarSentinel's conjunctions (`and`, `or`) and grouping (with parenthesis)
+work the same as Python's. Any difference is a bug that should be reported.
+
+#### Inputs
+
+Inputs are values provided to the script by CedarSentinel. The following are
+available:
+
+| Name         | Meaning                             |
+|--------------|-------------------------------------|
+| `confidence` | Confidence that the message is spam |
+| `reputation` | The message's author's reputation   |
+| `length`     | The length of the message           |
+
+#### Actions
+
+Actions are how the script tells CedarSentinel what to do in respone to
+the message. The following are available:
+
+| Name                 | Meaning                                   |
+|----------------------|-------------------------------------------|
+| `flag`               | Flag the message as spam                  |
+| `log`                | Log the message for manual classification |
+| `increasereputation` | Increase the author's reputation          |
+| `decreasereputation` | Decrease the author's reputation          |
 
 ### Contributors
 

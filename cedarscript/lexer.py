@@ -1,3 +1,5 @@
+import cedarscript.definitions as definitions
+
 def split(code):
     code = code.lower()
 
@@ -29,6 +31,8 @@ def split(code):
         elif char == " ":
             tokens.append("")
             indices.append([])
+        elif not (char == '_' and tokens[-1].isalpha()):
+            raise definitions.CedarScriptSyntaxError(f'invalid character: `{char}`')
     return tokens, indices
 
 
