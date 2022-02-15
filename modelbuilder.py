@@ -46,7 +46,10 @@ try:
                 except:
                     pass
         workspace["messages"] += spam_log
-        print("imported")
+        response = input("imported. Would you like to clear the now-imported spam log? [Y/N]?").strip().lower()
+        if "y" in response:
+            with open("spamLog.json", "w", encoding="utf-8") as f:
+                print("spam log cleared.")
 
     while workspace["messages"]:
         message = workspace["messages"].pop(0)

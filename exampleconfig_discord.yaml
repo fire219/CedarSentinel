@@ -10,3 +10,4 @@
     spamNotifyMessage   : Potential spam detected. # message to use in spam notifications
     bridgeBot           : Pine64 Protocol Droid#9618 # if your server uses a bridgebot (like matterbridge) to connect other networks, put its discord name + discriminator here
     debugMode           : false # output additional data in console and notification messages. Unless you know otherwise, you should probably have this set to false.
+    ocrEnable           : false # enable scanning of images (requires additional python modules, see README)

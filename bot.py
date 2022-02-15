@@ -11,7 +11,7 @@
 # A Discord Bot for using trained models to detect spam
 # Built for the Pine64 Chat Network
 
-# Copyright 2021 Matthew Petry (fireTwoOneNine), Samuel Sloniker (kj7rrv)
+# Copyright 2021-2022 Matthew Petry (fireTwoOneNine), Samuel Sloniker (kj7rrv)
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
 # to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
 # and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -23,6 +23,7 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
+from importlib import import_module
 import discord
 import irc.bot
 import gptc
@@ -32,7 +33,20 @@ import json
 import datetime
 import cedarscript
 
-version = "0.4"
+optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
+try:
+    for module in optionalModules:
+        import_module(module)
+    ocrAvailable = True;
+    #following line is redundant, but is provided to suppress errors from language helpers like Pylance
+    import cv2; import pytesseract ; import numpy; import requests
+    print("All optional modules loaded. OCR features are available (if enabled in config)")
+except ImportError as error:
+    print("Unable to import " + module +". OCR features are unavailable.")
+    ocrAvailable = False;
+
+
+version = "0.5"
 configFile = "config.yaml"
 
 knownUsers = {}
@@ -58,11 +72,30 @@ def get_reputation(username):
         return 0
 
 # Extract username of message sender, and return status based on classification and/or known user bypass
-def handle_message(author, content):
+def handle_message(author, content, attachments=[]):
     if author == config["bridgeBot"]:
         author = content.split(">", 1)[0]
         author = author.split("<", 1)[1].replace("@", "").strip()
         content = content.split(">", 1)[1]
+
+
+    #TODO: OCR functionality for image links on IRC
+    if (config["ocrEnable"] == True) and (ocrAvailable == True):
+        for item in attachments:
+            #very naive filetype checker
+            #TODO: find a better way to check image type and validity.
+            filetypes = [".jpg", ".jpeg", ".png"]
+            for ftype in filetypes:
+                if ftype in item.url:
+                    targetImage = requests.get(item.url)
+                    targetArray = numpy.frombuffer(targetImage.content, numpy.uint8)
+                    targetImageCV = cv2.imdecode(targetArray, cv2.IMREAD_UNCHANGED)
+                    targetText = pytesseract.image_to_string(targetImageCV)
+                    if config["debugMode"]:
+                        print("OCR result: "+targetText.strip())
+                    content = content + targetText
+                    break
+
 
     confidences = {
         "good": 0,
@@ -138,10 +171,12 @@ class BotInstance(discord.Client):
         if not (message.author == bot.user):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
-            is_spam, confidence, author, content = handle_message(author, content)
+            attachments = message.attachments
+            is_spam, confidence, author, content = handle_message(author, content, attachments)
             print(f"Message from {author}: {content}")
             if config["debugMode"]:
                 print(confidence)
+                print("Is Spam:" +str(is_spam))
             if is_spam:
                 await sendNotifMessage(message, confidence)
 

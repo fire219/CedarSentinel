@@ -13,3 +13,4 @@
     spamNotifyMessage   : Potential spam detected. # message to use in spam notifications
     bridgeBot           : bridgebot # if your channel(s) use(s) a bridgebot (like matterbridge) to connect other networks, put its nick here (set to an invalid nick value such as "*" if you don't have a bridgebot)
     debugMode           : false # output additional data in console and notification messages. Unless you know otherwise, you should probably have this set to false.
+    ocrEnable           : false # enable scanning of images (requires additional python modules, see README)

@@ -23,6 +23,17 @@ cp exampleconfig_<irc|discord>.yaml config.yaml
 After doing this, Cedar Sentinel can be executed in the same way as any other
 Python script.
 
+#### Configuring for use with OCR
+
+CedarSentinel can be optionally configured to do [Optical character recognition](https://en.wikipedia.org/wiki/Optical_character_recognition) (also known as OCR) on all images. This system requires many additional Python modules to be installed:
+
+```bash
+pip install opencv-python pytesseract numpy # this command is unnecessary if you don't want image OCR functionality
+# change the value of "ocrEnable" in your config.yaml file to "true" to enable OCR
+```
+
+If any of the above modules are missing, CedarSentinel will alert you at startup, but otherwise will work normally (albeit with OCR disabled).
+
 ### Using CedarSentinel
 
 In a sense, CedarSentinel is easy to set up. Once you have the config file set
