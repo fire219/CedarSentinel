@@ -24,6 +24,9 @@
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
 from importlib import import_module
+from re import M
+from time import sleep
+from urllib import response
 import discord
 import irc.bot
 import gptc
@@ -31,6 +34,7 @@ import yaml
 from yaml.loader import SafeLoader
 import json
 import datetime
+import http.client
 import cedarscript
 
 optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
@@ -46,7 +50,7 @@ except ImportError as error:
     ocrAvailable = False;
 
 
-version = "0.5"
+version = "0.6"
 configFile = "config.yaml"
 
 knownUsers = {}
@@ -96,7 +100,6 @@ def handle_message(author, content, attachments=[]):
                     content = content + targetText
                     break
 
-
     confidences = {
         "good": 0,
         "spam": 0,
@@ -126,30 +129,36 @@ def handle_message(author, content, attachments=[]):
 
 
 # Prepare and send notification about detected spam
-async def sendNotifMessage(message, confidence):
+async def sendNotifMessage(message, confidence=0.0, customMessage="", sameChannel=False):
     notifChannel = None
     notifPing = ""
 
-    for channel in message.guild.text_channels:
-        if channel.name == config["notificationChannel"]:
-            notifChannel = channel
-    if notifChannel is None:
+    if sameChannel == False:
+        for channel in message.guild.text_channels:
+            if channel.name == config["notificationChannel"]:
+                notifChannel = channel
+        if notifChannel is None:
+            notifChannel = message.channel
+            print(
+                "Notification channel not found! Sending in same channel as potential spam."
+            )
+    else:
         notifChannel = message.channel
-        print(
-            "Notification channel not found! Sending in same channel as potential spam."
-        )
 
     for role in message.guild.roles:
         if role.name == config["spamNotifyPing"]:
             notifPing = role.mention
 
-    await notifChannel.send(
-        f'{notifPing} {config["spamNotifyMessage"]} {message.jump_url}'
-    )
-    if config["debugMode"]:
+    if customMessage=="":
         await notifChannel.send(
-            f"DEBUG: Confidence value on the above message is: {confidence}"
+            f'{notifPing} {"**"} {config["spamNotifyMessage"]} {"**"} {message.jump_url}'
         )
+        if config["debugMode"]:
+            await notifChannel.send(
+                f"DEBUG: Confidence value on the above message is: {confidence}"
+            )
+    else:
+        await notifChannel.send(customMessage)
 
 
 # log message to file for later analysis
@@ -162,6 +171,17 @@ def logMessage(message, confidence):
         logEntry = {"time": logTime, "message": message, "confidence": confidence}
         json.dump(logEntry, f)
 
+
+async def messageDeleter(message):
+    if (config["autoDeleteAPI"] == "customMB"):
+        bridge = http.client.HTTPConnection(config["bridgeURL"])
+        bridge.request("DELETE", "/api/message", headers={'Content-Type': 'application/json'}, \
+            body='{id: %s, channel: %s, protocol: "discord", account: "discord.mydiscord"}' % (message.id, message.channel.name))
+        response = bridge.getresponse()
+        responseText = response.read()
+        await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** %s"%(responseText.decode("utf-8").strip()))
+        await sendNotifMessage(message, customMessage="**Message was:** `%s`"%(message.content))
+        await sendNotifMessage(message, customMessage=config["publicDeleteNotice"], sameChannel=True)
 
 class BotInstance(discord.Client):
     async def on_ready(self):
@@ -179,6 +199,8 @@ class BotInstance(discord.Client):
                 print("Is Spam:" +str(is_spam))
             if is_spam:
                 await sendNotifMessage(message, confidence)
+                if not (config['autoDeleteAPI'] == "none"):
+                    await messageDeleter(message)
 
 
 class CedarSentinelIRC(irc.bot.SingleServerIRCBot):

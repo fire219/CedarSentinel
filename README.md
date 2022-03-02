@@ -28,6 +28,7 @@ Python script.
 CedarSentinel can be optionally configured to do [Optical character recognition](https://en.wikipedia.org/wiki/Optical_character_recognition) (also known as OCR) on all images. This system requires many additional Python modules to be installed:
 
 ```bash
+apt install tesseract-ocr # or the equivalent command in your OS of choice
 pip install opencv-python pytesseract numpy # this command is unnecessary if you don't want image OCR functionality
 # change the value of "ocrEnable" in your config.yaml file to "true" to enable OCR
 ```
