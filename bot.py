@@ -176,7 +176,7 @@ async def messageDeleter(message):
     if (config["autoDeleteAPI"] == "customMB"):
         bridge = http.client.HTTPConnection(config["bridgeURL"])
         bridge.request("DELETE", "/api/message", headers={'Content-Type': 'application/json'}, \
-            body='{id: %s, channel: %s, protocol: "discord", account: "discord.mydiscord"}' % (message.id, message.channel.name))
+            body='{"id": "%s", "channel": "%s", "protocol": "discord", "account": "discord.mydiscord"}' % (message.id, message.channel.name))
         response = bridge.getresponse()
         responseText = response.read()
         await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** %s"%(responseText.decode("utf-8").strip()))
