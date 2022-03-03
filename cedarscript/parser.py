@@ -26,7 +26,9 @@ def tag(tokens):
                 token["token"] = len(token["token"]) // 4
                 token["tag"] = "indent"
             else:
-                raise definitions.CedarScriptSyntaxError(f'unrecognized token: {token["token"]}')
+                raise definitions.CedarScriptSyntaxError(
+                    f'unrecognized token: {token["token"]}'
+                )
 
     return tokens
 
@@ -60,11 +62,15 @@ def blocks(lines):
         elif line["tokens"][0]["token"] == "end":
             stack.pop()
             if len(stack) == 0:
-                raise definitions.CedarScriptSyntaxError(f'`end` outside an `if`/`else` statement')
+                raise definitions.CedarScriptSyntaxError(
+                    f"`end` outside an `if`/`else` statement"
+                )
         elif line["tokens"][0]["token"] == "else":
             stack.pop()
             if len(stack) == 0:
-                raise definitions.CedarScriptSyntaxError(f'`else` outside an `if` statement')
+                raise definitions.CedarScriptSyntaxError(
+                    f"`else` outside an `if` statement"
+                )
             stack.append(stack[-1][-1]["if_false"])
         else:
             stack[-1].append(line)
@@ -76,33 +82,37 @@ def convert_comparisons(tokens):
     combined = []
     for token in tokens:
         if token["tag"] == "open_compare":
-            if 'working' in locals():
-                raise definitions.CedarScriptSyntaxError('comparisons cannot be nested')
+            if "working" in locals():
+                raise definitions.CedarScriptSyntaxError("comparisons cannot be nested")
             working = {"type": "comparison", "comparator": token["token"], "values": []}
         elif token["tag"] == "number":
             try:
                 working["values"].append(token["token"])
             except (NameError, UnboundLocalError):
-                raise definitions.CedarScriptSyntaxError('number outside comparison')
+                raise definitions.CedarScriptSyntaxError("number outside comparison")
         elif token["tag"] == "input":
             try:
                 working["values"].append(definitions.inputs[token["token"]])
             except (NameError, UnboundLocalError):
-                raise definitions.CedarScriptSyntaxError('input outside comparison')
+                raise definitions.CedarScriptSyntaxError("input outside comparison")
         elif token["tag"] == "close_compare":
             try:
                 combined.append(
                     definitions.Comparison(working["comparator"], working["values"])
                 )
             except (NameError, UnboundLocalError):
-                raise definitions.CedarScriptSyntaxError(f'closing comparator `{token["token"]}` without matching opening comparator')
+                raise definitions.CedarScriptSyntaxError(
+                    f'closing comparator `{token["token"]}` without matching opening comparator'
+                )
             del working
         elif token["token"] in ["and", "or"]:
             combined.append(definitions.conjunctions[token["token"]])
         elif token["tag"] in ["open_paren", "close_paren"]:
             combined.append(token["tag"])
         else:
-            raise definitions.CedarScriptSyntaxError(f'invalid token in boolean expression: {token["token"]}')
+            raise definitions.CedarScriptSyntaxError(
+                f'invalid token in boolean expression: {token["token"]}'
+            )
 
     return combined
 
@@ -118,11 +128,13 @@ def assemble_expression(expression):
             elif token == "close_paren":
                 stack.pop()
                 if len(stack) == 0:
-                    raise definitions.CedarScriptSyntaxError(f'`)` without matching `(`')
+                    raise definitions.CedarScriptSyntaxError(
+                        f"`)` without matching `(`"
+                    )
         else:
             stack[-1].append(token)
     if len(stack) != 1:
-        raise definitions.CedarScriptSyntaxError(f'`(` without matching `)`')
+        raise definitions.CedarScriptSyntaxError(f"`(` without matching `)`")
     return out
 
 
