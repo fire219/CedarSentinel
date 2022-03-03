@@ -50,7 +50,7 @@ except ImportError as error:
     ocrAvailable = False;
 
 
-version = "0.6"
+version = "0.6.1"
 configFile = "config.yaml"
 
 knownUsers = {}
@@ -129,21 +129,18 @@ def handle_message(author, content, attachments=[]):
 
 
 # Prepare and send notification about detected spam
-async def sendNotifMessage(message, confidence=0.0, customMessage="", sameChannel=False):
+async def sendNotifMessage(message, confidence=0.0, customMessage=""):
     notifChannel = None
     notifPing = ""
 
-    if sameChannel == False:
-        for channel in message.guild.text_channels:
-            if channel.name == config["notificationChannel"]:
-                notifChannel = channel
-        if notifChannel is None:
-            notifChannel = message.channel
-            print(
-                "Notification channel not found! Sending in same channel as potential spam."
-            )
-    else:
+    for channel in message.guild.text_channels:
+        if channel.name == config["notificationChannel"]:
+            notifChannel = channel
+    if notifChannel is None:
         notifChannel = message.channel
+        print(
+            "Notification channel not found! Sending in same channel as potential spam."
+        )
 
     for role in message.guild.roles:
         if role.name == config["spamNotifyPing"]:
@@ -181,7 +178,11 @@ async def messageDeleter(message):
         responseText = response.read()
         await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** %s"%(responseText.decode("utf-8").strip()))
         await sendNotifMessage(message, customMessage="**Message was:** `%s`"%(message.content))
-        await sendNotifMessage(message, customMessage=config["publicDeleteNotice"], sameChannel=True)
+        alertMsg = await message.channel.send(config["publicDeleteNotice"])
+        sleep(10)
+        bridge.request("DELETE", "/api/message", headers={'Content-Type': 'application/json'}, \
+            body='{"id": "%s", "channel": "%s", "protocol": "discord", "account": "discord.mydiscord"}' % (alertMsg.id, alertMsg.channel.name))
+
 
 class BotInstance(discord.Client):
     async def on_ready(self):
