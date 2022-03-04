@@ -63,9 +63,7 @@ try:
         print(message)
         response = "________"
         while not response in "sgu":
-            response = (
-                input("[S]pam/[G]ood/[U]nknown/[Ctrl-C] Exit: ").strip().lower() + " "
-            )[0]
+            response = (input("[S]pam/[G]ood/[U]nknown/[Ctrl-C] Exit: ").strip().lower() + " ")[0]
         if response == "s":
             workspace["model"].append({"category": "spam", "text": message})
         elif response == "g":
