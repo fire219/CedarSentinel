@@ -57,13 +57,8 @@ class Interpreter:
 
             return all(tests)
         elif isinstance(expression, list):
-            expressions = [
-                self.interpret_expression(e, inputs) for e in expression[::2]
-            ]
-            conjunctions = [
-                {"and": (lambda x, y: x and y), "or": (lambda x, y: x or y)}[e.name]
-                for e in expression[1::2]
-            ]
+            expressions = [self.interpret_expression(e, inputs) for e in expression[::2]]
+            conjunctions = [{"and": (lambda x, y: x and y), "or": (lambda x, y: x or y)}[e.name] for e in expression[1::2]]
 
             state = expressions.pop(0)
 
