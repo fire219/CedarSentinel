@@ -129,9 +129,10 @@ def handle_message(author, content, attachments=[]):
     elif "decreasereputation" in actions:
         change_reputation(author, -1)
 
-    is_spam = "flag" in actions
+    flag = "flag" in actions or "moderate" in actions
+    moderate = "moderate" in actions
 
-    return is_spam, confidence, author, content
+    return flag, moderate, confidence, author, content
 
 
 # Prepare and send notification about detected spam
@@ -189,13 +190,16 @@ class BotInstance(discord.Client):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
             attachments = message.attachments
-            is_spam, confidence, author, content = handle_message(author, content, attachments)
+            flag, moderate, confidence, author, content = handle_message(author, content, attachments)
             print(f"Message from {author}: {content}")
             if config["debugMode"]:
                 print(confidence)
-                print("Is Spam:" + str(is_spam))
-            if is_spam:
+                print(f"Flagging: {flag}; Moderating: {moderate}")
+
+            if flag:
                 await sendNotifMessage(message, confidence)
+
+            if moderate:
                 if not (config["autoDeleteAPI"] == "none"):
                     await messageDeleter(message)
 
@@ -214,11 +218,12 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
     def on_pubmsg(self, connection, event):
         author = event.source.split("!")[0].strip()
         content = event.arguments[0]
-        is_spam, confidence, author, content = handle_message(author, content)
+        flag, moderate, confidence, author, content = handle_message(author, content)
         print(f"Message from {author}: {content}")
         if config["debugMode"]:
             print(confidence)
-        if is_spam:
+            print(f"Flagging: {flag}")
+        if flag:
             notification_channel = config["notificationChannel"]
             if notification_channel == "*":
                 notification_channel = event.target

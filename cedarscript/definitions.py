@@ -2,6 +2,7 @@ keywords = ["if", "else", "end", "and", "or"]
 input_list = ["confidence", "reputation", "length"]
 action_list = [
     "flag",
+    "moderate",
     "log",
     "loggood",
     "logspam",

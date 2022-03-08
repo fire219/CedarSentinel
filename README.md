@@ -169,12 +169,13 @@ available:
 Actions are how the script tells CedarSentinel what to do in respone to
 the message. The following are available:
 
-| Name                 | Meaning                                   |
-|----------------------|-------------------------------------------|
-| `flag`               | Flag the message as spam                  |
-| `log`                | Log the message for manual classification |
-| `increasereputation` | Increase the author's reputation          |
-| `decreasereputation` | Decrease the author's reputation          |
+| Name                 | Meaning                                               |
+|----------------------|-------------------------------------------------------|
+| `flag`               | Flag the message as spam                              |
+| `moderate`           | IRC: same as `flag`; Discord: flag and delete message |
+| `log`                | Log the message for manual classification             |
+| `increasereputation` | Increase the author's reputation                      |
+| `decreasereputation` | Decrease the author's reputation                      |
 
 ### Contributors
 
