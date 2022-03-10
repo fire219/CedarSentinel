@@ -21,6 +21,7 @@
 import json
 import gptc
 import sys
+import os
 
 try:
     with open("model_work.json") as f:
@@ -50,6 +51,30 @@ try:
         if "y" in response:
             with open("spamLog.json", "w", encoding="utf-8") as f:
                 print("spam log cleared.")
+    
+    if "imageimport" in sys.argv:
+        import pytesseract
+        spam_log = []
+        imageDir = input("What is the name of the folder containing spam images? ")
+        os.chdir(imageDir)
+        i = 0
+        fileCount = len(os.listdir(os.getcwd()))
+        for file in os.listdir(os.getcwd()):
+            i = i + 1
+            print("Please wait. Images processed: " + str(i) + " of " + str(fileCount))
+            rawRead = pytesseract.image_to_string(file)
+            try:
+                spam_log.append(rawRead)
+            except:
+                pass
+        workspace["messages"] += spam_log
+        response = input("imported. Would you like to delete the now-imported spam images [Y/N]? ").strip().lower()
+        if "y" in response:
+            for file in os.listdir(os.getcwd()):
+                os.remove(file)
+            print("spam images cleared.")
+        os.chdir("..")
+        
 
     while workspace["messages"]:
         message = workspace["messages"].pop(0)

@@ -2,3 +2,4 @@ config.yaml
 knownUsers.json
 spamLog.json
 __pycache__
+spamImages
