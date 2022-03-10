@@ -1,5 +1,6 @@
 import cedarscript.definitions as definitions
 
+
 def split(code):
     code = code.lower()
 
@@ -31,8 +32,8 @@ def split(code):
         elif char == " ":
             tokens.append("")
             indices.append([])
-        elif not (char == '_' and tokens[-1].isalpha()):
-            raise definitions.CedarScriptSyntaxError(f'invalid character: `{char}`')
+        elif not (char == "_" and tokens[-1].isalpha()):
+            raise definitions.CedarScriptSyntaxError(f"invalid character: `{char}`")
     return tokens, indices
 
 
@@ -43,10 +44,7 @@ def compress(tokens, indices):
 
 
 def combine(tokens, indices):
-    return [
-        {"token": token, "location": location}
-        for token, location in zip(tokens, indices)
-    ]
+    return [{"token": token, "location": location} for token, location in zip(tokens, indices)]
 
 
 def lineify(tokens):

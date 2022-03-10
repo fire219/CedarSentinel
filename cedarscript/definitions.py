@@ -1,6 +1,16 @@
 keywords = ["if", "else", "end", "and", "or"]
-inputs = ["confidence", "reputation", "length"]
-actions = ["flag", "log", "increasereputation", "decreasereputation"]
+input_list = ["confidence", "reputation", "length"]
+action_list = [
+    "flag",
+    "moderate",
+    "log",
+    "loggood",
+    "logspam",
+    "logprobablygood",
+    "logprobablyspam",
+    "increasereputation",
+    "decreasereputation",
+]
 
 
 class CodePiece:
@@ -31,23 +41,14 @@ class Input(Identifier):
     _type = "Input"
 
 
-inputs = {
-    "confidence": Input("confidence"),
-    "reputation": Input("reputation"),
-    "length": Input("length"),
-}
+inputs = {input_: Input(input_) for input_ in input_list}
 
 
 class Action(Identifier):
     _type = "Action"
 
 
-actions = {
-    "flag": Action("flag"),
-    "log": Action("log"),
-    "increasereputation": Action("increasereputation"),
-    "decreasereputation": Action("decreasereputation"),
-}
+actions = {action: Action(action) for action in action_list}
 
 
 class Conjunction(Identifier):

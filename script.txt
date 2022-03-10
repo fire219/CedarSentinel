@@ -1,7 +1,7 @@
 if [20 length]
     if <0.5 confidence>
         if [reputation 5]
-            flag
+            moderate
         end
         decrease_reputation
     else
