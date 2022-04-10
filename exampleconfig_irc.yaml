@@ -14,6 +14,6 @@
     bridgeBot           : bridgebot # if your channel(s) use(s) a bridgebot (like matterbridge) to connect other networks, put its nick here (set to an invalid nick value such as "*" if you don't have a bridgebot)
     debugMode           : false # output additional data in console and notification messages. Unless you know otherwise, you should probably have this set to false.
     ocrEnable           : false # enable scanning of images (requires additional python modules, see README)
-    autoDeleteAPI       : none # only currently available options are "customMB" (for gamiee's modified Matterbridge) or "none" (disabled)
+    autoDeleteAPI       : none # only currently available options are "customMB" (for gamiee's modified Matterbridge), "discord" for native Discord API delete, or "none" (disabled)
     bridgeURL           : "127.0.0.1:1223" # only necessary if using an autodelete method that requires HTTP API calls (customMB)
     publicDeleteNotice  : "Automated message: a message was detected by CedarSentinel as spam and was automatically deleted. If this was in error, please contact a moderator." # message to use in spam auto-delete public notifications

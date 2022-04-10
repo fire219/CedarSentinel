@@ -54,7 +54,7 @@ except ImportError as error:
     ocrAvailable = False
 
 
-version = "0.6.1"
+version = "0.6.2"
 configFile = "config.yaml"
 
 knownUsers = {}
@@ -179,6 +179,20 @@ async def messageDeleter(message):
         alertMsg = await message.channel.send(config["publicDeleteNotice"])
         sleep(10)
         bridge.request("DELETE", "/api/message", headers={"Content-Type": "application/json"}, body='{"id": "%s", "channel": "%s", "protocol": "discord", "account": "discord.mydiscord"}' % (alertMsg.id, alertMsg.channel.name))
+    if config["autoDeleteAPI"] == "discord":
+        try:
+            await message.delete()
+        except discord.Forbidden:
+            await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** No permission")
+            return
+        except discord.NotFound:
+            await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** Message does not exist")
+            return
+        except discord.HTTPException:
+            await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** Failed")
+            return
+        await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** OK")
+
 
 
 class BotInstance(discord.Client):
