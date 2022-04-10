@@ -192,7 +192,9 @@ async def messageDeleter(message):
             await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** Failed")
             return
         await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** OK")
-
+        alertMsg = await message.channel.send(config["publicDeleteNotice"])
+        sleep(10)
+        alertMsg.delete()
 
 
 class BotInstance(discord.Client):
