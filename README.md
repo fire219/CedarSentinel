@@ -93,6 +93,10 @@ take time to get CedarSentinel fully acclimated with your server, so don't be
 alarmed if the first few iterations aren't very effective!*** As the model
 improves, so will the detection rate.
 
+If you want to export your model in raw format for use with GPTC outside
+CedarSentinel, run `modelbuilder.py export`. The raw model will be in
+`raw_model_export.py`.
+
 ### CedarScript
 
 CedarSentinel's responses to messages are defined by `script.txt`. Note that a

@@ -35,6 +35,10 @@ if "compile" in sys.argv:
     with open("compiled_model.json", "w+") as f:
         json.dump(gptc.compile(workspace["model"]), f)
     sys.exit(0)
+elif "export" in sys.argv:
+    with open("raw_model_export.json", "w+") as f:
+        json.dump(workspace["model"], f)
+    sys.exit(0)
 
 try:
     if "import" in sys.argv:
