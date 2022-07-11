@@ -55,7 +55,6 @@ except ImportError as error:
     print("Unable to import " + module + ". OCR features are unavailable.")
     ocrAvailable = False
 
-
 version = "0.6.2"
 configFile = "config.yaml"
 
@@ -83,16 +82,10 @@ def handle_message(author, content, attachments=[]):
                     content = content + targetText
                     break
 
-    confidences = {
-        "good": 0,
-        "spam": 0,
-    }  # set defaults for good and spam to prevent KeyErrors in parsing
-    confidences.update(classifier.confidence(content))
-
     content = content.strip()
     author = author.strip()
 
-    confidence = confidences["spam"]
+    confidence = plugins["gptc"].confidence(content)
     length = len(content)
     reputation = reputation_db.get_reputation(author)
 
@@ -249,10 +242,11 @@ print()
 
 reputation_db.initialize(config)
 
-with open(config["spamModel"]) as f:
-    spamModel = json.load(f)
-classifier = gptc.Classifier(spamModel)
-print("GPTC model loaded!")
+plugins = {}
+for name in ["gptc"]:
+    plugins[name] = import_module(f"plugins.cs_{name}")
+    plugins[name].initialize(config)
+    print(f"Loaded plugin `{name}`!")
 print()
 
 with open("script.txt") as f:
