@@ -35,6 +35,7 @@ from yaml.loader import SafeLoader
 import json
 import datetime
 import http.client
+import pprint
 import cedarscript
 
 optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
@@ -207,7 +208,7 @@ class BotInstance(discord.Client):
             content = message.content
             attachments = message.attachments
             flag, moderate, confidence, author, content = handle_message(author, content, attachments)
-            print(f"Message from {author}: {content}")
+            print(f"Message from {author} -> {message.channel}: {content}")
             if config["debugMode"]:
                 print(confidence)
                 print(f"Flagging: {flag}; Moderating: {moderate}")
@@ -225,17 +226,22 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
         c.nick(c.get_nickname() + "_")
 
     def on_welcome(self, connection, event):
+        print("Connected!")
+
         for target in config["channels"].split(" "):
             connection.join(target)
         if config["notificationChannel"].startswith("#"):
             connection.join(config["notificationChannel"])
-        print("Connected!")
+
+    def on_join(self, connection, event):
+        print(f"Joined {event.target}!")
 
     def on_pubmsg(self, connection, event):
         author = event.source.split("!")[0].strip()
         content = event.arguments[0]
         flag, moderate, confidence, author, content = handle_message(author, content)
-        print(f"Message from {author}: {content}")
+        print()
+        print(f"Message from {author} -> {event.target}: {content}")
         if config["debugMode"]:
             print(confidence)
             print(f"Flagging: {flag}")
@@ -255,34 +261,43 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
                 )
 
 
+print("Cedar Sentinel version " + version + " starting up.")
+print()
+
 # load files
 with open(configFile) as f:
     config = yaml.load(f, Loader=SafeLoader)
-with open(config["spamModel"]) as f:
-    spamModel = json.load(f)
+print("Configuration loaded!")
+pprint.pprint(config)
+print()
 
 if config["persistKnownUsers"]:
     try:
         with open(config["persistFile"]) as f:
             knownUsers = json.load(f)
+            print("Known users file loaded!")
     except:
         print("No known users file found. Starting fresh.")
+print()
 
-# Startup
-print("Cedar Sentinel version " + version + " starting up.")
+with open(config["spamModel"]) as f:
+    spamModel = json.load(f)
 classifier = gptc.Classifier(spamModel)
-print("Spam Model Loaded!")
+print("GPTC model loaded!")
+print()
 
 with open("script.txt") as f:
     script = f.read()
 interpreter = cedarscript.Interpreter(script)
-print("CedarScript Interpreter Loaded!")
+print("CedarScript interpreter loaded!")
+print()
+
+# Startup
 
 if config["platform"] == "discord":
     bot = BotInstance()
     bot.run(config["discordToken"])
 elif config["platform"] == "irc":
-    print(config)
     bot = CedarSentinelIRC(
         [irc.bot.ServerSpec(config["ircServer"], int(config["ircPort"]))],
         config["ircNick"],
