@@ -37,6 +37,7 @@ import datetime
 import http.client
 import pprint
 import cedarscript
+import reputation_db
 
 optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
 try:
@@ -57,31 +58,6 @@ except ImportError as error:
 
 version = "0.6.2"
 configFile = "config.yaml"
-
-knownUsers = {}
-
-
-def change_reputation(username, change):
-    try:
-        knownUsers[username] = knownUsers[username] + change
-    except KeyError:
-        knownUsers[username] = change
-
-    if config["persistKnownUsers"]:
-        with open(config["persistFile"], "w") as f:
-            json.dump(knownUsers, f)
-
-
-def get_reputation(username):
-    try:
-        return knownUsers[username]
-    except KeyError:
-        knownUsers[username] = 0
-        if config["persistKnownUsers"]:
-            with open(config["persistFile"], "w") as f:
-                json.dump(knownUsers, f)
-        return 0
-
 
 # Extract username of message sender, and return status based on classification and/or known user bypass
 def handle_message(author, content, attachments=[]):
@@ -118,7 +94,7 @@ def handle_message(author, content, attachments=[]):
 
     confidence = confidences["spam"]
     length = len(content)
-    reputation = get_reputation(author)
+    reputation = reputation_db.get_reputation(author)
 
     actions = interpreter.interpret(confidence, length, reputation)
 
@@ -126,9 +102,9 @@ def handle_message(author, content, attachments=[]):
         logMessage(content, confidence)
 
     if "increasereputation" in actions:
-        change_reputation(author, 1)
+        reputation_db.change_reputation(author, 1)
     elif "decreasereputation" in actions:
-        change_reputation(author, -1)
+        reputation_db.change_reputation(author, -1)
 
     flag = "flag" in actions or "moderate" in actions
     moderate = "moderate" in actions
@@ -271,14 +247,7 @@ print("Configuration loaded!")
 pprint.pprint(config)
 print()
 
-if config["persistKnownUsers"]:
-    try:
-        with open(config["persistFile"]) as f:
-            knownUsers = json.load(f)
-            print("Known users file loaded!")
-    except:
-        print("No known users file found. Starting fresh.")
-print()
+reputation_db.initialize(config)
 
 with open(config["spamModel"]) as f:
     spamModel = json.load(f)
