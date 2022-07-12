@@ -38,7 +38,7 @@ version = "0.7.0"
 configFile = "config.yaml"
 
 # Extract username of message sender, and return status based on classification and/or known user bypass
-def handle_message(author, content, target, attachments=[]):
+def handle_message(author, content, target, attachments=[], flag_text=None):
     if author == config["bridgeBot"]:
         author = content.split(">", 1)[0]
         author = author.split("<", 1)[1].replace("@", "").strip()
@@ -72,32 +72,27 @@ def handle_message(author, content, target, attachments=[]):
         if "." in action:
             commands.to_dict()[action].function(message=content, username=author, inputs=inputs)
 
-    chat_message = f'{config["spamNotifyPing"]}: {config["spamNotifyMessage"]} ( {author} -> {target} ) {content}\nInputs: {str(inputs)}\nActions: {str(actions)}'
+    if flag_text is None:
+        flag_text = content
+    chat_message = f'{config["spamNotifyPing"]}: {config["spamNotifyMessage"]} ( {author} -> {target} ) {flag_text}\nInputs: `{str(inputs)}`\nActions: `{str(actions)}`'
     log_message = f'{author} -> {target}: {content}\nInputs: {str(inputs)}\nActions: {str(actions)}'
 
     return flag, moderate, author, content, inputs, actions, chat_message, log_message
 
 
 # Prepare and send notification about detected spam
-async def sendNotifMessage(message, customMessage=""):
+async def sendNotifMessage(original_message, message):
     notifChannel = None
     notifPing = ""
 
-    for channel in message.guild.text_channels:
+    for channel in original_message.guild.text_channels:
         if channel.name == config["notificationChannel"]:
             notifChannel = channel
     if notifChannel is None:
-        notifChannel = message.channel
+        notifChannel = original_message.channel
         print("Notification channel not found! Sending in same channel as potential spam.")
 
-    for role in message.guild.roles:
-        if role.name == config["spamNotifyPing"]:
-            notifPing = role.mention
-
-    if customMessage == "":
-        await notifChannel.send(f'{notifPing} {"**"} {config["spamNotifyMessage"]} {"**"} {message.jump_url}')
-    else:
-        await notifChannel.send(customMessage)
+    await notifChannel.send(message)
 
 
 async def messageDeleter(message):
@@ -106,8 +101,8 @@ async def messageDeleter(message):
         bridge.request("DELETE", "/api/message", headers={"Content-Type": "application/json"}, body='{"id": "%s", "channel": "%s", "protocol": "discord", "account": "discord.mydiscord"}' % (message.id, message.channel.name))
         response = bridge.getresponse()
         responseText = response.read()
-        await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** %s" % (responseText.decode("utf-8").strip()))
-        await sendNotifMessage(message, customMessage="**Message was:** `%s`" % (message.content))
+        await sendNotifMessage(message, "**Automatic Deletion Result:** %s" % (responseText.decode("utf-8").strip()))
+        await sendNotifMessage(message, "**Message was:** `%s`" % (message.content))
         alertMsg = await message.channel.send(config["publicDeleteNotice"])
         sleep(10)
         bridge.request("DELETE", "/api/message", headers={"Content-Type": "application/json"}, body='{"id": "%s", "channel": "%s", "protocol": "discord", "account": "discord.mydiscord"}' % (alertMsg.id, alertMsg.channel.name))
@@ -115,15 +110,16 @@ async def messageDeleter(message):
         try:
             await message.delete()
         except discord.Forbidden:
-            await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** No permission")
+            await sendNotifMessage(message, "**Automatic Deletion Result:** No permission")
             return
         except discord.NotFound:
-            await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** Message does not exist")
+            await sendNotifMessage(message, "**Automatic Deletion Result:** Message does not exist")
             return
         except discord.HTTPException:
-            await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** Failed")
+            await sendNotifMessage(message, "**Automatic Deletion Result:** Failed")
             return
-        await sendNotifMessage(message, customMessage="**Automatic Deletion Result:** OK")
+        await sendNotifMessage(message, "**Automatic Deletion Result:** OK")
+        await sendNotifMessage(message, "**Message was:** `%s`" % (message.content))
         alertMsg = await message.channel.send(config["publicDeleteNotice"])
         sleep(10)
         await alertMsg.delete()
@@ -138,13 +134,13 @@ class BotInstance(discord.Client):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
             attachments = message.attachments
-            flag, moderate, author, content, inputs, actions, chat_message, log_message = handle_message(author, content, message.channel, attachments)
+            flag, moderate, author, content, inputs, actions, chat_message, log_message = handle_message(author, content, message.channel, attachments, message.jump_url)
 
             print()
             print(log_message)
 
             if flag:
-                await sendNotifMessage(chat_message)
+                await sendNotifMessage(message, chat_message)
 
             if moderate:
                 if not (config["autoDeleteAPI"] == "none"):
