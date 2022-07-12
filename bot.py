@@ -74,7 +74,7 @@ def handle_message(author, content, target, attachments=[], flag_text=None):
 
     if flag_text is None:
         flag_text = content
-    chat_message = f'{config["spamNotifyPing"]}: {config["spamNotifyMessage"]} ( {author} -> {target} ) {flag_text}\nInputs: `{str(inputs)}`\nActions: `{str(actions)}`'
+    chat_message = f'{config["spamNotifyMessage"]} ( {author} -> {target} ) {flag_text}\nInputs: `{str(inputs)}`\nActions: `{str(actions)}`'
     log_message = f'{author} -> {target}: {content}\nInputs: {str(inputs)}\nActions: {str(actions)}'
 
     return flag, moderate, author, content, inputs, actions, chat_message, log_message

@@ -5,7 +5,6 @@
     ircNick             : NoMoreSpam # IRC nick
     channels            : "#spammychannel #anotherspammychannel" # Channels to monitor
     notificationChannel : "*" # name of the channel you want to receive spam notifications in. Set to a nick to receive notifications via private message, or to "*" to receive notifications in the same channel as the spam.
-    spamNotifyPing      : yournick   # put a nick here to ping it for spam notifications. Leave blank for no ping.
     spamNotifyMessage   : Potential spam detected. # message to use in spam notifications
     bridgeBot           : bridgebot # if your channel(s) use(s) a bridgebot (like matterbridge) to connect other networks, put its nick here (set to an invalid nick value such as "*" if you don't have a bridgebot)
     ocrEnable           : false # enable scanning of images (requires additional python modules, see README)

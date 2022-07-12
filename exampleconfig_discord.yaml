@@ -2,8 +2,7 @@
     platform            : discord
     discordToken        : ABCDEF1234567890 # Make sure to put your bot token here before starting!
     notificationChannel : spam-tracker # name of the channel you want to receive spam notifications in. If this channel is not accessible, notifications will occur in the same channel as spam.
-    spamNotifyPing      : Moderator   # put a role name here to ping it for spam notifications. Leave blank for no ping.
-    spamNotifyMessage   : Potential spam detected. # message to use in spam notifications
+    spamNotifyMessage   : @Moderator Potential spam detected. # message to use in spam notifications
     bridgeBot           : Pine64 Protocol Droid#9618 # if your server uses a bridgebot (like matterbridge) to connect other networks, put its discord name + discriminator here
     ocrEnable           : false # enable scanning of images (requires additional python modules, see README)
     autoDeleteAPI       : none # only currently available options are "customMB" (for gamiee's modified Matterbridge), "discord" for native Discord API delete,  or "none" (disabled)
