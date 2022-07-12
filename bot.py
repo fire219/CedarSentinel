@@ -80,29 +80,30 @@ def handle_message(author, content, target, attachments=[], flag_text=None):
 print("Cedar Sentinel version " + version + " starting up.")
 print()
 
-optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
-try:
-    for module in optionalModules:
-        import_module(module)
-    ocrAvailable = True
-    # following line is redundant, but is provided to suppress errors from language helpers like Pylance
-    import cv2
-    import pytesseract
-    import numpy
-    import requests
-
-    print("All optional modules loaded. OCR features are available (if enabled in config)")
-except ImportError as error:
-    print("Unable to import " + module + ". OCR features are unavailable.")
-    ocrAvailable = False
-print()
-
 # load files
 with open(configFile) as f:
     config = yaml.load(f, Loader=SafeLoader)
 print("Configuration loaded!")
 pprint.pprint(config)
 print()
+
+if config["ocrEnable"]:
+    optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
+    try:
+        for module in optionalModules:
+            import_module(module)
+        ocrAvailable = True
+        # following line is redundant, but is provided to suppress errors from language helpers like Pylance
+        import cv2
+        import pytesseract
+        import numpy
+        import requests
+
+        print("All optional modules loaded. OCR features are available (if enabled in config)")
+    except ImportError as error:
+        print("Unable to import " + module + ". OCR features are unavailable.")
+        ocrAvailable = False
+    print()
 
 
 def do_nothing(*_, **__):
@@ -133,13 +134,9 @@ print()
 
 # Startup
 
-if config["platform"] == "discord":
-    import platforms.cs_platform_discord
-    platforms.cs_platform_discord.config = config
-    platforms.cs_platform_discord.handle_message = handle_message
-    platforms.cs_platform_discord.run()
-else:
-    import platforms.cs_platform_irc
-    platforms.cs_platform_irc.config = config
-    platforms.cs_platform_irc.handle_message = handle_message
-    platforms.cs_platform_irc.run()
+platform = import_module(f"platforms.cs_platform_{config['platform']}")
+platform.config = config
+platform.handle_message = handle_message
+print(f"Loaded platform `{config['platform']}!`")
+print()
+platform.run()
