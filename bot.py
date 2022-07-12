@@ -86,7 +86,7 @@ def handle_message(author, content, attachments=[]):
 
     for action in actions:
         if "." in action:
-            commands.to_dict()[action].function(message=content, username=author)
+            commands.to_dict()[action].function(message=content, username=author, inputs=inputs)
 
     return flag, moderate, author, content, inputs, actions
 
