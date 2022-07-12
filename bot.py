@@ -78,8 +78,7 @@ def handle_message(author, content, attachments=[]):
                     targetArray = numpy.frombuffer(targetImage.content, numpy.uint8)
                     targetImageCV = cv2.imdecode(targetArray, cv2.IMREAD_UNCHANGED)
                     targetText = pytesseract.image_to_string(targetImageCV)
-                    if config["debugMode"]:
-                        print("OCR result: " + targetText.strip())
+                    print("OCR result: " + targetText.strip())
                     content = content + targetText
                     break
 
@@ -161,8 +160,7 @@ class BotInstance(discord.Client):
             attachments = message.attachments
             flag, moderate, author, content = handle_message(author, content, attachments)
             print(f"Message from {author} -> {message.channel}: {content}")
-            if config["debugMode"]:
-                print(f"Flagging: {flag}; Moderating: {moderate}")
+            print(f"Flagging: {flag}; Moderating: {moderate}")
 
             if flag:
                 await sendNotifMessage(message)
@@ -193,8 +191,7 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
         flag, moderate, author, content = handle_message(author, content)
         print()
         print(f"Message from {author} -> {event.target}: {content}")
-        if config["debugMode"]:
-            print(f"Flagging: {flag}")
+        print(f"Flagging: {flag}")
         if flag:
             notification_channel = config["notificationChannel"]
             if notification_channel == "*":
