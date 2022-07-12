@@ -196,6 +196,7 @@ try:
 except ImportError as error:
     print("Unable to import " + module + ". OCR features are unavailable.")
     ocrAvailable = False
+print()
 
 # load files
 with open(configFile) as f:
