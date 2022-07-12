@@ -24,16 +24,11 @@
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
 from importlib import import_module
-from re import M
 from time import sleep
-from urllib import response
 import discord
 import irc.bot
-import gptc
 import yaml
 from yaml.loader import SafeLoader
-import json
-import datetime
 import http.client
 import pprint
 import cedarscript

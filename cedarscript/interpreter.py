@@ -8,12 +8,7 @@ class Interpreter:
         self.code = parser.parse(code, commands)
         self.commands = commands
 
-    def interpret(self, inputs):  # confidence, length, reputation):
-        # inputs = {
-        #    "confidence": confidence,
-        #    "length": length,
-        #    "reputation": reputation,
-        # }
+    def interpret(self, inputs):
         return self.interpret_block(self.code, inputs)
 
     def interpret_block(self, code, inputs):
