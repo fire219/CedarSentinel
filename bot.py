@@ -24,12 +24,8 @@
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
 from importlib import import_module
-from time import sleep
-import discord
-import irc.bot
 import yaml
 from yaml.loader import SafeLoader
-import http.client
 import pprint
 import cedarscript
 from cedarscript.command_types import CommandList, Command, Action, Input
@@ -75,107 +71,10 @@ def handle_message(author, content, target, attachments=[], flag_text=None):
     if flag_text is None:
         flag_text = content
     chat_message = f'{config["spamNotifyMessage"]} ( {author} -> {target} ) {flag_text}\nInputs: `{str(inputs)}`\nActions: `{str(actions)}`'
-    log_message = f'{author} -> {target}: {content}\nInputs: {str(inputs)}\nActions: {str(actions)}'
+    print()
+    print(f'{author} -> {target}: {content}\nInputs: {str(inputs)}\nActions: {str(actions)}')
 
-    return flag, moderate, author, content, inputs, actions, chat_message, log_message
-
-
-# Prepare and send notification about detected spam
-async def sendNotifMessage(original_message, message):
-    notifChannel = None
-    notifPing = ""
-
-    for channel in original_message.guild.text_channels:
-        if channel.name == config["notificationChannel"]:
-            notifChannel = channel
-    if notifChannel is None:
-        notifChannel = original_message.channel
-        print("Notification channel not found! Sending in same channel as potential spam.")
-
-    await notifChannel.send(message)
-
-
-async def messageDeleter(message):
-    if config["autoDeleteAPI"] == "customMB":
-        bridge = http.client.HTTPConnection(config["bridgeURL"])
-        bridge.request("DELETE", "/api/message", headers={"Content-Type": "application/json"}, body='{"id": "%s", "channel": "%s", "protocol": "discord", "account": "discord.mydiscord"}' % (message.id, message.channel.name))
-        response = bridge.getresponse()
-        responseText = response.read()
-        await sendNotifMessage(message, "**Automatic Deletion Result:** %s" % (responseText.decode("utf-8").strip()))
-        await sendNotifMessage(message, "**Message was:** `%s`" % (message.content))
-        alertMsg = await message.channel.send(config["publicDeleteNotice"])
-        sleep(10)
-        bridge.request("DELETE", "/api/message", headers={"Content-Type": "application/json"}, body='{"id": "%s", "channel": "%s", "protocol": "discord", "account": "discord.mydiscord"}' % (alertMsg.id, alertMsg.channel.name))
-    if config["autoDeleteAPI"] == "discord":
-        try:
-            await message.delete()
-        except discord.Forbidden:
-            await sendNotifMessage(message, "**Automatic Deletion Result:** No permission")
-            return
-        except discord.NotFound:
-            await sendNotifMessage(message, "**Automatic Deletion Result:** Message does not exist")
-            return
-        except discord.HTTPException:
-            await sendNotifMessage(message, "**Automatic Deletion Result:** Failed")
-            return
-        await sendNotifMessage(message, "**Automatic Deletion Result:** OK")
-        await sendNotifMessage(message, "**Message was:** `%s`" % (message.content))
-        alertMsg = await message.channel.send(config["publicDeleteNotice"])
-        sleep(10)
-        await alertMsg.delete()
-
-
-class BotInstance(discord.Client):
-    async def on_ready(self):
-        print(f"Logged on as {self.user}!")
-
-    async def on_message(self, message):
-        if not (message.author == bot.user):
-            author = message.author.name + "#" + message.author.discriminator
-            content = message.content
-            attachments = message.attachments
-            flag, moderate, author, content, inputs, actions, chat_message, log_message = handle_message(author, content, message.channel, attachments, message.jump_url)
-
-            print()
-            print(log_message)
-
-            if flag:
-                await sendNotifMessage(message, chat_message)
-
-            if moderate:
-                if not (config["autoDeleteAPI"] == "none"):
-                    await messageDeleter(message)
-
-
-class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
-    def on_nicknameinuse(self, c, e):
-        c.nick(c.get_nickname() + "_")
-
-    def on_welcome(self, connection, event):
-        print("Connected!")
-
-        for target in config["channels"].split(" "):
-            connection.join(target)
-        if config["notificationChannel"].startswith("#"):
-            connection.join(config["notificationChannel"])
-
-    def on_join(self, connection, event):
-        print(f"Joined {event.target}!")
-
-    def on_pubmsg(self, connection, event):
-        # TODO: OCR functionality for image links on IRC
-        author = event.source.split("!")[0].strip()
-        content = event.arguments[0]
-        flag, moderate, author, content, inputs, actions, chat_message, log_message = handle_message(author, content, event.target)
-        print()
-        print(log_message)
-        if flag:
-            notification_channel = config["notificationChannel"]
-            if notification_channel == "*":
-                notification_channel = event.target
-
-            for submsg in chat_message.split("\n"):
-                connection.privmsg(notification_channel, submsg)
+    return flag, moderate, author, content, inputs, actions, chat_message
 
 
 print("Cedar Sentinel version " + version + " starting up.")
@@ -235,12 +134,12 @@ print()
 # Startup
 
 if config["platform"] == "discord":
-    bot = BotInstance()
-    bot.run(config["discordToken"])
-elif config["platform"] == "irc":
-    bot = CedarSentinelIRC(
-        [irc.bot.ServerSpec(config["ircServer"], int(config["ircPort"]))],
-        config["ircNick"],
-        config["ircNick"],
-    )
-    bot.start()
+    import platforms.cs_platform_discord
+    platforms.cs_platform_discord.config = config
+    platforms.cs_platform_discord.handle_message = handle_message
+    platforms.cs_platform_discord.run()
+else:
+    import platforms.cs_platform_irc
+    platforms.cs_platform_irc.config = config
+    platforms.cs_platform_irc.handle_message = handle_message
+    platforms.cs_platform_irc.run()
