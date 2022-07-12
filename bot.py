@@ -37,7 +37,7 @@ import datetime
 import http.client
 import pprint
 import cedarscript
-from cedarscript.command_types import CommandList
+from cedarscript.command_types import CommandList, Action, Input
 
 # import reputation_db
 
@@ -87,18 +87,16 @@ def handle_message(author, content, attachments=[]):
     author = author.strip()
 
     inputs = {input.name: input.function(message=content, username=author) for input in commands.inputs}
-    print(inputs)
     actions = interpreter.interpret(inputs)
-    print(actions)
 
-    flag = "moderation.flag" in actions or "moderation.delete" in actions
-    moderate = "moderation.delete" in actions
+    flag = "flag" in actions or "delete" in actions
+    moderate = "delete" in actions
 
     for action in actions:
-        if not action.startswith("moderation."):
+        if "." in action:
             commands.to_dict()[action].function(message=content, username=author)
 
-    return flag, moderate, author, content
+    return flag, moderate, author, content, inputs, actions
 
 
 # Prepare and send notification about detected spam
@@ -119,6 +117,7 @@ async def sendNotifMessage(message, customMessage=""):
 
     if customMessage == "":
         await notifChannel.send(f'{notifPing} {"**"} {config["spamNotifyMessage"]} {"**"} {message.jump_url}')
+    else:
         await notifChannel.send(customMessage)
 
 
@@ -160,12 +159,15 @@ class BotInstance(discord.Client):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
             attachments = message.attachments
-            flag, moderate, author, content = handle_message(author, content, attachments)
+            flag, moderate, author, content, inputs, actions = handle_message(author, content, attachments)
             print(f"Message from {author} -> {message.channel}: {content}")
-            print(f"Flagging: {flag}; Moderating: {moderate}")
+            print("Inputs:", inputs)
+            print("Actions:", actions)
 
             if flag:
                 await sendNotifMessage(message)
+                await sendNotifMessage("Inputs: " + str(inputs))
+                await sendNotifMessage("Actions: " + str(actions))
 
             if moderate:
                 if not (config["autoDeleteAPI"] == "none"):
@@ -190,10 +192,11 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
     def on_pubmsg(self, connection, event):
         author = event.source.split("!")[0].strip()
         content = event.arguments[0]
-        flag, moderate, author, content = handle_message(author, content)
+        flag, moderate, author, content, inputs, actions = handle_message(author, content)
         print()
         print(f"Message from {author} -> {event.target}: {content}")
-        print(f"Flagging: {flag}")
+        print("Inputs:", inputs)
+        print("Actions:", actions)
         if flag:
             notification_channel = config["notificationChannel"]
             if notification_channel == "*":
@@ -202,6 +205,14 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
             connection.privmsg(
                 notification_channel,
                 f'{config["spamNotifyPing"]}: {config["spamNotifyMessage"]} ({author} -> {event.target}) {content}',
+            )
+            connection.privmsg(
+                notification_channel,
+                "Inputs: " + str(inputs),
+            )
+            connection.privmsg(
+                notification_channel,
+                "Actions: " + str(actions),
             )
 
 
@@ -215,8 +226,13 @@ print("Configuration loaded!")
 pprint.pprint(config)
 print()
 
+
+def do_nothing(*_, **__):
+    pass
+
+
 plugins = {}
-commands = CommandList()
+commands = CommandList([Action("flag", do_nothing), Action("delete", do_nothing)])
 for name in config["plugins"]:
     print(f"Loading plugin `{name}`...")
     plugins[name] = import_module(f"plugins.cs_{name}")

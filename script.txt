@@ -1,7 +1,7 @@
 if [20 length.length]
     if <0.5 gptc.confidence>
         if [reputation.value 5]
-            moderation.delete
+            delete
         end
         reputation.decrease
     else
