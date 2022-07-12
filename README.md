@@ -162,24 +162,30 @@ work the same as Python's. Any difference is a bug that should be reported.
 Inputs are values provided to the script by CedarSentinel. The following are
 available:
 
-| Name         | Meaning                             |
-|--------------|-------------------------------------|
-| `confidence` | Confidence that the message is spam |
-| `reputation` | The message's author's reputation   |
-| `length`     | The length of the message           |
+| Name                | Meaning                             |
+|---------------------|-------------------------------------|
+| `gptc.confidence`   | Confidence that the message is spam |
+| `reputation.value`  | The message's author's reputation   |
+| `length.length`     | The length of the message           |
 
 #### Actions
 
 Actions are how the script tells CedarSentinel what to do in respone to
 the message. The following are available:
 
-| Name                 | Meaning                                               |
-|----------------------|-------------------------------------------------------|
-| `flag`               | Flag the message as spam                              |
-| `moderate`           | IRC: same as `flag`; Discord: flag and delete message |
-| `log`                | Log the message for manual classification             |
-| `increasereputation` | Increase the author's reputation                      |
-| `decreasereputation` | Decrease the author's reputation                      |
+| Name                  | Meaning                                               |
+|-----------------------|-------------------------------------------------------|
+| `flag`                | Flag the message as spam                              |
+| `delete`              | IRC: same as `flag`; Discord: flag and delete message |
+| `gptc.log`            | Log the message for manual classification             |
+| `reputation.increase` | Increase the author's reputation                      |
+| `reputation.decrease` | Decrease the author's reputation                      |
+
+### Plugins
+
+All inputs and most actions are not provided by CedarSentinel itself, but by
+plugins. Three plugins, `gptc`, `length`, and `reputation`, are included by
+default and enabled in the example configuration files.
 
 ### Contributors
 
