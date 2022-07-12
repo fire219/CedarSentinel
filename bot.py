@@ -32,7 +32,7 @@ from yaml.loader import SafeLoader
 import http.client
 import pprint
 import cedarscript
-from cedarscript.command_types import CommandList, Action, Input
+from cedarscript.command_types import CommandList, Command, Action, Input
 
 optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
 try:
@@ -224,16 +224,21 @@ def do_nothing(*_, **__):
     pass
 
 
-plugins = {}
 commands = CommandList([Action("flag", do_nothing), Action("delete", do_nothing)])
 for name in config["plugins"]:
     print(f"Loading plugin `{name}`...")
-    plugins[name] = import_module(f"plugins.cs_{name}")
-    plugins[name].config = config["pluginConfig"].get(name, {})
-    plugins[name].initialize(config=config)
-    commands += plugins[name].commands.prefix(name)
+    plugin = import_module(f"plugins.cs_{name}")
+    plugin.config = config["pluginConfig"].get(name, {})
+    plugin.initialize(config=config)
+    plugin_contents = [getattr(plugin, i) for i in dir(plugin)]
+    plugin_commands = CommandList(i for i in plugin_contents if isinstance(i, Command))
+    commands += plugin_commands.prefix(name)
     print(f"Loaded plugin `{name}`!")
     print()
+
+print("Inputs:", [i.name for i in commands.inputs])
+print("Actions:", [i.name for i in commands.actions])
+print()
 
 with open("script.txt") as f:
     script = f.read()

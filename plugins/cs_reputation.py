@@ -1,10 +1,11 @@
-from cedarscript.command_types import Input, Action, CommandList
+from cedarscript.decorators import input, action, init
 import json
 
 known_users = {}
 
 
-def initialize(*_, **__):
+@init
+def initialize():
     global known_users
 
     if config["persistKnownUsers"]:
@@ -39,22 +40,16 @@ def _change_reputation(username, change):
     _set_reputation(username, _get_reputation(username) + change)
 
 
-def get(username, *_, **__):
+@input
+def value(username):
     return _get_reputation(username)
 
 
-def increase(username, *_, **__):
+@action
+def increase(username):
     _change_reputation(username, 1)
 
 
-def decrease(username, *_, **__):
+@action
+def decrease(username):
     _change_reputation(username, -1)
-
-
-commands = CommandList(
-    [
-        Input("value", get),
-        Action("increase", increase),
-        Action("decrease", decrease),
-    ]
-)

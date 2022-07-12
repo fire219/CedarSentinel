@@ -1,12 +1,11 @@
-from cedarscript.command_types import Input, Action, CommandList
+from cedarscript.decorators import input, action, init
 
 
+@init
 def initialize(*_, **__):
     pass
 
 
-def length(message, *_, **__):
+@input
+def length(message):
     return len(message)
-
-
-commands = CommandList([Input("length", length)])
