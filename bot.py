@@ -34,8 +34,6 @@ import pprint
 import cedarscript
 from cedarscript.command_types import CommandList, Action, Input
 
-# import reputation_db
-
 optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
 try:
     for module in optionalModules:
@@ -52,7 +50,7 @@ except ImportError as error:
     print("Unable to import " + module + ". OCR features are unavailable.")
     ocrAvailable = False
 
-version = "0.6.2"
+version = "0.7.0"
 configFile = "config.yaml"
 
 # Extract username of message sender, and return status based on classification and/or known user bypass
@@ -62,7 +60,6 @@ def handle_message(author, content, attachments=[]):
         author = author.split("<", 1)[1].replace("@", "").strip()
         content = content.split(">", 1)[1]
 
-    # TODO: OCR functionality for image links on IRC
     if (config["ocrEnable"] == True) and (ocrAvailable == True):
         for item in attachments:
             # very naive filetype checker
@@ -185,6 +182,7 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
         print(f"Joined {event.target}!")
 
     def on_pubmsg(self, connection, event):
+        # TODO: OCR functionality for image links on IRC
         author = event.source.split("!")[0].strip()
         content = event.arguments[0]
         flag, moderate, author, content, inputs, actions = handle_message(author, content)
