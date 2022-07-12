@@ -1,11 +1,11 @@
-from cedarscript.decorators import input, action, init
+import cspapi
 
 
-@init
-def initialize(*_, **__):
+@cspapi.init
+def initialize():
     pass
 
 
-@input
+@cspapi.input
 def length(message):
     return len(message)

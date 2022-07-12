@@ -1,10 +1,10 @@
-from cedarscript.decorators import input, action, init
+import cspapi
 import json
 
 known_users = {}
 
 
-@init
+@cspapi.init
 def initialize():
     global known_users
 
@@ -40,16 +40,16 @@ def _change_reputation(username, change):
     _set_reputation(username, _get_reputation(username) + change)
 
 
-@input
+@cspapi.input
 def value(username):
     return _get_reputation(username)
 
 
-@action
+@cspapi.action
 def increase(username):
     _change_reputation(username, 1)
 
 
-@action
+@cspapi.action
 def decrease(username):
     _change_reputation(username, -1)

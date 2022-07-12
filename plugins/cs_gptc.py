@@ -1,10 +1,10 @@
-from cedarscript.decorators import input, action, init
+import cspapi
 import datetime
 import gptc
 import json
 
 
-@init
+@cspapi.init
 def initialize():
     global classifier
     with open(config["spamModel"]) as f:
@@ -12,12 +12,12 @@ def initialize():
     classifier = gptc.Classifier(spam_model)
 
 
-@input
+@cspapi.input
 def confidence(message):
     return classifier.confidence(message).get("spam", 0)
 
 
-@action
+@cspapi.action
 def log(message, inputs):
     with open(config["spamFile"], "a") as f:
         log_time = str(datetime.datetime.today())
