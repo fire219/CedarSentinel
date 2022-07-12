@@ -34,22 +34,6 @@ import pprint
 import cedarscript
 from cedarscript.command_types import CommandList, Command, Action, Input
 
-optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
-try:
-    for module in optionalModules:
-        import_module(module)
-    ocrAvailable = True
-    # following line is redundant, but is provided to suppress errors from language helpers like Pylance
-    import cv2
-    import pytesseract
-    import numpy
-    import requests
-
-    print("All optional modules loaded. OCR features are available (if enabled in config)")
-except ImportError as error:
-    print("Unable to import " + module + ". OCR features are unavailable.")
-    ocrAvailable = False
-
 version = "0.7.0"
 configFile = "config.yaml"
 
@@ -211,6 +195,22 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
 
 print("Cedar Sentinel version " + version + " starting up.")
 print()
+
+optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
+try:
+    for module in optionalModules:
+        import_module(module)
+    ocrAvailable = True
+    # following line is redundant, but is provided to suppress errors from language helpers like Pylance
+    import cv2
+    import pytesseract
+    import numpy
+    import requests
+
+    print("All optional modules loaded. OCR features are available (if enabled in config)")
+except ImportError as error:
+    print("Unable to import " + module + ". OCR features are unavailable.")
+    ocrAvailable = False
 
 # load files
 with open(configFile) as f:
