@@ -1,7 +1,7 @@
 from cedarscript.command_types import Input, Action, CommandList
 
 
-def initialize(_config, *_, **__):
+def initialize(*_, **__):
     pass
 
 

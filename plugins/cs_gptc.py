@@ -4,10 +4,8 @@ import gptc
 import json
 
 
-def initialize(config_, *_, **__):
-    global config, classifier
-    config = config_["pluginConfig"]["gptc"]
-
+def initialize(*_, **__):
+    global classifier
     with open(config["spamModel"]) as f:
         spam_model = json.load(f)
     classifier = gptc.Classifier(spam_model)

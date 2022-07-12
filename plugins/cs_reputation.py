@@ -4,9 +4,8 @@ import json
 known_users = {}
 
 
-def initialize(config_, *_, **__):
-    global known_users, config
-    config = config_["pluginConfig"]["reputation"]
+def initialize(*_, **__):
+    global known_users
 
     if config["persistKnownUsers"]:
         try:
