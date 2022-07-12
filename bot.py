@@ -38,7 +38,7 @@ version = "0.7.0"
 configFile = "config.yaml"
 
 # Extract username of message sender, and return status based on classification and/or known user bypass
-def handle_message(author, content, attachments=[]):
+def handle_message(author, content, target, attachments=[]):
     if author == config["bridgeBot"]:
         author = content.split(">", 1)[0]
         author = author.split("<", 1)[1].replace("@", "").strip()
@@ -72,7 +72,10 @@ def handle_message(author, content, attachments=[]):
         if "." in action:
             commands.to_dict()[action].function(message=content, username=author, inputs=inputs)
 
-    return flag, moderate, author, content, inputs, actions
+    chat_message = f'{config["spamNotifyPing"]}: {config["spamNotifyMessage"]} ( {author} -> {target} ) {content}\nInputs: {str(inputs)}\nActions: {str(actions)}'
+    log_message = f'{author} -> {target}: {content}\nInputs: {str(inputs)}\nActions: {str(actions)}'
+
+    return flag, moderate, author, content, inputs, actions, chat_message, log_message
 
 
 # Prepare and send notification about detected spam
@@ -135,15 +138,13 @@ class BotInstance(discord.Client):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
             attachments = message.attachments
-            flag, moderate, author, content, inputs, actions = handle_message(author, content, attachments)
-            print(f"Message from {author} -> {message.channel}: {content}")
-            print("Inputs:", inputs)
-            print("Actions:", actions)
+            flag, moderate, author, content, inputs, actions, chat_message, log_message = handle_message(author, content, message.channel, attachments)
+
+            print()
+            print(log_message)
 
             if flag:
-                await sendNotifMessage(message)
-                await sendNotifMessage("Inputs: " + str(inputs))
-                await sendNotifMessage("Actions: " + str(actions))
+                await sendNotifMessage(chat_message)
 
             if moderate:
                 if not (config["autoDeleteAPI"] == "none"):
@@ -169,28 +170,16 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
         # TODO: OCR functionality for image links on IRC
         author = event.source.split("!")[0].strip()
         content = event.arguments[0]
-        flag, moderate, author, content, inputs, actions = handle_message(author, content)
+        flag, moderate, author, content, inputs, actions, chat_message, log_message = handle_message(author, content, event.target)
         print()
-        print(f"Message from {author} -> {event.target}: {content}")
-        print("Inputs:", inputs)
-        print("Actions:", actions)
+        print(log_message)
         if flag:
             notification_channel = config["notificationChannel"]
             if notification_channel == "*":
                 notification_channel = event.target
 
-            connection.privmsg(
-                notification_channel,
-                f'{config["spamNotifyPing"]}: {config["spamNotifyMessage"]} ({author} -> {event.target}) {content}',
-            )
-            connection.privmsg(
-                notification_channel,
-                "Inputs: " + str(inputs),
-            )
-            connection.privmsg(
-                notification_channel,
-                "Actions: " + str(actions),
-            )
+            for submsg in chat_message.split("\n"):
+                connection.privmsg(notification_channel, submsg)
 
 
 print("Cedar Sentinel version " + version + " starting up.")
