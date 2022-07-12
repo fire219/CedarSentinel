@@ -8,7 +8,7 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
     def on_welcome(self, connection, event):
         print("Connected!")
 
-        for target in config["channels"].split(" "):
+        for target in config["channels"]:
             connection.join(target)
         if config["notificationChannel"].startswith("#"):
             connection.join(config["notificationChannel"])

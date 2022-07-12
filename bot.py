@@ -82,9 +82,10 @@ print()
 
 # load files
 with open(configFile) as f:
-    config = yaml.load(f, Loader=SafeLoader)
+    full_config = yaml.load(f, Loader=SafeLoader)
+config = full_config["platformConfig"][full_config["platform"]]
 print("Configuration loaded!")
-pprint.pprint(config)
+pprint.pprint(full_config)
 print()
 
 if config["ocrEnable"]:
@@ -111,11 +112,11 @@ def do_nothing(*_, **__):
 
 
 commands = CommandList([Action("flag", do_nothing), Action("delete", do_nothing)])
-for name in config["plugins"]:
+for name in full_config["plugins"]:
     print(f"Loading plugin `{name}`...")
     plugin = import_module(f"plugins.cs_{name}")
-    plugin.config = config["pluginConfig"].get(name, {})
-    plugin.initialize(config=config)
+    plugin.config = full_config["pluginConfig"].get(name, {})
+    plugin.initialize()
     plugin_contents = [getattr(plugin, i) for i in dir(plugin)]
     plugin_commands = CommandList(i for i in plugin_contents if isinstance(i, Command))
     commands += plugin_commands.prefix(name)
@@ -132,11 +133,9 @@ interpreter = cedarscript.Interpreter(script, commands)
 print("CedarScript interpreter loaded!")
 print()
 
-# Startup
-
-platform = import_module(f"platforms.cs_platform_{config['platform']}")
-platform.config = config
+platform = import_module(f"platforms.cs_platform_{full_config['platform']}")
+platform.config = config["private"]
 platform.handle_message = handle_message
-print(f"Loaded platform `{config['platform']}!`")
+print(f"Loaded platform `{full_config['platform']}`!")
 print()
 platform.run()
