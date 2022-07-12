@@ -52,8 +52,10 @@ def decrease(username, *_, **__):
     _change_reputation(username, -1)
 
 
-commands = CommandList([
-    Input("value", get),
-    Action("increase", increase),
-    Action("decrease", decrease),
-    ])
+commands = CommandList(
+    [
+        Input("value", get),
+        Action("increase", increase),
+        Action("decrease", decrease),
+    ]
+)

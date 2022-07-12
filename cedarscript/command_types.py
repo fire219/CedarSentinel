@@ -22,7 +22,7 @@ class Action(Command):
 class CommandList(list):
     def to_dict(self):
         return {command.name: command for command in self}
-    
+
     def _only_type(self, item_type):
         return CommandList(item for item in self if isinstance(item, item_type))
 

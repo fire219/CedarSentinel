@@ -38,6 +38,7 @@ import http.client
 import pprint
 import cedarscript
 from cedarscript.command_types import CommandList
+
 # import reputation_db
 
 optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
@@ -85,7 +86,7 @@ def handle_message(author, content, attachments=[]):
     content = content.strip()
     author = author.strip()
 
-    inputs = {input.name:input.function(message=content, username=author) for input in commands.inputs}
+    inputs = {input.name: input.function(message=content, username=author) for input in commands.inputs}
     print(inputs)
     actions = interpreter.interpret(inputs)
     print(actions)
@@ -119,6 +120,7 @@ async def sendNotifMessage(message, customMessage=""):
     if customMessage == "":
         await notifChannel.send(f'{notifPing} {"**"} {config["spamNotifyMessage"]} {"**"} {message.jump_url}')
         await notifChannel.send(customMessage)
+
 
 async def messageDeleter(message):
     if config["autoDeleteAPI"] == "customMB":

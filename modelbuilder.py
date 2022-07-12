@@ -55,9 +55,10 @@ try:
         if "y" in response:
             with open("spamLog.json", "w", encoding="utf-8") as f:
                 print("spam log cleared.")
-    
+
     if "imageimport" in sys.argv:
         import pytesseract
+
         spam_log = []
         imageDir = input("What is the name of the folder containing spam images? ")
         os.chdir(imageDir)
@@ -78,7 +79,6 @@ try:
                 os.remove(file)
             print("spam images cleared.")
         os.chdir("..")
-        
 
     while workspace["messages"]:
         message = workspace["messages"].pop(0)

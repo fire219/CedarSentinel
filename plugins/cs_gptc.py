@@ -3,6 +3,7 @@ import datetime
 import gptc
 import json
 
+
 def initialize(config_, *_, **__):
     global config, classifier
     config = config_["pluginConfig"]["gptc"]
@@ -11,8 +12,10 @@ def initialize(config_, *_, **__):
         spam_model = json.load(f)
     classifier = gptc.Classifier(spam_model)
 
+
 def confidence(message, *_, **__):
     return classifier.confidence(message).get("spam", 0)
+
 
 def log(message, *_, **__):
     with open(config["spamFile"], "a") as f:
@@ -22,7 +25,5 @@ def log(message, *_, **__):
         # TODO figure out how to get the confidence to this
         json.dump(logEntry, f)
 
-commands = CommandList([
-    Input("confidence", confidence),
-    Action("log", log)
-    ])
+
+commands = CommandList([Input("confidence", confidence), Action("log", log)])
