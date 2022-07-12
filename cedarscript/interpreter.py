@@ -1,23 +1,25 @@
 import cedarscript.definitions as definitions
 import cedarscript.parser as parser
+import cedarscript.command_types as command_types
 
 
 class Interpreter:
-    def __init__(self, code):
-        self.code = parser.parse(code)
+    def __init__(self, code, commands):
+        self.code = parser.parse(code, commands)
+        self.commands = commands
 
-    def interpret(self, confidence, length, reputation):
-        inputs = {
-            "confidence": confidence,
-            "length": length,
-            "reputation": reputation,
-        }
+    def interpret(self, inputs): #confidence, length, reputation):
+        #inputs = {
+        #    "confidence": confidence,
+        #    "length": length,
+        #    "reputation": reputation,
+        #}
         return self.interpret_block(self.code, inputs)
 
     def interpret_block(self, code, inputs):
         actions = set()
         for statement in code:
-            if isinstance(statement, definitions.Action):
+            if isinstance(statement, command_types.Action):
                 actions.add(statement.name)
             elif isinstance(statement, definitions.If):
                 if self.interpret_expression(statement.condition, inputs):
@@ -36,7 +38,7 @@ class Interpreter:
     def evaluate(self, token, inputs):
         if isinstance(token, float):
             return token
-        elif isinstance(token, definitions.Input):
+        elif isinstance(token, command_types.Input):
             return inputs[token.name]
 
     def interpret_expression(self, expression, inputs):

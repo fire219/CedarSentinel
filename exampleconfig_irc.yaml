@@ -4,10 +4,6 @@
     ircPort             : 6667 # IRC port (TLS is not yet supported)
     ircNick             : NoMoreSpam # IRC nick
     channels            : "#spammychannel #anotherspammychannel" # Channels to monitor
-    spamModel           : compiled_model.json # file name for your spam model
-    spamFile            : "spamLog.json" # filename to save messages that meet log threshold
-    persistKnownUsers   : True, # set to true to enable persistence of known user data across bot restarts
-    persistFile         : knownUsers.json # file name for known user persistence
     notificationChannel : "*" # name of the channel you want to receive spam notifications in. Set to a nick to receive notifications via private message, or to "*" to receive notifications in the same channel as the spam.
     spamNotifyPing      : yournick   # put a nick here to ping it for spam notifications. Leave blank for no ping.
     spamNotifyMessage   : Potential spam detected. # message to use in spam notifications
@@ -17,3 +13,17 @@
     autoDeleteAPI       : none # only currently available options are "customMB" (for gamiee's modified Matterbridge), "discord" for native Discord API delete, or "none" (disabled)
     bridgeURL           : "127.0.0.1:1223" # only necessary if using an autodelete method that requires HTTP API calls (customMB)
     publicDeleteNotice  : "Automated message: a message was detected by CedarSentinel as spam and was automatically deleted. If this was in error, please contact a moderator." # message to use in spam auto-delete public notifications
+
+    plugins :
+    - gptc
+    - length
+    - reputation
+    - moderation
+
+    pluginConfig :
+      gptc :
+        spamModel : compiled_model.json # file name for your spam model
+        spamFile  : "spamLog.json" # filename to save messages that meet log threshold
+      reputation :
+        persistKnownUsers   : True, # set to true to enable persistence of known user data across bot restarts
+        persistFile         : knownUsers.json # file name for known user persistence

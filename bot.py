@@ -37,7 +37,8 @@ import datetime
 import http.client
 import pprint
 import cedarscript
-import reputation_db
+from cedarscript.command_types import CommandList
+# import reputation_db
 
 optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
 try:
@@ -85,28 +86,23 @@ def handle_message(author, content, attachments=[]):
     content = content.strip()
     author = author.strip()
 
-    confidence = plugins["gptc"].confidence(content)
-    length = len(content)
-    reputation = reputation_db.get_reputation(author)
+    inputs = {input.name:input.function(message=content, username=author) for input in commands.inputs}
+    print(inputs)
+    actions = interpreter.interpret(inputs)
+    print(actions)
 
-    actions = interpreter.interpret(confidence, length, reputation)
+    flag = "moderation.flag" in actions or "moderation.delete" in actions
+    moderate = "moderation.delete" in actions
 
-    if "log" in actions:
-        logMessage(content, confidence)
+    for action in actions:
+        if not action.startswith("moderation."):
+            commands.to_dict()[action].function(message=content, username=author)
 
-    if "increasereputation" in actions:
-        reputation_db.change_reputation(author, 1)
-    elif "decreasereputation" in actions:
-        reputation_db.change_reputation(author, -1)
-
-    flag = "flag" in actions or "moderate" in actions
-    moderate = "moderate" in actions
-
-    return flag, moderate, confidence, author, content
+    return flag, moderate, author, content
 
 
 # Prepare and send notification about detected spam
-async def sendNotifMessage(message, confidence=0.0, customMessage=""):
+async def sendNotifMessage(message, customMessage=""):
     notifChannel = None
     notifPing = ""
 
@@ -123,20 +119,7 @@ async def sendNotifMessage(message, confidence=0.0, customMessage=""):
 
     if customMessage == "":
         await notifChannel.send(f'{notifPing} {"**"} {config["spamNotifyMessage"]} {"**"} {message.jump_url}')
-        if config["debugMode"]:
-            await notifChannel.send(f"DEBUG: Confidence value on the above message is: {confidence}")
-    else:
         await notifChannel.send(customMessage)
-
-
-# log message to file for later analysis
-def logMessage(message, confidence):
-    with open(config["spamFile"], "a") as f:
-        logTime = str(datetime.datetime.today())
-        f.write(",\n")  # append to previous JSON dump, and make this prettier for human eyes
-        logEntry = {"time": logTime, "message": message, "confidence": confidence}
-        json.dump(logEntry, f)
-
 
 async def messageDeleter(message):
     if config["autoDeleteAPI"] == "customMB":
@@ -176,14 +159,13 @@ class BotInstance(discord.Client):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
             attachments = message.attachments
-            flag, moderate, confidence, author, content = handle_message(author, content, attachments)
+            flag, moderate, author, content = handle_message(author, content, attachments)
             print(f"Message from {author} -> {message.channel}: {content}")
             if config["debugMode"]:
-                print(confidence)
                 print(f"Flagging: {flag}; Moderating: {moderate}")
 
             if flag:
-                await sendNotifMessage(message, confidence)
+                await sendNotifMessage(message)
 
             if moderate:
                 if not (config["autoDeleteAPI"] == "none"):
@@ -208,11 +190,10 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
     def on_pubmsg(self, connection, event):
         author = event.source.split("!")[0].strip()
         content = event.arguments[0]
-        flag, moderate, confidence, author, content = handle_message(author, content)
+        flag, moderate, author, content = handle_message(author, content)
         print()
         print(f"Message from {author} -> {event.target}: {content}")
         if config["debugMode"]:
-            print(confidence)
             print(f"Flagging: {flag}")
         if flag:
             notification_channel = config["notificationChannel"]
@@ -223,11 +204,6 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
                 notification_channel,
                 f'{config["spamNotifyPing"]}: {config["spamNotifyMessage"]} ({author} -> {event.target}) {content}',
             )
-            if config["debugMode"]:
-                connection.privmsg(
-                    notification_channel,
-                    f"DEBUG: Confidence value on the above message is: {confidence}",
-                )
 
 
 print("Cedar Sentinel version " + version + " starting up.")
@@ -240,18 +216,19 @@ print("Configuration loaded!")
 pprint.pprint(config)
 print()
 
-reputation_db.initialize(config)
-
 plugins = {}
-for name in ["gptc"]:
+commands = CommandList()
+for name in config["plugins"]:
+    print(f"Loading plugin `{name}`...")
     plugins[name] = import_module(f"plugins.cs_{name}")
     plugins[name].initialize(config)
+    commands += plugins[name].commands.prefix(name)
     print(f"Loaded plugin `{name}`!")
-print()
+    print()
 
 with open("script.txt") as f:
     script = f.read()
-interpreter = cedarscript.Interpreter(script)
+interpreter = cedarscript.Interpreter(script, commands)
 print("CedarScript interpreter loaded!")
 print()
 

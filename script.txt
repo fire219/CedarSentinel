@@ -1,14 +1,14 @@
-if [20 length]
-    if <0.5 confidence>
-        if [reputation 5]
-            moderate
+if [20 length.length]
+    if <0.5 gptc.confidence>
+        if [reputation.value 5]
+            moderation.delete
         end
-        decrease_reputation
+        reputation.decrease
     else
-        increase_reputation
+        reputation.increase
     end
 
-    if {0.0 confidence} or <0.4 confidence 0.6> or <0.9 confidence>
-        log
+    if {0.0 gptc.confidence} or <0.4 gptc.confidence 0.6> or <0.9 gptc.confidence>
+        gptc.log
     end
 end

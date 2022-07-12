@@ -8,8 +8,8 @@ def split(code):
     indices = [[]]
 
     for index, char in enumerate(code.replace("    ", "||||")):
-        if char in "abcdefghijklmnopqrstuvwxyz":
-            if not tokens[-1].isalpha():
+        if char in "abcdefghijklmnopqrstuvwxyz.":
+            if not all([char in "abcdefghijklmnopqrstuvwxyz." for char in tokens[-1]]):
                 tokens.append("")
                 indices.append([])
             tokens[-1] += char
