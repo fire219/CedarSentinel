@@ -16,7 +16,7 @@ allowing it to also handle messages from many more chat platforms!
 git clone https://github.com/fire219/CedarSentinel.git
 cd CedarSentinel
 pip install pyyaml discord.py irc git+https://git.kj7rrv.com/kj7rrv/gptc@master
-cp exampleconfig_<irc|discord>.yaml config.yaml
+cp example_config.yaml config.yaml
 # edit the config file with your editor of choice!
 ```
 
@@ -25,7 +25,10 @@ Python script.
 
 #### Configuring for use with OCR
 
-CedarSentinel can be optionally configured to do [Optical character recognition](https://en.wikipedia.org/wiki/Optical_character_recognition) (also known as OCR) on all images. This system requires many additional Python modules to be installed:
+CedarSentinel can be optionally configured to do [Optical character
+recognition](https://en.wikipedia.org/wiki/Optical_character_recognition) (also
+known as OCR) on all images. This system requires many additional Python
+modules to be installed:
 
 ```bash
 apt install tesseract-ocr # or the equivalent command in your OS of choice
@@ -33,7 +36,8 @@ pip install opencv-python pytesseract numpy # this command is unnecessary if you
 # change the value of "ocrEnable" in your config.yaml file to "true" to enable OCR
 ```
 
-If any of the above modules are missing, CedarSentinel will alert you at startup, but otherwise will work normally (albeit with OCR disabled).
+If any of the above modules are missing, CedarSentinel will alert you at
+startup, but otherwise will work normally (albeit with OCR disabled).
 
 ### Using CedarSentinel
 
@@ -50,52 +54,51 @@ that *aren't* spam, check out the ***How to train models*** section below.
 ### How to train models
 
 As previously mentioned, CedarSentinel comes with a model trained for the
-Pine64 Chat Network. If this model just isn't working for you, then it is
-time to check out the **modelbuilder.py** tool included with CedarSentinel.
+Pine64 Chat Network. If this model just isn't working for you, then it is time
+to check out the `gptc_data/modelbuilder.py` tool included with CedarSentinel.
 
 The Model Builder is designed to intake spam logs that CedarSentinel itself
 creates *(assuming you have it enabled in the config!)* and convert them into
 GPTC models that CedarSentinel makes its decisions based on. 
 
-As a starting point, **empty_model.json** is included for use in training from
-scratch. If you wish to do so, configure CedarSentinel to use this model. If
-you want to build on the existing data, leave it with the default model. Now,
-let it sit running in your chat for a while. Assuming you haven't dramatically
+If you want to reset the model and start over, run `gptc_data/reset.sh`. If you
+want to build on the existing data, leave it with the default model.  Now, let
+it sit running in your chat for a while. Assuming you haven't dramatically
 changed `script.txt` (see "CedarScript" below), it should start logging
-messages in your server. *(If you used the empty_model, it will likely log all
+messages in your server. *(If you reset the model, it will likely log all
 messages!)*. After an indeterminate amount of time (up to you, but more
 messages are better!), it's time to use the Model Builder.
 
-First, run it as `modelbuilder.py import`. This will import the messages from
-your "spam" log into its workspace. It should then show you a message and ask
-you if it is Good, Spam, or Unknown. Answer accordingly, and then hit enter.
-It will then give you the next message, and so on. Take your time, and make
-sure you label messages correctly. CedarSentinel relies on this data to make
-its decisions. If you need to stop at any time, hit Ctrl+C, and it will save
-your progress and exit. Remember to delete `spam_log.json` after
-`modelbuilder.py import`! When its time to start labeling the messages again,
-simply run `modelbuilder.py` without arguments, and it will start back where
-you left off.
+First, run it as `gptc_data/modelbuilder.py import`. This will import the
+messages from your "spam" log into its workspace. It should then show you a
+message and ask you if it is Good, Spam, or Unknown. Answer accordingly, and
+then hit enter.  It will then give you the next message, and so on. Take your
+time, and make sure you label messages correctly. CedarSentinel relies on this
+data to make its decisions. If you need to stop at any time, hit Ctrl+C, and it
+will save your progress and exit. Remember to delete `gptc_data/spam_log.json`
+after `gptc_data/modelbuilder.py import`! When its time to start labeling the
+messages again, simply run `gptc_data/modelbuilder.py` without arguments, and
+it will start back where you left off.
 
 Once you have labeled all messages in your log, you now need to compile the
 model. You can do this by simply running `modelbuilder.py compile`. At this
-point, your new model (at **compiled_model.json**) is ready for use in
-CedarSentinel! Go ahead and delete your existing spam log, set CedarSentinel
-to use this model in the config, and restart it! If you've followed these
+point, your new model (at `gptc_data/compiled_model.json`) is ready for use in
+CedarSentinel! Go ahead and delete your existing spam log, set CedarSentinel to
+use this model in the config, and restart it! If you've followed these
 instructions properly, CedarSentinel should now be trained to work on your
 server.
 
 As time goes on, you may refine the model by continuing to use the logs
 CedarSentinel creates. You can follow these instructions again from
 `modelbuilder.py import`, and as long as you have not deleted the workspace
-file (**model_work.json**), it will build on your existing model. ***It will
-take time to get CedarSentinel fully acclimated with your server, so don't be
-alarmed if the first few iterations aren't very effective!*** As the model
+file (`gptc_data/model_work.json`), it will build on your existing model. ***It
+will take time to get CedarSentinel fully acclimated with your server, so don't
+be alarmed if the first few iterations aren't very effective!*** As the model
 improves, so will the detection rate.
 
 If you want to export your model in raw format for use with GPTC outside
-CedarSentinel, run `modelbuilder.py export`. The raw model will be in
-`raw_model_export.py`.
+CedarSentinel, run `gptc_data/modelbuilder.py export`. This will print the raw
+model to stdout.
 
 ### CedarScript
 
