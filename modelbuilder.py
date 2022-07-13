@@ -22,6 +22,8 @@ import json
 import gptc
 import sys
 import os
+import yaml
+from yaml.loader import SafeLoader
 
 try:
     with open("model_work.json") as f:
@@ -32,8 +34,12 @@ except FileNotFoundError:
 
 
 if "compile" in sys.argv:
+    with open("config.yaml") as f:
+        config = yaml.load(f, Loader=SafeLoader)
+
     with open("compiled_model.json", "w+") as f:
-        json.dump(gptc.compile(workspace["model"]), f)
+        json.dump(gptc.compile(workspace["model"], config["pluginConfig"]["gptc"]["maxNgramLength"]), f)
+
     sys.exit(0)
 elif "export" in sys.argv:
     with open("raw_model_export.json", "w+") as f:

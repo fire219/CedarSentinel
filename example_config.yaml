@@ -34,8 +34,9 @@
 
     pluginConfig :
       gptc :
-        spamModel : "compiled_model.json"
-        spamFile  : "spamLog.json"
+        spamModel      : "compiled_model.json"
+        spamFile       : "spamLog.json"
+        maxNgramLength : 30
       reputation :
         persistKnownUsers : true
         persistFile       : "knownUsers.json"

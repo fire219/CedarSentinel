@@ -9,7 +9,7 @@ def initialize():
     global classifier
     with open(config["spamModel"]) as f:
         spam_model = json.load(f)
-    classifier = gptc.Classifier(spam_model)
+    classifier = gptc.Classifier(spam_model, config["maxNgramLength"])
 
 
 @cspapi.input
