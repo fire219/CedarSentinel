@@ -29,6 +29,7 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
             for submsg in chat_message.split("\n"):
                 connection.privmsg(notification_channel, submsg)
 
+
 def run():
     bot = CedarSentinelIRC(
         [irc.bot.ServerSpec(config["ircServer"], int(config["ircPort"]))],

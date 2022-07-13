@@ -66,6 +66,7 @@ class BotInstance(discord.Client):
                 if not (config["autoDeleteAPI"] == "none"):
                     await messageDeleter(message)
 
+
 def run():
     global bot
     bot = BotInstance()
