@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Samuel Sloniker (kj7rrv)
+# Copyright (c) 2021-2022 Samuel Sloniker (kj7rrv)
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -25,44 +25,43 @@ import os
 import yaml
 from yaml.loader import SafeLoader
 
+with open("config.yaml") as f:
+    full_config = yaml.load(f, Loader=SafeLoader)
+config = full_config["pluginConfig"]["gptc"]
+
 try:
-    with open("model_work.json") as f:
+    with open(config["modelWorkspace"]) as f:
         workspace = json.load(f)
 except FileNotFoundError:
     print("No existing model workspace found. Continuing fresh.")
     workspace = {"messages": [], "model": []}
 
 
-if "compile" in sys.argv:
-    with open("config.yaml") as f:
-        config = yaml.load(f, Loader=SafeLoader)
-
-    with open("compiled_model.json", "w+") as f:
-        json.dump(gptc.compile(workspace["model"], config["pluginConfig"]["gptc"]["maxNgramLength"]), f)
-
-    sys.exit(0)
-elif "export" in sys.argv:
-    with open("raw_model_export.json", "w+") as f:
-        json.dump(workspace["model"], f)
-    sys.exit(0)
-
 try:
-    if "import" in sys.argv:
-        spam_log = []
-        with open("spamLog.json", encoding="utf-8") as f:
-            lines = f.readlines()
-            for line in lines:
-                try:
-                    spam_log.append(json.loads(line.replace(",\n", ""))["message"])
-                except:
-                    pass
-        workspace["messages"] += spam_log
-        response = input("imported. Would you like to clear the now-imported spam log? [Y/N]?").strip().lower()
-        if "y" in response:
-            with open("spamLog.json", "w", encoding="utf-8") as f:
-                print("spam log cleared.")
+    if "compile" in sys.argv:
+        with open(config["spamModel"], "w+") as f:
+            json.dump(gptc.compile(workspace["model"], config["maxNgramLength"]), f)
 
-    if "imageimport" in sys.argv:
+        sys.exit(0)
+    elif "export" in sys.argv:
+        print(json.dumps(workspace["model"]))
+        sys.exit(0)
+
+        if "import" in sys.argv:
+            spam_log = []
+            with open(config["spamLog"], encoding="utf-8") as f:
+                lines = f.readlines()
+                for line in lines:
+                    try:
+                        spam_log.appnd(json.loads(line.replace(",\n", ""))["message"])
+                    except:
+                        pass
+            workspace["messages"] += spam_log
+            response = input("imported. Would you like to clear the now-imported spam log? [Y/N]?").strip().lower()
+            if "y" in response:
+                with open(config["spamLog"], "w", encoding="utf-8") as f:
+                    print("spam log cleared.")
+    elif "imageimport" in sys.argv:
         import pytesseract
 
         spam_log = []
@@ -106,5 +105,5 @@ try:
 except KeyboardInterrupt:
     pass
 
-with open("model_work.json", "w+") as f:
+with open(config["modelWorkspace"], "w+") as f:
     json.dump(workspace, f)
