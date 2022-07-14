@@ -8,7 +8,19 @@ if [20 length.length]
         reputation.increase
     end
 
-    if {0.0 gptc.confidence} or <0.4 gptc.confidence 0.6> or <0.9 gptc.confidence>
-        gptc.log
+    if [100 reputation.value]
+        gptc.log_good
+    else
+        if [10 reputation.value 99]
+            gptc.log_prob_good
+        else
+            if {0.0 gptc.confidence} or [0.4 gptc.confidence 0.6]
+                gptc.log_unknown
+            end
+
+            if [0.8 gptc.confidence]
+                gptc.log_prob_spam
+            end
+        end
     end
 end

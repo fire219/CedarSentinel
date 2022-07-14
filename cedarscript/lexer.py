@@ -32,7 +32,7 @@ def split(code):
         elif char == " ":
             tokens.append("")
             indices.append([])
-        elif not (char == "_" and tokens[-1].isalpha()):
+        elif not (char == "_" and tokens[-1][-1].isalpha()):
             raise definitions.CedarScriptSyntaxError(f"invalid character: `{char}`")
     return tokens, indices
 
