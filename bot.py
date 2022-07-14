@@ -77,65 +77,69 @@ def handle_message(author, content, target, attachments=[], flag_text=None):
     return flag, moderate, author, content, inputs, actions, chat_message
 
 
-print("Cedar Sentinel version " + version + " starting up.")
-print()
-
-# load files
-with open(configFile) as f:
-    full_config = yaml.load(f, Loader=SafeLoader)
-config = full_config["platformConfig"][full_config["platform"]]
-print("Configuration loaded!")
-pprint.pprint(full_config)
-print()
-
-if config["ocrEnable"]:
-    optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
-    try:
-        for module in optionalModules:
-            import_module(module)
-        ocrAvailable = True
-        # following line is redundant, but is provided to suppress errors from language helpers like Pylance
-        import cv2
-        import pytesseract
-        import numpy
-        import requests
-
-        print("All optional modules loaded. OCR features are available (if enabled in config)")
-    except ImportError as error:
-        print("Unable to import " + module + ". OCR features are unavailable.")
-        ocrAvailable = False
+def run():
+    global full_config, config, commands, interpreter
+    print("Cedar Sentinel version " + version + " starting up.")
     print()
 
-
-def do_nothing(*_, **__):
-    pass
-
-
-commands = CommandList([Action("flag", do_nothing), Action("delete", do_nothing)])
-for name in full_config["plugins"]:
-    print(f"Loading plugin `{name}`...")
-    plugin = import_module(f"plugins.cs_{name}")
-    plugin.config = full_config["pluginConfig"].get(name, {})
-    plugin.initialize()
-    plugin_contents = [getattr(plugin, i) for i in dir(plugin)]
-    plugin_commands = CommandList(i for i in plugin_contents if isinstance(i, Command))
-    commands += plugin_commands.prefix(name)
-    print(f"Loaded plugin `{name}`!")
+    # load files
+    with open(configFile) as f:
+        full_config = yaml.load(f, Loader=SafeLoader)
+    config = full_config["platformConfig"][full_config["platform"]]
+    print("Configuration loaded!")
+    pprint.pprint(full_config)
     print()
 
-print("Inputs:", [i.name for i in commands.inputs])
-print("Actions:", [i.name for i in commands.actions])
-print()
+    if config["ocrEnable"]:
+        optionalModules = ["cv2", "pytesseract", "numpy", "requests"]
+        try:
+            for module in optionalModules:
+                import_module(module)
+            ocrAvailable = True
+            # following line is redundant, but is provided to suppress errors from language helpers like Pylance
+            import cv2
+            import pytesseract
+            import numpy
+            import requests
 
-with open("script.txt") as f:
-    script = f.read()
-interpreter = cedarscript.Interpreter(script, commands)
-print("CedarScript interpreter loaded!")
-print()
+            print("All optional modules loaded. OCR features are available (if enabled in config)")
+        except ImportError as error:
+            print("Unable to import " + module + ". OCR features are unavailable.")
+            ocrAvailable = False
+        print()
 
-platform = import_module(f"platforms.cs_platform_{full_config['platform']}")
-platform.config = config["private"]
-platform.handle_message = handle_message
-print(f"Loaded platform `{full_config['platform']}`!")
-print()
-platform.run()
+
+    def do_nothing(*_, **__):
+        pass
+
+
+    commands = CommandList([Action("flag", do_nothing), Action("delete", do_nothing)])
+    for name in full_config["plugins"]:
+        print(f"Loading plugin `{name}`...")
+        plugin = import_module(f"plugins.cs_{name}")
+        plugin.config = full_config["pluginConfig"].get(name, {})
+        plugin.initialize()
+        plugin_contents = [getattr(plugin, i) for i in dir(plugin)]
+        plugin_commands = CommandList(i for i in plugin_contents if isinstance(i, Command))
+        commands += plugin_commands.prefix(name)
+        print(f"Loaded plugin `{name}`!")
+        print()
+
+    print("Inputs:", [i.name for i in commands.inputs])
+    print("Actions:", [i.name for i in commands.actions])
+    print()
+
+    with open("script.txt") as f:
+        script = f.read()
+    interpreter = cedarscript.Interpreter(script, commands)
+    print("CedarScript interpreter loaded!")
+    print()
+
+    platform = import_module(f"platforms.cs_platform_{full_config['platform']}")
+    platform.config = config["private"]
+    platform.handle_message = handle_message
+    print(f"Loaded platform `{full_config['platform']}`!")
+    print()
+    platform.run()
+
+run()

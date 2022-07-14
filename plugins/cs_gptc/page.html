@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CedarSentinel GPTC Trainer</title>
+        <style>
+            * {
+                font-family: sans-serif;
+            }
+
+            th {
+                text-align: left;
+            }
+
+            table {
+                border: 1px solid black;
+            }
+
+            th, td {
+                border-left: 1px solid black;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                padding: 3px;
+            }
+
+            th.message, td.message {
+                width: 100%;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #DDF;
+            }
+
+            thead, tfoot {
+                background-color: #333;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CedarSentinel GPTC Trainer</h1>
+        <h2>Category: Unknown</h2>
+        <nav><form method="GET" action="">
+            <select name="category">
+                <option value="good">Known good</option>
+                <option value="prob_good">Probably good</option>
+                <option value="unknown" disabled selected>Unkown</option>
+                <option value="prob_spam">Probably spam</option>
+                <option value="spam">Known spam</option>
+                <option value="trash">Trash</option>
+            </select>
+            <button>Switch category</button>
+            <p><!--<noscript>-->Any changes you may have made on this page will not be saved!<!--</noscript>--></p>
+        </form></nav>
+        <form method="POST" action="submit">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="checkbox" id="header-check"></th>
+                        <th class="message">Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="checkbox"><input type="checkbox" name="check-{id}"></td>
+                        <td class="message">{message}</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th class="checkbox" id="footer-check"></th>
+                        <th class="message">Message</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <select name="category">
+                <option value="good">Known good</option>
+                <option value="prob_good">Probably good</option>
+                <option value="unknown" disabled selected>Unkown</option>
+                <option value="prob_spam">Probably spam</option>
+                <option value="spam">Known spam</option>
+                <option value="trash">Trash</option>
+            </select>
+            <input type="hidden" name="current_category" value="unknown">
+            <button>Recategorize messages</button>
+        </form>
+    </body>
+</html>
