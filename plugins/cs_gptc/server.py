@@ -85,20 +85,20 @@ class MainHandler(tornado.web.RequestHandler):
     <body>
         <h1>CedarSentinel GPTC Trainer</h1>
         <h2>Category: {current_user}</h2>
-        <nav><form method="GET" action=".">
+        <nav><form method="GET" action="">
             <select name="category">
 {options}
             </select>
             <button>Switch category</button><!--<noscript>--> Any changes you may have made on this page will not be saved!<!--</noscript>-->
         </form></nav>
         <p>Showing {len(data)} messages starting at {offset}.</p>
-        <form method="GET" action=".">
+        <form method="GET" action="">
             <p>Start at <input type="number" name="offset" min="0" max="{max_offset}" step="100" value="{offset}"> (0 to {max_offset}, increments of 100) instead?
             <button>Go</button>
             <!--<noscript>--> Any changes you may have made on this page will not be saved!<!--</noscript>-->
             <input type="hidden" name="category" value="{current}"></p>
         </form>
-        <form method="POST" action=".">
+        <form method="POST" action="">
             <table>
                 <thead>
                     <tr>
