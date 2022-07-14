@@ -43,13 +43,13 @@ input[type="checkbox"] {
 
 
 categories = {
-        "good": "Known good",
-        "probably_good": "Probably good",
-        "unknown": "Unknown",
-        "probably_spam": "Probably spam",
-        "spam": "Known spam",
-        "trash": "Trash",
-        }
+    "good": "Known good",
+    "probably_good": "Probably good",
+    "unknown": "Unknown",
+    "probably_spam": "Probably spam",
+    "spam": "Known spam",
+    "trash": "Trash",
+}
 
 
 class MainHandler(tornado.web.RequestHandler):
@@ -64,7 +64,7 @@ class MainHandler(tornado.web.RequestHandler):
         data = cursor.fetchall()
         total_count = len(data)
         max_offset = total_count // 100 * 100
-        data = data[offset:offset+100]
+        data = data[offset : offset + 100]
         for id, message in data:
             rows += f"""\
                     <tr>
@@ -73,7 +73,8 @@ class MainHandler(tornado.web.RequestHandler):
                     </tr>
 """
 
-        self.write(f"""\
+        self.write(
+            f"""\
 <!DOCTYPE html>
 <html>
     <head>
@@ -125,7 +126,9 @@ class MainHandler(tornado.web.RequestHandler):
         </form>
     </body>
 </html>
-""")
+"""
+        )
+
     def post(self):
         messages = [int(i.split("-")[1]) for i in self.request.body_arguments.keys() if i.startswith("check-")]
         category = self.get_body_argument("category")
@@ -137,9 +140,11 @@ class MainHandler(tornado.web.RequestHandler):
 
 
 def make_app():
-    return tornado.web.Application([
-        (r"/", MainHandler),
-    ])
+    return tornado.web.Application(
+        [
+            (r"/", MainHandler),
+        ]
+    )
 
 
 async def main():

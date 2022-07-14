@@ -108,10 +108,8 @@ def run():
             ocrAvailable = False
         print()
 
-
     def do_nothing(*_, **__):
         pass
-
 
     commands = CommandList([Action("flag", do_nothing), Action("delete", do_nothing)])
     for name in full_config["plugins"]:
@@ -141,5 +139,6 @@ def run():
     print(f"Loaded platform `{full_config['platform']}`!")
     print()
     platform.run()
+
 
 run()
