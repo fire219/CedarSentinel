@@ -41,6 +41,51 @@ input[type="checkbox"] {
 }
 """
 
+script = """\
+var is_submitting = false
+
+document.querySelector("#switch_menu").addEventListener(
+    "change",
+    function() {
+        document.querySelector("#switch_form").submit()
+    }
+)
+
+document.querySelector("#recat_form").addEventListener(
+    "submit",
+    function() {
+        is_submitting = true
+    }
+)
+
+function has_changes() {
+    let result = false
+    document.querySelectorAll("input[type=checkbox]").forEach(
+        function(checkbox) {
+            if (checkbox.checked) {
+                result = true
+            }
+        }
+    )
+    return result;
+}
+
+window.addEventListener(
+    "beforeunload",
+    function (e) {
+        if (is_submitting || ! has_changes()) {
+            return undefined
+        } else {
+            e.preventDefault()
+            var confirmation_message = 'Are you sure? Your changes will not be saved.'
+            (e || window.event).returnValue = confirmation_message
+            return confirmation_message
+        }
+    }
+)
+
+"""
+
 
 categories = {
     "good": "Known good",
@@ -64,6 +109,7 @@ class MainHandler(tornado.web.RequestHandler):
         data = cursor.fetchall()
         total_count = len(data)
         max_offset = total_count // 100 * 100
+        offset = min(offset, max_offset)
         data = data[offset : offset + 100]
         for id, message in data:
             rows += f"""\
@@ -79,6 +125,7 @@ class MainHandler(tornado.web.RequestHandler):
 <html>
     <head>
         <title>CedarSentinel GPTC Trainer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
 {style}
         </style>
@@ -86,20 +133,20 @@ class MainHandler(tornado.web.RequestHandler):
     <body>
         <h1>CedarSentinel GPTC Trainer</h1>
         <h2>Category: {current_user}</h2>
-        <nav><form method="GET" action="">
-            <select name="category">
+        <nav><form method="GET" action="" id="switch_form">
+            <select name="category" id="switch_menu">
 {options}
             </select>
-            <button>Switch category</button><!--<noscript>--> Any changes you may have made on this page will not be saved!<!--</noscript>-->
+            <noscript><button>Switch category</button> Any changes you may have made on this page will not be saved!</noscript>
         </form></nav>
-        <p>Showing {len(data)} messages starting at {offset}.</p>
-        <form method="GET" action="">
+        <p>Showing{" all" if len(data) == total_count else ""} {len(data)} messages{" in category<!--" if len(data) == total_count else ""} out of {total_count}, starting at {offset}{"-->" if len(data) == total_count else ""}.</p>
+        {"<!--" if max_offset == 0 else ""}<form method="GET" action="">
             <p>Start at <input type="number" name="offset" min="0" max="{max_offset}" step="100" value="{offset}"> (0 to {max_offset}, increments of 100) instead?
             <button>Go</button>
-            <!--<noscript>--> Any changes you may have made on this page will not be saved!<!--</noscript>-->
+            <noscript>Any changes you may have made on this page will not be saved!</noscript>
             <input type="hidden" name="category" value="{current}"></p>
-        </form>
-        <form method="POST" action="">
+        </form>{"-->" if max_offset == 0 else ""}
+        {"<!--" if len(data) == 0 else ""}<form method="POST" action="" id="recat_form">
             <table>
                 <thead>
                     <tr>
@@ -123,7 +170,10 @@ class MainHandler(tornado.web.RequestHandler):
             </select>
             <input type="hidden" name="current_category" value="{current}"><input type="hidden" name="offset" value="{offset}">
             <button>Recategorize messages</button>
-        </form>
+        </form>{"-->" if len(data) == 0 else ""}
+        <script>
+{script}
+        </script>
     </body>
 </html>
 """
