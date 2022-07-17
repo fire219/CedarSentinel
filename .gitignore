@@ -1,5 +1,7 @@
 config.yaml
 knownUsers.json
 spamLog.json
+gptc_data
+reputation_data
 __pycache__
 spamImages

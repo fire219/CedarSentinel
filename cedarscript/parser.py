@@ -2,14 +2,14 @@ import cedarscript.lexer as lexer
 import cedarscript.definitions as definitions
 
 
-def tag(tokens):
+def tag(tokens, commands):
     for line in tokens:
         for token in line:
             if token["token"] in definitions.keywords:
                 token["tag"] = "keyword"
-            elif token["token"] in definitions.inputs:
+            elif token["token"] in commands.inputs.names:
                 token["tag"] = "input"
-            elif token["token"] in definitions.actions:
+            elif token["token"] in commands.actions.names:
                 token["tag"] = "action"
             elif token["token"].replace(".", "0").isnumeric():
                 token["tag"] = "number"
@@ -72,7 +72,7 @@ def blocks(lines):
     return stack[-1]
 
 
-def convert_comparisons(tokens):
+def convert_comparisons(tokens, commands):
     combined = []
     for token in tokens:
         if token["tag"] == "open_compare":
@@ -86,7 +86,7 @@ def convert_comparisons(tokens):
                 raise definitions.CedarScriptSyntaxError("number outside comparison")
         elif token["tag"] == "input":
             try:
-                working["values"].append(definitions.inputs[token["token"]])
+                working["values"].append(commands.inputs.to_dict()[token["token"]])
             except (NameError, UnboundLocalError):
                 raise definitions.CedarScriptSyntaxError("input outside comparison")
         elif token["tag"] == "close_compare":
@@ -124,24 +124,24 @@ def assemble_expression(expression):
     return out
 
 
-def gen_ast(lines):
+def gen_ast(lines, commands):
     out = []
     for line in lines:
         command = line["tokens"][0]["token"]
         if command == "if":
             out.append(
                 definitions.If(
-                    assemble_expression(convert_comparisons(line["tokens"][1:])),
-                    gen_ast(line["if_true"]),
-                    gen_ast(line["if_false"]),
+                    assemble_expression(convert_comparisons(line["tokens"][1:], commands)),
+                    gen_ast(line["if_true"], commands),
+                    gen_ast(line["if_false"], commands),
                 )
             )
         elif line["tokens"][0]["tag"] == "input":
-            out.append(definitions.inputs[command])
+            out.append(commands.inputs.to_dict()[command])
         elif line["tokens"][0]["tag"] == "action":
-            out.append(definitions.actions[command])
+            out.append(commands.actions.to_dict()[command])
     return out
 
 
-def parse(code):
-    return gen_ast(blocks(deindent(tag(lexer.lex(code)))))
+def parse(code, commands):
+    return gen_ast(blocks(deindent(tag(lexer.lex(code), commands))), commands)

@@ -8,8 +8,8 @@ def split(code):
     indices = [[]]
 
     for index, char in enumerate(code.replace("    ", "||||")):
-        if char in "abcdefghijklmnopqrstuvwxyz":
-            if not tokens[-1].isalpha():
+        if char in "abcdefghijklmnopqrstuvwxyz.":
+            if not all([char in "abcdefghijklmnopqrstuvwxyz." for char in tokens[-1]]):
                 tokens.append("")
                 indices.append([])
             tokens[-1] += char
@@ -32,7 +32,7 @@ def split(code):
         elif char == " ":
             tokens.append("")
             indices.append([])
-        elif not (char == "_" and tokens[-1].isalpha()):
+        elif not (char == "_" and tokens[-1][-1].isalpha()):
             raise definitions.CedarScriptSyntaxError(f"invalid character: `{char}`")
     return tokens, indices
 

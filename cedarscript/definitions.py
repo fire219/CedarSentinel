@@ -1,16 +1,4 @@
 keywords = ["if", "else", "end", "and", "or"]
-input_list = ["confidence", "reputation", "length"]
-action_list = [
-    "flag",
-    "moderate",
-    "log",
-    "loggood",
-    "logspam",
-    "logprobablygood",
-    "logprobablyspam",
-    "increasereputation",
-    "decreasereputation",
-]
 
 
 class CodePiece:
@@ -35,20 +23,6 @@ class Identifier(CodePiece):
 
     def __repr__(self):
         return f"{self._type}('{self.name}')"
-
-
-class Input(Identifier):
-    _type = "Input"
-
-
-inputs = {input_: Input(input_) for input_ in input_list}
-
-
-class Action(Identifier):
-    _type = "Action"
-
-
-actions = {action: Action(action) for action in action_list}
 
 
 class Conjunction(Identifier):
