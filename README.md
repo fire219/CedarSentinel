@@ -15,7 +15,7 @@ allowing it to also handle messages from many more chat platforms!
 ```bash
 git clone https://github.com/fire219/CedarSentinel.git
 cd CedarSentinel
-pip install pyyaml discord.py irc gptc
+pip install pyyaml discord.py irc gptc tornado lark
 cp example_config.yaml config.yaml
 # edit the config file with your editor of choice!
 ```
