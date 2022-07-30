@@ -101,10 +101,17 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self):
         current = self.get_argument("category", "unknown")
         offset = int(self.get_argument("offset", "0"))
-        options = "\n".join([f'                <option value="{code}"{" selected" if code == current else ""}>{visible}</option>' for code, visible in categories.items()])
+        options = "\n".join(
+            [
+                f'                <option value="{code}"{" selected" if code == current else ""}>{visible}</option>'
+                for code, visible in categories.items()
+            ]
+        )
         current_user = categories[current]
         cursor = con.cursor()
-        cursor.execute("SELECT id, message FROM log WHERE category=?", (current,))
+        cursor.execute(
+            "SELECT id, message FROM log WHERE category=?", (current,)
+        )
         rows = ""
         data = cursor.fetchall()
         total_count = len(data)
@@ -180,13 +187,24 @@ class MainHandler(tornado.web.RequestHandler):
         )
 
     def post(self):
-        messages = [int(i.split("-")[1]) for i in self.request.body_arguments.keys() if i.startswith("check-")]
+        messages = [
+            int(i.split("-")[1])
+            for i in self.request.body_arguments.keys()
+            if i.startswith("check-")
+        ]
         category = self.get_body_argument("category")
         cursor = con.cursor()
         for message in messages:
-            cursor.execute("UPDATE log SET category=? WHERE id=?", (category, message))
+            cursor.execute(
+                "UPDATE log SET category=? WHERE id=?", (category, message)
+            )
         con.commit()
-        self.redirect("?category=" + self.get_body_argument("current_category") + "&offset" + self.get_body_argument("offset"))
+        self.redirect(
+            "?category="
+            + self.get_body_argument("current_category")
+            + "&offset"
+            + self.get_body_argument("offset")
+        )
 
 
 def make_app():

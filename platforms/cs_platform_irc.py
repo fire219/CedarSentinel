@@ -20,7 +20,15 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
         # TODO: OCR functionality for image links on IRC
         author = event.source.split("!")[0].strip()
         content = event.arguments[0]
-        flag, moderate, author, content, inputs, actions, chat_message = handle_message(author, content, event.target)
+        (
+            flag,
+            moderate,
+            author,
+            content,
+            inputs,
+            actions,
+            chat_message,
+        ) = handle_message(author, content, event.target)
         if flag:
             notification_channel = config["notificationChannel"]
             if notification_channel == "*":

@@ -15,10 +15,14 @@ def initialize():
         exists = False
     con = sqlite3.connect(config["database"])
     if not exists:
-        con.execute("CREATE TABLE log (id integer PRIMARY KEY, message text, category text);")
+        con.execute(
+            "CREATE TABLE log (id integer PRIMARY KEY, message text, category text);"
+        )
         con.commit()
     cur = con.cursor()
-    cur.execute("SELECT category, message FROM log WHERE category='good' OR category='spam';")
+    cur.execute(
+        "SELECT category, message FROM log WHERE category='good' OR category='spam';"
+    )
     model = [{"category": line[0], "text": line[1]} for line in cur.fetchall()]
     compiled_model = gptc.compile(model, config["maxNgramLength"])
     classifier = gptc.Classifier(compiled_model, config["maxNgramLength"])
@@ -33,7 +37,10 @@ def confidence(message):
 
 def _log(message, category):
     cur = con.cursor()
-    cur.execute("INSERT INTO log (message, category) VALUES (?, ?);", (message, category))
+    cur.execute(
+        "INSERT INTO log (message, category) VALUES (?, ?);",
+        (message, category),
+    )
     con.commit()
 
 
