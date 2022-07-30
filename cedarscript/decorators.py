@@ -12,7 +12,9 @@ class TolerantFunction:
         self.accepted = inspect.signature(self.function).parameters
 
     def __call__(self, **kwargs):
-        new_kwargs = {key: value for key, value in kwargs.items() if key in self.accepted}
+        new_kwargs = {
+            key: value for key, value in kwargs.items() if key in self.accepted
+        }
         return self.function(**new_kwargs)
 
 

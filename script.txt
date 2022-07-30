@@ -1,26 +1,20 @@
-if [20 length.length]
-    if <0.5 gptc.confidence>
-        if [reputation.value 5]
-            delete
-        end
-        reputation.decrease
-    else
-        reputation.increase
-    end
+if $length.length >= 20 {
+    if $gptc.confidence >= 0.5 {
+        if $reputation.value <= 5 {
+            @delete
+        }
+        @reputation.decrease
+    } else {
+        @reputation.increase
+    }
 
-    if [100 reputation.value]
-        gptc.log_good
-    else
-        if [10 reputation.value 99]
-            gptc.log_prob_good
-        else
-            if {0.0 gptc.confidence} or [0.4 gptc.confidence 0.6]
-                gptc.log_unknown
-            end
-
-            if [0.8 gptc.confidence]
-                gptc.log_prob_spam
-            end
-        end
-    end
-end
+    if $reputation.value >= 100 {
+        @gptc.log_good
+    } else if $reputation.value >= 10 {
+        @gptc.log_prob_good
+    } else if $gptc.confidence == 0 or ($gptc.confidence >= 0.4 and $gptc.confidence <= 0.6) {
+        @gptc.log_unknown
+    } else if $gptc.confidence >= 0.6 {
+        @gptc.log_prob_spam
+    }
+}

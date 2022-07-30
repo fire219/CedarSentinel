@@ -1,0 +1,22 @@
+block: (action | if_statement)+
+
+if_statement: "if" _condition _wrapped_block _else?
+_wrapped_block: "{" block "}"
+_else: "else" (_wrapped_block | if_statement)
+
+_condition: inversion | comparison | combination | ( "(" _condition ")" )
+inversion: "not" _condition
+comparison: _value COMPARISON_OPERATOR _value
+combination: _condition COMBINATION_OPERATOR _condition
+COMPARISON_OPERATOR: "<" | "<=" | "==" | "!=" | ">=" | ">"
+COMBINATION_OPERATOR: "and" | "or"
+
+IDENTIFIER: /[a-z_]+/ ("." /[a-z_]+/)?
+action: "@" IDENTIFIER
+input: "$" IDENTIFIER
+
+_value: input | constant
+constant: NUMBER
+NUMBER: ("0".."9")+ ( "." ("0".."9")+ )?
+
+%ignore (" " | "_" | "\n")+

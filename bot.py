@@ -48,8 +48,12 @@ def handle_message(author, content, target, attachments=[], flag_text=None):
             for ftype in filetypes:
                 if ftype in item.url:
                     targetImage = requests.get(item.url)
-                    targetArray = numpy.frombuffer(targetImage.content, numpy.uint8)
-                    targetImageCV = cv2.imdecode(targetArray, cv2.IMREAD_UNCHANGED)
+                    targetArray = numpy.frombuffer(
+                        targetImage.content, numpy.uint8
+                    )
+                    targetImageCV = cv2.imdecode(
+                        targetArray, cv2.IMREAD_UNCHANGED
+                    )
                     targetText = pytesseract.image_to_string(targetImageCV)
                     print("OCR result: " + targetText.strip())
                     content = content + targetText
@@ -58,27 +62,34 @@ def handle_message(author, content, target, attachments=[], flag_text=None):
     content = content.strip()
     author = author.strip()
 
-    inputs = {input.name: input.function(message=content, username=author) for input in commands.inputs}
-    actions = interpreter.interpret(inputs)
+    inputs = {
+        input.name: input.function(message=content, username=author)
+        for input in commands.inputs
+    }
+    actions = script(inputs)
 
     flag = "flag" in actions or "delete" in actions
     moderate = "delete" in actions
 
     for action in actions:
         if "." in action:
-            commands.to_dict()[action].function(message=content, username=author, inputs=inputs)
+            commands.to_dict()[action].function(
+                message=content, username=author, inputs=inputs
+            )
 
     if flag_text is None:
         flag_text = content
     chat_message = f'{config["spamNotifyMessage"]} ( {author} -> {target} ) {flag_text}\nInputs: `{str(inputs)}`\nActions: `{str(actions)}`'
     print()
-    print(f"{author} -> {target}: {content}\nInputs: {str(inputs)}\nActions: {str(actions)}")
+    print(
+        f"{author} -> {target}: {content}\nInputs: {str(inputs)}\nActions: {str(actions)}"
+    )
 
     return flag, moderate, author, content, inputs, actions, chat_message
 
 
 def run():
-    global full_config, config, commands, interpreter
+    global full_config, config, commands, script
     print("Cedar Sentinel version " + version + " starting up.")
     print()
 
@@ -102,23 +113,31 @@ def run():
             import numpy
             import requests
 
-            print("All optional modules loaded. OCR features are available (if enabled in config)")
+            print(
+                "All optional modules loaded. OCR features are available (if enabled in config)"
+            )
         except ImportError as error:
-            print("Unable to import " + module + ". OCR features are unavailable.")
+            print(
+                "Unable to import " + module + ". OCR features are unavailable."
+            )
             ocrAvailable = False
         print()
 
     def do_nothing(*_, **__):
         pass
 
-    commands = CommandList([Action("flag", do_nothing), Action("delete", do_nothing)])
+    commands = CommandList(
+        [Action("flag", do_nothing), Action("delete", do_nothing)]
+    )
     for name in full_config["plugins"]:
         print(f"Loading plugin `{name}`...")
         plugin = import_module(f"plugins.cs_{name}")
         plugin.config = full_config["pluginConfig"].get(name, {})
         plugin.initialize()
         plugin_contents = [getattr(plugin, i) for i in dir(plugin)]
-        plugin_commands = CommandList(i for i in plugin_contents if isinstance(i, Command))
+        plugin_commands = CommandList(
+            i for i in plugin_contents if isinstance(i, Command)
+        )
         commands += plugin_commands.prefix(name)
         print(f"Loaded plugin `{name}`!")
         print()
@@ -128,8 +147,7 @@ def run():
     print()
 
     with open("script.txt") as f:
-        script = f.read()
-    interpreter = cedarscript.Interpreter(script, commands)
+        script = cedarscript.load(f.read())
     print("CedarScript interpreter loaded!")
     print()
 

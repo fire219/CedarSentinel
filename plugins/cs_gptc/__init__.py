@@ -38,25 +38,25 @@ def _log(message, category):
 
 
 @cspapi.action
-def loggood(message):
+def log_good(message):
     _log(message, "good")
 
 
 @cspapi.action
-def logprobgood(message):
+def log_prob_good(message):
     _log(message, "probably_good")
 
 
 @cspapi.action
-def logunknown(message):
+def log_unknown(message):
     _log(message, "unknown")
 
 
 @cspapi.action
-def logprobspam(message):
+def log_prob_spam(message):
     _log(message, "probably_spam")
 
 
 @cspapi.action
-def logspam(message):
+def log_spam(message):
     _log(message, "spam")
