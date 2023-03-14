@@ -107,5 +107,7 @@ class BotInstance(discord.Client):
 
 def run():
     global bot
-    bot = BotInstance()
+    intents = discord.Intents.default()
+    intents.message_content = True
+    bot = BotInstance(intents=intents)
     bot.run(config["discordToken"])
