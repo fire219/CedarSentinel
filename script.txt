@@ -1,20 +1,8 @@
-if $length.length >= 20 {
-    if $gptc.confidence >= 0.5 {
-        if $reputation.value <= 5 {
-            @delete
-        }
-        @reputation.decrease
-    } else {
-        @reputation.increase
+if $profanity.confidence >= 0.5 {
+    if $reputation.value <= 5 {
+        @delete
     }
-
-    if $reputation.value >= 100 {
-        @gptc.log_good
-    } else if $reputation.value >= 10 {
-        @gptc.log_prob_good
-    } else if $gptc.confidence == 0 or ($gptc.confidence >= 0.4 and $gptc.confidence <= 0.6) {
-        @gptc.log_unknown
-    } else if $gptc.confidence >= 0.6 {
-        @gptc.log_prob_spam
-    }
+    @reputation.decrease
+} else {
+    @reputation.increase
 }

@@ -31,6 +31,7 @@
     - "gptc"
     - "length"
     - "reputation"
+    - "profanity"
 
     pluginConfig :
       gptc :
@@ -40,3 +41,5 @@
       reputation :
         persistKnownUsers : true
         persistFile       : "knownUsers.json"
+      profanity :
+        allowlist: ["words", "to", "allow"]
