@@ -84,7 +84,6 @@ class BotInstance(discord.Client):
         if not (message.author == bot.user):
             author = message.author.name + "#" + message.author.discriminator
             content = message.content
-            attachments = message.attachments
             (
                 flag,
                 moderate,
@@ -94,7 +93,7 @@ class BotInstance(discord.Client):
                 actions,
                 chat_message,
             ) = handle_message(
-                author, content, message.channel, attachments, message.jump_url
+                author, content, message.channel, message.jump_url
             )
 
             if flag:

@@ -4,7 +4,6 @@
       irc :
         spamNotifyMessage : "moderator_nick another_mod: Potential spam detected."
         bridgeBot         : "P64ProtocolBot"
-        ocrEnable         : false
 
         private:
           ircServer           : "irc.pine64.org"
@@ -18,7 +17,6 @@
       discord :
         spamNotifyMessage : "@Moderator Potential spam detected."
         bridgeBot         : "Pine64 Protocol Droid#9618"
-        ocrEnable         : false
 
         private :
           discordToken        : "0123456789ABCDEF"

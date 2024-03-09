@@ -17,7 +17,6 @@ class CedarSentinelIRC(irc.bot.SingleServerIRCBot):
         print(f"Joined {event.target}!")
 
     def on_pubmsg(self, connection, event):
-        # TODO: OCR functionality for image links on IRC
         author = event.source.split("!")[0].strip()
         content = event.arguments[0]
         (
