@@ -10,6 +10,12 @@ It also has support for
 [**Matterbridge**](https://github.com/42wim/matterbridge/)-type chat bridges,
 allowing it to also handle messages from many more chat platforms!
 
+CedarSentinel can be extended using plugins. It comes with three plugins by
+default. `cs_gptc` uses [GPTC](https://git.kj7rrv.com/kj7rrv/gptc) to analyze
+the content of messages. `cs_reputation` tracks user reputation; this can be
+incremented or decremented automatically. Finally, `cs_length` simply indicates
+the number of characters in the message.
+
 ### How to install
 
 ```bash
