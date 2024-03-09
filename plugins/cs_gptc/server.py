@@ -217,7 +217,7 @@ def make_app():
 
 async def main():
     app = make_app()
-    app.listen(8888)
+    app.listen(8888, address='127.0.0.1')
     await asyncio.Event().wait()
 
 
