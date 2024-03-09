@@ -41,5 +41,3 @@
       reputation :
         persistKnownUsers : true
         persistFile       : "knownUsers.json"
-      profanity :
-        allowlist: ["words", "to", "allow"]
