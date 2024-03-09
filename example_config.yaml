@@ -31,7 +31,6 @@
     - "gptc"
     - "length"
     - "reputation"
-    - "profanity"
 
     pluginConfig :
       gptc :
