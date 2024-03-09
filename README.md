@@ -1,4 +1,4 @@
-![Cedar Sentinel](/readme_files/logo_sm.png)
+![CedarSentinel](/readme_files/logo_sm.png)
 ## A Discord/IRC bot for automated spam detection
 
 ### About
@@ -7,7 +7,7 @@
 automatically detect spam messages *(or any sort of message you don't like!)*.
 It can alert your moderators instantly, allowing them to take action faster.
 It also has support for
-[**Matterbridge**](https://github.com/42wim/matterbridge/)-type chat bridges,
+[Matterbridge](https://github.com/42wim/matterbridge/)-type chat bridges,
 allowing it to also handle messages from many more chat platforms!
 
 CedarSentinel can be extended using plugins. It comes with three plugins by
@@ -15,6 +15,17 @@ default. `cs_gptc` uses [GPTC](https://git.kj7rrv.com/kj7rrv/gptc) to analyze
 the content of messages. `cs_reputation` tracks user reputation; this can be
 incremented or decremented automatically. Finally, `cs_length` simply indicates
 the number of characters in the message.
+
+Unless you are writing your own plugin, it is unlikely that you will not want
+to use the `cs_gptc` module, as it does most of the work in actually
+determining whether or a message is spam. It is also a good idea to use
+`cs_reputation` to prevent the bot from deleting messages from trusted users.
+GPTC does occasionally flag messages incorrectly, so exempting established
+users from having messages automatically deleted helps to reduce false
+positives. `cs_length` may be helpful if you find that CedarSentinel often
+incorrectly flags short messages as spam; GPTC seems to be less accurate at
+classifying very short messages. You can configure CedarSentinel to not delete
+messages under a certain length.
 
 ### How to install
 
@@ -26,8 +37,8 @@ cp example_config.yaml config.yaml
 # edit the config file with your editor of choice!
 ```
 
-After doing this, Cedar Sentinel can be executed in the same way as any other
-Python script.
+After doing this, CedarSentinel can be executed in the same way as any other
+Python script; the file to run is `bot.py`.
 
 ### Using CedarSentinel
 
@@ -45,140 +56,91 @@ that *aren't* spam, check out the ***How to train models*** section below.
 
 As previously mentioned, CedarSentinel comes with a model trained for the
 Pine64 Chat Network. If this model just isn't working for you, then it is time
-to check out the `gptc_data/modelbuilder.py` tool included with CedarSentinel.
+to check out the GPTC module's training tool. This is accessed through a Web
+interface, available at [`http://localhost:8888`](https://localhost:8888) when
+CedarSentinel is running. Documentation is included on the page.
 
-The Model Builder is designed to intake spam logs that CedarSentinel itself
-creates *(assuming you have it enabled in the config!)* and convert them into
-GPTC models that CedarSentinel makes its decisions based on. 
+For security reasons, this tool can only be accessed from `localhost`. If you
+want to use it over a network, then you can either use a reverse proxy or
+access it through a command-line browser over SSH; it is designed to work well
+in [Lynx](https://lynx.invisible-island.net/current/) as well as graphical
+browser.
 
-If you want to reset the model and start over, run `gptc_data/reset.sh`. If you
-want to build on the existing data, leave it with the default model.  Now, let
-it sit running in your chat for a while. Assuming you haven't dramatically
-changed `script.txt` (see "CedarScript" below), it should start logging
-messages in your server. *(If you reset the model, it will likely log all
-messages!)*. After an indeterminate amount of time (up to you, but more
-messages are better!), it's time to use the Model Builder.
-
-First, run it as `gptc_data/modelbuilder.py import`. This will import the
-messages from your "spam" log into its workspace. It should then show you a
-message and ask you if it is Good, Spam, or Unknown. Answer accordingly, and
-then hit enter.  It will then give you the next message, and so on. Take your
-time, and make sure you label messages correctly. CedarSentinel relies on this
-data to make its decisions. If you need to stop at any time, hit Ctrl+C, and it
-will save your progress and exit. Remember to delete `gptc_data/spam_log.json`
-after `gptc_data/modelbuilder.py import`! When its time to start labeling the
-messages again, simply run `gptc_data/modelbuilder.py` without arguments, and
-it will start back where you left off.
-
-Once you have labeled all messages in your log, you now need to compile the
-model. You can do this by simply running `modelbuilder.py compile`. At this
-point, your new model (at `gptc_data/compiled_model.json`) is ready for use in
-CedarSentinel! Go ahead and delete your existing spam log, set CedarSentinel to
-use this model in the config, and restart it! If you've followed these
-instructions properly, CedarSentinel should now be trained to work on your
-server.
-
-As time goes on, you may refine the model by continuing to use the logs
-CedarSentinel creates. You can follow these instructions again from
-`modelbuilder.py import`, and as long as you have not deleted the workspace
-file (`gptc_data/model_work.json`), it will build on your existing model. ***It
-will take time to get CedarSentinel fully acclimated with your server, so don't
-be alarmed if the first few iterations aren't very effective!*** As the model
-improves, so will the detection rate.
-
-If you want to export your model in raw format for use with GPTC outside
-CedarSentinel, run `gptc_data/modelbuilder.py export`. This will print the raw
-model to stdout.
+In most cases, the default model should be a good starting point, and you can
+build on it instead of starting over. However, if you find that CedarSentinel
+is not working well even after retraining with several days of new data, it may
+be best to delete the model and start from scratch. To do this, simply stop
+CedarSentinel, delete `gptc.db`, and restart the bot. This will delete the
+entire model and all logged messages, allowing for a fresh start.
 
 ### CedarScript
 
-CedarSentinel's responses to messages are defined by `script.txt`. Note that a
-syntax error in `script.txt` will likely result in an error message that
-appears to be caused by a bug in CedarSentinel. (If you do get an error,
-please submit an issue anyway, just in case it is a CedarSentinel bug. If you
-have changed `script.txt`, please include your modified version.)
+CedarSentinel's responses to messages are defined by `script.txt`. This file is
+written in CedarScript, a domain-specific language (DSL) designed for this
+purpose. Please note that CedarScript is not Turing-complete; it is designed to
+express simple if-else logic, not advanced algorithms.
 
-#### `if ... end`
+#### Conditions
 
-    if ...
-        ...
-    end
+If statements have the following syntax:
 
-#### `if ... else ... end`
+```
+if [condition] {
+    ...
+} else {
+    ...
+}
+```
 
-    if ...
-        ...
-    else
-        ...
-    end
-
-#### Comparisons
-
-CedarScript's comparison syntax is different from that of most programming
-languages. The following are some simple comparisons:
-
-    <0.5 confidence>
-    [20 length]
-    {5 reputation}
-    /5 reputation\
-
-The syntax is an opening comparator, a space-separated list of values, and a
-closing comparator. The following comparators are defined:
-
-| Comparators | Python equivalent |
-|-------------|-------------------|
-| `<...>`     | `<`               |
-| `[...]`     | `<=`              |
-| `{...}`     | `==`              |
-| `/...\`     | `!=`              |
-
-Items in a comparison are compared in order, left to right. For `{...}` and
-`/...\`, order is not significant, but it is for `<...>` and `[...]`. The
-example comparisons listed above translate to the following in Python:
-
-    0.5 < confidence
-    20 <= length
-    5 == reputation
-    5 != reputation
-
-Comparisons are not limited to two values, although having more than three is
-rarely, if ever, useful. `<0.4 confidence 0.6>` translates to `0.4 <
-confidence < 0.6`.
-
-##### Conjunctions, grouping, and order of operations.
-
-CedarSentinel's conjunctions (`and`, `or`) and grouping (with parenthesis)
-work the same as Python's. Any difference is a bug that should be reported.
+The `else` block is optional. The `[condition]` is written as a comparison
+between values. The supported operators are `<`, `<=`, `==`, `!=`, `>=`, and
+`>`; they work as would be expected. Multiple comparisons can be combined using
+`and` and `or`; parenthesis can be used for grouping, but are not syntactically
+required.
 
 #### Inputs
 
-Inputs are values provided to the script by CedarSentinel. The following are
-available:
+Inputs are values provided to the script by CedarSentinel plugins. Their names
+consist of a dollar sign (`$`), followed by the name of the plugin (without the
+`cs_` prefix), a period (`.`), and the input name. These inputs are provided by
+the default plugins:
 
-| Name                | Meaning                             |
-|---------------------|-------------------------------------|
-| `gptc.confidence`   | Confidence that the message is spam |
-| `reputation.value`  | The message's author's reputation   |
-| `length.length`     | The length of the message           |
+| Name                 | Meaning                             |
+|----------------------|-------------------------------------|
+| `$gptc.confidence`   | Confidence that the message is spam |
+| `$reputation.value`  | The message's author's reputation   |
+| `$length.length`     | The length of the message           |
 
 #### Actions
 
-Actions are how the script tells CedarSentinel what to do in respone to
-the message. The following are available:
+Actions are how the script tells CedarSentinel what to do in respone to the
+message. Their names have the same format as input names, except they begin
+with an at sign (`@`) instead of a dollar sign. Also, CedarSentinel itself,
+without relying on plugins, provides some actions; their names do not contain
+periods.
 
-| Name                  | Meaning                                               |
-|-----------------------|-------------------------------------------------------|
-| `flag`                | Flag the message as spam                              |
-| `delete`              | IRC: same as `flag`; Discord: flag and delete message |
-| `gptc.log`            | Log the message for manual classification             |
-| `reputation.increase` | Increase the author's reputation                      |
-| `reputation.decrease` | Decrease the author's reputation                      |
+| Name                   | Meaning                                                        |
+|------------------------|----------------------------------------------------------------|
+| `@flag`                | Flag the message as spam                                       |
+| `@delete`              | IRC: same as `flag`; Discord: flag and delete message          |
+| `@gptc.log_good`       | Add the message to the model as known good                     |
+| `@gptc.log_prob_good`  | Log the message for manual review as uncertain but likely good |
+| `@gptc.log_unknown`    | Log the message for manual review as unknown qualiy            |
+| `@gptc.log_prob_spam`  | Log the message for manual review as uncertain but likely spam |
+| `@gptc.log_spam`       | Add the message to the model as known spam                     |
+| `@reputation.increase` | Increase the author's reputation                               |
+| `@reputation.decrease` | Decrease the author's reputation                               |
 
-### Plugins
-
-All inputs and most actions are not provided by CedarSentinel itself, but by
-plugins. Three plugins, `gptc`, `length`, and `reputation`, are included by
-default and enabled in the example configuration files.
+Please note that `@gptc.log_good` and `@gptc.log_spam` are best avoided.
+CedarSentinel can never be entirely sure that a message is good or bad; these
+actions add messages directly into the model with no human review, so there is
+a significant possibility of messages being inaccurately categorized and never
+detected. This, of course, will make CedarSentinel less effective. This would
+most likely occur accidentally, but a malicious user could potentially
+deliberately insert harmful content into the training database as well. For
+these reasons, it is most likely best to instead use `@gptc.log_prob_good` and
+`@gptc.log_prob_spam` instead, and review the logged messages manually using
+the training tool.
 
 ### Contributors
 
@@ -187,9 +149,10 @@ Samuel Sloniker (kj7rrv). Feel free to fork it and push your improvements
 and/or bugfixes upstream!
 
 ### License
+
 MIT License
 
-Copyright 2021-2022 Matthew Petry (fireTwoOneNine) and Samuel Sloniker (kj7rrv)
+Copyright 2021-2024 Matthew Petry (fireTwoOneNine) and Samuel Sloniker (kj7rrv)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"),  to deal
