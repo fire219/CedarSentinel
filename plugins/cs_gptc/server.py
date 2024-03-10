@@ -2,6 +2,17 @@ import asyncio
 import sqlite3
 import tornado.web, tornado.escape
 
+def count_string(displayed_count, total_count):
+    if total_count == 0:
+        return "No messages in category"
+    if displayed_count == total_count == 1:
+        return "Showing only message in category"
+    if displayed_count == total_count == 2:
+        return "Showing both messages in category"
+    if displayed_count == total_count:
+        return f"Showing all {displayed_count} messages in category"
+    return f"Showing {displayed_count} message{'' if displayed_count == 1 else 's'} out of {total_count} in category"
+
 style = """\
 * {
     font-family: sans-serif;
@@ -140,13 +151,14 @@ class MainHandler(tornado.web.RequestHandler):
     <body>
         <h1>CedarSentinel GPTC Trainer</h1>
         <h2>Category: {current_user}</h2>
+        <p>If you would like to look at messages in a different category, use the dropdown menu below to select the desired category<noscript>, then click "Switch category</noscript>.<noscript>"</noscript></p>
         <nav><form method="GET" action="" id="switch_form">
             <select name="category" id="switch_menu">
 {options}
             </select>
             <noscript><button>Switch category</button> Any changes you may have made on this page will not be saved!</noscript>
         </form></nav>
-        <p>Showing{" all" if len(data) == total_count else ""} {len(data)} messages{" in category<!--" if len(data) == total_count else ""} out of {total_count}, starting at {offset}{"-->" if len(data) == total_count else ""}.</p>
+        <p>{count_string(len(data), total_count)}{"<!--" if len(data) == total_count else ""}, starting at {offset}{"-->" if len(data) == total_count else ""}.</p>
         {"<!--" if max_offset == 0 else ""}<form method="GET" action="">
             <p>Start at <input type="number" name="offset" min="0" max="{max_offset}" step="100" value="{offset}"> (0 to {max_offset}, increments of 100) instead?
             <button>Go</button>
@@ -171,7 +183,7 @@ class MainHandler(tornado.web.RequestHandler):
                     </tr>
                 </tfoot>
             </table>
-            <br>
+            <p>To move messages to a different category, select the check boxes next to the messages you want to move in the table above, select the desired category in the dropdown below, and click "Recategorize messages."</p>
             <select name="category">
 {options}
             </select>
