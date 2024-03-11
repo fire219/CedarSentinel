@@ -7,7 +7,7 @@ import threading
 
 @cspapi.init
 def initialize():
-    global classifier, con
+    global classifier
     try:
         open(config["database"]).close()
         exists = True
@@ -19,11 +19,16 @@ def initialize():
             "CREATE TABLE log (id integer PRIMARY KEY, message text, category text);"
         )
         con.commit()
+
     cur = con.cursor()
     cur.execute(
         "SELECT category, message FROM log WHERE category='good' OR category='spam';"
     )
+
     model = [{"category": line[0], "text": line[1]} for line in cur.fetchall()]
+
+    con.close()
+
     compiled_model = gptc.compile(model, config["maxNgramLength"])
     classifier = gptc.Classifier(compiled_model, config["maxNgramLength"])
     server.config = config
@@ -36,12 +41,14 @@ def confidence(message):
 
 
 def _log(message, category):
+    con = sqlite3.connect(config["database"])
     cur = con.cursor()
     cur.execute(
         "INSERT INTO log (message, category) VALUES (?, ?);",
         (message, category),
     )
     con.commit()
+    con.close()
 
 
 @cspapi.action
