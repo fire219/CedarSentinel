@@ -1,0 +1,40 @@
+---
+    platform : "discord"
+    platformConfig :
+      irc :
+        spamNotifyMessage : "moderator_nick another_mod: Potential spam detected."
+        bridgeBot         : "P64ProtocolBot"
+
+        private:
+          ircServer           : "irc.pine64.org"
+          ircPort             : 6667
+          ircNick             : "CedarSentinel"
+          channels            :
+          - "#spammy-channel"
+          - "#another-spammy-channel"
+          notificationChannel : "#spam-alerts"
+
+      discord :
+        spamNotifyMessage : "@Moderator Potential spam detected."
+        bridgeBot         : "Pine64 Protocol Droid#9618"
+
+        private :
+          discordToken        : "0123456789ABCDEF"
+          notificationChannel : "spam-tracker"
+          autoDeleteAPI       : "none"
+          bridgeURL           : "127.0.0.1:1223"
+          publicDeleteNotice  : "Automated message: a message was detected by CedarSentinel as spam and was automatically deleted. If this was in error, please contact a moderator."
+
+    plugins :
+    - "gptc"
+    - "length"
+    - "reputation"
+
+    pluginConfig :
+      gptc :
+        spamModel      : "compiled_model.json"
+        spamFile       : "spamLog.json"
+        maxNgramLength : 30
+      reputation :
+        persistKnownUsers : true
+        persistFile       : "knownUsers.json"
