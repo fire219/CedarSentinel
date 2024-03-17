@@ -237,3 +237,11 @@ def run():
     global con
     con = sqlite3.connect(config["database"])
     asyncio.run(main())
+
+if __name__ == "__main__":
+    global config
+    import yaml
+    from yaml.loader import SafeLoader
+    with open("config.yaml") as f:
+        config = yaml.load(f, Loader=SafeLoader)["pluginConfig"]["gptc"]
+    run()
