@@ -50,6 +50,12 @@ input[type="checkbox"] {
     height: 1.5em;
     width: 1.5em;
 }
+
+textarea {
+    width: 90%;
+    max-width: 40em;
+    height: 6em;
+}
 """
 
 script = """\
@@ -187,9 +193,14 @@ class MainHandler(tornado.web.RequestHandler):
             <select name="category">
 {options}
             </select>
-            <input type="hidden" name="current_category" value="{current}"><input type="hidden" name="offset" value="{offset}">
+            <input type="hidden" name="action" value="recategorize"><input type="hidden" name="current_category" value="{current}"><input type="hidden" name="offset" value="{offset}">
             <button>Recategorize messages</button>
         </form>{"-->" if len(data) == 0 else ""}
+        <form method="POST" action="" id="add_form">
+            <p>To add a new message to the category "{current_user}," enter it in the field below, then click "Add message."</p>
+            <textarea name="content"></textarea><input type="hidden" name="action" value="add"><input type="hidden" name="current_category" value="{current}"><input type="hidden" name="offset" value="{offset}">
+            <div><button>Add message</button></div>
+        </form>
         <script>
 {script}
         </script>
@@ -199,18 +210,29 @@ class MainHandler(tornado.web.RequestHandler):
         )
 
     def post(self):
-        messages = [
-            int(i.split("-")[1])
-            for i in self.request.body_arguments.keys()
-            if i.startswith("check-")
-        ]
-        category = self.get_body_argument("category")
-        cursor = con.cursor()
-        for message in messages:
-            cursor.execute(
-                "UPDATE log SET category=? WHERE id=?", (category, message)
+        action = self.get_body_argument("action")
+        if action == "recategorize":
+            messages = [
+                int(i.split("-")[1])
+                for i in self.request.body_arguments.keys()
+                if i.startswith("check-")
+            ]
+            category = self.get_body_argument("category")
+            cursor = con.cursor()
+            for message in messages:
+                cursor.execute(
+                    "UPDATE log SET category=? WHERE id=?", (category, message)
+                )
+            con.commit()
+        elif action == "add":
+            category = self.get_body_argument("current_category")
+            cur = con.cursor()
+            cur.execute(
+                "INSERT INTO log (message, category) VALUES (?, ?);",
+                (self.get_body_argument("content"), category),
             )
-        con.commit()
+            con.commit()
+
         self.redirect(
             "?category="
             + self.get_body_argument("current_category")
